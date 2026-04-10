@@ -1,0 +1,12 @@
+node_modules
+dist
+build
+.env
+.env.*
+!.env.example
+.git
+.github
+*.md
+coverage
+.DS_Store
+mobile

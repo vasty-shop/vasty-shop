@@ -1,0 +1,140 @@
+This file contains entity interfaces that need to be added to schema.ts
+
+Add these after OrderEntity:
+
+export interface CampaignEntity {
+  id: string;
+  shopId?: string;
+  name: string;
+  slug: string;
+  description?: string;
+  campaignType: string;
+  startDate: string;
+  endDate: string;
+  status: string;
+  discountType?: string;
+  discountValue?: number;
+  maxDiscount?: number;
+  minPurchase?: number;
+  targetProducts: string[];
+  targetCategories: string[];
+  targetShops: string[];
+  bannerImages: any[];
+  featuredImage?: string;
+  impressions: number;
+  clicks: number;
+  conversions: number;
+  revenue: number;
+  settings: Record<string, any>;
+  termsConditions?: string;
+  createdAt: string;
+  updatedAt: string;
+  deletedAt?: string;
+}
+
+export interface OfferEntity {
+  id: string;
+  shopId?: string;
+  code: string;
+  name: string;
+  description?: string;
+  type: string;
+  value: number;
+  minPurchase?: number;
+  maxDiscount?: number;
+  minItems?: number;
+  specificProducts: string[];
+  specificCategories: string[];
+  excludedProducts: string[];
+  firstOrderOnly: boolean;
+  userTypes: string[];
+  totalUsageLimit?: number;
+  perUserLimit: number;
+  currentUsage: number;
+  validFrom: string;
+  validTo: string;
+  status: string;
+  appliedTo: Record<string, any>;
+  createdAt: string;
+  updatedAt: string;
+  deletedAt?: string;
+}
+
+export interface WishlistEntity {
+  id: string;
+  userId: string;
+  name: string;
+  isDefault: boolean;
+  products: any[];
+  privacy: string;
+  shareToken?: string;
+  totalItems: number;
+  createdAt: string;
+  updatedAt: string;
+  deletedAt?: string;
+}
+
+export interface ReviewEntity {
+  id: string;
+  productId: string;
+  userId: string;
+  orderId?: string;
+  rating: number;
+  title: string;
+  reviewText: string;
+  reviewImages: string[];
+  reviewVideos: string[];
+  isVerifiedPurchase: boolean;
+  helpfulCount: number;
+  notHelpfulCount: number;
+  shopResponse?: string;
+  respondedBy?: string;
+  respondedAt?: string;
+  status: string;
+  rejectionReason?: string;
+  isReported: boolean;
+  reportReason?: string;
+  reportCount: number;
+  createdAt: string;
+  updatedAt: string;
+  deletedAt?: string;
+}
+
+export interface CartEntity {
+  id: string;
+  userId?: string;
+  sessionId?: string;
+  items: any[];
+  subtotal: number;
+  tax: number;
+  shipping: number;
+  discount: number;
+  total: number;
+  appliedCoupons: any[];
+  shippingAddressId?: string;
+  status: string;
+  expiresAt?: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface CategoryEntity {
+  id: string;
+  name: string;
+  slug: string;
+  description?: string;
+  parentId?: string;
+  level: number;
+  image?: string;
+  icon?: string;
+  displayOrder: number;
+  isActive: boolean;
+  isFeatured: boolean;
+  metaTitle?: string;
+  metaDescription?: string;
+  metaKeywords: string[];
+  productCount: number;
+  createdAt: string;
+  updatedAt: string;
+  deletedAt?: string;
+}

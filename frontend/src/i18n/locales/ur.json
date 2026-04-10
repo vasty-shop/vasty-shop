@@ -1,0 +1,4368 @@
+{
+  "common": {
+    "home": "ہوم",
+    "products": "مصنوعات",
+    "categories": "زمرے",
+    "collections": "کلیکشنز",
+    "about": "ہمارے بارے میں",
+    "contact": "رابطہ",
+    "faq": "عمومی سوالات",
+    "search": "تلاش",
+    "searchPlaceholder": "مصنوعات تلاش کریں...",
+    "cart": "کارٹ",
+    "wishlist": "خواہش فہرست",
+    "profile": "پروفائل",
+    "orders": "آرڈرز",
+    "settings": "ترتیبات",
+    "login": "لاگ ان",
+    "logout": "لاگ آؤٹ",
+    "register": "رجسٹر",
+    "signIn": "سائن ان",
+    "signUp": "سائن اپ",
+    "signOut": "سائن آؤٹ",
+    "submit": "جمع کرائیں",
+    "cancel": "منسوخ",
+    "save": "محفوظ کریں",
+    "delete": "حذف کریں",
+    "edit": "ترمیم",
+    "add": "شامل کریں",
+    "close": "بند کریں",
+    "back": "واپس",
+    "next": "اگلا",
+    "previous": "پچھلا",
+    "continue": "جاری رکھیں",
+    "loading": "لوڈ ہو رہا ہے...",
+    "error": "خرابی",
+    "success": "کامیابی",
+    "optional": "اختیاری",
+    "select": "منتخب کریں",
+    "viewAll": "سب دیکھیں",
+    "seeMore": "مزید دیکھیں",
+    "showLess": "کم دکھائیں",
+    "language": "زبان",
+    "currency": "کرنسی",
+    "allRightsReserved": "جملہ حقوق محفوظ ہیں",
+    "privacyPolicy": "رازداری کی پالیسی",
+    "termsOfService": "شرائط و ضوابط",
+    "contactUs": "ہم سے رابطہ کریں",
+    "followUs": "ہمیں فالو کریں",
+    "newsletter": "نیوز لیٹر",
+    "subscribeNewsletter": "ہمارے نیوز لیٹر کی رکنیت حاصل کریں",
+    "emailPlaceholder": "اپنا ای میل درج کریں",
+    "subscribe": "رکنیت حاصل کریں",
+    "noResults": "کوئی نتائج نہیں ملے",
+    "tryAgain": "دوبارہ کوشش کریں",
+    "shopNow": "ابھی خریداری کریں",
+    "learnMore": "مزید جانیں",
+    "addToCart": "کارٹ میں شامل کریں",
+    "addToWishlist": "خواہش فہرست میں شامل کریں",
+    "removeFromWishlist": "خواہش فہرست سے ہٹائیں",
+    "buyNow": "ابھی خریدیں",
+    "outOfStock": "سٹاک میں نہیں",
+    "inStock": "دستیاب ہے",
+    "limitedStock": "محدود سٹاک",
+    "sale": "سیل",
+    "new": "نیا",
+    "featured": "نمایاں",
+    "bestSeller": "بہترین فروخت",
+    "off": "چھوٹ",
+    "free": "مفت",
+    "qty": "تعداد",
+    "quantity": "مقدار",
+    "price": "قیمت",
+    "total": "کل",
+    "subtotal": "ذیلی کل",
+    "tax": "ٹیکس",
+    "shipping": "شپنگ",
+    "discount": "رعایت",
+    "apply": "لاگو کریں",
+    "remove": "ہٹائیں",
+    "clear": "صاف کریں",
+    "filter": "فلٹر",
+    "sort": "ترتیب",
+    "sortBy": "ترتیب بلحاظ",
+    "newest": "تازہ ترین",
+    "oldest": "قدیم ترین",
+    "priceLowToHigh": "قیمت: کم سے زیادہ",
+    "priceHighToLow": "قیمت: زیادہ سے کم",
+    "mostPopular": "سب سے مقبول",
+    "topRated": "اعلیٰ درجہ",
+    "reviews": "جائزے",
+    "rating": "درجہ بندی",
+    "writeReview": "جائزہ لکھیں",
+    "share": "شیئر کریں",
+    "copy": "کاپی",
+    "copied": "کاپی ہو گیا!",
+    "menu": "مینو",
+    "store": "اسٹور",
+    "placeholders": {
+      "searchForDeals": "سودے تلاش کریں...",
+      "searchProducts": "مصنوعات تلاش کریں...",
+      "searchProductsBrands": "مصنوعات، برانڈز تلاش کریں...",
+      "searchStores": "اسٹورز تلاش کریں...",
+      "enterCode": "کوڈ درج کریں",
+      "enterEmail": "اپنا ای میل ایڈریس درج کریں",
+      "searchOrders": "اپنے آرڈرز تلاش کریں",
+      "dateRange": "تاریخ کی حد",
+      "sortBy": "ترتیب بلحاظ",
+      "enterOrderNumber": "اپنا آرڈر نمبر یا ٹریکنگ آئی ڈی درج کریں",
+      "cardholderName": "کارڈ ہولڈر کا نام",
+      "searchBrands": "برانڈز تلاش کریں...",
+      "locationSearch": "شہر، صوبہ، یا زپ کوڈ درج کریں...",
+      "maintenanceMessage": "دیکھ بھال کے دوران دکھایا جانے والا پیغام درج کریں...",
+      "platformName": "{{appName}}",
+      "selectEventType": "ایونٹ کی قسم منتخب کریں",
+      "view": "دیکھیں"
+    }
+  },
+  "header": {
+    "welcome": "خوش آمدید",
+    "searchProducts": "مصنوعات تلاش کریں...",
+    "searchPlaceholder": "اسٹورز تلاش کریں...",
+    "myAccount": "میرا اکاؤنٹ",
+    "trackOrder": "آرڈر ٹریک کریں",
+    "help": "مدد",
+    "announcement": "$50 سے زیادہ آرڈرز پر مفت شپنگ!",
+    "exploreStores": "اسٹورز دریافت کریں",
+    "selectLanguage": "زبان منتخب کریں",
+    "menu": "مینو",
+    "signIn": "سائن ان",
+    "createAccount": "اکاؤنٹ بنائیں",
+    "referrals": "حوالہ جات",
+    "settings": "ترتیبات",
+    "myStoreDashboard": "میرے اسٹور کا ڈیش بورڈ",
+    "createYourStore": "اپنا اسٹور بنائیں",
+    "logout": "لاگ آؤٹ",
+    "loggingOut": "لاگ آؤٹ ہو رہا ہے...",
+    "loading": "لوڈ ہو رہا ہے...",
+    "startSelling": "فروخت شروع کریں",
+    "myStore": "میرا اسٹور",
+    "nav": {
+      "home": "ہوم",
+      "pages": "صفحات",
+      "aboutUs": "ہمارے بارے میں",
+      "faq": "عمومی سوالات",
+      "terms": "شرائط و ضوابط",
+      "privacy": "رازداری کی پالیسی",
+      "contact": "ہم سے رابطہ کریں"
+    }
+  },
+  "mobileNav": {
+    "myProfile": "میرا پروفائل",
+    "exploreStores": "اسٹورز دریافت کریں",
+    "settings": "ترتیبات",
+    "myStoreDashboard": "میرے اسٹور کا ڈیش بورڈ",
+    "startSelling": "فروخت شروع کریں",
+    "logout": "لاگ آؤٹ",
+    "welcomeTitle": "{{appName}} میں خوش آمدید",
+    "welcomeSubtitle": "اپنے اکاؤنٹ اور آرڈرز تک رسائی کے لیے سائن ان کریں",
+    "signIn": "سائن ان",
+    "createAccount": "اکاؤنٹ بنائیں"
+  },
+  "platformNavbar": {
+    "howItWorks": "یہ کیسے کام کرتا ہے",
+    "features": "خصوصیات",
+    "marketplace": "مارکیٹ پلیس",
+    "pricing": "قیمتیں",
+    "adminPanel": "ایڈمن پینل",
+    "storeDashboard": "اسٹور ڈیش بورڈ",
+    "startSelling": "فروخت شروع کریں",
+    "startSellingFree": "مفت فروخت شروع کریں"
+  },
+  "footer": {
+    "aboutUs": "ہمارے بارے میں",
+    "customerService": "کسٹمر سروس",
+    "quickLinks": "فوری لنکس",
+    "stayConnected": "رابطے میں رہیں",
+    "paymentMethods": "ادائیگی کے طریقے",
+    "securePayment": "محفوظ ادائیگی",
+    "copyright": "جملہ حقوق محفوظ ہیں۔",
+    "poweredBy": "تقویت یافتہ از"
+  },
+  "home": {
+    "heroTitle": "ہمارا کلیکشن دریافت کریں",
+    "heroSubtitle": "اپنے طرز زندگی کے لیے بہترین مصنوعات تلاش کریں",
+    "featuredProducts": "نمایاں مصنوعات",
+    "newArrivals": "نئی آمد",
+    "bestSellers": "بہترین فروخت",
+    "specialOffers": "خصوصی پیشکشیں",
+    "shopByCategory": "زمرے کے لحاظ سے خریداری",
+    "trendingNow": "ابھی رجحان میں",
+    "testimonials": "ہمارے صارفین کیا کہتے ہیں",
+    "stayUpdated": "اپ ڈیٹ رہیں",
+    "handpickedFavorites": "ہمارے منتخب کردہ پسندیدہ",
+    "subscribeExclusive": "خصوصی پیشکشوں کے لیے رکنیت حاصل کریں",
+    "subscribeExclusiveArrivals": "خصوصی پیشکشوں اور نئی آمد کے لیے رکنیت حاصل کریں",
+    "latestArrivalsDesc": "ہماری تازہ ترین آمد دیکھیں",
+    "popularItemsDesc": "ہماری سب سے مقبول اشیاء",
+    "discoverProducts": "محبت سے تیار کردہ حیرت انگیز مصنوعات دریافت کریں",
+    "seeWhatEveryoneLoves": "دیکھیں سب کو کیا پسند ہے",
+    "findWhatYouNeed": "بالکل وہی تلاش کریں جو آپ کو چاہیے",
+    "realReviews": "حقیقی لوگوں کے حقیقی جائزے",
+    "hotPicks": "بہترین انتخاب جو آپ کو پسند آئیں گے",
+    "freshDrops": "ہر ہفتے نئی آمد",
+    "whyChooseUsDesc": "ہم آپ کے لیے بہترین معیار اور انداز کی مصنوعات لاتے ہیں۔ ہر شے آپ کی توقعات پر پورا اترنے کے لیے احتیاط سے منتخب کی گئی ہے۔",
+    "firstOrderDiscount": "اپنے پہلے آرڈر پر 15% رعایت حاصل کریں",
+    "subscribeDealsUpdates": "خصوصی سودوں اور اپ ڈیٹس کے لیے رکنیت حاصل کریں",
+    "whyChooseUs": "ہمیں کیوں چنیں",
+    "freeShipping": "مفت شپنگ",
+    "freeShippingDesc": "$50 سے زیادہ تمام آرڈرز پر مفت شپنگ",
+    "securePayment": "محفوظ ادائیگی",
+    "securePaymentDesc": "100% محفوظ ادائیگی کی کارروائی",
+    "support": "24/7 سپورٹ",
+    "supportDesc": "چوبیس گھنٹے وقف سپورٹ",
+    "easyReturns": "آسان واپسی",
+    "easyReturnsDesc": "30 دن کی پریشانی سے پاک واپسی"
+  },
+  "product": {
+    "description": "تفصیل",
+    "reviews": "جائزے",
+    "shipping": "شپنگ",
+    "noDescription": "کوئی تفصیل دستیاب نہیں۔",
+    "addToCart": "کارٹ میں شامل کریں",
+    "buyNow": "ابھی خریدیں",
+    "outOfStock": "سٹاک میں نہیں",
+    "inStock": "دستیاب ہے",
+    "lowStock": "صرف {{count}} باقی ہیں",
+    "quantity": "مقدار",
+    "size": "سائز",
+    "color": "رنگ",
+    "specifications": "تفصیلات",
+    "features": "خصوصیات",
+    "relatedProducts": "متعلقہ مصنوعات",
+    "youMayAlsoLike": "آپ کو یہ بھی پسند آ سکتا ہے",
+    "tryOn": "آزمائیں",
+    "notFound": "مصنوعات نہیں ملی"
+  },
+  "ar": {
+    "loading": "AR ٹرائی آن لوڈ ہو رہا ہے...",
+    "initializingCamera": "کیمرا شروع ہو رہا ہے...",
+    "loadingAIModel": "AI ماڈل لوڈ ہو رہا ہے...",
+    "settingUpAR": "AR سیٹ اپ ہو رہا ہے...",
+    "allowCameraAccess": "براہ کرم کیمرا تک رسائی کی اجازت دیں",
+    "mayTakeMoment": "اس میں تھوڑا وقت لگ سکتا ہے",
+    "bodyDetected": "جسم کا پتہ چلا",
+    "lookingForBody": "جسم تلاش کر رہا ہے...",
+    "live": "لائیو",
+    "productNotFound": "مصنوعات نہیں ملی",
+    "couldNotLoadAR": "ہم اس مصنوعات کے لیے AR ٹرائی آن لوڈ نہیں کر سکے۔",
+    "goBack": "واپس جائیں",
+    "cameraAccessRequired": "کیمرا تک رسائی ضروری ہے",
+    "browserNotSupported": "براؤزر معاون نہیں ہے",
+    "aiModelError": "AI ماڈل میں خرابی",
+    "somethingWentWrong": "کچھ غلط ہو گیا",
+    "retry": "دوبارہ کوشش",
+    "close": "بند کریں",
+    "capture": "تصویر لیں",
+    "flipCamera": "کیمرا تبدیل کریں",
+    "share": "شیئر کریں",
+    "reset": "ری سیٹ",
+    "adjustSize": "سائز ایڈجسٹ کریں",
+    "showSkeleton": "ڈھانچہ دکھائیں",
+    "hideSkeleton": "ڈھانچہ چھپائیں",
+    "fullscreen": "فل سکرین",
+    "exitFullscreen": "فل سکرین سے باہر نکلیں"
+  },
+  "products": {
+    "allProducts": "تمام مصنوعات",
+    "filterProducts": "مصنوعات فلٹر کریں",
+    "clearFilters": "فلٹرز صاف کریں",
+    "clearAll": "سب صاف کریں",
+    "applyFilters": "فلٹرز لاگو کریں",
+    "filters": "فلٹرز",
+    "priceRange": "قیمت کی حد",
+    "minPrice": "کم سے کم قیمت",
+    "maxPrice": "زیادہ سے زیادہ قیمت",
+    "category": "زمرہ",
+    "allCategories": "تمام زمرے",
+    "brand": "برانڈ",
+    "color": "رنگ",
+    "size": "سائز",
+    "availability": "دستیابی",
+    "showingResults": "{{count}} مصنوعات دکھائی جا رہی ہیں",
+    "showingFromTo": "{{total}} میں سے {{from}} - {{to}} مصنوعات دکھائی جا رہی ہیں",
+    "noProductsFound": "کوئی مصنوعات نہیں ملیں",
+    "adjustFilters": "اپنے فلٹرز ایڈجسٹ کرنے کی کوشش کریں",
+    "productDetails": "مصنوعات کی تفصیلات",
+    "description": "تفصیل",
+    "specifications": "وضاحتیں",
+    "customerReviews": "صارفین کے جائزے",
+    "relatedProducts": "متعلقہ مصنوعات",
+    "youMayAlsoLike": "آپ کو یہ بھی پسند آ سکتا ہے",
+    "recentlyViewed": "حال ہی میں دیکھا گیا",
+    "addedToCart": "کارٹ میں شامل ہو گیا!",
+    "addedToWishlist": "خواہش فہرست میں شامل ہو گیا!",
+    "removedFromWishlist": "خواہش فہرست سے ہٹا دیا گیا",
+    "selectSize": "سائز منتخب کریں",
+    "selectColor": "رنگ منتخب کریں",
+    "selectVariant": "ویرینٹ منتخب کریں",
+    "sku": "ایس کے یو",
+    "shareProduct": "یہ مصنوعات شیئر کریں",
+    "errorLoading": "مصنوعات لوڈ کرنے میں خرابی",
+    "andUp": "اور اس سے اوپر",
+    "review": "جائزہ",
+    "reviewsCount": "{{count}} جائزے",
+    "sortOptions": {
+      "featured": "نمایاں",
+      "newest": "تازہ ترین",
+      "priceLowToHigh": "قیمت: کم سے زیادہ",
+      "priceHighToLow": "قیمت: زیادہ سے کم",
+      "topRated": "اعلیٰ درجہ",
+      "mostPopular": "سب سے مقبول",
+      "nameAZ": "نام: ا سے ی",
+      "nameZA": "نام: ی سے ا"
+    },
+    "shippingInfo": "شپنگ کی معلومات",
+    "returnPolicy": "واپسی کی پالیسی",
+    "shipping": {
+      "standard": "معیاری شپنگ",
+      "standardTime": "5-7 کاروباری دن",
+      "standardPrice": "$100 سے زیادہ آرڈرز پر مفت",
+      "express": "ایکسپریس شپنگ",
+      "expressTime": "2-3 کاروباری دن",
+      "expressPrice": "$15.99",
+      "nextDay": "اگلے دن کی ترسیل",
+      "nextDayTime": "1 کاروباری دن",
+      "nextDayPrice": "$29.99",
+      "businessDays": "کاروباری دن",
+      "businessDay": "کاروباری دن",
+      "freeOver": "سے زیادہ آرڈرز پر مفت"
+    },
+    "returnPolicyItems": {
+      "returnWindow": "ترسیل کی تاریخ سے 30 دن کی واپسی کی مدت",
+      "returnWindowDays": "دن کی واپسی کی مدت ترسیل کی تاریخ سے",
+      "itemCondition": "اشیاء نئی ہونی چاہئیں اصل ٹیگز کے ساتھ",
+      "freeReturn": "تمام آرڈرز پر مفت واپسی شپنگ",
+      "refundOption": "مکمل رقم واپسی یا تبادلہ دستیاب",
+      "refundTime": "رقم واپسی 5-7 کاروباری دنوں میں",
+      "refundProcessed": "رقم واپسی کی کارروائی"
+    },
+    "reviews": {
+      "writeReview": "جائزہ لکھیں",
+      "yourRating": "آپ کی درجہ بندی",
+      "reviewTitle": "جائزے کا عنوان (اختیاری)",
+      "reviewTitlePlaceholder": "اپنے جائزے کا خلاصہ",
+      "yourReview": "آپ کا جائزہ",
+      "yourReviewPlaceholder": "ہمیں بتائیں آپ کو کیا پسند آیا یا کیا نہیں...",
+      "charactersMinimum": "حروف کم از کم",
+      "submitting": "جمع ہو رہا ہے...",
+      "submitReview": "جائزہ جمع کرائیں",
+      "basedOnReviews": "{{count}} جائزوں کی بنیاد پر",
+      "ratingDistribution": "درجہ بندی کی تقسیم",
+      "noReviewsYet": "ابھی تک کوئی جائزے نہیں",
+      "beFirstToReview": "اس مصنوعات کا پہلا جائزہ لکھیں!",
+      "clearFilter": "فلٹر صاف کریں",
+      "verified": "تصدیق شدہ",
+      "helpful": "مفید ({{count}})",
+      "reviewSubmitted": "جائزہ کامیابی سے جمع ہو گیا!",
+      "selectRating": "براہ کرم درجہ بندی منتخب کریں",
+      "reviewMinLength": "جائزہ کم از کم 10 حروف کا ہونا چاہیے"
+    }
+  },
+  "cart": {
+    "shoppingCart": "شاپنگ کارٹ",
+    "yourCart": "آپ کا کارٹ",
+    "emptyCart": "آپ کا کارٹ خالی ہے",
+    "emptyCartMessage": "لگتا ہے آپ نے ابھی تک کوئی شے اپنے کارٹ میں شامل نہیں کی۔",
+    "browseProducts": "مصنوعات دیکھیں",
+    "goToStoreHome": "اسٹور ہوم پر جائیں",
+    "startShopping": "خریداری شروع کریں",
+    "continueShopping": "خریداری جاری رکھیں",
+    "cartSummary": "کارٹ کا خلاصہ",
+    "orderSummary": "آرڈر کا خلاصہ",
+    "items": "اشیاء",
+    "itemsInCart": "آپ کے کارٹ میں {{count}} شے(اشیاء)",
+    "removeItem": "شے ہٹائیں",
+    "updateQuantity": "مقدار اپ ڈیٹ کریں",
+    "size": "سائز",
+    "color": "رنگ",
+    "inStock": "دستیاب ہے",
+    "promoCode": "پرومو کوڈ",
+    "enterCode": "کوڈ درج کریں",
+    "apply": "لاگو کریں",
+    "applying": "لاگو ہو رہا ہے...",
+    "applied": "لاگو ہو گیا",
+    "applyCode": "کوڈ لاگو کریں",
+    "invalidPromoCode": "غلط پرومو کوڈ",
+    "promoApplied": "پرومو کوڈ \"{{code}}\" لاگو ہو گیا!",
+    "promoRemoved": "پرومو کوڈ ہٹا دیا گیا",
+    "loginToSaveWishlist": "خواہش فہرست میں محفوظ کرنے کے لیے لاگ ان کریں",
+    "savedToWishlist": "خواہش فہرست میں محفوظ ہو گیا",
+    "loginToAddToCart": "کارٹ میں شامل کرنے کے لیے لاگ ان کریں",
+    "subtotal": "ذیلی کل",
+    "discount": "رعایت",
+    "shipping": "شپنگ",
+    "tax": "ٹیکس",
+    "free": "مفت",
+    "total": "کل",
+    "addMoreForFreeShipping": "مفت شپنگ کے لیے ${{amount}} مزید شامل کریں!",
+    "estimatedTotal": "تخمینی کل",
+    "proceedToCheckout": "چیک آؤٹ پر جائیں",
+    "secureCheckout": "محفوظ چیک آؤٹ",
+    "freeShippingOver": "$50 سے زیادہ آرڈرز پر مفت شپنگ",
+    "freeReturns": "30 دن مفت واپسی",
+    "buyerProtection": "خریدار کی حفاظت کی ضمانت",
+    "weAccept": "ہم قبول کرتے ہیں",
+    "freeShippingProgress": "مفت شپنگ کے لیے {{amount}} مزید شامل کریں!",
+    "freeShippingUnlocked": "آپ نے مفت شپنگ حاصل کر لی!",
+    "saveForLater": "بعد کے لیے محفوظ کریں",
+    "moveToWishlist": "خواہش فہرست میں منتقل کریں",
+    "youMightAlsoLike": "آپ کو یہ بھی پسند آ سکتا ہے"
+  },
+  "checkout": {
+    "checkout": "چیک آؤٹ",
+    "guestCheckout": "مہمان چیک آؤٹ",
+    "returningCustomer": "پرانے صارف؟",
+    "shippingAddress": "شپنگ ایڈریس",
+    "billingAddress": "بلنگ ایڈریس",
+    "sameAsShipping": "شپنگ ایڈریس جیسا ہی",
+    "shippingMethod": "شپنگ کا طریقہ",
+    "paymentMethod": "ادائیگی کا طریقہ",
+    "paymentDetails": "ادائیگی کی تفصیلات",
+    "orderReview": "آرڈر کا جائزہ",
+    "placeOrder": "آرڈر دیں",
+    "processing": "کارروائی ہو رہی ہے...",
+    "fullName": "مکمل نام",
+    "firstName": "پہلا نام",
+    "lastName": "آخری نام",
+    "email": "ای میل",
+    "phone": "فون",
+    "address": "پتہ",
+    "addressLine1": "پتہ لائن 1",
+    "addressLine2": "پتہ لائن 2 (اختیاری)",
+    "city": "شہر",
+    "state": "صوبہ/ریاست",
+    "postalCode": "پوسٹل کوڈ",
+    "country": "ملک",
+    "standardShipping": "معیاری شپنگ",
+    "expressShipping": "ایکسپریس شپنگ",
+    "overnightShipping": "راتوں رات شپنگ",
+    "freeShipping": "مفت شپنگ",
+    "estimatedDelivery": "تخمینی ترسیل",
+    "businessDays": "{{days}} کاروباری دن",
+    "creditCard": "کریڈٹ کارڈ",
+    "debitCard": "ڈیبٹ کارڈ",
+    "paypal": "پے پال",
+    "bankTransfer": "بینک ٹرانسفر",
+    "cashOnDelivery": "ادائیگی بوقت ترسیل",
+    "cardNumber": "کارڈ نمبر",
+    "expiryDate": "میعاد ختم ہونے کی تاریخ",
+    "cvv": "CVV",
+    "nameOnCard": "کارڈ پر نام",
+    "saveCard": "مستقبل کی خریداریوں کے لیے کارڈ محفوظ کریں",
+    "orderNotes": "آرڈر نوٹس (اختیاری)",
+    "termsAgree": "میں شرائط و ضوابط اور رازداری کی پالیسی سے متفق ہوں",
+    "orderConfirmation": "آرڈر کی تصدیق",
+    "orderPlaced": "آپ کا آرڈر دے دیا گیا ہے!",
+    "orderFailed": "آرڈر دینے میں ناکامی۔ براہ کرم دوبارہ کوشش کریں۔",
+    "orderNumber": "آرڈر نمبر",
+    "thankYou": "آپ کی خریداری کا شکریہ!",
+    "confirmationEmail": "{{email}} پر تصدیقی ای میل بھیج دیا گیا ہے",
+    "continueBrowsing": "براؤزنگ جاری رکھیں",
+    "viewOrder": "آرڈر دیکھیں",
+    "backToCart": "کارٹ پر واپس جائیں",
+    "acceptTermsError": "براہ کرم شرائط و ضوابط قبول کریں",
+    "addItemsBeforeCheckout": "چیک آؤٹ سے پہلے اپنے کارٹ میں کچھ اشیاء شامل کریں",
+    "loadingDeliveryOptions": "ترسیل کے اختیارات لوڈ ہو رہے ہیں...",
+    "continueToDelivery": "ترسیل پر جائیں",
+    "continueToPayment": "ادائیگی پر جائیں",
+    "reviewOrder": "آرڈر کا جائزہ لیں",
+    "paymentFailed": "ادائیگی ناکام",
+    "paymentFailedMessage": "آپ کی ادائیگی کی کارروائی نہیں ہو سکی۔ براہ کرم دوبارہ کوشش کریں۔",
+    "retryPayment": "ادائیگی دوبارہ کریں",
+    "contactInfo": "رابطہ کی معلومات",
+    "emailPlaceholder": "your.email@domain.com",
+    "phonePlaceholder": "+1 (555) 123-4567",
+    "selectCountry": "ملک منتخب کریں",
+    "searchCountries": "ممالک تلاش کریں...",
+    "addressPlaceholder": "123 مین سٹریٹ",
+    "addressLine2Placeholder": "اپارٹمنٹ، سوئٹ، وغیرہ",
+    "searchState": "صوبہ/ریاست تلاش کریں...",
+    "saveAddress": "مستقبل کے آرڈرز کے لیے یہ پتہ محفوظ کریں",
+    "saveAddressDesc": "آپ کا پتہ آپ کے اکاؤنٹ میں محفوظ طریقے سے محفوظ ہو جائے گا",
+    "shippingShort": "شپنگ",
+    "deliveryShort": "ترسیل",
+    "paymentShort": "ادائیگی",
+    "reviewShort": "جائزہ",
+    "chooseDeliveryMethod": "اپنا ترسیل کا طریقہ منتخب کریں",
+    "selectShippingSpeed": "وہ شپنگ رفتار منتخب کریں جو آپ کے لیے بہترین ہو",
+    "nextBusinessDay": "اگلا کاروباری دن",
+    "businessDaysRange": "{{min}}-{{max}} کاروباری دن",
+    "arrivesBy": "تک پہنچ جائے گا",
+    "freeOnOrdersOver": "${{amount}} سے زیادہ آرڈرز پر مفت",
+    "orderWithinHours": "اگلے دن کی ترسیل کے لیے 4 گھنٹوں میں آرڈر کریں",
+    "deliveryInformation": "ترسیل کی معلومات",
+    "deliveryInfo1": "تمام ترسیلات کے لیے دستخط ضروری ہیں",
+    "deliveryInfo2": "ٹریکنگ کی معلومات آپ کے ای میل پر بھیجی جائیں گی",
+    "deliveryInfo3": "کاروباری دنوں میں ہفتے کے آخر اور تعطیلات شامل نہیں ہیں",
+    "paymentMethodTitle": "ادائیگی کا طریقہ",
+    "allTransactionsSecure": "تمام لین دین محفوظ اور خفیہ ہیں",
+    "paymentSecure": "آپ کی ادائیگی کی معلومات خفیہ اور محفوظ ہیں",
+    "weAccept": "ہم قبول کرتے ہیں",
+    "cardholderName": "کارڈ ہولڈر کا نام",
+    "expirationDate": "میعاد ختم ہونے کی تاریخ",
+    "cvvTooltip1": "آپ کے کارڈ کے پیچھے 3 ہندسوں کا کوڈ",
+    "cvvTooltip2": "(امریکن ایکسپریس کے لیے 4 ہندسے)",
+    "saveCardFuture": "مستقبل کی خریداریوں کے لیے کارڈ محفوظ کریں",
+    "cardSecurelyEncrypted": "آپ کے کارڈ کی تفصیلات محفوظ طریقے سے خفیہ ہوں گی",
+    "payWithPaypal": "پے پال سے ادائیگی کریں",
+    "paypalRedirect": "آپ کو محفوظ خریداری مکمل کرنے کے لیے پے پال پر بھیجا جائے گا",
+    "payWithApplePay": "ایپل پے سے ادائیگی کریں",
+    "applePayDesc": "تیز اور محفوظ چیک آؤٹ کے لیے ٹچ آئی ڈی یا فیس آئی ڈی استعمال کریں",
+    "payWithGooglePay": "گوگل پے سے ادائیگی کریں",
+    "googlePayDesc": "اپنے گوگل اکاؤنٹ سے تیز اور آسان چیک آؤٹ",
+    "codTitle": "ادائیگی بوقت ترسیل",
+    "codDesc": "جب آپ کا آرڈر آپ کی دہلیز پر آئے تو نقد ادائیگی کریں",
+    "codBenefit1": "آن لائن ادائیگی کی ضرورت نہیں",
+    "codBenefit2": "آرڈر ملنے پر ادائیگی کریں",
+    "codBenefit3": "ادائیگی سے پہلے جانچ کریں",
+    "bankTransferTitle": "بینک ٹرانسفر",
+    "bankTransferDesc": "براہ راست ہمارے بینک اکاؤنٹ میں ادائیگی منتقل کریں",
+    "bankTransferInfo": "آرڈر دینے کے بعد، آپ کو ای میل کے ذریعے بینک اکاؤنٹ کی تفصیلات ملیں گی۔ براہ کرم 24 گھنٹوں میں ٹرانسفر مکمل کریں۔",
+    "bankTransferBenefit1": "ادائیگی کی تصدیق کے بعد آرڈر پر کارروائی ہوگی",
+    "bankTransferBenefit2": "ٹرانسفر ریفرنس میں آرڈر نمبر شامل کریں",
+    "sameAsShippingAddress": "شپنگ ایڈریس جیسا ہی",
+    "pciCompliant": "محفوظ اور PCI معیاری",
+    "pciCompliantDesc": "آپ کی ادائیگی کی معلومات محفوظ طریقے سے کارروائی کی جاتی ہیں۔ ہم کریڈٹ کارڈ کی تفصیلات محفوظ نہیں کرتے اور نہ ہی آپ کی کریڈٹ کارڈ کی معلومات تک رسائی رکھتے ہیں۔",
+    "reviewYourOrder": "اپنے آرڈر کا جائزہ لیں",
+    "reviewOrderDesc": "آرڈر دینے سے پہلے اپنے آرڈر کی تفصیلات کا جائزہ لیں",
+    "orderItems": "آرڈر کی اشیاء",
+    "agreeTerms": "میں شرائط و ضوابط اور رازداری کی پالیسی سے متفق ہوں",
+    "agreeTermsDesc": "یہ آرڈر دے کر، آپ ہماری سروس کی شرائط اور رازداری کی پالیسی سے متفق ہیں۔ آپ کو اپنے آرڈر کی حیثیت کے بارے میں ای میل اطلاعات موصول ہوں گی۔",
+    "readTerms": "شرائط و ضوابط پڑھیں",
+    "readPrivacy": "رازداری کی پالیسی پڑھیں",
+    "freeReturns": "مفت واپسی",
+    "returnPolicy": "30 دن کی واپسی کی پالیسی",
+    "priceMatch": "قیمت کی مماثلت",
+    "priceMatchDesc": "ہم حریفوں کی قیمتوں سے ملاتے ہیں",
+    "secureCheckout": "محفوظ چیک آؤٹ",
+    "sslEncrypted": "SSL خفیہ ادائیگی",
+    "beforePlaceOrder": "آرڈر دینے سے پہلے",
+    "verifyDetails": "براہ کرم تصدیق کریں کہ تمام تفصیلات درست ہیں",
+    "confirmationEmailAt": "آپ کو {{email}} پر تصدیقی ای میل موصول ہوگا",
+    "trackOrderAnytime": "اپنے اکاؤنٹ سے کسی بھی وقت آرڈر ٹریک کریں",
+    "contactSupportHelp": "مدد کے لیے سپورٹ سے رابطہ کریں",
+    "orderTotal": "آرڈر کا کل",
+    "viewDetails": "تفصیلات دیکھیں",
+    "subtotalItems": "ذیلی کل ({{count}} اشیاء)",
+    "taxPercent": "ٹیکس ({{percent}}%)",
+    "secureSSL": "محفوظ SSL خفیہ چیک آؤٹ",
+    "freeShippingOver": "$50 سے زیادہ آرڈرز پر مفت شپنگ",
+    "satisfactionGuarantee": "100% اطمینان کی ضمانت",
+    "needHelp": "مدد چاہیے؟",
+    "customerServiceHelp": "ہماری کسٹمر سروس ٹیم آپ کی مدد کے لیے موجود ہے",
+    "contactSupport": "سپورٹ سے رابطہ کریں"
+  },
+  "orders": {
+    "myOrders": "میرے آرڈرز",
+    "orderHistory": "آرڈر کی تاریخ",
+    "noOrders": "ابھی تک کوئی آرڈر نہیں",
+    "noOrdersMessage": "آپ نے ابھی تک کوئی آرڈر نہیں دیا۔",
+    "orderDetails": "آرڈر کی تفصیلات",
+    "orderDate": "آرڈر کی تاریخ",
+    "orderStatus": "آرڈر کی حیثیت",
+    "orderItems": "آرڈر کی اشیاء",
+    "orderNumber": "آرڈر نمبر",
+    "enterOrderNumber": "ٹریک کرنے کے لیے اپنا آرڈر نمبر درج کریں",
+    "trackOrder": "آرڈر ٹریک کریں",
+    "trackingNumber": "ٹریکنگ نمبر",
+    "carrier": "کیریئر",
+    "reorder": "دوبارہ آرڈر کریں",
+    "cancelOrder": "آرڈر منسوخ کریں",
+    "cancelWarning": "یہ عمل واپس نہیں ہو سکتا۔ آرڈر منسوخ ہو جائے گا اور اگر قابل اطلاق ہو تو رقم واپس کی جائے گی۔",
+    "cancelReason": "منسوخی کی وجہ",
+    "cancelReasonPlaceholder": "براہ کرم بتائیں آپ یہ آرڈر کیوں منسوخ کرنا چاہتے ہیں...",
+    "confirmCancel": "ہاں، آرڈر منسوخ کریں",
+    "orderCancelled": "آرڈر کامیابی سے منسوخ ہو گیا",
+    "cancelFailed": "آرڈر منسوخ کرنے میں ناکامی",
+    "returnOrder": "آرڈر واپس کریں",
+    "downloadInvoice": "رسید ڈاؤن لوڈ کریں",
+    "item": "شے",
+    "items": "اشیاء",
+    "moreItems": "{{count}} مزید",
+    "showingOrders": "{{total}} میں سے {{from}} سے {{to}} آرڈرز دکھائے جا رہے ہیں",
+    "orderStatuses": {
+      "pending": "زیر التوا",
+      "confirmed": "تصدیق شدہ",
+      "processing": "کارروائی جاری",
+      "shipped": "بھیج دیا گیا",
+      "inTransit": "راستے میں",
+      "outForDelivery": "ترسیل کے لیے روانہ",
+      "delivered": "ترسیل مکمل",
+      "cancelled": "منسوخ",
+      "returned": "واپس آیا",
+      "refunded": "رقم واپس"
+    },
+    "trackingSteps": {
+      "orderPlaced": "آرڈر دیا گیا",
+      "paymentConfirmed": "ادائیگی کی تصدیق",
+      "processing": "کارروائی جاری",
+      "shipped": "بھیج دیا گیا",
+      "inTransit": "راستے میں",
+      "outForDelivery": "ترسیل کے لیے روانہ",
+      "delivered": "ترسیل مکمل"
+    }
+  },
+  "profile": {
+    "myProfile": "میرا پروفائل",
+    "accountSettings": "اکاؤنٹ کی ترتیبات",
+    "personalInfo": "ذاتی معلومات",
+    "editProfile": "پروفائل میں ترمیم",
+    "changePassword": "پاس ورڈ تبدیل کریں",
+    "currentPassword": "موجودہ پاس ورڈ",
+    "newPassword": "نیا پاس ورڈ",
+    "confirmPassword": "پاس ورڈ کی تصدیق",
+    "passwordChanged": "پاس ورڈ کامیابی سے تبدیل ہو گیا",
+    "savedAddresses": "محفوظ شدہ پتے",
+    "addAddress": "پتہ شامل کریں",
+    "editAddress": "پتہ میں ترمیم",
+    "deleteAddress": "پتہ حذف کریں",
+    "setAsDefault": "طے شدہ بنائیں",
+    "defaultAddress": "طے شدہ پتہ",
+    "paymentMethods": "ادائیگی کے طریقے",
+    "addPaymentMethod": "ادائیگی کا طریقہ شامل کریں",
+    "notifications": "اطلاعات",
+    "emailNotifications": "ای میل اطلاعات",
+    "pushNotifications": "پش اطلاعات",
+    "orderUpdates": "آرڈر کی تازہ کاری",
+    "promotions": "پروموشنز اور پیشکشیں",
+    "deleteAccount": "اکاؤنٹ حذف کریں",
+    "deleteAccountWarning": "یہ عمل واپس نہیں ہو سکتا۔ آپ کا تمام ڈیٹا مستقل طور پر حذف ہو جائے گا۔"
+  },
+  "wishlist": {
+    "myWishlist": "میری خواہش فہرست",
+    "emptyWishlist": "آپ کی خواہش فہرست خالی ہے",
+    "emptyWishlistMessage": "مصنوعات پر دل کا آئکن دبا کر پسندیدہ اشیاء محفوظ کریں۔",
+    "wishlistEmpty": "آپ کی خواہش فہرست خالی ہے",
+    "wishlistEmptyMessage": "اپنی پسندیدہ اشیاء خواہش فہرست میں محفوظ کریں۔",
+    "browseProducts": "مصنوعات دیکھیں",
+    "addAllToCart": "سب کارٹ میں شامل کریں",
+    "shareWishlist": "خواہش فہرست شیئر کریں",
+    "shareMessage": "اپنی خواہش فہرست دوستوں اور خاندان کے ساتھ شیئر کریں",
+    "itemsInWishlist": "خواہش فہرست میں {{count}} اشیاء"
+  },
+  "auth": {
+    "welcomeBack": "خوش آمدید واپسی",
+    "signInToContinue": "خریداری جاری رکھنے کے لیے سائن ان کریں",
+    "createAccount": "اکاؤنٹ بنائیں",
+    "joinUs": "ہمارے ساتھ شامل ہوں اور خریداری شروع کریں",
+    "joinToShop": "ہمارے ساتھ خریداری شروع کرنے کے لیے شامل ہوں",
+    "emailAddress": "ای میل ایڈریس",
+    "emailOrUsername": "ای میل یا صارف نام",
+    "fullName": "مکمل نام",
+    "password": "پاس ورڈ",
+    "confirmPassword": "پاس ورڈ کی تصدیق",
+    "newPassword": "نیا پاس ورڈ",
+    "confirmNewPassword": "نئے پاس ورڈ کی تصدیق",
+    "rememberMe": "مجھے یاد رکھیں",
+    "forgotPassword": "پاس ورڈ بھول گئے؟",
+    "resetPassword": "پاس ورڈ ری سیٹ",
+    "resetPasswordMessage": "اپنا ای میل درج کریں اور ہم آپ کو ری سیٹ لنک بھیجیں گے",
+    "sendResetLink": "ری سیٹ لنک بھیجیں",
+    "backToLogin": "لاگ ان پر واپس",
+    "noAccount": "اکاؤنٹ نہیں ہے؟",
+    "haveAccount": "پہلے سے اکاؤنٹ ہے؟",
+    "orContinueWith": "یا اس کے ساتھ جاری رکھیں",
+    "signInWithGoogle": "گوگل سے سائن ان",
+    "signInWithFacebook": "فیس بک سے سائن ان",
+    "signInWithApple": "ایپل سے سائن ان",
+    "agreeToTerms": "سائن اپ کر کے آپ ہماری شرائط سے متفق ہیں",
+    "and": "اور",
+    "verifyEmail": "اپنا ای میل تصدیق کریں",
+    "verificationSent": "ہم نے {{email}} پر تصدیقی لنک بھیج دیا ہے",
+    "resendVerification": "تصدیقی ای میل دوبارہ بھیجیں",
+    "invalidCredentials": "غلط ای میل یا پاس ورڈ",
+    "accountCreated": "اکاؤنٹ کامیابی سے بن گیا!",
+    "loggedOut": "آپ لاگ آؤٹ ہو گئے ہیں",
+    "passwordStrength": "پاس ورڈ کی مضبوطی",
+    "passwordRequirements": "پاس ورڈ کی ضروریات",
+    "placeholders": {
+      "emailOrUsername": "اپنا ای میل یا صارف نام درج کریں",
+      "email": "اپنا ای میل درج کریں",
+      "password": "اپنا پاس ورڈ درج کریں",
+      "createPassword": "پاس ورڈ بنائیں",
+      "confirmPassword": "اپنا پاس ورڈ دوبارہ درج کریں",
+      "fullName": "اپنا مکمل نام درج کریں",
+      "newPassword": "نیا پاس ورڈ درج کریں",
+      "confirmNewPassword": "نئے پاس ورڈ کی تصدیق کریں"
+    }
+  },
+  "contact": {
+    "contactUs": "ہم سے رابطہ کریں",
+    "getInTouch": "ہم سے رابطہ کریں۔ ہم آپ سے سننا چاہتے ہیں!",
+    "contactFormTitle": "ہمیں پیغام بھیجیں",
+    "name": "نام",
+    "namePlaceholder": "آپ کا نام",
+    "subject": "موضوع",
+    "subjectPlaceholder": "ہم آپ کی کیسے مدد کر سکتے ہیں؟",
+    "message": "پیغام",
+    "messagePlaceholder": "اپنے سوال کے بارے میں مزید بتائیں...",
+    "email": "ای میل",
+    "emailPlaceholder": "your@email.com",
+    "sendMessage": "پیغام بھیجیں",
+    "sending": "بھیجا جا رہا ہے...",
+    "messageSent": "پیغام کامیابی سے بھیج دیا گیا!",
+    "messageSentDesc": "ہم جلد آپ سے رابطہ کریں گے۔",
+    "messageFailed": "پیغام بھیجنے میں ناکامی۔ براہ کرم دوبارہ کوشش کریں۔",
+    "contactInfo": "رابطے کی معلومات",
+    "address": "پتہ",
+    "emailUs": "ہمیں ای میل کریں",
+    "callUs": "ہمیں کال کریں",
+    "visitUs": "ہم سے ملیں",
+    "businessHours": "سپورٹ کے اوقات",
+    "mondayFriday": "ای میل سپورٹ",
+    "saturday": "لائیو چیٹ",
+    "sunday": "ہیلپ سینٹر",
+    "closed": "ہمیشہ دستیاب",
+    "weekdayHours": "24/7 ای میل سپورٹ",
+    "weekendHours": "کسی بھی وقت دستیاب",
+    "hero": {
+      "title": "رابطہ کریں",
+      "subtitle": "ہم آپ کے کسی بھی سوال میں مدد کے لیے موجود ہیں",
+      "availability": "آپ کی سہولت کے لیے 24/7 دستیاب"
+    },
+    "form": {
+      "title": "ہمیں پیغام بھیجیں",
+      "subtitle": "نیچے فارم بھریں اور ہم جلد از جلد آپ سے رابطہ کریں گے",
+      "fullName": "مکمل نام",
+      "fullNamePlaceholder": "آپ کا مکمل نام",
+      "emailAddress": "ای میل ایڈریس",
+      "emailPlaceholder": "your.email@domain.com",
+      "phone": "فون نمبر",
+      "phoneOptional": "(اختیاری)",
+      "phonePlaceholder": "+1 (555) 123-4567",
+      "selectSubject": "موضوع منتخب کریں",
+      "yourMessage": "پیغام",
+      "messagePlaceholder": "بتائیں ہم آپ کی کیسے مدد کر سکتے ہیں...",
+      "characters": "حروف",
+      "successTitle": "پیغام کامیابی سے بھیج دیا گیا!",
+      "successMessage": "ہم سے رابطہ کرنے کا شکریہ۔ ہم 24 گھنٹوں میں آپ کے سوال کا جواب دیں گے۔"
+    },
+    "subjects": {
+      "general": "عمومی سوال",
+      "order": "آرڈر سپورٹ",
+      "product": "مصنوعات کا سوال",
+      "partnership": "شراکت داری",
+      "other": "دیگر"
+    },
+    "info": {
+      "customerSupport": "کسٹمر سپورٹ",
+      "businessInquiries": "کاروباری سوالات",
+      "ourAddress": "ہمارا پتہ",
+      "followUs": "ہمیں فالو کریں",
+      "email": "ای میل",
+      "hours": "اوقات",
+      "support247": "24/7 سپورٹ"
+    },
+    "quickAnswers": {
+      "title": "فوری جوابات",
+      "subtitle": "عام سوالات کے فوری جوابات حاصل کریں۔ مزید جاننے کے لیے کسی بھی سوال پر کلک کریں۔",
+      "viewAllFaqs": "تمام عمومی سوالات دیکھیں"
+    },
+    "faqQuestions": {
+      "trackOrder": "{{appName}} پر فروخت کیسے شروع کروں؟",
+      "returnPolicy": "کون سے سبسکرپشن پلانز دستیاب ہیں؟",
+      "internationalShipping": "کیا میں اپنا اسٹور اپنی مرضی کے مطابق بنا سکتا ہوں؟",
+      "changeOrder": "میں اپنا آرڈر کیسے ٹریک کروں؟",
+      "paymentMethods": "کیا کوئی ٹرانزیکشن فیس ہے؟",
+      "contactService": "میں کسٹمر سروس سے کیسے رابطہ کروں؟"
+    },
+    "headquarters": {
+      "title": "آن لائن سپورٹ",
+      "subtitle": "ہمارے ڈیجیٹل چینلز کے ذریعے کسی بھی وقت مدد حاصل کریں",
+      "name": "{{appName}} سپورٹ",
+      "getDirections": "سپورٹ سے رابطہ کریں"
+    },
+    "validation": {
+      "nameRequired": "نام ضروری ہے",
+      "nameMinLength": "نام کم از کم 2 حروف کا ہونا چاہیے",
+      "emailRequired": "ای میل ضروری ہے",
+      "emailInvalid": "براہ کرم درست ای میل ایڈریس درج کریں",
+      "subjectRequired": "براہ کرم موضوع منتخب کریں",
+      "messageRequired": "پیغام ضروری ہے",
+      "messageMinLength": "پیغام کم از کم 10 حروف کا ہونا چاہیے",
+      "fixErrors": "براہ کرم فارم میں غلطیاں درست کریں"
+    }
+  },
+  "about": {
+    "aboutUs": "ہمارے بارے میں",
+    "ourStory": "ہماری کہانی",
+    "ourMission": "ہمارا مشن",
+    "ourVision": "ہمارا وژن",
+    "ourValues": "ہماری اقدار",
+    "meetTheTeam": "ٹیم سے ملیں",
+    "yearsOfExperience": "سالوں کا تجربہ",
+    "yearsExperience": "سالوں کا تجربہ",
+    "happyCustomers": "خوش صارفین",
+    "products": "مصنوعات",
+    "productsDelivered": "فراہم کردہ مصنوعات",
+    "countriesServed": "خدمت کردہ ممالک",
+    "learnMore": "ہماری کہانی، مشن، اور اقدار کے بارے میں مزید جانیں۔",
+    "storyDescription": "{{storeName}} میں خوش آمدید! ہم آپ کو بہترین مصنوعات اور خریداری کا تجربہ فراہم کرنے کے بارے میں پرجوش ہیں۔",
+    "missionStatement": "ہم نے ایک سادہ مشن کے ساتھ آغاز کیا: آپ کو بہترین مصنوعات غیر معمولی سروس کے ساتھ فراہم کرنا۔",
+    "fullMissionStatement": "ہم نے ایک سادہ مشن کے ساتھ آغاز کیا: آپ کو بہترین مصنوعات غیر معمولی سروس کے ساتھ فراہم کرنا۔ ہمارے اسٹور کی ہر شے معیار اور قدر کو یقینی بنانے کے لیے احتیاط سے منتخب کی گئی ہے۔",
+    "quality": "معیار",
+    "qualityDesc": "ہم اپنی مصنوعات کے معیار پر کبھی سمجھوتہ نہیں کرتے۔",
+    "customerFirst": "صارف اولیت",
+    "customerFirstDesc": "آپ کا اطمینان ہماری اولین ترجیح ہے۔",
+    "passion": "جذبہ",
+    "passionDesc": "ہم اپنے کام سے محبت کرتے ہیں اور یہ ہماری ہر پیشکش میں جھلکتا ہے۔",
+    "haveQuestions": "سوالات ہیں؟",
+    "getInTouch": "ہم آپ سے سننا چاہتے ہیں۔ ہماری ٹیم سے رابطہ کریں۔",
+    "hero": {
+      "established": "ای کامرس کو تقویت",
+      "title": "{{appName}} کے بارے میں",
+      "subtitle": "آل ان ون ای کامرس پلیٹ فارم جو کاروباری افراد کو AI سے چلنے والے ٹولز کے ساتھ اپنے آن لائن اسٹورز بنانے، شروع کرنے، اور بڑھانے میں مدد کرتا ہے",
+      "shopNow": "اپنا اسٹور شروع کریں",
+      "getInTouch": "رابطہ کریں",
+      "storeAlt": "{{appName}} پلیٹ فارم"
+    },
+    "story": {
+      "badge": "ہمارا مشن",
+      "title": "دنیا بھر میں کاروباری افراد کو بااختیار بنانا",
+      "p1": "{{appName}} ایک سادہ یقین پر بنایا گیا ہے: ہر کسی کو کامیاب آن لائن کاروبار بنانے کے ٹولز ملنے چاہئیں۔ ہم AI سے چلنے والے اسٹور بلڈر، مربوط ادائیگیوں، اور ترسیل کے انتظام کے ساتھ ایک مکمل ای کامرس پلیٹ فارم فراہم کرتے ہیں—وہ سب کچھ جو آپ کو منٹوں میں فروخت شروع کرنے کے لیے چاہیے۔",
+      "p2": "چاہے آپ اپنا پہلا اسٹور شروع کر رہے ہوں یا ایک قائم شدہ برانڈ کو بڑھا رہے ہوں، {{appName}} پیچیدگیوں کو سنبھالتا ہے تاکہ آپ سب سے اہم چیز پر توجہ دے سکیں: آپ کی مصنوعات اور صارفین۔",
+      "p3": "",
+      "p4": "",
+      "growingFast": "قابل توسیع",
+      "customerFocused": "تاجر اولیت",
+      "innovationDriven": "AI سے چلنے والا",
+      "customerRating": "صارفین کی درجہ بندی",
+      "images": {
+        "fashionShopping": "آن لائن خریداری",
+        "styleCollection": "مصنوعات کا کلیکشن",
+        "premiumProducts": "اعلیٰ مصنوعات",
+        "shoppingExperience": "خریداری کا تجربہ"
+      }
+    },
+    "values": {
+      "badge": "ہماری اقدار",
+      "title": "ہم کس چیز کی نمائندگی کرتے ہیں",
+      "subtitle": "ہماری بنیادی اقدار ہمارے ہر فیصلے کی رہنمائی کرتی ہیں اور تاجروں اور صارفین کو فراہم کردہ تجربے کو شکل دیتی ہیں",
+      "qualityFirst": {
+        "title": "قابل اعتمادی",
+        "description": "آپ کا اسٹور ہمیشہ آن لائن رہتا ہے۔ ہم 99.99% اپ ٹائم فراہم کرتے ہیں تاکہ آپ کبھی فروخت سے نہ چوکیں، انٹرپرائز گریڈ انفراسٹرکچر کے ساتھ۔"
+      },
+      "sustainability": {
+        "title": "سادگی",
+        "description": "آن لائن اسٹور بنانا آسان ہونا چاہیے۔ ہمارے بدیہی ٹولز اور AI سے چلنے والی خصوصیات کسی کے لیے بھی فروخت شروع کرنا آسان بناتے ہیں۔"
+      },
+      "customerObsession": {
+        "title": "تاجر کی کامیابی",
+        "description": "آپ کی کامیابی ہماری کامیابی ہے۔ ہم 24/7 سپورٹ، جامع گائیڈز، اور آپ کے کاروبار کو بڑھانے کے لیے ڈیزائن کیے گئے ٹولز فراہم کرتے ہیں۔"
+      },
+      "innovation": {
+        "title": "اختراع",
+        "description": "AI اسٹور بلڈر سے لے کر موبائل ایپ جنریشن تک، ہم آپ کو مسابقتی برتری دینے کے لیے جدید ترین ٹیکنالوجی کا فائدہ اٹھاتے ہیں۔"
+      }
+    },
+    "stats": {
+      "title": "دنیا بھر میں کاروبار کو طاقت فراہم کرنا",
+      "subtitle": "تاجر {{appName}} پر اپنے آن لائن کاروبار کو چلانے کے لیے اعتماد کرتے ہیں",
+      "happyCustomers": "فعال اسٹورز",
+      "products": "درج مصنوعات",
+      "brands": "ممالک",
+      "support": "سپورٹ"
+    },
+    "team": {
+      "badge": "ہماری ٹیم",
+      "title": "ہماری قیادت سے ملیں",
+      "subtitle": "پرجوش افراد آپ کے خریداری کے تجربے میں انقلاب لانے کے لیے وقف ہیں",
+      "members": {
+        "sarah": {
+          "name": "سارہ جانسن",
+          "role": "سی ای او اور بانی"
+        },
+        "michael": {
+          "name": "مائیکل چن",
+          "role": "چیف ٹیکنالوجی آفیسر"
+        },
+        "emma": {
+          "name": "ایما روڈریگز",
+          "role": "سربراہ ڈیزائن"
+        },
+        "david": {
+          "name": "ڈیوڈ کم",
+          "role": "وی پی آپریشنز"
+        },
+        "lisa": {
+          "name": "لیزا اینڈرسن",
+          "role": "کسٹمر کامیابی لیڈ"
+        },
+        "james": {
+          "name": "جیمز ولسن",
+          "role": "سربراہ پائیداری"
+        }
+      }
+    },
+    "sustainability": {
+      "badge": "پلیٹ فارم کی خصوصیات",
+      "title": "کامیابی کے لیے سب کچھ",
+      "description": "{{appName}} آپ کو اپنا آن لائن کاروبار بنانے، چلانے، اور بڑھانے کے لیے تمام ٹولز اور خصوصیات فراہم کرتا ہے۔ اسٹور کی تخلیق سے لے کر آرڈر کی تکمیل تک، ہم نے سب سنبھال لیا ہے۔",
+      "carbonNeutralShipping": {
+        "title": "مربوط ترسیل",
+        "description": "ہمارے ترسیل کے پارٹنر نیٹ ورک سے جڑیں یا اپنی لاجسٹکس استعمال کریں۔ گودام سے صارف تک حقیقی وقت میں آرڈرز ٹریک کریں۔"
+      },
+      "recyclablePackaging": {
+        "title": "AI سے چلنے والے ٹولز",
+        "description": "مصنوعات کی تفصیلات بنائیں، مارکیٹنگ مواد تیار کریں، اور ذہین AI مدد سے اپنا اسٹور بنائیں۔"
+      },
+      "ethicalSourcing": {
+        "title": "محفوظ ادائیگیاں",
+        "description": "ہمارے محفوظ، PCI معیاری ادائیگی کی کارروائی کے ساتھ عالمی سطح پر ادائیگیاں قبول کریں۔ متعدد کرنسیوں اور طریقوں کے لیے سپورٹ۔"
+      },
+      "sustainableMaterials": {
+        "title": "موبائل ایپ بلڈر",
+        "description": "ایک کلک سے اپنے اسٹور کو موبائل ایپ میں تبدیل کریں۔ بغیر کسی کوڈنگ کے iOS اور اینڈرائیڈ پر صارفین تک پہنچیں۔"
+      },
+      "carbonNeutralCertified": {
+        "title": "انٹرپرائز گریڈ سیکیورٹی",
+        "description": "آپ کا ڈیٹا صنعت کی معروف حفاظتی تدابیر، SSL انکرپشن، اور باقاعدہ سیکیورٹی آڈٹس سے محفوظ ہے۔"
+      },
+      "ecoFriendlyPackaging": "مکمل پلیٹ فارم",
+      "imageAlt": "ای کامرس پلیٹ فارم"
+    },
+    "cta": {
+      "badge": "شروع کریں",
+      "title": "اپنا کاروبار شروع کرنے کے لیے تیار ہیں؟",
+      "description": "{{appName}} کے ساتھ اپنا مستقبل بنائیں۔ ہمارے AI سے چلنے والے ٹولز سے منٹوں میں اپنا اسٹور بنائیں—کسی تکنیکی مہارت کی ضرورت نہیں۔",
+      "startShopping": "اپنا اسٹور بنائیں",
+      "contactUs": "سیلز سے رابطہ کریں",
+      "stayUpdated": "اپ ڈیٹ رہیں",
+      "subscribeText": "اپنے آن لائن کاروبار کو بڑھانے کے لیے پلیٹ فارم اپ ڈیٹس، ٹپس، اور وسائل حاصل کرنے کے لیے رکنیت حاصل کریں",
+      "emailPlaceholder": "اپنا ای میل درج کریں",
+      "subscribe": "رکنیت حاصل کریں"
+    }
+  },
+  "faq": {
+    "title": "عمومی سوالات",
+    "subtitle": "{{appName}} مارکیٹ پلیس پر فروخت، خریداری، اور استعمال کے بارے میں عام سوالات کے جوابات تلاش کریں",
+    "frequentlyAsked": "عمومی سوالات",
+    "searchFaq": "عمومی سوالات تلاش کریں...",
+    "searchPlaceholder": "جوابات تلاش کریں... (مثلاً، 'فروخت'، 'اسٹور'، 'سبسکرپشن')",
+    "foundResults": "\"{{query}}\" کے لیے {{count}} نتیجہ ملا",
+    "foundResultsPlural": "\"{{query}}\" کے لیے {{count}} نتائج ملے",
+    "question": "سوال",
+    "questions": "سوالات",
+    "categories": {
+      "general": "عمومی",
+      "orders": "آرڈرز",
+      "payments": "ادائیگیاں",
+      "shipping": "شپنگ",
+      "returns": "واپسی",
+      "ordersShipping": "آرڈرز اور شپنگ",
+      "returnsRefunds": "واپسی اور رقم واپسی",
+      "products": "{{appName}} پر فروخت",
+      "paymentSecurity": "ادائیگی اور سبسکرپشنز",
+      "account": "اکاؤنٹ اور اسٹور",
+      "other": "پلیٹ فارم کی خصوصیات"
+    },
+    "noResults": {
+      "title": "کوئی نتائج نہیں ملے",
+      "message": "ہم \"{{query}}\" سے مطابقت رکھنے والے عمومی سوالات نہیں ڈھونڈ سکے۔ مختلف الفاظ استعمال کریں یا نیچے ہمارے زمرے دیکھیں۔",
+      "clearSearch": "تلاش صاف کریں"
+    },
+    "stillHaveQuestions": "ابھی بھی سوالات ہیں؟",
+    "supportHelp": "ہماری سپورٹ ٹیم آپ کے کسی بھی سوال میں مدد کے لیے موجود ہے۔",
+    "contactSupport": "سپورٹ سے رابطہ کریں",
+    "viewFaq": "عمومی سوالات دیکھیں",
+    "stillNeedHelp": {
+      "title": "ابھی بھی مدد چاہیے؟",
+      "subtitle": "ہماری کسٹمر سپورٹ ٹیم 24/7 آپ کی مدد کے لیے موجود ہے",
+      "liveChat": {
+        "title": "لائیو چیٹ",
+        "description": "ہماری سپورٹ ٹیم سے حقیقی وقت میں چیٹ کریں",
+        "button": "چیٹ شروع کریں"
+      },
+      "email": {
+        "title": "ہمیں ای میل کریں",
+        "description": "24 گھنٹوں میں جواب حاصل کریں",
+        "button": "ای میل بھیجیں"
+      },
+      "contact": {
+        "title": "ہم سے رابطہ کریں",
+        "description": "مزید اختیارات کے لیے ہمارا رابطہ صفحہ ملاحظہ کریں",
+        "button": "رابطہ صفحہ"
+      },
+      "supportHours": {
+        "title": "سپورٹ کے اوقات",
+        "weekdays": "پیر - جمعہ: صبح 9 بجے - رات 9 بجے EST",
+        "weekends": "ہفتہ - اتوار: صبح 10 بجے - شام 6 بجے EST"
+      },
+      "headquarters": {
+        "title": "ہیڈ کوارٹرز"
+      }
+    },
+    "defaultFaqs": {
+      "placeOrder": {
+        "question": "{{appName}} پر فروخت کیسے شروع کروں؟",
+        "answer": "وینڈر اکاؤنٹ کے لیے سائن اپ کریں، سبسکرپشن پلان منتخب کریں، اور اپنا اسٹور بنائیں۔ آپ اپنا اسٹور فرنٹ اپنی مرضی کے مطابق بنا سکتے ہیں اور فوری طور پر فروخت شروع کر سکتے ہیں۔"
+      },
+      "paymentMethods": {
+        "question": "سبسکرپشن پلانز کیا ہیں؟",
+        "answer": "ہم مفت، سٹارٹر ($29.99/ماہ)، پرو ($79.99/ماہ)، اور بزنس ($199.99/ماہ) پلانز پیش کرتے ہیں۔ سالانہ بلنگ کے ساتھ 2 ماہ مفت حاصل کریں۔"
+      },
+      "shippingTime": {
+        "question": "کیا کوئی ٹرانزیکشن فیس ہے؟",
+        "answer": "نہیں! {{appName}} تمام پلانز پر صفر ٹرانزیکشن فیس لیتا ہے۔ آپ صرف اپنی ماہانہ یا سالانہ سبسکرپشن ادا کرتے ہیں۔"
+      },
+      "returnPolicy": {
+        "question": "کیا میں اپنا اسٹور اپنی مرضی کے مطابق بنا سکتا ہوں؟",
+        "answer": "ہاں! ہمارے اسٹور فرنٹ بلڈر کا استعمال کر کے تھیمز، رنگ، اور لے آؤٹس کو اپنی مرضی کے مطابق بنائیں۔ پرو+ پلانز میں پریمیم تھیمز اور کسٹم ڈومینز شامل ہیں۔"
+      },
+      "trackOrder": {
+        "question": "بطور خریدار میں اپنا آرڈر کیسے ٹریک کروں؟",
+        "answer": "اپنے اکاؤنٹ میں 'میرے آرڈرز' پر جائیں۔ وینڈر کی فراہم کردہ ٹریکنگ تفصیلات دیکھنے کے لیے کسی بھی آرڈر پر کلک کریں۔"
+      },
+      "internationalShipping": {
+        "question": "کیا میرے متعدد اسٹورز ہو سکتے ہیں؟",
+        "answer": "ہاں! اسٹورز کی حد آپ کے پلان پر منحصر ہے: مفت (1)، سٹارٹر (2)، پرو (5)، بزنس (لامحدود)۔"
+      }
+    },
+    "items": {
+      "trackOrder": {
+        "question": "میں اپنا آرڈر کیسے ٹریک کروں؟",
+        "answer": "آپ کا آرڈر بھیجے جانے کے بعد، آپ کو ٹریکنگ کی تفصیلات کے ساتھ تصدیقی ای میل موصول ہوگا۔ آپ اپنے اکاؤنٹ میں لاگ ان کر کے 'میرے آرڈرز' پر جا کر بھی آرڈرز ٹریک کر سکتے ہیں۔ ہر وینڈر اپنی شپنگ خود سنبھالتا ہے، لہذا ٹریکنگ کی معلومات براہ راست اس اسٹور سے آتی ہیں جس سے آپ نے خریداری کی ہے۔"
+      },
+      "shippingOptions": {
+        "question": "{{appName}} پر شپنگ کیسے کام کرتی ہے؟",
+        "answer": "{{appName}} پر ہر وینڈر اپنی شپنگ کی شرحیں اور طریقے خود مقرر کرتا ہے۔ شپنگ کے اختیارات اور لاگت چیک آؤٹ پر ظاہر ہوتی ہیں۔ اگر آپ متعدد اسٹورز سے آرڈر کرتے ہیں تو ہر آرڈر الگ بھیجا جاتا ہے اور ترسیل کے اوقات مختلف ہو سکتے ہیں۔"
+      },
+      "internationalShipping": {
+        "question": "کیا وینڈرز بین الاقوامی شپنگ کرتے ہیں؟",
+        "answer": "بین الاقوامی شپنگ کی دستیابی وینڈر کے مطابق مختلف ہے۔ ہر اسٹور کی شپنگ پالیسی ان کے اسٹور فرنٹ پیج پر دیکھیں۔ کچھ وینڈرز دنیا بھر میں شپنگ کی پیشکش کرتے ہیں جبکہ دیگر صرف ملکی سطح پر بھیج سکتے ہیں۔ کسٹمز ڈیوٹیز اور ٹیکس خریدار کی ذمہ داری ہیں۔"
+      },
+      "shippingTime": {
+        "question": "شپنگ میں کتنا وقت لگتا ہے؟",
+        "answer": "ترسیل کا وقت وینڈر کے مقام اور شپنگ کے طریقے پر منحصر ہے۔ زیادہ تر ملکی آرڈرز 3-7 کاروباری دنوں میں پہنچ جاتے ہیں۔ مخصوص شپنگ ٹائم فریم کے لیے مصنوعات کا صفحہ یا وینڈر کا اسٹور دیکھیں۔"
+      },
+      "lostDamaged": {
+        "question": "اگر میرا پارسل گم یا خراب ہو جائے تو؟",
+        "answer": "اپنے آرڈر تفصیلات کے صفحے کے ذریعے وینڈر سے براہ راست رابطہ کریں۔ زیادہ تر وینڈرز گم یا خراب اشیاء کے لیے تبدیلی یا رقم واپسی کی پیشکش کرتے ہیں۔ اگر آپ وینڈر کے ساتھ مسئلہ حل نہیں کر سکتے تو {{appName}} سپورٹ سے رابطہ کریں اور ہم ثالثی میں مدد کریں گے۔"
+      },
+      "changeAddress": {
+        "question": "کیا آرڈر دینے کے بعد شپنگ ایڈریس تبدیل ہو سکتا ہے؟",
+        "answer": "آرڈر تفصیلات کے صفحے کے ذریعے فوری طور پر وینڈر سے رابطہ کریں۔ اگر آرڈر ابھی تک بھیجا نہیں گیا ہے تو زیادہ تر وینڈرز پتہ اپ ڈیٹ کر سکتے ہیں۔ بھیجے جانے کے بعد، آپ کو شپنگ کیریئر سے براہ راست رابطہ کرنا ہوگا۔"
+      },
+      "returnPolicy": {
+        "question": "واپسی کی پالیسی کیا ہے؟",
+        "answer": "واپسی کی پالیسیاں انفرادی وینڈرز طے کرتے ہیں۔ خریداری سے پہلے اسٹور کی واپسی کی پالیسی دیکھیں۔ زیادہ تر وینڈرز غیر استعمال شدہ اشیاء کے لیے 14-30 دنوں میں واپسی قبول کرتے ہیں۔ کچھ اشیاء جیسے کسٹم یا ذاتی نوعیت کی مصنوعات واپس نہیں ہو سکتیں۔"
+      },
+      "howToReturn": {
+        "question": "میں کوئی شے کیسے واپس کروں؟",
+        "answer": "اپنے اکاؤنٹ میں 'میرے آرڈرز' پر جائیں، آرڈر منتخب کریں، اور 'واپسی کی درخواست' پر کلک کریں۔ وینڈر آپ کی درخواست کا جائزہ لے گا اور واپسی کی ہدایات فراہم کرے گا۔ واپسی کی منظوری تک اشیاء کو اصل حالت میں ٹیگز کے ساتھ رکھیں۔"
+      },
+      "refundTime": {
+        "question": "مجھے اپنی رقم واپسی کب ملے گی؟",
+        "answer": "جب وینڈر آپ کی واپسی موصول کر کے منظور کر لے تو رقم واپسی عام طور پر 5-7 کاروباری دنوں میں کارروائی ہو جاتی ہے۔ رقم واپسی آپ کے اصل ادائیگی کے طریقے میں جاتی ہے اور آپ کے اکاؤنٹ میں ظاہر ہونے میں مزید 3-5 دن لگ سکتے ہیں۔"
+      },
+      "exchange": {
+        "question": "کیا میں کوئی شے تبدیل کر سکتا ہوں؟",
+        "answer": "تبادلے کی پالیسیاں وینڈر کے مطابق مختلف ہیں۔ تبادلے کی درخواست کے لیے اپنے آرڈر کے ذریعے وینڈر سے رابطہ کریں۔ بہت سے وینڈرز ترجیح دیتے ہیں کہ آپ اصل شے رقم واپسی کے لیے واپس کریں اور متبادل کے لیے نیا آرڈر دیں۔"
+      },
+      "defectiveItem": {
+        "question": "اگر مجھے خراب یا غلط شے ملے تو؟",
+        "answer": "مسئلے کی تصاویر کے ساتھ فوری طور پر وینڈر سے رابطہ کریں۔ وینڈرز کو خراب یا غلط آرڈرز حل کرنے کی ضرورت ہے۔ اگر وینڈر جواب نہیں دیتا تو مدد کے لیے {{appName}} سپورٹ سے رابطہ کریں۔"
+      },
+      "sizeGuide": {
+        "question": "{{appName}} پر فروخت کیسے شروع کروں؟",
+        "answer": "وینڈر اکاؤنٹ کے لیے سائن اپ کریں، سبسکرپشن پلان (مفت، سٹارٹر، پرو، یا بزنس) منتخب کریں، اور اپنا اسٹور بنائیں۔ آپ اپنا اسٹور فرنٹ اپنی مرضی کے مطابق بنا سکتے ہیں، مصنوعات شامل کر سکتے ہیں، اور فوری طور پر فروخت شروع کر سکتے ہیں۔ کسی تکنیکی مہارت کی ضرورت نہیں!"
+      },
+      "authentic": {
+        "question": "میں کیا فروخت کر سکتا ہوں؟",
+        "answer": "آپ فیشن، الیکٹرانکس، گھریلو سامان، خوبصورتی، اور مزید سمیت کئی زمروں میں جسمانی مصنوعات فروخت کر سکتے ہیں۔ ممنوعہ اشیاء میں غیر قانونی مصنوعات، جعلی سامان، اور ہماری سروس کی شرائط کی خلاف ورزی کرنے والی اشیاء شامل ہیں۔ تفصیلات کے لیے ہمارے بیچنے والوں کی رہنما اصول دیکھیں۔"
+      },
+      "restock": {
+        "question": "فروخت شروع کرنے میں کتنا خرچ آتا ہے؟",
+        "answer": "{{appName}} لچکدار قیمتیں پیش کرتا ہے: مفت پلان (1 اسٹور، 10 مصنوعات)، سٹارٹر $29.99/ماہ، پرو $79.99/ماہ، اور بزنس $199.99/ماہ۔ سالانہ بلنگ کے ساتھ 2 ماہ مفت حاصل کریں۔ کسی بھی پلان پر کوئی ٹرانزیکشن فیس نہیں!"
+      },
+      "preorder": {
+        "question": "فروخت کی رقم مجھے کیسے ملتی ہے؟",
+        "answer": "اپنے وینڈر ڈیش بورڈ میں اپنا بینک اکاؤنٹ یا ادائیگی کا طریقہ جوڑیں۔ ادائیگیاں آپ کے ادائیگی کے شیڈول کے مطابق خود بخود کارروائی ہوتی ہیں۔ آپ اپنے تجزیاتی ڈیش بورڈ میں تمام لین دین اور آمدنی دیکھ سکتے ہیں۔"
+      },
+      "inStock": {
+        "question": "کیا میں اپنے اسٹور کا ڈیزائن اپنی مرضی کے مطابق بنا سکتا ہوں؟",
+        "answer": "ہاں! {{appName}} ایک طاقتور اسٹور فرنٹ بلڈر پیش کرتا ہے جس میں اپنی مرضی کے مطابق تھیمز، رنگ، فونٹس، اور لے آؤٹس ہیں۔ پرو اور بزنس پلانز میں پریمیم تھیمز اور جدید تخصیص کے اختیارات شامل ہیں۔ آپ کسٹم ڈومین بھی جوڑ سکتے ہیں۔"
+      },
+      "careInstructions": {
+        "question": "کیا آپ میرے اسٹور کے لیے موبائل ایپ پیش کرتے ہیں؟",
+        "answer": "سٹارٹر، پرو، اور بزنس پلانز میں موبائل ایپ بلڈر شامل ہے۔ اپنے لوگو، رنگوں، اور مصنوعات کے ساتھ اپنے صارفین کے لیے برانڈڈ موبائل ایپ بنائیں۔ صارفین خریداری، آرڈر ٹریک، اور پش اطلاعات وصول کر سکتے ہیں۔"
+      },
+      "paymentMethods": {
+        "question": "کون سے سبسکرپشن پلانز دستیاب ہیں؟",
+        "answer": "ہم 4 پلانز پیش کرتے ہیں: مفت (1 اسٹور، 10 مصنوعات)، سٹارٹر $29.99/ماہ (2 اسٹورز، لامحدود مصنوعات، کسٹم ڈومین، موبائل ایپ)، پرو $79.99/ماہ (5 اسٹورز، موبائل ایپ، جدید تجزیات)، اور بزنس $199.99/ماہ (لامحدود سب کچھ، API رسائی، وائٹ لیبل)۔"
+      },
+      "paymentSecure": {
+        "question": "کیا ادائیگی کی کارروائی محفوظ ہے؟",
+        "answer": "بالکل! {{appName}} محفوظ ادائیگی کی کارروائی کے لیے Stripe استعمال کرتا ہے۔ تمام لین دین صنعتی معیار SSL سے خفیہ ہیں اور ہم PCI DSS معیاری ہیں۔ ہم اپنے سرورز پر مکمل کریڈٹ کارڈ کی معلومات کبھی محفوظ نہیں کرتے۔"
+      },
+      "multiplePayment": {
+        "question": "کیا میں اپنا پلان اپ گریڈ یا ڈاؤن گریڈ کر سکتا ہوں؟",
+        "answer": "ہاں! آپ اپنی بلنگ ترتیبات سے کسی بھی وقت اپنا سبسکرپشن پلان تبدیل کر سکتے ہیں۔ اپ گریڈز فوری طور پر لاگو ہوتے ہیں۔ ڈاؤن گریڈز موجودہ بلنگ مدت کے اختتام پر لاگو ہوتے ہیں۔ غیر استعمال شدہ وقت متناسب ہوتا ہے۔"
+      },
+      "paymentPlans": {
+        "question": "کیا آپ سالانہ بلنگ پر رعایت دیتے ہیں؟",
+        "answer": "ہاں! سالانہ بلنگ منتخب کرنے پر 2 ماہ مفت حاصل کریں۔ مثال کے طور پر، پرو پلان سالانہ بلنگ پر $66.67/ماہ ($799.99/سال) ہے بجائے $79.99/ماہ۔ سالانہ پلانز پورے سال کے لیے پیشگی بل کیے جاتے ہیں۔"
+      },
+      "paymentDeclined": {
+        "question": "اگر میری سبسکرپشن ادائیگی ناکام ہو جائے تو؟",
+        "answer": "اگر ادائیگی ناکام ہو جائے تو ہم آپ کو مطلع کریں گے اور چند بار دوبارہ کوشش کریں گے۔ آپ کے پاس اپنے ادائیگی کے طریقے کو اپ ڈیٹ کرنے کے لیے مہلت ہے۔ اگر ادائیگی موصول نہ ہو تو آپ کا اکاؤنٹ مفت پلان پر ڈاؤن گریڈ ہو سکتا ہے اور کچھ خصوصیات محدود ہو سکتی ہیں۔"
+      },
+      "createAccount": {
+        "question": "میں اکاؤنٹ کیسے بناؤں؟",
+        "answer": "'سائن اپ' پر کلک کریں اور اپنا ای میل اور پاس ورڈ درج کریں۔ آپ گوگل سے بھی سائن اپ کر سکتے ہیں۔ منتخب کریں کہ آپ خریداری (کسٹمر اکاؤنٹ) یا فروخت (وینڈر اکاؤنٹ) کرنا چاہتے ہیں۔ وینڈر اکاؤنٹس مارکیٹ پلیس پر خریداری بھی کر سکتے ہیں۔"
+      },
+      "forgotPassword": {
+        "question": "میں اپنا پاس ورڈ بھول گیا۔ کیا کروں؟",
+        "answer": "لاگ ان پیج پر 'پاس ورڈ بھول گئے' پر کلک کریں اور اپنا ای میل درج کریں۔ آپ کو منٹوں میں ری سیٹ لنک موصول ہوگا۔ لنک پر کلک کریں اور نیا پاس ورڈ بنائیں۔ سیکیورٹی کے لیے، ری سیٹ لنکس 24 گھنٹے بعد ختم ہو جاتے ہیں۔"
+      },
+      "updateAccount": {
+        "question": "میں اپنے اسٹور کی ترتیبات کیسے منظم کروں؟",
+        "answer": "اپنے وینڈر ڈیش بورڈ میں جائیں اور 'اسٹور ترتیبات' پر کلک کریں۔ آپ اپنے اسٹور کا نام، تفصیل، لوگو، بینر، رابطے کی معلومات، شپنگ پالیسیاں، واپسی کی پالیسیاں، اور مزید اپ ڈیٹ کر سکتے ہیں۔ تبدیلیاں خود بخود محفوظ ہو جاتی ہیں۔"
+      },
+      "deleteAccount": {
+        "question": "کیا میرے متعدد اسٹورز ہو سکتے ہیں؟",
+        "answer": "ہاں! اسٹورز کی تعداد آپ کے پلان پر منحصر ہے: مفت (1 اسٹور)، سٹارٹر (2 اسٹورز)، پرو (5 اسٹورز)، بزنس (لامحدود)۔ ہر اسٹور کی اپنی برانڈنگ، مصنوعات، اور کسٹم ڈومین ہو سکتی ہے۔"
+      },
+      "emailPreferences": {
+        "question": "میں اپنے اسٹور میں ٹیم ممبرز کیسے شامل کروں؟",
+        "answer": "اسٹور ترتیبات > ٹیم ممبرز پر جائیں۔ ای میل کے ذریعے ٹیم ممبرز کو مدعو کریں اور کردار (ایڈمن، مینیجر، سٹاف) تفویض کریں۔ ٹیم ممبرز کی حد آپ کے پلان پر منحصر ہے: مفت (1)، سٹارٹر (2)، پرو (5)، بزنس (15)۔"
+      },
+      "physicalStores": {
+        "question": "{{appName}} مارکیٹ پلیس کیا ہے؟",
+        "answer": "{{appName}} مارکیٹ پلیس وہ جگہ ہے جہاں صارفین ایک ہی جگہ تمام وینڈر اسٹورز سے دریافت اور خریداری کر سکتے ہیں۔ آپ کی مصنوعات مارکیٹ پلیس کے سرچ نتائج، زمرے کے صفحات، اور سفارشات میں ظاہر ہوتی ہیں، جس سے آپ کو مزید ممکنہ صارفین تک رسائی ملتی ہے۔"
+      },
+      "contactService": {
+        "question": "میں سپورٹ سے کیسے رابطہ کر سکتا ہوں؟",
+        "answer": "کسی بھی سوال کے لیے support@example.com پر ای میل کریں۔ ہم عام طور پر 24 گھنٹوں میں جواب دیتے ہیں۔ فوری وینڈر مسائل کے لیے، اپنے ڈیش بورڈ میں چیٹ ویجٹ استعمال کریں۔ عام سوالات کے فوری جوابات کے لیے ہمارا ہیلپ سینٹر دیکھیں۔"
+      },
+      "giftCards": {
+        "question": "کیا میں اپنا ڈومین استعمال کر سکتا ہوں؟",
+        "answer": "ہاں! سٹارٹر، پرو، اور بزنس پلانز کسٹم ڈومینز کی سپورٹ کرتے ہیں۔ اسٹور ترتیبات > ڈومین پر جائیں اور اپنا ڈومین شامل کریں۔ ہم خود بخود SSL سرٹیفکیٹس فراہم کرتے ہیں۔ آپ کا اسٹور آپ کے کسٹم ڈومین پر قابل رسائی ہوگا۔"
+      },
+      "promotions": {
+        "question": "میں پروموشنز اور رعایتیں کیسے بناؤں؟",
+        "answer": "اپنے وینڈر ڈیش بورڈ میں، مارکیٹنگ > پروموشنز پر جائیں۔ فیصد یا مقررہ رعایتیں بنائیں، کم از کم خریداری کی شرائط مقرر کریں، استعمال محدود کریں، اور شروع/اختتام کی تاریخیں شیڈول کریں۔ اپنے صارفین کے ساتھ پرومو کوڈز شیئر کریں۔"
+      },
+      "priceMatch": {
+        "question": "کون سے تجزیات دستیاب ہیں؟",
+        "answer": "آپ کا ڈیش بورڈ فروخت، آمدنی، آرڈرز، اعلیٰ مصنوعات، صارفین کی بصیرت، اور ٹریفک ذرائع دکھاتا ہے۔ پرو اور بزنس پلانز میں تفصیلی رپورٹس، تبدیلی ٹریکنگ، اور قابل برآمد ڈیٹا کے ساتھ جدید تجزیات شامل ہیں۔"
+      }
+    }
+  },
+  "errors": {
+    "pageNotFound": "صفحہ نہیں ملا",
+    "pageNotFoundMessage": "آپ جو صفحہ تلاش کر رہے ہیں وہ موجود نہیں ہے۔",
+    "goHome": "ہوم پر جائیں",
+    "somethingWentWrong": "کچھ غلط ہو گیا",
+    "tryAgainLater": "براہ کرم بعد میں دوبارہ کوشش کریں۔",
+    "networkError": "نیٹ ورک کی خرابی",
+    "checkConnection": "براہ کرم اپنا انٹرنیٹ کنکشن چیک کریں۔",
+    "sessionExpired": "سیشن ختم ہو گیا",
+    "pleaseLoginAgain": "جاری رکھنے کے لیے دوبارہ لاگ ان کریں۔",
+    "accessDenied": "رسائی سے انکار",
+    "noPermission": "آپ کو اس صفحے تک رسائی کی اجازت نہیں ہے۔"
+  },
+  "validation": {
+    "required": "یہ فیلڈ ضروری ہے",
+    "invalidEmail": "براہ کرم درست ای میل درج کریں",
+    "invalidPhone": "براہ کرم درست فون نمبر درج کریں",
+    "passwordMinLength": "پاس ورڈ کم از کم 8 حروف کا ہونا چاہیے",
+    "passwordMin6": "پاس ورڈ کم از کم 6 حروف کا ہونا چاہیے",
+    "passwordsDoNotMatch": "پاس ورڈ مطابقت نہیں رکھتے",
+    "invalidCard": "براہ کرم درست کارڈ نمبر درج کریں",
+    "invalidCvv": "براہ کرم درست CVV درج کریں",
+    "invalidExpiry": "براہ کرم درست میعاد ختم ہونے کی تاریخ درج کریں",
+    "acceptTerms": "آپ کو شرائط و ضوابط قبول کرنا ضروری ہے"
+  },
+  "messages": {
+    "loginToAddCart": "کارٹ میں شامل کرنے کے لیے لاگ ان کریں",
+    "loginToAddWishlist": "خواہش فہرست میں شامل کرنے کے لیے لاگ ان کریں",
+    "addedToCart": "کارٹ میں شامل ہو گیا",
+    "removedFromWishlist": "خواہش فہرست سے ہٹا دیا گیا",
+    "addedToWishlist": "خواہش فہرست میں شامل ہو گیا",
+    "linkCopied": "لنک کلپ بورڈ پر کاپی ہو گیا!",
+    "selectSize": "براہ کرم سائز منتخب کریں",
+    "alreadyMarked": "پہلے سے نشان زد",
+    "orderCancelled": "آرڈر کامیابی سے منسوخ ہو گیا",
+    "failedCancelOrder": "آرڈر منسوخ کرنے میں ناکامی",
+    "addedItemsToCart": "{{count}} شے(اشیاء) کارٹ میں شامل ہو گئیں",
+    "failedAddToCart": "کارٹ میں شامل کرنے میں ناکامی",
+    "cancelOrderConfirm": "کیا آپ واقعی یہ آرڈر منسوخ کرنا چاہتے ہیں؟",
+    "cartNotFound": "کارٹ نہیں ملا۔ براہ کرم اشیاء دوبارہ کارٹ میں شامل کریں۔"
+  },
+  "landing": {
+    "hero": {
+      "badge": "ای کامرس کا مستقبل یہاں ہے",
+      "words": {
+        "discover": "دریافت کریں",
+        "create": "تخلیق کریں",
+        "grow": "بڑھائیں",
+        "succeed": "کامیاب ہوں"
+      },
+      "titlePart1": "آپ کی",
+      "titlePart2": "آن لائن سلطنت",
+      "subtitlePart1": "ہائبرڈ مارکیٹ پلیس جو",
+      "shopifyIndependence": "Shopify کی آزادی",
+      "with": "کے ساتھ",
+      "amazonDiscovery": "Amazon کی دریافت",
+      "subtitlePart2": "کو ملاتا ہے۔ اپنا اسٹور بنائیں۔ دریافت ہوں۔ مل کر بڑھیں۔",
+      "startStoreFree": "اپنا اسٹور مفت شروع کریں",
+      "exploreMarketplace": "مارکیٹ پلیس دریافت کریں",
+      "scrollToExplore": "دریافت کرنے کے لیے سکرول کریں",
+      "stats": {
+        "activeStores": "فعال اسٹورز",
+        "products": "مصنوعات",
+        "customers": "صارفین",
+        "uptime": "اپ ٹائم"
+      }
+    },
+    "howItWorks": {
+      "badge": "آسان عمل",
+      "titlePart1": "کیسے",
+      "titlePart2": "کام کرتا ہے",
+      "subtitle": "چاہے آپ بیچنے والے ہوں یا خریدار، ہم نے تجربے کو ہموار اور طاقتور بنایا ہے۔",
+      "forSellers": "بیچنے والوں کے لیے",
+      "forSellersDesc": "اپنا آن لائن کاروبار شروع کریں اور بڑھائیں",
+      "forBuyers": "خریداروں کے لیے",
+      "forBuyersDesc": "حیرت انگیز اسٹورز سے مصنوعات دریافت کریں",
+      "seller": {
+        "step1": {
+          "title": "اپنا اسٹور بنائیں",
+          "description": "ہمارے AI سے چلنے والے بلڈر سے منٹوں میں اپنا برانڈڈ اسٹور فرنٹ بنائیں۔ کوڈنگ کی ضرورت نہیں۔",
+          "feature1": "کسٹم ڈومین",
+          "feature2": "خوبصورت تھیمز",
+          "feature3": "AI سے تیار کردہ صفحات"
+        },
+        "step2": {
+          "title": "اپنی مصنوعات شامل کریں",
+          "description": "AI سے بہتر تفصیلات، SEO آپٹیمائزیشن، اور سمارٹ زمرہ بندی کے ساتھ مصنوعات اپ لوڈ کریں۔",
+          "feature1": "بلک اپ لوڈ",
+          "feature2": "AI تفصیلات",
+          "feature3": "ویرینٹ مینجمنٹ"
+        },
+        "step3": {
+          "title": "دریافت ہوں",
+          "description": "آپ کی مصنوعات ہمارے مارکیٹ پلیس میں ظاہر ہوتی ہیں۔ صارفین آپ کو ہمارے طاقتور دریافت انجن سے تلاش کرتے ہیں۔",
+          "feature1": "مارکیٹ پلیس لسٹنگ",
+          "feature2": "سمارٹ سرچ",
+          "feature3": "زمرے کے صفحات"
+        },
+        "step4": {
+          "title": "بڑھیں اور پھیلائیں",
+          "description": "اپنے کاروبار کو بڑھانے کے لیے ہمارے ٹولز کا فائدہ اٹھائیں۔ تجزیات، مارکیٹنگ، اور کسٹمر مینجمنٹ شامل ہے۔",
+          "feature1": "سیلز تجزیات",
+          "feature2": "مارکیٹنگ ٹولز",
+          "feature3": "صارفین کی بصیرت"
+        }
+      },
+      "buyer": {
+        "step1": {
+          "title": "مارکیٹ پلیس دریافت کریں",
+          "description": "ایک متحد، خوبصورت مارکیٹ پلیس میں تصدیق شدہ بیچنے والوں سے مصنوعات براؤز کریں۔",
+          "feature1": "AI سرچ",
+          "feature2": "زمرے کے فلٹرز",
+          "feature3": "رجحان میں مصنوعات"
+        },
+        "step2": {
+          "title": "اسٹورز دریافت کریں",
+          "description": "منتخب مصنوعات کے ساتھ منفرد اسٹورز تلاش کریں۔ ہر اسٹور کی اپنی برانڈ اور شناخت ہے۔",
+          "feature1": "اسٹور پروفائلز",
+          "feature2": "بیچنے والوں کی درجہ بندی",
+          "feature3": "اسٹور کلیکشنز"
+        },
+        "step3": {
+          "title": "بغیر رکاوٹ خریداری",
+          "description": "اسٹورز میں متحد کارٹ۔ متعدد ادائیگی کے اختیارات کے ساتھ محفوظ چیک آؤٹ۔",
+          "feature1": "ملٹی اسٹور کارٹ",
+          "feature2": "محفوظ ادائیگیاں",
+          "feature3": "آرڈر ٹریکنگ"
+        },
+        "step4": {
+          "title": "رابطہ اور جائزہ",
+          "description": "مصنوعات کی درجہ بندی کریں، اسٹورز فالو کریں، اور کمیونٹی کو بہترین بیچنے والے دریافت کرنے میں مدد کریں۔",
+          "feature1": "جائزے اور درجہ بندی",
+          "feature2": "اسٹورز فالو کریں",
+          "feature3": "خواہش فہرست شیئرنگ"
+        }
+      }
+    },
+    "features": {
+      "badge": "طاقتور خصوصیات",
+      "title": "کامیابی کے لیے سب کچھ",
+      "subtitle": "دونوں جہانوں کا بہترین: مارکیٹ پلیس دریافت + آزاد اسٹور فرنٹس۔ اس کے علاوہ AI سے چلنے والے ٹولز جو آپ کا کاروبار چلانا آسان بناتے ہیں۔",
+      "learnMore": "مزید جانیں",
+      "viewAllFeatures": "تمام خصوصیات دیکھیں",
+      "marketplaceDiscovery": {
+        "title": "مارکیٹ پلیس دریافت",
+        "description": "Shopify کے برعکس، آپ کی مصنوعات ہمارے مرکزی مارکیٹ پلیس میں دریافت ہونے کے قابل ہیں۔ اشتہارات کے لیے ادائیگی کیے بغیر ٹریفک حاصل کریں۔"
+      },
+      "independentStorefronts": {
+        "title": "آزاد اسٹور فرنٹس",
+        "description": "Amazon کے برعکس، آپ اپنے برانڈ کے مالک ہیں۔ کسٹم ڈومین، منفرد ڈیزائن، آپ کے صارفین۔"
+      },
+      "aiStoreBuilder": {
+        "title": "AI اسٹور بلڈر",
+        "description": "اپنے اسٹور کو الفاظ میں بیان کریں۔ ہماری AI سیکنڈوں میں بنا دیتی ہے۔ کوڈنگ نہیں، ڈیزائن مہارت نہیں چاہیے۔"
+      },
+      "integratedPayments": {
+        "title": "مربوط ادائیگیاں",
+        "description": "Stripe Connect مربوط۔ صرف 0.5% پلیٹ فارم فیس کے ساتھ عالمی سطح پر ادائیگیاں قبول کریں۔"
+      },
+      "powerfulAnalytics": {
+        "title": "طاقتور تجزیات",
+        "description": "اپنے کاروبار میں حقیقی وقت کی بصیرت۔ فروخت، صارفین، مصنوعات - سب ایک ڈیش بورڈ میں۔"
+      },
+      "deliveryManagement": {
+        "title": "ترسیل کا انتظام",
+        "description": "مربوط ترسیل پارٹنر نیٹ ورک۔ آرڈرز ٹریک کریں، شپنگ منظم کریں، صارفین کو خوش کریں۔"
+      },
+      "lightningFast": "بجلی کی رفتار",
+      "lightningFastDesc": "رفتار کے لیے بہتر بنایا گیا۔ آپ کا اسٹور ملی سیکنڈز میں لوڈ ہوتا ہے۔",
+      "enterpriseSecurity": "انٹرپرائز سیکیورٹی",
+      "enterpriseSecurityDesc": "بینک سطح کی انکرپشن اور فراڈ سے تحفظ۔",
+      "globalScale": "عالمی پیمانہ",
+      "globalScaleDesc": "CDN ترسیل کے ساتھ دنیا بھر کے صارفین کی خدمت کریں۔",
+      "support247": "24/7 سپورٹ",
+      "support247Desc": "AI چیٹ بوٹ + انسانی سپورٹ کسی بھی وقت۔"
+    },
+    "marketplacePreview": {
+      "badge": "مارکیٹ پلیس پریویو",
+      "title": "حیرت انگیز دریافت کریں",
+      "titleHighlight": "مصنوعات",
+      "subtitle": "متعدد اسٹورز سے مصنوعات براؤز کریں۔ سب ایک جگہ۔",
+      "trendingNow": "ابھی رجحان میں",
+      "viewAll": "سب دیکھیں",
+      "featuredStores": "نمایاں اسٹورز",
+      "noProducts": "ابھی تک کوئی مصنوعات دستیاب نہیں",
+      "exploreProducts": "تمام مصنوعات دریافت کریں",
+      "noStores": "ابھی تک کوئی اسٹور دستیاب نہیں",
+      "exploreStores": "تمام اسٹورز دریافت کریں",
+      "exploreMarketplace": "مکمل مارکیٹ پلیس دریافت کریں"
+    },
+    "pricing": {
+      "badge": "سادہ قیمتیں",
+      "title": "بچائیں",
+      "titleHighlight": "$3,000+",
+      "titleEnd": "سالانہ",
+      "subtitle": "مارکیٹ پلیس ٹریفک + تمام ٹولز شامل حاصل کریں۔ کوئی چھپی فیس نہیں، کوئی مہنگے ایڈ آنز نہیں۔",
+      "monthly": "ماہانہ",
+      "yearly": "سالانہ",
+      "save16": "16% بچائیں",
+      "perMonth": "/ماہ",
+      "perYear": "سال",
+      "billedYearly": "/ماہ سالانہ بل",
+      "mostPopular": "سب سے مقبول",
+      "getStarted": "شروع کریں",
+      "startFree": "مفت شروع کریں",
+      "compareWithShopify": "Shopify سے موازنہ کریں",
+      "comparison": {
+        "feature": "خصوصیت",
+        "typicalSavings": "عام بچت",
+        "savingsDescription": "$10K/ماہ کرنے والا اسٹور Shopify کے مقابلے $250/ماہ بچاتا ہے",
+        "yearlyBack": "یہ آپ کی جیب میں $3,000/سال واپس ہے"
+      },
+      "free": {
+        "name": "مفت",
+        "description": "اپنا پہلا اسٹور شروع کریں",
+        "feature1": "1 اسٹور 10 مصنوعات کے ساتھ",
+        "feature2": "مفت سب ڈومین (yourstore.example.com)",
+        "feature3": "بنیادی اسٹور فرنٹ تھیم",
+        "feature4": "مارکیٹ پلیس لسٹنگ",
+        "feature5": "معیاری چیک آؤٹ",
+        "feature6": "کمیونٹی سپورٹ"
+      },
+      "starter": {
+        "name": "سٹارٹر",
+        "description": "شروع کریں اور بڑھائیں",
+        "feature1": "2 اسٹورز لامحدود مصنوعات کے ساتھ",
+        "feature2": "کسٹم ڈومین",
+        "feature3": "پریمیم اسٹور فرنٹ تھیمز",
+        "feature4": "بنیادی تجزیاتی ڈیش بورڈ",
+        "feature5": "2 ٹیم ممبرز",
+        "feature6": "ای میل سپورٹ",
+        "feature7": "مکمل موبائل ایپ (تمام پینلز)"
+      },
+      "basic": {
+        "name": "بنیادی",
+        "description": "چھوٹے کاروبار کے لیے بہترین",
+        "feature1": "لامحدود مصنوعات",
+        "feature2": "جدید تجزیات",
+        "feature3": "ترجیحی سپورٹ",
+        "feature4": "کسٹم ڈومین",
+        "feature5": "بنیادی پروموشنز"
+      },
+      "pro": {
+        "name": "پرو",
+        "description": "اپنا کاروبار بڑھائیں",
+        "feature1": "5 اسٹورز لامحدود مصنوعات کے ساتھ",
+        "feature2": "فی اسٹور کسٹم ڈومین",
+        "feature3": "جدید تجزیات اور رپورٹس",
+        "feature4": "5 ٹیم ممبرز",
+        "feature5": "ترجیحی سپورٹ (ای میل اور چیٹ)",
+        "feature6": "مکمل موبائل ایپ (تمام پینلز)",
+        "feature7": "جدید پروموشنز اور مہمات"
+      },
+      "business": {
+        "name": "بزنس",
+        "description": "بغیر حدود پھیلائیں",
+        "feature1": "لامحدود اسٹورز اور مصنوعات",
+        "feature2": "فی اسٹور کسٹم ڈومین",
+        "feature3": "مکمل تجزیات + کسٹم رپورٹس",
+        "feature4": "15 ٹیم ممبرز",
+        "feature5": "مکمل موبائل ایپ (تمام پینلز)",
+        "feature6": "انٹیگریشنز کے لیے API رسائی",
+        "feature7": "وائٹ لیبل حل"
+      },
+      "premium": {
+        "name": "پریمیم",
+        "description": "انٹرپرائز ضروریات کے لیے",
+        "feature1": "پرو میں سب کچھ",
+        "feature2": "لامحدود ٹیم ممبرز",
+        "feature3": "وائٹ لیبل حل",
+        "feature4": "وقف اکاؤنٹ مینیجر",
+        "feature5": "کسٹم انٹیگریشنز",
+        "feature6": "SLA ضمانت",
+        "feature7": "بلک آپریشنز"
+      }
+    },
+    "cta": {
+      "badge": "شروع کرنے کے لیے تیار ہیں؟",
+      "title": "آپ کی سلطنت منتظر ہے۔",
+      "titleHighlight": "آج مفت شروع کریں۔",
+      "subtitle": "مارکیٹ پلیس + آزادی کی طاقت دریافت کریں۔ شروع کرنے کے لیے کریڈٹ کارڈ کی ضرورت نہیں۔",
+      "benefits": {
+        "freeToStart": "شروع کرنا مفت",
+        "noHiddenFees": "کوئی چھپی فیس نہیں",
+        "cancelAnytime": "کسی بھی وقت منسوخ کریں",
+        "support247": "24/7 سپورٹ"
+      },
+      "createStore": "اپنا اسٹور مفت بنائیں",
+      "browseMarketplace": "مارکیٹ پلیس براؤز کریں",
+      "trust": {
+        "security": "بینک سطح کی سیکیورٹی",
+        "rating": "4.9/5 بیچنے والوں کی درجہ بندی",
+        "worldwide": "دنیا بھر میں دستیاب"
+      }
+    }
+  },
+  "platform": {
+    "hero": {
+      "categories": "زمرے",
+      "noCategoriesAvailable": "کوئی زمرے دستیاب نہیں",
+      "newCollection": "نیا کلیکشن",
+      "sunglassCollection": "دھوپ کے چشمے",
+      "collection": "کلیکشن",
+      "heroDescription": "آئی ویئر کے تازہ ترین رجحانات دریافت کریں۔ اعلیٰ معیار، شاندار ڈیزائنز۔",
+      "shopNow": "ابھی خریداری کریں",
+      "premium": "پریمیم",
+      "trendyCollection": "جدید",
+      "luxury": "لگژری",
+      "watchCollection": "گھڑی",
+      "explore": "دریافت کریں",
+      "freeShipping": "مفت شپنگ",
+      "freeShippingDesc": "تمام آن لائن آرڈرز پر مفت شپنگ",
+      "support247": "24/7 سپورٹ",
+      "support247Desc": "24 گھنٹے ہم سے رابطہ کریں",
+      "daysReturn": "90 دن واپسی",
+      "daysReturnDesc": "اگر سامان میں نقص ہو",
+      "paymentSecure": "محفوظ ادائیگی",
+      "paymentSecureDesc": "ہم محفوظ لین دین کو یقینی بناتے ہیں"
+    },
+    "explore": {
+      "discoverBadge": "حیرت انگیز مصنوعات اور اسٹورز دریافت کریں",
+      "title": "دریافت کریں",
+      "marketplace": "مارکیٹ پلیس",
+      "subtitle": "آزاد بیچنے والوں سے مصنوعات اور اسٹورز تلاش کریں۔",
+      "searchProducts": "مصنوعات تلاش کریں...",
+      "searchStores": "اسٹورز تلاش کریں...",
+      "search": "تلاش",
+      "products": "مصنوعات",
+      "stores": "اسٹورز",
+      "productsFound": "{{count}} مصنوعات ملیں",
+      "storesFound": "{{count}} اسٹورز ملے",
+      "forQuery": "\"{{query}}\" کے لیے",
+      "filters": "فلٹرز",
+      "priceRange": "قیمت کی حد",
+      "min": "کم از کم",
+      "max": "زیادہ سے زیادہ",
+      "minimumRating": "کم از کم درجہ بندی",
+      "region": "علاقہ",
+      "clearAll": "سب صاف کریں",
+      "applyFilters": "فلٹرز لاگو کریں",
+      "noProductsFound": "کوئی مصنوعات نہیں ملیں",
+      "noProductsFoundDesc": "جو آپ تلاش کر رہے ہیں اسے تلاش کرنے کے لیے اپنی تلاش یا فلٹرز ایڈجسٹ کریں۔",
+      "noStoresFound": "کوئی اسٹور نہیں ملے",
+      "noStoresFoundDesc": "اسٹورز تلاش کرنے کے لیے اپنی تلاش ایڈجسٹ کریں۔",
+      "sortOptions": {
+        "relevance": "سب سے متعلقہ",
+        "newest": "تازہ ترین پہلے",
+        "priceLow": "قیمت: کم سے زیادہ",
+        "priceHigh": "قیمت: زیادہ سے کم",
+        "rating": "اعلیٰ ترین درجہ",
+        "popular": "سب سے مقبول"
+      },
+      "regions": {
+        "all": "تمام علاقے",
+        "asia": "ایشیا",
+        "middleEast": "مشرق وسطیٰ",
+        "europe": "یورپ",
+        "americas": "امریکاز"
+      }
+    },
+    "sellSection": {
+      "yourStore": "آپ کا اسٹور",
+      "manageStore": "اپنی مصنوعات، آرڈرز، اور تجزیات کا انتظام کریں",
+      "goToDashboard": "ڈیش بورڈ پر جائیں",
+      "createAnotherStore": "ایک اور اسٹور بنائیں",
+      "startYourBusiness": "اپنا کاروبار شروع کریں",
+      "sellOn": "پر فروخت کریں",
+      "sellDescription": "آج ہی اپنا آن لائن کاروبار شروع کریں۔ اپنا اسٹور بنائیں، مصنوعات شامل کریں، اور نئے صارفین تک پہنچیں۔",
+      "easySetup": "آسان سیٹ اپ",
+      "easySetupDesc": "منٹوں میں اپنا اسٹور بنائیں",
+      "productManagement": "مصنوعات کا انتظام",
+      "productManagementDesc": "لامحدود مصنوعات شامل کریں",
+      "analytics": "تجزیات",
+      "analyticsDesc": "اپنی فروخت اور ترقی ٹریک کریں",
+      "reachCustomers": "صارفین تک پہنچیں",
+      "reachCustomersDesc": "دنیا بھر کے خریداروں تک پہنچیں",
+      "getStartedFree": "مفت شروع کریں",
+      "createYourStore": "اپنا اسٹور بنائیں",
+      "learnMore": "مزید جانیں",
+      "noMonthlyFees": "کوئی ماہانہ فیس نہیں",
+      "freeToStart": "شروع کرنا مفت",
+      "support247": "24/7 سپورٹ",
+      "activeSellers": "فعال بیچنے والے",
+      "productsListed": "درج مصنوعات",
+      "happyCustomers": "خوش صارفین",
+      "sellerSatisfaction": "بیچنے والوں کا اطمینان"
+    },
+    "bestSellers": {
+      "title": "بہترین فروخت اسٹور",
+      "noStoresAvailable": "کوئی اسٹور دستیاب نہیں",
+      "noStoresAvailableNow": "اس وقت کوئی اسٹور دستیاب نہیں",
+      "noProduct": "کوئی مصنوعات نہیں"
+    },
+    "footer": {
+      "stayUpdated": "اپ ڈیٹ رہیں",
+      "newsletterDesc": "نئی خصوصیات، بیچنے والوں کے ٹپس، اور مارکیٹ پلیس رجحانات کے بارے میں تازہ ترین اپ ڈیٹس حاصل کریں۔",
+      "enterEmail": "اپنا ای میل درج کریں",
+      "subscribe": "رکنیت حاصل کریں",
+      "subscribed": "رکنیت مل گئی",
+      "platformDescription": "ہائبرڈ مارکیٹ پلیس جو آزاد اسٹور فرنٹس کو طاقتور دریافت کے ساتھ ملاتا ہے۔ اپنا برانڈ بنائیں، دریافت ہوں، مل کر بڑھیں۔",
+      "followUs": "ہمیں فالو کریں",
+      "allRightsReserved": "جملہ حقوق محفوظ ہیں۔",
+      "privacy": "رازداری",
+      "terms": "شرائط",
+      "contact": "رابطہ",
+      "sections": {
+        "platform": "پلیٹ فارم",
+        "company": "کمپنی",
+        "legal": "قانونی",
+        "resources": "وسائل"
+      },
+      "links": {
+        "howItWorks": "یہ کیسے کام کرتا ہے",
+        "features": "خصوصیات",
+        "pricing": "قیمتیں",
+        "marketplace": "مارکیٹ پلیس",
+        "forSellers": "بیچنے والوں کے لیے",
+        "aboutUs": "ہمارے بارے میں",
+        "press": "پریس",
+        "contact": "رابطہ",
+        "privacyPolicy": "رازداری کی پالیسی",
+        "termsOfService": "شرائط و ضوابط",
+        "cookiePolicy": "کوکی پالیسی",
+        "dataDeletion": "ڈیٹا حذف",
+        "siteMap": "سائٹ میپ",
+        "faqs": "عمومی سوالات",
+        "helpCenter": "ہیلپ سینٹر"
+      }
+    },
+    "demoAccess": {
+      "title": "ڈیمو رسائی",
+      "comingSoon": "جلد آ رہا ہے",
+      "googlePlay": "گوگل پلے",
+      "appStore": "ایپ اسٹور",
+      "getItOn": "پر حاصل کریں",
+      "downloadOn": "سے ڈاؤن لوڈ کریں",
+      "roles": {
+        "admin": "ایڈمن",
+        "vendor": "وینڈر",
+        "customer": "صارف",
+        "delivery": "ترسیل"
+      }
+    }
+  },
+  "helpCenter": {
+    "pageTitle": "ہیلپ سینٹر",
+    "docsTitle": "{{appName}} دستاویزات",
+    "copyLink": "لنک کاپی کریں",
+    "goToPage": "صفحے پر جائیں",
+    "lastUpdated": "آخری اپ ڈیٹ: جنوری 2026",
+    "suggestImprovements": "بہتری تجویز کریں ←",
+    "nav": {
+      "introduction": "تعارف",
+      "quickStart": "فوری آغاز",
+      "forVendors": "وینڈرز (بیچنے والوں) کے لیے",
+      "forCustomers": "صارفین کے لیے",
+      "forDelivery": "ترسیل کے شراکت داروں کے لیے",
+      "pricingPlans": "قیمتیں اور پلانز",
+      "payments": "ادائیگیاں اور بلنگ",
+      "support": "سپورٹ اور رابطہ"
+    },
+    "vendorNav": {
+      "createStore": "اپنا اسٹور بنائیں",
+      "vendorDashboard": "وینڈر ڈیش بورڈ",
+      "addProducts": "مصنوعات شامل کریں",
+      "manageOrders": "آرڈرز کا انتظام",
+      "storefrontBuilder": "اسٹور فرنٹ بلڈر",
+      "aiFeatures": "AI خصوصیات",
+      "mobileApp": "موبائل ایپ بلڈر",
+      "analytics": "تجزیات اور رپورٹس",
+      "deliverySetup": "ترسیل کا سیٹ اپ",
+      "teamManagement": "ٹیم مینجمنٹ"
+    },
+    "customerNav": {
+      "browseShop": "براؤز اور خریداری",
+      "cartCheckout": "کارٹ اور چیک آؤٹ",
+      "trackOrders": "آرڈرز ٹریک کریں",
+      "reviewsWishlist": "جائزے اور خواہش فہرست"
+    },
+    "deliveryNav": {
+      "howDeliveryWorks": "ترسیل کیسے کام کرتی ہے",
+      "deliveryDashboard": "ترسیل ڈیش بورڈ",
+      "earnings": "آمدنی اور ادائیگیاں"
+    },
+    "introduction": {
+      "title": "تعارف",
+      "welcome": "<strong>{{appName}}</strong> میں خوش آمدید — آل ان ون ملٹی وینڈر ای کامرس پلیٹ فارم۔ چاہے آپ مصنوعات فروخت کرنے والے وینڈر ہوں، متعدد اسٹورز سے خریداری کرنے والے صارف ہوں، یا پیسے کمانے والے ترسیل پارٹنر ہوں، یہ گائیڈ وہ سب کچھ شامل کرتی ہے جو آپ کو جاننا ضروری ہے۔",
+      "whatIsThisPlatform": "{{appName}} کیا ہے؟",
+      "features": {
+        "multiVendor": "<strong>ملٹی وینڈر مارکیٹ پلیس</strong> — ایک پلیٹ فارم پر متعدد اسٹورز",
+        "aiPowered": "<strong>AI سے چلنے والے ٹولز</strong> — AI مدد سے اسٹورز اور مصنوعات بنائیں",
+        "mobileApp": "<strong>موبائل ایپ بلڈر</strong> — اپنے اسٹور کو مقامی ایپ میں تبدیل کریں",
+        "payments": "<strong>مربوط ادائیگیاں</strong> — Stripe کے ذریعے محفوظ چیک آؤٹ",
+        "delivery": "<strong>ترسیل نیٹ ورک</strong> — مربوط ترسیل پارٹنر سسٹم"
+      },
+      "userTypes": "صارف کی اقسام",
+      "table": {
+        "headers": [
+          "صارف کی قسم",
+          "تفصیل",
+          "رسائی"
+        ],
+        "vendor": [
+          "وینڈر",
+          "اسٹورز بنائیں، مصنوعات فروخت کریں، آرڈرز منظم کریں",
+          "/vendor/dashboard"
+        ],
+        "customer": [
+          "صارف",
+          "اسٹورز براؤز کریں، مصنوعات خریدیں، آرڈرز ٹریک کریں",
+          "/explore"
+        ],
+        "deliveryPartner": [
+          "ترسیل پارٹنر",
+          "آرڈرز ترسیل کریں (وینڈرز کی طرف سے بنائے گئے)",
+          "/delivery/dashboard"
+        ],
+        "admin": [
+          "ایڈمن",
+          "پلیٹ فارم منظم کریں، اسٹورز منظور کریں",
+          "/admin"
+        ]
+      }
+    },
+    "quickStart": {
+      "title": "فوری آغاز",
+      "subtitle": "3 آسان مراحل میں شروع کریں:",
+      "step1": {
+        "title": "اکاؤنٹ بنائیں",
+        "description": "\"سائن اپ\" پر کلک کریں اور اپنا ای میل اور پاس ورڈ درج کریں۔ اپنا اکاؤنٹ فعال کرنے کے لیے اپنا ای میل تصدیق کریں۔",
+        "linkText": "سائن اپ"
+      },
+      "step2": {
+        "title": "اپنا راستہ منتخب کریں",
+        "wantToSell": "<strong>فروخت کرنا ہے؟</strong> ← وینڈر اکاؤنٹ بنائیں اور اپنا اسٹور کھولیں",
+        "wantToShop": "<strong>خریداری کرنا ہے؟</strong> ← فوری طور پر مصنوعات براؤز کرنا شروع کریں",
+        "wantToDeliver": "<strong>ترسیل کرنا ہے؟</strong> ← اپنی ترسیل ٹیم میں شامل ہونے کے لیے وینڈر سے رابطہ کریں"
+      },
+      "step3": {
+        "title": "پلیٹ فارم دریافت کریں",
+        "description": "اسٹورز اور مصنوعات دیکھنے کے لیے مارکیٹ پلیس ملاحظہ کریں، یا اپنا کاروبار منظم کرنے کے لیے اپنے ڈیش بورڈ پر جائیں۔",
+        "linkText": "مارکیٹ پلیس براؤز کریں"
+      },
+      "cards": {
+        "startSelling": "فروخت شروع کریں",
+        "startSellingDesc": "اپنا پہلا اسٹور بنائیں",
+        "startShopping": "خریداری شروع کریں",
+        "startShoppingDesc": "تمام مصنوعات براؤز کریں"
+      }
+    },
+    "forVendors": {
+      "title": "وینڈرز (بیچنے والوں) کے لیے",
+      "subtitle": "{{appName}} پر اپنا آن لائن اسٹور بنانے اور منظم کرنے کی مکمل گائیڈ۔",
+      "createStore": {
+        "title": "اپنا اسٹور بنائیں",
+        "step1": {
+          "title": "اسٹور بنانے کے صفحے پر جائیں",
+          "description": "<code>/vendor/create-shop</code> پر جائیں یا نیویگیشن میں \"فروخت شروع کریں\" پر کلک کریں۔",
+          "linkText": "اسٹور بنائیں"
+        },
+        "step2": {
+          "title": "اسٹور کی تفصیلات بھریں",
+          "storeName": "<strong>اسٹور کا نام</strong> — آپ کا برانڈ نام (مثلاً \"فیشن ہب\")",
+          "storeDescription": "<strong>اسٹور کی تفصیل</strong> — آپ کے کاروبار کی مختصر تفصیل",
+          "category": "<strong>زمرہ</strong> — اپنا بنیادی زمرہ منتخب کریں",
+          "logoBanner": "<strong>لوگو اور بینر</strong> — اپنی برانڈ تصاویر اپ لوڈ کریں"
+        },
+        "step3": {
+          "title": "سبسکرپشن پلان منتخب کریں",
+          "description": "اپنی ضروریات کے مطابق پلان منتخب کریں (مفت، سٹارٹر، پرو، یا بزنس)۔",
+          "linkText": "پلانز دیکھیں"
+        },
+        "step4": {
+          "title": "منظوری کے لیے جمع کرائیں",
+          "description": "آپ کے اسٹور کا ایڈمنز جائزہ لیں گے۔ منظوری کے بعد آپ فروخت شروع کر سکتے ہیں!"
+        }
+      },
+      "dashboard": {
+        "title": "وینڈر ڈیش بورڈ",
+        "accessAt": "اپنے ڈیش بورڈ تک رسائی",
+        "table": {
+          "headers": [
+            "سیکشن",
+            "پاتھ",
+            "تفصیل"
+          ],
+          "rows": [
+            ["ڈیش بورڈ", "/vendor/dashboard", "فروخت، آرڈرز، اور اعداد و شمار کا جائزہ"],
+            ["مصنوعات", "/vendor/products", "اپنی مصنوعات کی فہرست منظم کریں"],
+            ["آرڈرز", "/vendor/orders", "صارفین کے آرڈرز دیکھیں اور کارروائی کریں"],
+            ["تجزیات", "/vendor/analytics", "فروخت کی رپورٹس اور بصیرت"],
+            ["صارفین", "/vendor/customers", "صارفین کی فہرست اور تفصیلات"],
+            ["جائزے", "/vendor/reviews", "صارفین کے جائزے اور درجہ بندی"],
+            ["پیشکشیں", "/vendor/offers", "رعایتیں اور پروموشنز"],
+            ["ترتیبات", "/vendor/settings", "اسٹور کی ترتیبات اور ترتیب"]
+          ]
+        }
+      },
+      "addProducts": {
+        "title": "مصنوعات شامل کریں",
+        "step1": {
+          "title": "مصنوعات شامل کریں پر جائیں",
+          "description": "سائیڈبار میں <code>مصنوعات ← مصنوعات شامل کریں</code> پر جائیں۔",
+          "linkText": "مصنوعات شامل کریں"
+        },
+        "step2": {
+          "title": "مصنوعات کی معلومات بھریں",
+          "productName": "<strong>مصنوعات کا نام</strong> — واضح، وضاحتی عنوان",
+          "description": "<strong>تفصیل</strong> — تفصیلی مصنوعات کی تفصیل (AI جنریٹر استعمال کریں!)",
+          "price": "<strong>قیمت</strong> — باقاعدہ قیمت اور اختیاری سیل قیمت",
+          "images": "<strong>تصاویر</strong> — متعدد مصنوعات کی تصاویر اپ لوڈ کریں",
+          "category": "<strong>زمرہ</strong> — مناسب زمرہ منتخب کریں",
+          "inventory": "<strong>انوینٹری</strong> — سٹاک کی مقدار اور SKU"
+        },
+        "step3": {
+          "title": "ویرینٹس شامل کریں (اختیاری)",
+          "description": "انفرادی سٹاک اور قیمت کے ساتھ سائز، رنگ، یا دیگر ویرینٹس شامل کریں۔"
+        },
+        "step4": {
+          "title": "شائع کریں",
+          "description": "اپنی مصنوعات کو اپنے اسٹور پر لائیو کرنے کے لیے \"شائع کریں\" پر کلک کریں۔"
+        }
+      },
+      "manageOrders": {
+        "title": "آرڈرز کا انتظام",
+        "viewAt": "تمام آرڈرز دیکھیں",
+        "table": {
+          "headers": ["حیثیت", "تفصیل", "عمل"],
+          "rows": [
+            ["زیر التوا", "نیا آرڈر موصول", "جائزہ لیں اور تصدیق کریں"],
+            ["کارروائی جاری", "آرڈر کی تصدیق، تیاری", "شپنگ کے لیے تیار کریں"],
+            ["بھیج دیا گیا", "آرڈر ترسیل کو دیا گیا", "ٹریکنگ معلومات شامل کریں"],
+            ["ترسیل مکمل", "صارف نے آرڈر وصول کیا", "مکمل"],
+            ["منسوخ", "آرڈر منسوخ", "اگر ضرورت ہو تو رقم واپسی"]
+          ]
+        }
+      },
+      "storefrontBuilder": {
+        "title": "اسٹور فرنٹ بلڈر",
+        "customizeAt": "اپنے اسٹور کی ظاہری شکل اپنی مرضی کے مطابق بنائیں",
+        "features": [
+          "پریمیم تھیمز میں سے منتخب کریں",
+          "رنگ، فونٹس، اور لے آؤٹس اپنی مرضی کے مطابق بنائیں",
+          "سیکشنز شامل کریں: ہیرو بینر، نمایاں مصنوعات، تعریفیں",
+          "حقیقی وقت میں تبدیلیوں کا پیش نظارہ دیکھیں",
+          "آپ کا اسٹور فرنٹ <code>/store/your-store-slug</code> پر لائیو ہے"
+        ],
+        "cardTitle": "اسٹور فرنٹ بلڈر کھولیں",
+        "cardDescription": "اپنے اسٹور کا ڈیزائن اپنی مرضی کے مطابق بنائیں"
+      },
+      "aiFeatures": {
+        "title": "AI خصوصیات",
+        "storeBuilder": {
+          "title": "AI اسٹور بلڈر",
+          "description": "اپنے کاروبار کی وضاحت کریں اور AI رنگوں، لے آؤٹس، اور مواد کے ساتھ مکمل اسٹور فرنٹ ڈیزائن بنائے گا۔",
+          "linkText": "AI اسٹور بلڈر آزمائیں ←"
+        },
+        "productDescriptions": {
+          "title": "AI مصنوعات کی تفصیلات",
+          "description": "مصنوعات شامل کرتے وقت، دلکش، SEO بہتر بنائی گئی تفصیلات خود بخود بنانے کے لیے \"AI سے بنائیں\" پر کلک کریں۔"
+        }
+      },
+      "mobileApp": {
+        "title": "موبائل ایپ بلڈر",
+        "availability": "<strong>پرو اور بزنس پلانز پر دستیاب۔</strong> اپنے اسٹور کو مقامی iOS/Android ایپ میں تبدیل کریں۔",
+        "step1": {
+          "title": "موبائل ایپ بلڈر تک رسائی",
+          "description": "وینڈر سائیڈبار میں <code>موبائل ایپ</code> پر جائیں۔",
+          "linkText": "ایپ بلڈر کھولیں"
+        },
+        "step2": {
+          "title": "ایپ ترتیب دیں",
+          "description": "ایپ کا نام، آئکن، سپلیش سکرین، اور رنگ اسکیم مقرر کریں۔"
+        },
+        "step3": {
+          "title": "شائع کریں",
+          "description": "ہم Apple App Store اور Google Play Store پر شائع کرنے کا انتظام کرتے ہیں۔"
+        }
+      },
+      "analytics": {
+        "title": "تجزیات اور رپورٹس",
+        "accessAt": "بصیرت تک رسائی",
+        "features": [
+          "فروخت کے رجحانات اور آمدنی",
+          "سب سے زیادہ فروخت ہونے والی مصنوعات",
+          "صارفین کی آبادیاتی معلومات",
+          "تبدیلی کی شرحیں",
+          "ٹریفک ذرائع"
+        ]
+      },
+      "deliverySetup": {
+        "title": "ترسیل کا سیٹ اپ",
+        "configureAt": "شپنگ کی ترتیب",
+        "features": [
+          "شپنگ زونز اور شرحیں مقرر کریں",
+          "مفت شپنگ کی حدیں ترتیب دیں",
+          "{{appName}} ترسیل نیٹ ورک سے جڑیں",
+          "پک اپ مقامات مقرر کریں"
+        ]
+      },
+      "teamManagement": {
+        "title": "ٹیم مینجمنٹ",
+        "addAt": "ٹیم ممبرز شامل کریں",
+        "table": {
+          "headers": ["کردار", "اجازتیں"],
+          "rows": [
+            ["مالک", "تمام خصوصیات تک مکمل رسائی"],
+            ["مینیجر", "مصنوعات، آرڈرز، اور صارفین کا انتظام"],
+            ["سٹاف", "آرڈرز کی کارروائی اور صارفین کو جواب دیں"]
+          ]
+        }
+      }
+    },
+    "forCustomers": {
+      "title": "صارفین کے لیے",
+      "browseShop": {
+        "title": "براؤز اور خریداری",
+        "step1": {
+          "title": "مارکیٹ پلیس دریافت کریں",
+          "description": "تمام اسٹورز سے مصنوعات دریافت کرنے کے لیے <code>/explore</code> ملاحظہ کریں۔",
+          "linkText": "مصنوعات براؤز کریں"
+        },
+        "step2": {
+          "title": "فلٹرز استعمال کریں",
+          "description": "زمرے، قیمت کی حد، درجہ بندی، اور مقام کے لحاظ سے فلٹر کریں۔"
+        },
+        "step3": {
+          "title": "اسٹورز ملاحظہ کریں",
+          "description": "<code>/store/store-name</code> پر ان کی مکمل فہرست دیکھنے کے لیے کسی بھی اسٹور پر کلک کریں"
+        }
+      },
+      "cartCheckout": {
+        "title": "کارٹ اور چیک آؤٹ",
+        "step1": {
+          "title": "کارٹ میں شامل کریں",
+          "description": "کسی بھی مصنوعات پر \"کارٹ میں شامل کریں\" پر کلک کریں۔ آپ متعدد اسٹورز سے اشیاء شامل کر سکتے ہیں۔",
+          "linkText": "کارٹ دیکھیں"
+        },
+        "step2": {
+          "title": "کارٹ کا جائزہ لیں",
+          "description": "<code>/cart</code> پر اپنا کارٹ دیکھیں۔ مقدار ایڈجسٹ کریں یا اشیاء ہٹائیں۔"
+        },
+        "step3": {
+          "title": "چیک آؤٹ",
+          "description": "شپنگ ایڈریس اور ادائیگی کی تفصیلات درج کریں۔ ہم Stripe کے ذریعے کریڈٹ کارڈز قبول کرتے ہیں۔",
+          "linkText": "چیک آؤٹ"
+        }
+      },
+      "trackOrders": {
+        "title": "آرڈرز ٹریک کریں",
+        "viewAt": "تمام آرڈرز دیکھیں",
+        "features": [
+          "آرڈر کی حیثیت اور ٹریکنگ معلومات دیکھیں",
+          "آرڈر کی تفصیلات اور رسیدیں دیکھیں",
+          "اپنے آرڈر کے بارے میں وینڈر سے رابطہ کریں",
+          "واپسی یا رقم واپسی کی درخواست کریں"
+        ],
+        "cardTitle": "میرے آرڈرز",
+        "cardDescription": "اپنے آرڈر کی تاریخ دیکھیں"
+      },
+      "reviewsWishlist": {
+        "title": "جائزے اور خواہش فہرست",
+        "leaveReviews": "<strong>جائزے دیں</strong> — خریداری کے بعد مصنوعات کی درجہ بندی کریں تاکہ دوسرے خریداروں کی مدد ہو",
+        "wishlist": "<strong>خواہش فہرست</strong> — بعد میں کے لیے مصنوعات <code>/wishlist</code> پر محفوظ کریں"
+      }
+    },
+    "forDelivery": {
+      "title": "ترسیل کے شراکت داروں کے لیے",
+      "subtitle": "ترسیل کے شراکت دار وینڈرز کی طرف سے بنائے اور منظم کیے جاتے ہیں۔ اگر آپ ترسیل پارٹنر بننا چاہتے ہیں تو براہ راست وینڈر سے رابطہ کریں۔",
+      "howDeliveryWorks": {
+        "title": "ترسیل کیسے کام کرتی ہے",
+        "forVendors": {
+          "title": "وینڈرز کے لیے: ترسیل اہلکار شامل کرنا",
+          "description": "وینڈرز اپنی ترسیل ٹیم وینڈر ڈیش بورڈ سے بناتے اور منظم کرتے ہیں۔",
+          "step1": {
+            "title": "ترسیل ترتیبات پر جائیں",
+            "description": "وینڈر سائیڈبار میں <code>ترسیل</code> پر جائیں۔",
+            "linkText": "ترسیل منظم کریں"
+          },
+          "step2": {
+            "title": "ترسیل اہلکار شامل کریں",
+            "description": "\"ترسیل شخص شامل کریں\" پر کلک کریں اور ان کی تفصیلات (نام، ای میل، فون، گاڑی کی معلومات) درج کریں۔"
+          },
+          "step3": {
+            "title": "لاگ ان اسناد شیئر کریں",
+            "description": "ترسیل شخص کو اپنے ترسیل ڈیش بورڈ تک رسائی کے لیے ای میل کے ذریعے لاگ ان اسناد موصول ہوں گی۔"
+          }
+        },
+        "forDeliveryPersonnel": {
+          "title": "ترسیل اہلکاروں کے لیے: شروع کرنا",
+          "description": "اگر آپ کو کسی وینڈر نے ترسیل پارٹنر کے طور پر شامل کیا ہے تو آپ کو اپنے لاگ ان اسناد کے ساتھ ایک ای میل موصول ہوگا۔ ترسیل ڈیش بورڈ تک رسائی کے لیے ان کا استعمال کریں۔"
+        }
+      },
+      "deliveryDashboard": {
+        "title": "ترسیل ڈیش بورڈ",
+        "accessAt": "اپنے ڈیش بورڈ تک رسائی",
+        "table": {
+          "headers": ["سیکشن", "پاتھ", "تفصیل"],
+          "rows": [
+            ["ڈیش بورڈ", "/delivery/dashboard", "جائزہ اور دستیاب آرڈرز"],
+            ["آرڈرز", "/delivery/orders", "تفویض شدہ ترسیلات دیکھیں اور منظم کریں"],
+            ["آمدنی", "/delivery/earnings", "اپنی آمدنی ٹریک کریں"],
+            ["تاریخ", "/delivery/history", "ماضی کی ترسیلات"],
+            ["پروفائل", "/delivery/profile", "آپ کا پروفائل اور ترتیبات"]
+          ]
+        }
+      },
+      "earnings": {
+        "title": "آمدنی اور ادائیگیاں",
+        "features": [
+          "<code>/delivery/earnings</code> پر آمدنی دیکھیں",
+          "آمدنی آپ کے وینڈر کی طرف سے منظم ہوتی ہے",
+          "مکمل ترسیلات اور ٹپس ٹریک کریں",
+          "ترسیل کی تاریخ اور کارکردگی دیکھیں"
+        ]
+      }
+    },
+    "pricingPlans": {
+      "title": "قیمتیں اور پلانز",
+      "subtitle": "{{appName}} ہر کاروباری سائز کے لیے لچکدار پلانز پیش کرتا ہے۔ <strong>تمام پلانز پر صفر ٹرانزیکشن فیس!</strong>",
+      "table": {
+        "headers": ["پلان", "قیمت", "اسٹورز", "مصنوعات", "خصوصیات"],
+        "rows": [
+          ["مفت", "$0/ماہ", "1", "10", "بنیادی اسٹور فرنٹ، معیاری سپورٹ"],
+          ["سٹارٹر", "$29.99/ماہ", "2", "100", "جدید تخصیص، ترجیحی سپورٹ"],
+          ["پرو", "$79.99/ماہ", "5", "لامحدود", "موبائل ایپ، پریمیم تھیمز، تجزیات"],
+          ["بزنس", "$199.99/ماہ", "لامحدود", "لامحدود", "API رسائی، وقف مینیجر، وائٹ لیبل"]
+        ]
+      },
+      "annualDiscount": "سالانہ بلنگ کے ساتھ 15% بچائیں",
+      "cardTitle": "مکمل قیمتوں کی تفصیلات دیکھیں",
+      "cardDescription": "تمام پلان خصوصیات کا موازنہ کریں"
+    },
+    "paymentsAndBilling": {
+      "title": "ادائیگیاں اور بلنگ",
+      "customerPayments": {
+        "title": "صارفین کی ادائیگیاں",
+        "features": [
+          "Stripe کے ذریعے محفوظ چیک آؤٹ",
+          "ویزا، ماسٹر کارڈ، امریکن ایکسپریس قبول کریں",
+          "ڈیجیٹل والٹس معاون",
+          "تمام لین دین خفیہ (PCI-معیاری)"
+        ]
+      },
+      "vendorPayouts": {
+        "title": "وینڈر ادائیگیاں",
+        "features": [
+          "آپ کے بینک اکاؤنٹ میں براہ راست جمع",
+          "ہفتہ وار ادائیگی کا شیڈول",
+          "ادائیگی کی کارروائی کی فیس (Stripe شرحیں) ہر فروخت سے کاٹی جاتی ہیں",
+          "<strong>صفر پلیٹ فارم ٹرانزیکشن فیس!</strong>"
+        ]
+      },
+      "subscriptionBilling": {
+        "title": "سبسکرپشن بلنگ",
+        "features": [
+          "<code>/vendor/billing</code> پر سبسکرپشن منظم کریں",
+          "کسی بھی وقت منسوخ یا اپ گریڈ کریں",
+          "رسیدیں ڈاؤن لوڈ کے لیے دستیاب"
+        ]
+      }
+    },
+    "supportAndContact": {
+      "title": "سپورٹ اور رابطہ",
+      "contactUs": "ہم سے رابطہ کریں",
+      "email": "ای میل:",
+      "supportEmail": "support@example.com",
+      "supportHours": "سپورٹ اوقات:",
+      "supportHoursValue": "ای میل کے ذریعے 24/7",
+      "cards": {
+        "faqsTitle": "عمومی سوالات",
+        "faqsDescription": "عام سوالات کے جوابات",
+        "contactTitle": "رابطہ فارم",
+        "contactDescription": "ہمیں پیغام بھیجیں"
+      }
+    }
+  },
+  "legal": {
+    "breadcrumb": "قانونی",
+    "privacy": {
+      "title": "رازداری کی پالیسی",
+      "subtitle": "آپ کی رازداری ہمارے لیے اہم ہے۔ جانیں کہ ہم آپ کی ذاتی معلومات کیسے جمع، استعمال، اور محفوظ کرتے ہیں۔",
+      "lastUpdated": "آخری اپ ڈیٹ: 26 اکتوبر، 2025",
+      "compliance": "GDPR اور CCPA معیاری",
+      "toc": "فہرست مضامین",
+      "savePolicy": "اس پالیسی کو محفوظ کرنا چاہتے ہیں؟",
+      "printPage": "یہ صفحہ پرنٹ کریں",
+      "badges": {
+        "gdpr": "GDPR معیاری",
+        "ccpa": "CCPA معیاری",
+        "ssl": "SSL خفیہ",
+        "pci": "PCI DSS مصدقہ"
+      },
+      "sidebar": {
+        "rights": {
+          "title": "آپ کے حقوق",
+          "description": "آپ کو کسی بھی وقت اپنے ذاتی ڈیٹا تک رسائی، ترمیم، یا حذف کرنے کا حق ہے۔",
+          "button": "میرا ڈیٹا منظم کریں"
+        },
+        "questions": {
+          "title": "سوالات؟",
+          "description": "کسی بھی تشویش کے لیے ہماری رازداری ٹیم سے رابطہ کریں۔",
+          "button": "رازداری ٹیم کو ای میل کریں"
+        }
+      },
+      "sections": {
+        "introduction": {
+          "title": "1. تعارف",
+          "p1": "{{appName}} (\"ہم\" یا \"ہمارا\") میں، ہم آپ کی رازداری کی حفاظت اور آپ کی ذاتی معلومات کی سیکیورٹی کو یقینی بنانے کے لیے پرعزم ہیں۔ یہ رازداری کی پالیسی بتاتی ہے کہ ہم آپ کی معلومات کو کیسے جمع، استعمال، ظاہر، اور محفوظ کرتے ہیں جب آپ ہماری ویب سائٹ، موبائل ایپلیکیشن، یا ہماری خدمات (مجموعی طور پر \"سروس\") استعمال کرتے ہیں۔",
+          "p2": "یہ رازداری کی پالیسی ہماری سروس کے ذریعے جمع کی گئی تمام معلومات اور کسی بھی متعلقہ خدمات، فروخت، مارکیٹنگ، یا تقریبات پر لاگو ہوتی ہے۔ براہ کرم اس رازداری کی پالیسی کو غور سے پڑھیں۔ ہماری سروس استعمال کر کے آپ اس رازداری کی پالیسی کے مطابق معلومات کی جمع آوری اور استعمال سے متفق ہیں۔",
+          "p3": "اگر آپ اس رازداری کی پالیسی کی شرائط سے متفق نہیں ہیں تو براہ کرم ہماری سروس تک رسائی یا استعمال نہ کریں۔ ہم کسی بھی وقت اور کسی بھی وجہ سے اس رازداری کی پالیسی میں تبدیلیاں کرنے کا حق محفوظ رکھتے ہیں۔",
+          "p4": "یہ رازداری کی پالیسی قابل اطلاق رازداری کے قوانین اور ضوابط کی تعمیل کرتی ہے، بشمول جنرل ڈیٹا پروٹیکشن ریگولیشن (GDPR)، کیلیفورنیا کنزیومر پرائیویسی ایکٹ (CCPA)، اور دیگر متعلقہ ڈیٹا تحفظ کی قانون سازی۔"
+        },
+        "informationWeCollect": {
+          "title": "2. ہم کون سی معلومات جمع کرتے ہیں",
+          "personalInfo": "2.1 ذاتی معلومات",
+          "personalInfoDesc": "ہم ذاتی معلومات جمع کرتے ہیں جو آپ رضاکارانہ طور پر فراہم کرتے ہیں جب آپ سروس پر رجسٹر ہوتے ہیں، خریداری کرتے ہیں، ہمارے نیوز لیٹر کی رکنیت حاصل کرتے ہیں، یا دوسری صورت میں ہم سے رابطہ کرتے ہیں۔",
+          "personalInfoList": [
+            "نام اور رابطے کی معلومات (ای میل ایڈریس، فون نمبر، ڈاک کا پتہ)",
+            "اکاؤنٹ اسناد (صارف نام، پاس ورڈ)",
+            "آبادیاتی معلومات (عمر، جنس، تاریخ پیدائش)",
+            "پروفائل کی معلومات (پروفائل تصویر، ترجیحات، سائز)",
+            "خریداری کی تاریخ اور مصنوعات کی ترجیحات",
+            "مواصلاتی ترجیحات اور مارکیٹنگ آپٹ انز",
+            "کسٹمر سروس تعاملات اور فیڈ بیک",
+            "سوشل میڈیا پروفائل کی معلومات (جب آپ سوشل اکاؤنٹس جوڑتے ہیں)"
+          ],
+          "paymentInfo": "2.2 ادائیگی کی معلومات",
+          "paymentInfoDesc": "جب آپ خریداری کرتے ہیں تو ہم آپ کے لین دین کی کارروائی کے لیے ضروری ادائیگی کی معلومات جمع کرتے ہیں۔",
+          "paymentInfoList": [
+            "کریڈٹ کارڈ یا ڈیبٹ کارڈ نمبرز (ٹوکنائزڈ اور خفیہ)",
+            "بلنگ ایڈریس اور شپنگ ایڈریس",
+            "پے پال اکاؤنٹ کی معلومات یا دیگر ادائیگی سروس کی تفصیلات"
+          ],
+          "paymentInfoNote": "براہ کرم نوٹ کریں کہ ہم اپنے سرورز پر آپ کی مکمل کریڈٹ کارڈ کی معلومات محفوظ نہیں کرتے۔ تمام ادائیگی کی معلومات تیسرے فریق کے ادائیگی پروسیسرز کے ذریعے محفوظ طریقے سے کارروائی کی جاتی ہیں۔",
+          "autoCollected": "2.3 خود بخود جمع شدہ معلومات",
+          "autoCollectedDesc": "جب آپ ہماری سروس تک رسائی حاصل کرتے ہیں تو ہم آپ کے آلے اور استعمال کے نمونوں کے بارے میں خود بخود کچھ معلومات جمع کرتے ہیں۔",
+          "autoCollectedList": [
+            "IP ایڈریس اور جغرافیائی مقام",
+            "براؤزر کی قسم اور ورژن",
+            "آلے کی قسم، آپریٹنگ سسٹم، اور منفرد آلے کی شناخت",
+            "ملاحظہ کیے گئے صفحات، صفحات پر صرف کیا گیا وقت، اور نیویگیشن کے راستے",
+            "حوالہ دینے والی ویب سائٹ یا ایپلیکیشن",
+            "رسائی کی تاریخ اور وقت",
+            "کلک تھرو ڈیٹا اور خصوصیات کے ساتھ تعامل",
+            "تلاش کے سوالات اور مصنوعات کے مناظر"
+          ]
+        },
+        "howWeUse": {
+          "title": "3. ہم آپ کی معلومات کیسے استعمال کرتے ہیں",
+          "intro": "ہم جمع کی گئی معلومات کو مختلف مقاصد کے لیے استعمال کرتے ہیں، بشمول:",
+          "list": [
+            "آپ کے آرڈرز کی کارروائی: ہم خریداریوں، ادائیگیوں، واپسیوں، اور تبادلوں کو پورا کرنے اور منظم کرنے کے لیے آپ کی معلومات استعمال کرتے ہیں",
+            "آپ سے بات چیت: ہم آرڈر کی تصدیق، شپنگ اپ ڈیٹس، کسٹمر سروس کے جوابات، اور اکاؤنٹ اطلاعات بھیجتے ہیں",
+            "آپ کے تجربے کو ذاتی بنانا: ہم آپ کی ترجیحات اور رویے کی بنیاد پر مصنوعات کی سفارشات، مواد، اور مارکیٹنگ کو اپنی مرضی کے مطابق بناتے ہیں",
+            "ہماری سروس کو بہتر بنانا: ہم خصوصیات بڑھانے، کارکردگی بہتر بنانے، اور نئی مصنوعات تیار کرنے کے لیے استعمال کے ڈیٹا کا تجزیہ کرتے ہیں",
+            "مارکیٹنگ مواصلات بھیجنا: آپ کی رضامندی سے، ہم پروموشنل ای میلز، خصوصی پیشکشیں، اور نیوز لیٹرز بھیجتے ہیں",
+            "فراڈ کی روک تھام اور سیکیورٹی کو یقینی بنانا: ہم مشکوک سرگرمی کی نگرانی کرتے ہیں اور غیر مجاز رسائی سے تحفظ کرتے ہیں",
+            "قانونی ذمہ داریوں کی تعمیل: ہم قانون کے تقاضوں کے مطابق ڈیٹا کی کارروائی کرتے ہیں",
+            "تجزیات اور تحقیق کرنا: ہم رجحانات اور صارفین کے رویے کو سمجھنے کے لیے ڈیٹا کو مجموعی اور تجزیہ کرتے ہیں",
+            "سماجی خصوصیات کی سہولت: ہم خواہش فہرستوں، جائزوں، اور سماجی شیئرنگ جیسی خصوصیات کو فعال کرتے ہیں",
+            "پروموشنز اور مقابلوں کا انتظام: ہم خصوصی تقریبات اور پروموشنل مہمات میں شرکت کا انتظام کرتے ہیں"
+          ],
+          "outro": "ہم آپ کی ذاتی معلومات ان مقاصد کے لیے اپنے جائز کاروباری مفادات، آپ کے ساتھ اپنے معاہدے کو پورا کرنے، آپ کی رضامندی، یا ہماری قانونی ذمہ داریوں کی تعمیل کی بنیاد پر کارروائی کرتے ہیں۔"
+        },
+        "cookies": {
+          "title": "4. کوکیز اور ٹریکنگ ٹیکنالوجیز",
+          "intro": "ہم اپنی سروس پر سرگرمی ٹریک کرنے اور مخصوص معلومات محفوظ کرنے کے لیے کوکیز اور اسی طرح کی ٹریکنگ ٹیکنالوجیز استعمال کرتے ہیں۔",
+          "types": "4.1 ہم جو کوکیز استعمال کرتے ہیں ان کی اقسام",
+          "typesList": [
+            "ضروری کوکیز: سروس کے صحیح کام کرنے کے لیے ضروری، بشمول تصدیق، سیکیورٹی، اور شاپنگ کارٹ کی فعالیت",
+            "کارکردگی کوکیز: ہمیں یہ سمجھنے میں مدد کرتی ہیں کہ زائرین ہماری سروس کے ساتھ کیسے تعامل کرتے ہیں",
+            "فنکشنل کوکیز: آپ کی ترجیحات اور ترتیبات کو یاد رکھتی ہیں",
+            "ہدف بندی/اشتہاری کوکیز: متعلقہ اشتہارات فراہم کرنے اور مہم کی تاثیر ٹریک کرنے کے لیے استعمال",
+            "تجزیاتی کوکیز: ہمیں زائرین کے رویے کا تجزیہ کرنے اور ہماری سروس بہتر بنانے کی اجازت دیتی ہیں"
+          ],
+          "managing": "4.2 کوکیز کا انتظام",
+          "managingDesc": "آپ مختلف طریقوں سے کوکیز کو کنٹرول اور منظم کر سکتے ہیں۔ زیادہ تر براؤزرز آپ کو کوکیز کو مسترد یا حذف کرنے کی اجازت دیتے ہیں۔",
+          "managingNote": "دلچسپی پر مبنی اشتہارات سے آپٹ آؤٹ کرنے کے لیے، آپ ڈیجیٹل ایڈورٹائزنگ الائنس کے آپٹ آؤٹ پورٹل یا نیٹ ورک ایڈورٹائزنگ انیشیٹو کے آپٹ آؤٹ پورٹل ملاحظہ کر سکتے ہیں۔",
+          "cookieConsent": "کوکی رضامندی",
+          "cookieConsentDesc": "آپ ہماری ویب سائٹ کے فوٹر میں کوکی سیٹنگز کے ذریعے یا \"کوکیز منظم کریں\" بٹن پر کلک کر کے کسی بھی وقت اپنی کوکی ترجیحات کا انتظام کر سکتے ہیں۔"
+        },
+        "sharing": {
+          "title": "5. آپ کی معلومات کا اشتراک",
+          "intro": "ہم مندرجہ ذیل حالات میں آپ کی معلومات شیئر کر سکتے ہیں:",
+          "list": [
+            "سروس فراہم کنندگان: ہم معلومات تیسرے فریق وینڈرز کے ساتھ شیئر کرتے ہیں جو ہماری جانب سے خدمات انجام دیتے ہیں",
+            "کاروباری منتقلی: کسی بھی انضمام، کمپنی اثاثوں کی فروخت، یا حصول کے سلسلے میں آپ کی معلومات منتقل ہو سکتی ہیں",
+            "قانونی تقاضے: ہم آپ کی معلومات ظاہر کر سکتے ہیں اگر قانون، عدالتی حکم، یا حکومتی درخواست کے ذریعے مطلوب ہو",
+            "آپ کی رضامندی سے: ہم آپ کی واضح رضامندی سے کسی بھی دوسرے مقصد کے لیے آپ کی معلومات شیئر کر سکتے ہیں",
+            "مجموعی ڈیٹا: ہم تحقیق، مارکیٹنگ، یا تجزیاتی مقاصد کے لیے مجموعی یا گمنام ڈیٹا شیئر کر سکتے ہیں",
+            "ملحقہ کمپنیاں: ہم اپنی پیرنٹ کمپنی، ذیلی اداروں، اور ملحقوں کے ساتھ کاروباری مقاصد کے لیے معلومات شیئر کر سکتے ہیں"
+          ],
+          "noSell": "ہم آپ کی ذاتی معلومات تیسرے فریقوں کو فروخت نہیں کرتے۔"
+        },
+        "security": {
+          "title": "6. ڈیٹا سیکیورٹی",
+          "intro": "ہم آپ کی ذاتی معلومات کو غیر مجاز رسائی، افشاء، تبدیلی، یا تباہی سے بچانے کے لیے مناسب تکنیکی اور تنظیمی حفاظتی اقدامات نافذ کرتے ہیں۔",
+          "list": [
+            "SSL/TLS پروٹوکولز استعمال کر کے ٹرانزٹ میں ڈیٹا کی خفیہ کاری",
+            "آرام پر حساس ڈیٹا کی خفیہ کاری",
+            "باقاعدہ سیکیورٹی جائزے اور کمزوری کی جانچ",
+            "رسائی کنٹرول اور تصدیق کے تقاضے",
+            "ڈیٹا تحفظ اور رازداری پر ملازمین کی تربیت",
+            "جسمانی اور ماحولیاتی کنٹرول کے ساتھ محفوظ ڈیٹا سینٹرز",
+            "باقاعدہ بیک اپ اور تباہی سے بحالی کے طریقہ کار",
+            "واقعہ کا جواب اور خلاف ورزی کی اطلاع کے طریقہ کار"
+          ],
+          "disclaimer": "تاہم، براہ کرم نوٹ کریں کہ انٹرنیٹ یا الیکٹرانک اسٹوریج پر ترسیل کا کوئی طریقہ 100% محفوظ نہیں ہے۔",
+          "responsibility": "آپ اپنے اکاؤنٹ اسناد کی رازداری برقرار رکھنے کے ذمہ دار ہیں۔"
+        },
+        "rights": {
+          "title": "7. آپ کے رازداری کے حقوق",
+          "intro": "آپ کے مقام اور قابل اطلاق قوانین کے لحاظ سے، آپ کو اپنی ذاتی معلومات کے حوالے سے مخصوص حقوق حاصل ہو سکتے ہیں:",
+          "gdpr": "7.1 GDPR حقوق (EU صارفین)",
+          "gdprIntro": "اگر آپ یورپی اقتصادی علاقے (EEA) میں واقع ہیں تو آپ کو GDPR کے تحت مندرجہ ذیل حقوق حاصل ہیں:",
+          "gdprList": [
+            "رسائی کا حق: آپ اپنی ذاتی معلومات تک رسائی کی درخواست کر سکتے ہیں",
+            "تصحیح کا حق: آپ غلط یا نامکمل ذاتی معلومات کی تصحیح کی درخواست کر سکتے ہیں",
+            "حذف کا حق: آپ مخصوص حالات میں اپنی ذاتی معلومات کی حذف کی درخواست کر سکتے ہیں",
+            "کارروائی پر پابندی کا حق: آپ اپنی ذاتی معلومات کی کارروائی پر پابندی کی درخواست کر سکتے ہیں",
+            "ڈیٹا پورٹیبلٹی کا حق: آپ اپنے ڈیٹا کی ایک کاپی منظم، مشین پڑھنے کے قابل فارمیٹ میں حاصل کر سکتے ہیں",
+            "اعتراض کا حق: آپ مخصوص مقاصد کے لیے اپنی ذاتی معلومات کی کارروائی پر اعتراض کر سکتے ہیں",
+            "رضامندی واپس لینے کا حق: جہاں کارروائی رضامندی پر مبنی ہو، آپ کسی بھی وقت اپنی رضامندی واپس لے سکتے ہیں",
+            "شکایت درج کرانے کا حق: آپ اپنی مقامی ڈیٹا تحفظ اتھارٹی کے پاس شکایت درج کرا سکتے ہیں"
+          ],
+          "ccpa": "7.2 CCPA حقوق (کیلیفورنیا صارفین)",
+          "ccpaIntro": "اگر آپ کیلیفورنیا کے رہائشی ہیں تو CCPA کے تحت آپ کو مندرجہ ذیل حقوق حاصل ہیں:",
+          "ccpaList": [
+            "جاننے کا حق: آپ ان زمروں اور مخصوص ذاتی معلومات کے بارے میں معلومات کی درخواست کر سکتے ہیں جو ہم نے جمع کی ہیں",
+            "حذف کا حق: آپ اپنی ذاتی معلومات کی حذف کی درخواست کر سکتے ہیں",
+            "آپٹ آؤٹ کا حق: آپ اپنی ذاتی معلومات کی فروخت سے آپٹ آؤٹ کر سکتے ہیں (ہم ذاتی معلومات فروخت نہیں کرتے)",
+            "عدم امتیاز کا حق: آپ کو اپنے CCPA حقوق استعمال کرنے پر امتیازی سلوک نہیں ملے گا"
+          ],
+          "exercising": "7.3 اپنے حقوق کا استعمال",
+          "exercisingIntro": "اپنے رازداری کے حقوق استعمال کرنے کے لیے، آپ یہ کر سکتے ہیں:",
+          "exercisingList": [
+            "support@example.com پر ہمیں ای میل کریں",
+            "اپنے اکاؤنٹ سیٹنگز صفحے پر جائیں",
+            "نیچے لنک کیے گئے ڈیٹا کی درخواست فارم استعمال کریں",
+            "ہماری کسٹمر سروس ٹیم سے رابطہ کریں"
+          ],
+          "downloadData": "میرا ڈیٹا ڈاؤن لوڈ کریں",
+          "deleteAccount": "میرا اکاؤنٹ حذف کریں",
+          "responseTime": "ہم 30 دنوں میں آپ کی درخواست کا جواب دیں گے۔"
+        },
+        "children": {
+          "title": "8. بچوں کی رازداری",
+          "p1": "ہماری سروس 13 سال سے کم عمر بچوں (یا EEA میں 16 سے کم) کے لیے نہیں ہے۔ ہم جان بوجھ کر ان عمروں سے کم بچوں سے ذاتی معلومات جمع نہیں کرتے۔",
+          "p2": "اگر ہمیں معلوم ہو کہ ہم نے والدین کی رضامندی کی تصدیق کے بغیر قابل اطلاق عمر سے کم بچے سے ذاتی معلومات جمع کی ہیں تو ہم فوری طور پر اس معلومات کو اپنے سرورز سے حذف کرنے کے اقدامات کریں گے۔",
+          "p3": "ہم والدین اور سرپرستوں کو حوصلہ افزائی کرتے ہیں کہ وہ اپنے بچوں کے انٹرنیٹ استعمال کی نگرانی کریں۔"
+        },
+        "international": {
+          "title": "9. بین الاقوامی ڈیٹا کی منتقلی",
+          "p1": "آپ کی معلومات، بشمول ذاتی معلومات، آپ کی ریاست، صوبے، ملک، یا دیگر حکومتی دائرہ اختیار سے باہر واقع کمپیوٹرز پر منتقل اور برقرار رکھی جا سکتی ہیں۔",
+          "p2": "اگر آپ امریکہ سے باہر واقع ہیں اور ہمیں معلومات فراہم کرنا منتخب کرتے ہیں تو براہ کرم نوٹ کریں کہ ہم معلومات کو امریکہ منتقل کرتے ہیں اور وہاں اس کی کارروائی کرتے ہیں۔",
+          "p3": "ہم یقینی بنانے کے لیے تمام معقول ضروری اقدامات کریں گے کہ آپ کا ڈیٹا محفوظ طریقے سے اور اس رازداری کی پالیسی کے مطابق سلوک کیا جائے۔"
+        },
+        "thirdParty": {
+          "title": "10. تیسرے فریق کے لنکس",
+          "p1": "ہماری سروس میں تیسرے فریق کی ویب سائٹس، ایپلیکیشنز، یا خدمات کے لنکس ہو سکتے ہیں جو ہمارے زیر انتظام نہیں ہیں۔",
+          "p2": "ہمارا کسی بھی تیسرے فریق سائٹس یا خدمات کے مواد، رازداری کی پالیسیوں، یا طریقوں پر کوئی کنٹرول نہیں ہے اور نہ ہی ہم اس کی ذمہ داری قبول کرتے ہیں۔",
+          "p3": "تیسرے فریق کی خدمات کی کچھ مثالیں جن سے ہم لنک یا مربوط ہو سکتے ہیں:",
+          "list": [
+            "سوشل میڈیا پلیٹ فارمز (فیس بک، انسٹاگرام، ٹوئٹر، پنٹریسٹ)",
+            "ادائیگی پروسیسرز (پے پال، Stripe، Square)",
+            "شپنگ کیریئرز (UPS, FedEx, USPS)",
+            "تجزیاتی خدمات (Google Analytics, Mixpanel)",
+            "کسٹمر سروس پلیٹ فارمز (Zendesk, Intercom)",
+            "ای میل مارکیٹنگ خدمات (Mailchimp, SendGrid)"
+          ]
+        },
+        "retention": {
+          "title": "11. ڈیٹا کی برقراری",
+          "intro": "ہم آپ کی ذاتی معلومات اتنے عرصے تک برقرار رکھتے ہیں جتنا اس رازداری کی پالیسی میں بیان کردہ مقاصد کو پورا کرنے کے لیے ضروری ہو۔",
+          "criteriaList": [
+            "وہ مدت جس میں ہمارا آپ کے ساتھ جاری تعلق ہے اور ہم اپنی سروس فراہم کرتے ہیں",
+            "قانونی ذمہ داری (مثلاً ٹیکس، اکاؤنٹنگ، یا قانونی تقاضے)",
+            "ہماری قانونی پوزیشن کے لحاظ سے برقراری مناسب ہے یا نہیں"
+          ],
+          "periodsIntro": "مخصوص برقراری کے ادوار شامل ہیں:",
+          "periodsList": [
+            "اکاؤنٹ کی معلومات: اکاؤنٹ فعال رہنے تک اور اکاؤنٹ بند ہونے کے 3 سال بعد تک",
+            "خریداری کی تاریخ: ٹیکس اور اکاؤنٹنگ مقاصد کے لیے 7 سال",
+            "مارکیٹنگ ڈیٹا: آپ کے آپٹ آؤٹ یا حذف کی درخواست تک",
+            "کسٹمر سروس ریکارڈز: آخری تعامل کے 3 سال بعد تک",
+            "ویب سائٹ تجزیات: عام طور پر 26 ماہ بعد مجموعی اور گمنام"
+          ],
+          "outro": "برقراری کی مدت ختم ہونے کے بعد، ہم قابل اطلاق قانون کے مطابق آپ کی ذاتی معلومات کو محفوظ طریقے سے حذف یا گمنام کر دیں گے۔"
+        },
+        "changes": {
+          "title": "12. رازداری کی پالیسی میں تبدیلیاں",
+          "p1": "ہم وقتاً فوقتاً اپنی رازداری کی پالیسی کو اپ ڈیٹ کر سکتے ہیں۔ ہم اس صفحے پر نئی رازداری کی پالیسی پوسٹ کر کے اور \"آخری اپ ڈیٹ\" کی تاریخ اپ ڈیٹ کر کے آپ کو کسی بھی اہم تبدیلی کے بارے میں مطلع کریں گے۔",
+          "p2": "اہم تبدیلیوں کے لیے، ہم اضافی نوٹس فراہم کریں گے، جس میں شامل ہو سکتا ہے:",
+          "list": [
+            "آپ کے اکاؤنٹ سے منسلک ای میل ایڈریس پر ای میل اطلاع بھیجنا",
+            "ہماری ویب سائٹ یا موبائل ایپلیکیشن پر نمایاں نوٹس دکھانا",
+            "جہاں قانون کی ضرورت ہو وہاں تبدیلیوں کے لیے آپ کی رضامندی حاصل کرنا"
+          ],
+          "p3": "ہم آپ کو حوصلہ افزائی کرتے ہیں کہ یہ رازداری کی پالیسی وقتاً فوقتاً دیکھتے رہیں۔"
+        },
+        "contact": {
+          "title": "13. ہم سے رابطہ کریں",
+          "intro": "اگر اس رازداری کی پالیسی کے بارے میں آپ کے کوئی سوالات، تشویشات، یا درخواستیں ہیں تو براہ کرم ہم سے رابطہ کریں:",
+          "companyName": "{{appName}} رازداری ٹیم",
+          "email": "ای میل: support@example.com",
+          "dpo": "ڈیٹا پروٹیکشن آفیسر: support@example.com",
+          "general": "عمومی سوالات: support@example.com",
+          "phone": "",
+          "hours": "سپورٹ: ای میل کے ذریعے 24/7 دستیاب",
+          "commitment": "ہم آپ کی رازداری کے بارے میں شکایات حل کرنے کے لیے پرعزم ہیں۔",
+          "euComplaint": "EU صارفین کے لیے، آپ کو اپنی مقامی نگران اتھارٹی کے پاس شکایت درج کرانے کا بھی حق ہے۔"
+        }
+      },
+      "introText": "یہ رازداری کی پالیسی بیان کرتی ہے کہ {{appName}} (\"ہم\" یا \"ہمارا\") آپ کی ذاتی معلومات کو کیسے جمع، استعمال، اور شیئر کرتا ہے جب آپ ہمارے ای کامرس پلیٹ فارم سے خریداری کرتے ہیں یا ملاحظہ کرتے ہیں۔",
+      "footerNote": "{{appName}} استعمال کر کے، آپ تسلیم کرتے ہیں کہ آپ نے یہ رازداری کی پالیسی پڑھ اور سمجھ لی ہے۔"
+    },
+    "terms": {
+      "title": "شرائط و ضوابط",
+      "subtitle": "ہمارا مارکیٹ پلیس پلیٹ فارم استعمال کرنے سے پہلے براہ کرم ان شرائط کو غور سے پڑھیں",
+      "lastUpdated": "آخری اپ ڈیٹ: 2 جنوری، 2026",
+      "effectiveDate": "نفاذ کی تاریخ: 1 جنوری، 2026",
+      "toc": "فہرست مضامین",
+      "saveTerms": "ان شرائط کو محفوظ کرنا چاہتے ہیں؟",
+      "printPage": "یہ صفحہ پرنٹ کریں",
+      "sidebar": {
+        "needHelp": {
+          "title": "مدد چاہیے؟",
+          "description": "ہماری شرائط کے بارے میں سوالات ہیں؟ ہماری سپورٹ ٹیم مدد کے لیے موجود ہے۔",
+          "button": "ہم سے رابطہ کریں"
+        }
+      },
+      "sections": {
+        "introduction": {
+          "title": "1. تعارف",
+          "p1": "{{appName}} (\"ہم\" یا \"ہمارا\") میں خوش آمدید۔ {{appName}} ایک ملٹی وینڈر ای کامرس مارکیٹ پلیس پلیٹ فارم ہے جو وینڈرز کو آن لائن اسٹورز بنانے اور صارفین کو مصنوعات فروخت کرنے کے قابل بناتا ہے۔",
+          "p2": "یہ شرائط سروس کے تمام صارفین پر لاگو ہوتی ہیں: (الف) مصنوعات براؤز اور خریدنے والے صارفین؛ (ب) اسٹورز بنانے اور مصنوعات فروخت کرنے والے وینڈرز؛ اور (ج) مارکیٹ پلیس براؤز کرنے والے زائرین۔",
+          "p3": "ہم کسی بھی وقت ان شرائط کو اپ ڈیٹ کرنے کا حق محفوظ رکھتے ہیں۔"
+        },
+        "acceptance": {
+          "title": "2. شرائط کی قبولیت",
+          "p1": "اکاؤنٹ بنا کر، آرڈر دے کر، فروخت کے لیے مصنوعات درج کر کے، یا دوسری صورت میں ہماری سروس استعمال کر کے، آپ تسلیم کرتے ہیں کہ آپ نے ان شرائط اور ہماری رازداری کی پالیسی کو پڑھ، سمجھ، اور ان سے متفق ہیں۔",
+          "p2": "ہماری سروس استعمال کرنے کے لیے آپ کی عمر کم از کم 18 سال ہونی چاہیے۔",
+          "p3": "ہم ان شرائط کی خلاف ورزی، دھوکہ دہی، یا کسی اور وجہ سے سروس سے انکار، اکاؤنٹس ختم، مصنوعات یا اسٹورز ہٹانے، یا آرڈرز منسوخ کرنے کا حق محفوظ رکھتے ہیں۔"
+        },
+        "useOfWebsite": {
+          "title": "3. پلیٹ فارم کا استعمال",
+          "permitted": "3.1 اجازت شدہ استعمال",
+          "permittedP1": "صارفین مصنوعات براؤز، اکاؤنٹس بنا، خریداری، جائزے دے، اور مارکیٹ پلیس کے ذریعے فراہم کردہ خصوصیات استعمال کر سکتے ہیں۔",
+          "permittedP2": "آپ ہماری سروس صرف قانونی مقاصد کے لیے استعمال کرنے سے متفق ہیں۔",
+          "prohibited": "3.2 ممنوعہ سرگرمیاں",
+          "prohibitedIntro": "آپ اس بات سے متفق ہیں کہ آپ یہ نہیں کریں گے:",
+          "prohibitedList": [
+            "مارکیٹ پلیس پر جعلی، چوری شدہ، غیر قانونی، یا ممنوعہ اشیاء فروخت کرنا",
+            "مصنوعات کی تفصیلات، تصاویر، یا وضاحتوں کو غلط بیان کرنا",
+            "قیمت میں ہیرا پھیری، جعلی جائزے، یا دھوکہ دہی کے لین دین میں ملوث ہونا",
+            "سپیم، فشنگ کوششیں، یا بدنیتی پر مبنی مواد منتقل کرنے کے لیے سروس استعمال کرنا",
+            "{{appName}}، دیگر وینڈرز، یا صارفین کی نقالی کرنا",
+            "پلیٹ فارم سے بغیر اجازت ڈیٹا نکالنا، کاپی کرنا، یا حاصل کرنا",
+            "سروس یا منسلک نیٹ ورکس میں مداخلت، خلل، یا اوور لوڈ کرنا",
+            "سیکیورٹی اقدامات کو نظر انداز کرنے یا محدود علاقوں تک رسائی حاصل کرنے کی کوشش کرنا",
+            "دوسرے صارفین کو ہراساں کرنا، بدسلوکی کرنا، یا امتیازی سلوک کرنا",
+            "{{appName}}، وینڈرز، یا تیسرے فریقوں کے دانشورانہ ملکیت کے حقوق کی خلاف ورزی"
+          ]
+        },
+        "accountReg": {
+          "title": "4. اکاؤنٹ رجسٹریشن",
+          "creation": "4.1 اکاؤنٹ بنانا",
+          "creationP1": "صارفین خریداری، آرڈرز ٹریک، اور ترجیحات محفوظ کرنے کے لیے اکاؤنٹس بنا سکتے ہیں۔ وینڈرز کو فروخت شروع کرنے کے لیے وینڈر اکاؤنٹ بنانا ضروری ہے۔",
+          "creationP2": "آپ اپنے اکاؤنٹ اسناد کی رازداری برقرار رکھنے کے ذمہ دار ہیں۔",
+          "security": "4.2 اکاؤنٹ سیکیورٹی",
+          "securityP1": "آپ ایسے صارف نام یا اسٹور نام استعمال نہیں کر سکتے جو دوسروں کی نقالی کریں، ٹریڈ مارکس کی خلاف ورزی کریں، یا جارحانہ ہوں۔",
+          "securityP2": "ہم مضبوط پاس ورڈ استعمال کرنے اور دو عنصری تصدیق فعال کرنے کی سفارش کرتے ہیں۔"
+        },
+        "products": {
+          "title": "5. وینڈر سبسکرپشنز اور مصنوعات",
+          "descriptions": "5.1 سبسکرپشن پلانز",
+          "descriptionsP1": "{{appName}} وینڈرز کے لیے سبسکرپشن پلانز پیش کرتا ہے: مفت، سٹارٹر ($29.99/ماہ)، پرو ($79.99/ماہ)، اور بزنس ($199.99/ماہ)۔",
+          "descriptionsP2": "{{appName}} تمام پلانز پر صفر ٹرانزیکشن فیس لیتا ہے۔",
+          "pricing": "5.2 مصنوعات کی لسٹنگ",
+          "pricingP1": "وینڈرز اپنی مصنوعات کی لسٹنگ، تفصیلات، تصاویر، اور قیمتوں کے مکمل طور پر ذمہ دار ہیں۔",
+          "pricingP2": "وینڈرز کو یقینی بنانا ہوگا کہ مصنوعات تمام قابل اطلاق قوانین کی تعمیل کرتی ہیں۔",
+          "pricingP3": "{{appName}} پالیسی کی خلاف ورزیوں کے لیے بغیر پیشگی اطلاع کے مصنوعات ہٹانے یا وینڈر اکاؤنٹس معطل کرنے کا حق محفوظ رکھتا ہے۔"
+        },
+        "orders": {
+          "title": "6. آرڈرز اور ادائیگی",
+          "acceptance": "6.1 آرڈر کی کارروائی",
+          "acceptanceP1": "آرڈرز {{appName}} مارکیٹ پلیس کے ذریعے براہ راست وینڈرز کو دیے جاتے ہیں۔ ہر وینڈر اپنے آرڈرز کی تکمیل کا ذمہ دار ہے۔",
+          "acceptanceP2": "وینڈرز اپنی پالیسیوں کی بنیاد پر آرڈرز قبول یا مسترد کر سکتے ہیں۔",
+          "methods": "6.2 ادائیگی کی کارروائی",
+          "methodsP1": "{{appName}} محفوظ ادائیگی کی کارروائی کے لیے Stripe استعمال کرتا ہے۔",
+          "methodsP2": "صارفین کی خریداریوں کے لیے، ادائیگی چیک آؤٹ پر جمع کی جاتی ہے۔",
+          "security": "6.3 ادائیگی کی سیکیورٹی",
+          "securityP1": "تمام ادائیگی کا ڈیٹا صنعتی معیار SSL/TLS پروٹوکولز سے خفیہ ہے۔",
+          "securityP2": "وینڈرز {{appName}} پلیٹ فارم سے باہر ادائیگی جمع نہیں کر سکتے۔"
+        },
+        "shipping": {
+          "title": "7. شپنگ اور ترسیل",
+          "p1": "ہر وینڈر اپنی شپنگ شرحیں، طریقے، اور ترسیل کے وقت مقرر کرتا ہے۔",
+          "p2": "وینڈرز آرڈرز کو فوری طور پر بھیجنے اور ٹریکنگ معلومات فراہم کرنے کے ذمہ دار ہیں۔",
+          "p3": "بین الاقوامی آرڈرز کے لیے، کسٹمز ڈیوٹیز اور ٹیکس صارف کی ذمہ داری ہیں۔",
+          "p4": "اگر پارسل گم یا خراب ہو جائے تو صارفین کو پہلے وینڈر سے رابطہ کرنا چاہیے۔"
+        },
+        "returns": {
+          "title": "8. واپسی اور رقم واپسی",
+          "p1": "ہر وینڈر اپنی واپسی اور رقم واپسی کی پالیسیاں مقرر کرتا ہے۔",
+          "p2": "واپسی کی درخواست کے لیے صارفین کو اپنے آرڈر تفصیلات صفحے کے ذریعے وینڈر سے رابطہ کرنا چاہیے۔",
+          "p3": "اگر وینڈر اپنی واپسی کی پالیسی کا احترام نہیں کرتا تو صارفین {{appName}} سپورٹ سے رابطہ کر سکتے ہیں۔",
+          "p4": "سبسکرپشن رقم واپسی کے لیے، وینڈرز اپنی سبسکرپشن کسی بھی وقت منسوخ کر سکتے ہیں۔"
+        },
+        "ip": {
+          "title": "9. دانشورانہ ملکیت",
+          "p1": "{{appName}} پلیٹ فارم، بشمول اس کا ڈیزائن، سافٹ ویئر، خصوصیات، اور برانڈنگ، {{appName}} کی ملکیت ہے۔",
+          "p2": "{{appName}} کا نام، لوگو، اور برانڈنگ {{appName}} کے ٹریڈ مارکس ہیں۔",
+          "p3": "آپ {{appName}} پلیٹ فارم کو کاپی، ترمیم، ریورس انجینئر، یا مشتق کام نہیں بنا سکتے۔",
+          "p4": "اگر آپ کو یقین ہے کہ {{appName}} پر مواد آپ کے دانشورانہ ملکیت کے حقوق کی خلاف ورزی کرتا ہے تو support@example.com پر رابطہ کریں۔"
+        },
+        "liability": {
+          "title": "10. ذمہ داری کی حد",
+          "p1": "{{appName}} ایک مارکیٹ پلیس پلیٹ فارم ہے جو وینڈرز اور صارفین کو جوڑتا ہے۔ ہم وینڈرز اور صارفین کے درمیان لین دین کا فریق نہیں ہیں۔",
+          "p2": "وینڈرز اپنی مصنوعات، کسٹمر سروس، شپنگ، واپسی، اور قوانین کی تعمیل کے مکمل ذمہ دار ہیں۔",
+          "p3": "قانون کی اجازت کی حد تک، {{appName}} کی کسی بھی صارف کے لیے کل ذمہ داری اس رقم سے زیادہ نہیں ہوگی جو اس صارف نے دعوے سے پہلے 12 مہینوں میں {{appName}} کو ادا کی ہے، یا $100 USD۔",
+          "p4": "{{appName}} بالواسطہ، اتفاقی، خاص، نتیجتاً، یا تعزیری نقصانات کا ذمہ دار نہیں ہے۔"
+        },
+        "disputes": {
+          "title": "11. تنازعات کا حل",
+          "informal": "11.1 وینڈر-صارف تنازعات",
+          "informalP1": "وینڈرز اور صارفین کے درمیان تنازعات (مثلاً مصنوعات کا معیار، شپنگ، رقم واپسی) پلیٹ فارم کے پیغام رسانی نظام کے ذریعے براہ راست فریقین کے درمیان حل ہونے چاہیے۔",
+          "arbitration": "11.2 پلیٹ فارم تنازعات",
+          "arbitrationP1": "{{appName}} کے ساتھ تنازعات (مثلاً اکاؤنٹ ختم، سبسکرپشن مسائل) support@example.com پر اٹھائے جانے چاہیے۔",
+          "arbitrationP2": "اگر غیر رسمی حل ناکام ہو تو تنازعات امریکن آربیٹریشن ایسوسی ایشن کے قوانین کے مطابق لازمی ثالثی کے ذریعے حل ہوں گے۔",
+          "arbitrationP3": "کوئی بھی فریق دانشورانہ ملکیت کی خلاف ورزیوں کے لیے عدالت میں حکم امتناعی طلب کر سکتا ہے۔"
+        },
+        "changes": {
+          "title": "12. شرائط میں تبدیلیاں",
+          "p1": "ہم کسی بھی وقت ان شرائط کو اپ ڈیٹ کر سکتے ہیں۔ تبدیلیاں اپ ڈیٹ شدہ \"آخری اپ ڈیٹ\" تاریخ کے ساتھ اس صفحے پر پوسٹ کی جائیں گی۔",
+          "p2": "تبدیلیوں کے بعد سروس کا مسلسل استعمال ترمیم شدہ شرائط کی قبولیت کا مظہر ہے۔",
+          "p3": "وینڈرز کے لیے، سبسکرپشن شرائط یا فیس میں تبدیلیاں کم از کم 30 دن پہلے مطلع کی جائیں گی۔"
+        },
+        "contact": {
+          "title": "13. رابطے کی معلومات",
+          "intro": "اگر ان شرائط یا ہماری سروس کے بارے میں آپ کے کوئی سوالات ہیں تو براہ کرم ہم سے رابطہ کریں:",
+          "companyName": "{{appName}} سپورٹ ٹیم",
+          "email": "ای میل: support@example.com",
+          "support": "عمومی سپورٹ: support@example.com",
+          "phone": "",
+          "hours": "سپورٹ: ای میل کے ذریعے 24/7 دستیاب",
+          "responseTime": "ہم عام طور پر 24 گھنٹوں میں سوالات کا جواب دیتے ہیں۔",
+          "privacyNote": "رازداری سے متعلق سوالات کے لیے، براہ کرم ہماری رازداری کی پالیسی سے رجوع کریں۔"
+        }
+      },
+      "introText": "یہ شرائط و ضوابط {{appName}}، ایک ملٹی وینڈر ای کامرس مارکیٹ پلیس کے آپ کے استعمال کو منظم کرتی ہیں۔",
+      "footerNote": "{{appName}} استعمال کر کے، آپ تسلیم کرتے ہیں کہ آپ نے یہ شرائط و ضوابط پڑھ اور سمجھ لی ہیں۔"
+    },
+    "cookies": {
+      "title": "کوکی پالیسی",
+      "subtitle": "جانیں کہ {{appName}} آپ کے ای کامرس تجربے کو بہتر بنانے کے لیے کوکیز کیسے استعمال کرتا ہے",
+      "whatAreCookies": {
+        "title": "کوکیز کیا ہیں؟",
+        "content": "کوکیز چھوٹی ٹیکسٹ فائلیں ہیں جو {{appName}} پلیٹ فارم استعمال کرتے وقت آپ کے آلے پر محفوظ ہوتی ہیں۔ وہ آپ کے لاگ ان سیشنز، شاپنگ کارٹ کے مواد، اسٹور کی ترجیحات کو یاد رکھ کر اور ہمارے پلیٹ فارم کی کارکردگی بہتر بنا کر ہمیں ایک ہموار تجربہ فراہم کرنے میں مدد کرتی ہیں۔"
+      },
+      "types": {
+        "title": "ہم جو کوکیز استعمال کرتے ہیں ان کی اقسام",
+        "essential": {
+          "title": "ضروری کوکیز",
+          "description": "بنیادی پلیٹ فارم فعالیت کے لیے ضروری بشمول صارف کی تصدیق، شاپنگ کارٹ کی برقراری، محفوظ چیک آؤٹ، وینڈر ڈیش بورڈ رسائی، اور اسٹور مینجمنٹ کی خصوصیات۔"
+        },
+        "analytics": {
+          "title": "تجزیاتی کوکیز",
+          "description": "ہمیں یہ سمجھنے میں مدد کرتی ہیں کہ تاجر اور صارفین ہمارا پلیٹ فارم کیسے استعمال کرتے ہیں۔"
+        },
+        "marketing": {
+          "title": "مارکیٹنگ کوکیز",
+          "description": "آپ کے براؤزنگ رویے اور خریداری کی تاریخ کی بنیاد پر متعلقہ مصنوعات کی سفارشات اور پروموشنل مواد فراہم کرنے کے لیے استعمال ہوتی ہیں۔"
+        },
+        "preference": {
+          "title": "ترجیحاتی کوکیز",
+          "description": "آپ کی زبان کی ترتیبات، کرنسی کی ترجیحات، حال ہی میں دیکھی گئی مصنوعات، اور اسٹور تخصیص کے انتخاب یاد رکھتی ہیں۔"
+        }
+      },
+      "managing": {
+        "title": "کوکیز کا انتظام",
+        "content1": "آپ اپنے براؤزر کی ترتیبات کے ذریعے کوکیز کو کنٹرول کر سکتے ہیں۔ نوٹ کریں کہ ضروری کوکیز غیر فعال کرنے سے آپ کو شاپنگ کارٹ، چیک آؤٹ، یا وینڈر ڈیش بورڈ جیسی اہم خصوصیات استعمال کرنے سے روکا جا سکتا ہے۔",
+        "content2": "{{appName}} پر بہترین تجربے کے لیے، ہم کوکیز فعال رکھنے کی سفارش کرتے ہیں۔"
+      },
+      "moreInfo": "{{appName}} پر ہم آپ کے ڈیٹا کی حفاظت کیسے کرتے ہیں اس بارے میں مزید معلومات کے لیے، براہ کرم ہماری رازداری کی پالیسی پڑھیں۔",
+      "viewPrivacy": "رازداری کی پالیسی دیکھیں"
+    },
+    "dataDeletion": {
+      "title": "ڈیٹا حذف کی درخواست",
+      "subtitle": "{{appName}} پلیٹ فارم سے اپنے ذاتی ڈیٹا کی مستقل حذف کی درخواست کریں۔",
+      "compliance": "GDPR اور CCPA معیاری",
+      "processingTime": "30 دنوں میں کارروائی",
+      "warningTitle": "اہم نوٹس",
+      "warningContent": "ڈیٹا حذف مستقل اور ناقابل واپسی ہے۔ کارروائی کے بعد، آپ کا تمام ذاتی ڈیٹا {{appName}} سے مستقل طور پر ہٹا دیا جائے گا۔",
+      "howItWorks": "ڈیٹا حذف کیسے کام کرتی ہے",
+      "steps": {
+        "submit": {
+          "title": "درخواست جمع کرائیں",
+          "description": "اپنے رجسٹرڈ ای میل ایڈریس کے ساتھ ڈیٹا حذف کی درخواست فارم بھریں۔"
+        },
+        "verification": {
+          "title": "تصدیق",
+          "description": "ہم آپ کی شناخت اور درخواست کی تصدیق کے لیے ایک تصدیقی ای میل بھیجیں گے۔"
+        },
+        "processing": {
+          "title": "کارروائی",
+          "description": "GDPR تقاضوں کے مطابق آپ کی درخواست 30 دنوں میں کارروائی کی جائے گی۔"
+        },
+        "confirmation": {
+          "title": "تصدیق",
+          "description": "آپ کا ڈیٹا مستقل طور پر حذف ہونے کے بعد آپ کو تصدیق موصول ہوگی۔"
+        }
+      },
+      "whatWillBeDeleted": "کون سا ڈیٹا حذف ہوگا",
+      "dataTypes": {
+        "account": {
+          "title": "اکاؤنٹ کی معلومات",
+          "description": "نام، ای میل، فون نمبر، پروفائل تصویر، لاگ ان اسناد"
+        },
+        "orders": {
+          "title": "آرڈر اور لین دین کی تاریخ",
+          "description": "تمام خریداریاں، فروخت کے ریکارڈ، ادائیگی کی معلومات، رسیدیں"
+        },
+        "addresses": {
+          "title": "پتے",
+          "description": "شپنگ پتے، بلنگ پتے، اسٹور مقامات"
+        },
+        "preferences": {
+          "title": "ترجیحات اور ترتیبات",
+          "description": "خواہش فہرست، محفوظ اشیاء، اطلاعاتی ترتیبات، زبان کی ترجیحات"
+        },
+        "activity": {
+          "title": "اسٹور اور سرگرمی کا ڈیٹا",
+          "description": "تاجروں کے لیے: اسٹور ترتیبات، مصنوعات کی لسٹنگ، تجزیات۔ صارفین کے لیے: براؤزنگ تاریخ، کارٹ ڈیٹا"
+        },
+        "reviews": {
+          "title": "جائزے اور مواصلات",
+          "description": "مصنوعات کے جائزے، درجہ بندی، صارفین کے پیغامات، سپورٹ ٹکٹس"
+        }
+      },
+      "submitRequest": "حذف کی درخواست جمع کرائیں",
+      "success": {
+        "title": "درخواست کامیابی سے جمع ہو گئی",
+        "message": "ہمیں آپ کی ڈیٹا حذف کی درخواست موصول ہو گئی ہے۔ آپ کو جلد ہی ایک تصدیقی ای میل موصول ہوگا۔",
+        "processingNote": "تصدیق کے 30 دنوں میں آپ کی درخواست پر کارروائی کی جائے گی۔"
+      },
+      "form": {
+        "loggedInAs": "لاگ ان بطور:",
+        "deleteFromProfile": "آپ اپنا اکاؤنٹ براہ راست اپنی",
+        "profileSettings": "پروفائل ترتیبات",
+        "emailLabel": "ای میل ایڈریس",
+        "emailRequired": "براہ کرم اپنا ای میل ایڈریس درج کریں",
+        "emailPlaceholder": "اپنا رجسٹرڈ ای میل ایڈریس درج کریں",
+        "emailHint": "اپنے اکاؤنٹ سے منسلک ای میل ایڈریس درج کریں۔",
+        "reasonLabel": "حذف کی وجہ (اختیاری)",
+        "reasonPlaceholder": "براہ کرم ہمیں بتائیں آپ ڈیٹا حذف کی درخواست کیوں کر رہے ہیں...",
+        "consent": "میں سمجھتا/سمجھتی ہوں کہ ڈیٹا حذف مستقل اور ناقابل واپسی ہے۔ میری تمام ذاتی معلومات، بشمول اکاؤنٹ کی معلومات، آرڈر کی تاریخ، اسٹور ڈیٹا (اگر تاجر ہوں)، اور ترجیحات {{appName}} سے مستقل طور پر حذف ہو جائیں گی۔",
+        "submitting": "درخواست جمع ہو رہی ہے..."
+      },
+      "alternatives": {
+        "title": "جانے سے پہلے",
+        "intro": "اپنا {{appName}} اکاؤنٹ حذف کرنے کے بارے میں یقین نہیں ہے؟ ان متبادلات پر غور کریں:",
+        "download": "اپنا ڈیٹا ڈاؤن لوڈ کریں - حذف سے پہلے اپنے ذاتی ڈیٹا، آرڈر کی تاریخ، اور اسٹور کی معلومات کی ایک کاپی برآمد کریں",
+        "deactivate": "عارضی طور پر غیر فعال کریں - مستقل حذف کرنے کے بجائے اپنا اکاؤنٹ یا اسٹور روکیں",
+        "updatePrefs": "ترجیحات اپ ڈیٹ کریں - رازداری کی ترتیبات، اطلاعاتی ترجیحات، اور مارکیٹنگ کے اختیارات ایڈجسٹ کریں",
+        "downloadBtn": "میرا ڈیٹا ڈاؤن لوڈ کریں",
+        "privacyBtn": "رازداری کی پالیسی"
+      },
+      "needHelp": {
+        "title": "مدد چاہیے؟",
+        "content": "اگر ڈیٹا حذف کے بارے میں آپ کے کوئی سوالات ہیں یا مدد کی ضرورت ہے تو براہ کرم support@example.com پر ہماری سپورٹ ٹیم سے رابطہ کریں۔"
+      }
+    },
+    "sitemap": {
+      "title": "سائٹ میپ",
+      "subtitle": "{{appName}} پر وہ سب کچھ تلاش کریں جو آپ کو چاہیے۔ ہمارے پلیٹ فارم کے تمام صفحات اور سیکشنز براؤز کریں۔",
+      "breadcrumb": "وسائل",
+      "sections": {
+        "mainPages": "مرکزی صفحات",
+        "shopping": "خریداری",
+        "account": "اکاؤنٹ",
+        "sellerHub": "بیچنے والوں کا مرکز",
+        "deliveryPartners": "ترسیل شراکت دار",
+        "company": "کمپنی",
+        "legal": "قانونی",
+        "helpSupport": "مدد اور سپورٹ"
+      },
+      "links": {
+        "home": "ہوم",
+        "homeDesc": "مرکزی لینڈنگ صفحہ",
+        "explore": "دریافت کریں",
+        "exploreDesc": "مصنوعات اور اسٹورز براؤز کریں",
+        "categories": "زمرے",
+        "categoriesDesc": "زمرے کے لحاظ سے خریداری",
+        "offers": "پیشکشیں",
+        "offersDesc": "موجودہ سودے اور رعایتیں",
+        "products": "مصنوعات",
+        "productsDesc": "تمام مصنوعات",
+        "cart": "کارٹ",
+        "cartDesc": "آپ کا شاپنگ کارٹ",
+        "checkout": "چیک آؤٹ",
+        "checkoutDesc": "اپنی خریداری مکمل کریں",
+        "wishlist": "خواہش فہرست",
+        "wishlistDesc": "محفوظ شدہ اشیاء",
+        "login": "لاگ ان",
+        "loginDesc": "اپنے اکاؤنٹ میں سائن ان کریں",
+        "register": "رجسٹر",
+        "registerDesc": "نیا اکاؤنٹ بنائیں",
+        "profile": "پروفائل",
+        "profileDesc": "اپنا پروفائل منظم کریں",
+        "orders": "آرڈرز",
+        "ordersDesc": "آرڈر کی تاریخ دیکھیں",
+        "trackOrder": "آرڈر ٹریک کریں",
+        "trackOrderDesc": "اپنی ترسیل ٹریک کریں",
+        "becomeSeller": "بیچنے والے بنیں",
+        "becomeSellerDesc": "{{appName}} پر فروخت شروع کریں",
+        "vendorDashboard": "وینڈر ڈیش بورڈ",
+        "vendorDashboardDesc": "اپنی دکان منظم کریں",
+        "productsManagement": "مصنوعات کا انتظام",
+        "productsManagementDesc": "مصنوعات شامل اور منظم کریں",
+        "ordersManagement": "آرڈرز کا انتظام",
+        "ordersManagementDesc": "صارفین کے آرڈرز کی کارروائی",
+        "shopSettings": "دکان کی ترتیبات",
+        "shopSettingsDesc": "اپنا اسٹور ترتیب دیں",
+        "analytics": "تجزیات",
+        "analyticsDesc": "فروخت کی بصیرت دیکھیں",
+        "deliveryLogin": "ترسیل لاگ ان",
+        "deliveryLoginDesc": "ترسیل پارٹنر کے طور پر سائن ان",
+        "deliveryDashboard": "ترسیل ڈیش بورڈ",
+        "deliveryDashboardDesc": "ترسیلات منظم کریں",
+        "availableOrders": "دستیاب آرڈرز",
+        "availableOrdersDesc": "دستیاب آرڈرز دیکھیں",
+        "earnings": "آمدنی",
+        "earningsDesc": "اپنی آمدنی ٹریک کریں",
+        "aboutUs": "ہمارے بارے میں",
+        "aboutUsDesc": "{{appName}} کے بارے میں جانیں",
+        "press": "پریس",
+        "pressDesc": "پریس ریلیزز اور میڈیا",
+        "contactUs": "ہم سے رابطہ کریں",
+        "contactUsDesc": "رابطہ کریں",
+        "privacyPolicy": "رازداری کی پالیسی",
+        "privacyPolicyDesc": "ہم آپ کا ڈیٹا کیسے سنبھالتے ہیں",
+        "termsOfService": "شرائط و ضوابط",
+        "termsOfServiceDesc": "پلیٹ فارم کی شرائط و ضوابط",
+        "cookiePolicy": "کوکی پالیسی",
+        "cookiePolicyDesc": "کوکی استعمال کی معلومات",
+        "dataDeletion": "ڈیٹا حذف",
+        "dataDeletionDesc": "ڈیٹا ہٹانے کی درخواست",
+        "shippingPolicy": "شپنگ پالیسی",
+        "shippingPolicyDesc": "شپنگ کی معلومات",
+        "helpCenter": "ہیلپ سینٹر",
+        "helpCenterDesc": "مدد اور سپورٹ حاصل کریں",
+        "faqs": "عمومی سوالات",
+        "faqsDesc": "اکثر پوچھے جانے والے سوالات",
+        "contactSupport": "سپورٹ سے رابطہ کریں",
+        "contactSupportDesc": "ہماری سپورٹ ٹیم تک پہنچیں"
+      },
+      "cantFind": {
+        "title": "جو آپ تلاش کر رہے ہیں وہ نہیں مل رہا؟",
+        "description": "مصنوعات، اسٹورز، یا معلومات تیزی سے تلاش کرنے کے لیے ہماری تلاش کی خصوصیت استعمال کریں۔",
+        "searchBtn": "مصنوعات تلاش کریں",
+        "contactBtn": "سپورٹ سے رابطہ کریں"
+      }
+    }
+  },
+  "referrals": {
+    "failedToLoad": "حوالہ کی معلومات لوڈ کرنے میں ناکامی",
+    "copiedToClipboard": "کلپ بورڈ پر کاپی ہو گیا!",
+    "failedToCopy": "کاپی کرنے میں ناکامی",
+    "enterCustomCode": "براہ کرم کسٹم کوڈ درج کریں",
+    "codeLengthError": "کوڈ 4-20 حروف کا ہونا چاہیے",
+    "codeCharError": "کوڈ میں صرف حروف، اعداد، انڈر سکور، اور ہائفن ہو سکتے ہیں",
+    "customCodeCreated": "کسٹم حوالہ کوڈ بن گیا!",
+    "failedToCreateCode": "کسٹم کوڈ بنانے میں ناکامی",
+    "loading": "حوالہ پروگرام لوڈ ہو رہا ہے...",
+    "comingSoon": "حوالہ پروگرام جلد آ رہا ہے",
+    "comingSoonDesc": "ہمارا حوالہ پروگرام فی الحال ترتیب دیا جا رہا ہے۔ انعامات حاصل کرنا شروع کرنے کے لیے جلد واپس آئیں!",
+    "title": "دوستوں کو حوالہ دیں، انعامات حاصل کریں",
+    "subtitle": "دوستوں کے ساتھ اپنا منفرد کوڈ شیئر کریں۔ جب وہ پہلی خریداری کریں تو آپ دونوں کو انعام ملے گا!",
+    "yourCode": "آپ کا حوالہ کوڈ",
+    "shareCodeDesc": "یہ کوڈ یا لنک اپنے دوستوں کے ساتھ شیئر کریں",
+    "custom": "کسٹم",
+    "share": "شیئر کریں",
+    "customize": "اپنی مرضی کے مطابق بنائیں",
+    "referralLink": "حوالہ لنک",
+    "copyLink": "لنک کاپی کریں",
+    "email": "ای میل",
+    "whatsapp": "واٹس ایپ",
+    "createCustomCode": "کسٹم کوڈ بنائیں",
+    "makeItMemorable": "اسے یادگار بنائیں!",
+    "codePlaceholder": "مثلاً MYCODE2024",
+    "codeHint": "4-20 حروف۔ صرف حروف، اعداد، انڈر سکور، اور ہائفن۔",
+    "stats": {
+      "totalReferrals": "کل حوالے",
+      "pending": "زیر التوا",
+      "qualified": "اہل",
+      "completedFirstOrder": "پہلا آرڈر مکمل",
+      "totalEarned": "کل آمدنی",
+      "conversionRate": "تبدیلی کی شرح",
+      "signupsToOrders": "سائن اپ سے آرڈرز"
+    },
+    "howItWorks": "یہ کیسے کام کرتا ہے",
+    "step": "مرحلہ",
+    "steps": {
+      "step1Title": "اپنا کوڈ شیئر کریں",
+      "step1Desc": "اپنا منفرد حوالہ کوڈ یا لنک دوستوں اور خاندان کو بھیجیں",
+      "step2Title": "دوست سائن اپ کرے",
+      "step2Desc": "انہیں اپنے پہلے آرڈر پر رعایت ملتی ہے",
+      "step3Title": "آپ انعامات حاصل کریں",
+      "step3Desc": "جب وہ خریداری مکمل کریں تو آپ انعامات حاصل کرتے ہیں"
+    },
+    "yourReferrals": "آپ کے حوالے",
+    "total": "کل",
+    "noReferralsYet": "ابھی تک کوئی حوالے نہیں",
+    "shareToEarn": "انعامات حاصل کرنا شروع کرنے کے لیے دوستوں کے ساتھ اپنا کوڈ شیئر کریں!",
+    "minOrderRequired": "کم از کم ${{amount}} کا آرڈر ضروری ہے۔",
+    "rewardsAfterCompletion": "آرڈر مکمل ہونے کے بعد انعامات کریڈٹ ہوتے ہیں۔",
+    "viewTerms": "مکمل شرائط دیکھیں"
+  },
+  "tracking": {
+    "live": "لائیو",
+    "eta": "تخمینی وقت",
+    "away": "دور",
+    "loadingMap": "نقشہ لوڈ ہو رہا ہے...",
+    "locationNotAvailable": "مقام ابھی دستیاب نہیں",
+    "pickupPoint": "پک اپ پوائنٹ",
+    "deliveryPerson": "ترسیل کرنے والا",
+    "deliveryAddress": "ترسیل کا پتہ",
+    "lastUpdate": "آخری اپ ڈیٹ",
+    "trackingYourOrder": "آپ کا آرڈر ٹریک ہو رہا ہے",
+    "estimatedDelivery": "تخمینی ترسیل",
+    "deliveryPartner": "ترسیل پارٹنر",
+    "liveTracking": "لائیو ٹریکنگ",
+    "viewOnMap": "نقشے پر دیکھیں",
+    "callDelivery": "ترسیل کو کال کریں",
+    "orderInTransit": "آپ کا آرڈر راستے میں ہے",
+    "delivered": "ترسیل مکمل",
+    "outForDelivery": "ترسیل کے لیے روانہ",
+    "waitingForLocation": "ترسیل کے مقام کا انتظار..."
+  },
+  "admin": {
+    "common": {
+      "refresh": "ریفریش",
+      "export": "برآمد",
+      "filters": "فلٹرز",
+      "status": "حیثیت",
+      "date": "تاریخ",
+      "actions": "عمل",
+      "close": "بند کریں",
+      "loading": "لوڈ ہو رہا ہے...",
+      "noData": "کوئی ڈیٹا دستیاب نہیں",
+      "clearFilters": "فلٹرز صاف کریں",
+      "active": "فعال",
+      "all": "سب",
+      "viewDetails": "تفصیلات دیکھیں",
+      "save": "محفوظ کریں",
+      "cancel": "منسوخ",
+      "delete": "حذف کریں",
+      "edit": "ترمیم",
+      "create": "بنائیں",
+      "search": "تلاش",
+      "searchPlaceholder": "تلاش کریں...",
+      "showing": "دکھا رہا ہے",
+      "of": "کا",
+      "page": "صفحہ",
+      "vsLastPeriod": "پچھلی مدت کے مقابلے",
+      "adminPanel": "ایڈمن پینل"
+    },
+    "sidebar": {
+      "dashboard": "ڈیش بورڈ",
+      "users": "صارف ماڈریشن",
+      "shops": "دکان کی منظوریاں",
+      "orders": "آرڈرز",
+      "products": "مصنوعات",
+      "categories": "زمرے",
+      "payments": "ادائیگیاں",
+      "reviews": "جائزے",
+      "referrals": "حوالے",
+      "reports": "رپورٹس",
+      "notifications": "اطلاعات",
+      "cms": "CMS صفحات",
+      "settings": "ترتیبات",
+      "analytics": "تجزیات",
+      "logout": "لاگ آؤٹ",
+      "managePlatform": "پلیٹ فارم منظم کریں",
+      "collapse": "سکیڑیں"
+    },
+    "topbar": {
+      "searchPlaceholder": "تلاش کریں...",
+      "admin": "ایڈمن",
+      "superAdmin": "سپر ایڈمن",
+      "adminUser": "ایڈمن صارف",
+      "goToWebsite": "ویب سائٹ پر جائیں",
+      "viewAllNotifications": "تمام اطلاعات دیکھیں",
+      "unreadCount": "{{count}} نہ پڑھی ہوئی"
+    },
+    "dashboard": {
+      "title": "ایڈمن ڈیش بورڈ",
+      "subtitle": "آپ کے پلیٹ فارم کا جائزہ",
+      "totalUsers": "کل صارفین",
+      "totalShops": "کل دکانیں",
+      "totalOrders": "کل آرڈرز",
+      "totalRevenue": "کل آمدنی",
+      "activeShops": "فعال دکانیں",
+      "pendingShops": "زیر التوا منظوریاں",
+      "quickActions": "فوری عمل",
+      "revenueOverview": "آمدنی کا جائزہ",
+      "shopCategories": "دکان کے زمرے",
+      "recentActivity": "حالیہ سرگرمی"
+    },
+    "analytics": {
+      "title": "پلیٹ فارم تجزیات",
+      "subtitle": "جامع پلیٹ فارم بصیرت اور رجحانات",
+      "revenue": "آمدنی",
+      "last7Days": "آخری 7 دن",
+      "last30Days": "آخری 30 دن",
+      "last90Days": "آخری 90 دن",
+      "dailyTrends": "روزانہ آمدنی اور آرڈر کے رجحانات",
+      "revenueOverTime": "وقت کے ساتھ آمدنی",
+      "platformRevenueTrend": "پلیٹ فارم آمدنی کا رجحان",
+      "ordersOverTime": "وقت کے ساتھ آرڈرز",
+      "orderVolumeAnalysis": "آرڈر حجم کا تجزیہ",
+      "userRegistrations": "صارف رجسٹریشنز",
+      "newUserGrowthTrend": "نئے صارف کی ترقی کا رجحان",
+      "topCategories": "اعلیٰ زمرے",
+      "salesByCategory": "زمرے کے لحاظ سے فروخت",
+      "topShops": "اعلیٰ دکانیں",
+      "topProducts": "اعلیٰ مصنوعات",
+      "topCustomers": "اعلیٰ صارفین",
+      "activeShops": "فعال دکانیں",
+      "users": "صارفین",
+      "shops": "دکانیں",
+      "today": "آج",
+      "thisWeek": "اس ہفتے",
+      "thisMonth": "اس ماہ",
+      "thisYear": "اس سال",
+      "completed": "مکمل",
+      "pending": "زیر التوا",
+      "cancelled": "منسوخ",
+      "customers": "صارفین",
+      "vendors": "وینڈرز",
+      "daily": "روزانہ",
+      "weekly": "ہفتہ وار",
+      "monthly": "ماہانہ",
+      "orders": "آرڈرز",
+      "units": "یونٹس",
+      "failedToLoad": "پلیٹ فارم تجزیات لوڈ کرنے میں ناکامی",
+      "exportedSuccess": "تجزیات کامیابی سے برآمد ہوئے",
+      "exportFailed": "تجزیات برآمد کرنے میں ناکامی",
+      "dateRange": "تاریخ کی حد"
+    },
+    "users": {
+      "title": "صارف ماڈریشن",
+      "subtitle": "پلیٹ فارم صارفین کو منظم اور ماڈریٹ کریں",
+      "allUsers": "تمام صارفین",
+      "activeUsers": "فعال صارفین",
+      "bannedUsers": "پابندی شدہ صارفین",
+      "userName": "صارف کا نام",
+      "email": "ای میل",
+      "role": "کردار",
+      "status": "حیثیت",
+      "joinedDate": "شمولیت کی تاریخ",
+      "joinDate": "شمولیت کی تاریخ",
+      "banUser": "صارف پر پابندی لگائیں",
+      "unbanUser": "صارف سے پابندی ہٹائیں",
+      "viewProfile": "پروفائل دیکھیں",
+      "noUsers": "کوئی صارف نہیں ملے",
+      "searchUsers": "صارفین تلاش کریں...",
+      "searchPlaceholder": "نام یا ای میل سے تلاش کریں...",
+      "customer": "صارف",
+      "customers": "صارفین",
+      "vendor": "وینڈر",
+      "vendors": "وینڈرز",
+      "admin": "ایڈمن",
+      "admins": "ایڈمنز",
+      "banned": "پابندی شدہ",
+      "verified": "تصدیق شدہ",
+      "unverified": "غیر تصدیق شدہ",
+      "userDetails": "صارف کی تفصیلات",
+      "userActivity": "صارف کی سرگرمی",
+      "totalOrders": "کل آرڈرز",
+      "totalSpent": "کل خرچ",
+      "memberSince": "رکن از",
+      "lastActive": "آخری سرگرمی",
+      "totalUsers": "کل صارفین",
+      "active": "فعال",
+      "suspended": "معطل",
+      "suspendedUsers": "معطل صارفین",
+      "all": "سب",
+      "sortByDate": "تاریخ سے ترتیب",
+      "sortByName": "نام سے ترتیب",
+      "sortByEmail": "ای میل سے ترتیب",
+      "failedToLoad": "صارفین لوڈ کرنے میں ناکامی",
+      "retry": "دوبارہ کوشش",
+      "tryAdjusting": "اپنے فلٹرز ایڈجسٹ کریں",
+      "noUsersAvailable": "کوئی صارف دستیاب نہیں",
+      "unnamedUser": "بے نام صارف",
+      "orders": "آرڈرز",
+      "reviews": "جائزے",
+      "viewDetails": "تفصیلات دیکھیں",
+      "changeRole": "کردار تبدیل کریں",
+      "suspendUser": "صارف معطل کریں",
+      "activateUser": "صارف فعال کریں",
+      "deleteUser": "صارف حذف کریں",
+      "pageOf": "صفحہ {{current}} از {{total}}",
+      "changeUserRole": "صارف کا کردار تبدیل کریں",
+      "changeRoleConfirm": "کیا آپ واقعی اس صارف کا کردار {{from}} سے {{to}} تبدیل کرنا چاہتے ہیں؟",
+      "roleChanged": "صارف کا کردار {{role}} میں تبدیل ہو گیا",
+      "failedChangeRole": "صارف کا کردار تبدیل کرنے میں ناکامی",
+      "suspendUserTitle": "صارف معطل کریں",
+      "activateUserTitle": "صارف فعال کریں",
+      "suspendConfirm": "کیا آپ واقعی اس صارف اکاؤنٹ کو معطل کرنا چاہتے ہیں؟",
+      "activateConfirm": "کیا آپ واقعی اس صارف اکاؤنٹ کو فعال کرنا چاہتے ہیں؟",
+      "userSuspended": "صارف کامیابی سے معطل ہو گیا",
+      "userActivated": "صارف کامیابی سے فعال ہو گیا",
+      "failedSuspend": "صارف معطل کرنے میں ناکامی",
+      "failedActivate": "صارف فعال کرنے میں ناکامی",
+      "deleteUserTitle": "صارف حذف کریں",
+      "deleteConfirm": "کیا آپ واقعی {{name}} کو حذف کرنا چاہتے ہیں؟ یہ عمل واپس نہیں ہو سکتا۔",
+      "userDeleted": "صارف کامیابی سے حذف ہو گیا",
+      "failedDelete": "صارف حذف کرنے میں ناکامی",
+      "bulkAction": "بلک {{action}}",
+      "bulkConfirm": "کیا آپ واقعی {{count}} منتخب صارف(صارفین) کو {{action}} کرنا چاہتے ہیں؟",
+      "bulkSuccess": "{{count}} صارف(صارفین) کامیابی سے {{action}} ہو گئے",
+      "failedBulk": "بلک عمل کرنے میں ناکامی",
+      "selectFirst": "براہ کرم پہلے صارفین منتخب کریں",
+      "exportSuccess": "صارفین کی فہرست کامیابی سے برآمد ہوئی",
+      "exportFailed": "صارفین برآمد کرنے میں ناکامی",
+      "shops": "دکانیں",
+      "contactInfo": "رابطے کی معلومات",
+      "phone": "فون",
+      "joined": "شامل ہوئے",
+      "lastLogin": "آخری لاگ ان",
+      "noShopsFound": "کوئی دکانیں نہیں ملیں",
+      "recentOrders": "حالیہ آرڈرز",
+      "noOrdersFound": "کوئی آرڈرز نہیں ملے",
+      "activate": "فعال کریں",
+      "suspend": "معطل کریں",
+      "delete": "حذف کریں",
+      "confirm": "تصدیق",
+      "cancel": "منسوخ"
+    },
+    "shops": {
+      "title": "دکان کی منظوریاں",
+      "subtitle": "دکان کی درخواستوں کا جائزہ لیں اور منظور کریں",
+      "pendingApprovals": "زیر التوا منظوریاں",
+      "approveShop": "دکان منظور کریں",
+      "rejectShop": "دکان مسترد کریں",
+      "viewShop": "دکان دیکھیں",
+      "shopName": "دکان کا نام",
+      "owner": "مالک",
+      "category": "زمرہ",
+      "status": "حیثیت",
+      "appliedDate": "درخواست کی تاریخ",
+      "createdAt": "بنایا گیا",
+      "approved": "منظور شدہ",
+      "rejected": "مسترد",
+      "noShops": "کوئی دکانیں نہیں ملیں",
+      "searchShops": "دکانیں تلاش کریں...",
+      "shopDetails": "دکان کی تفصیلات",
+      "shopApproved": "دکان کامیابی سے منظور ہو گئی",
+      "shopRejected": "دکان مسترد ہو گئی",
+      "approvalFailed": "دکان کی حیثیت اپ ڈیٹ کرنے میں ناکامی",
+      "approveConfirm": "کیا آپ واقعی اس دکان کو منظور کرنا چاہتے ہیں؟",
+      "rejectConfirm": "کیا آپ واقعی اس دکان کو مسترد کرنا چاہتے ہیں؟",
+      "approve": "منظور کریں",
+      "reject": "مسترد کریں",
+      "failedApprove": "دکان منظور کرنے میں ناکامی",
+      "failedReject": "دکان مسترد کرنے میں ناکامی",
+      "rejectionRequired": "مسترد کی وجہ ضروری ہے",
+      "rejectionRequiredDesc": "براہ کرم اس دکان کو مسترد کرنے کی وجہ بتائیں",
+      "description": "تفصیل",
+      "noDescription": "کوئی تفصیل فراہم نہیں کی گئی",
+      "ownerDetails": "مالک کی تفصیلات",
+      "ownerName": "نام",
+      "ownerEmail": "ای میل",
+      "businessDocuments": "کاروباری دستاویزات",
+      "rejectionReason": "مسترد کی وجہ",
+      "takeAction": "عمل کریں",
+      "rejectionReasonLabel": "مسترد کی وجہ (مسترد عمل کے لیے ضروری)",
+      "rejectionPlaceholder": "اگر آپ اس دکان کو مسترد کرنے کا ارادہ رکھتے ہیں تو وجہ فراہم کریں...",
+      "created": "بنایا گیا",
+      "updated": "اپ ڈیٹ"
+    },
+    "orders": {
+      "title": "تمام آرڈرز",
+      "subtitle": "تمام دکانوں کے آرڈرز منظم کریں",
+      "allOrders": "تمام آرڈرز",
+      "orderId": "آرڈر آئی ڈی",
+      "customer": "صارف",
+      "shop": "دکان",
+      "amount": "رقم",
+      "pending": "زیر التوا",
+      "processing": "کارروائی جاری",
+      "shipped": "بھیج دیا گیا",
+      "delivered": "ترسیل مکمل",
+      "cancelled": "منسوخ",
+      "completed": "مکمل",
+      "noOrders": "کوئی آرڈرز نہیں ملے",
+      "searchOrders": "آئی ڈی، صارف، یا دکان سے آرڈرز تلاش کریں...",
+      "orderDetails": "آرڈر کی تفصیلات",
+      "customerInfo": "صارف کی معلومات",
+      "shopInfo": "دکان کی معلومات",
+      "totalAmount": "کل رقم"
+    },
+    "products": {
+      "title": "تمام مصنوعات",
+      "subtitle": "تمام دکانوں کی مصنوعات دیکھیں اور منظم کریں",
+      "allProducts": "تمام مصنوعات",
+      "productName": "مصنوعات",
+      "shop": "دکان",
+      "category": "زمرہ",
+      "price": "قیمت",
+      "stock": "سٹاک",
+      "status": "حیثیت",
+      "active": "فعال",
+      "draft": "ڈرافٹ",
+      "outOfStock": "سٹاک میں نہیں",
+      "noProducts": "کوئی مصنوعات نہیں ملیں",
+      "noProductsYet": "ابھی تک کوئی مصنوعات نہیں",
+      "noProductsMatch": "آپ کے معیار سے مطابقت رکھنے والی کوئی مصنوعات نہیں ملیں۔",
+      "productsWillAppear": "دکانوں کی مصنوعات بنائے جانے کے بعد یہاں ظاہر ہوں گی۔",
+      "searchProducts": "مصنوعات کا نام، دکان، یا زمرے سے تلاش کریں...",
+      "viewProduct": "دکان میں دیکھیں",
+      "productDetails": "مصنوعات کی تفصیلات",
+      "added": "شامل"
+    },
+    "categories": {
+      "title": "زمرے",
+      "subtitle": "مصنوعات کے زمرے منظم کریں",
+      "allCategories": "تمام زمرے",
+      "addCategory": "زمرہ شامل کریں",
+      "editCategory": "زمرہ میں ترمیم",
+      "deleteCategory": "زمرہ حذف کریں",
+      "categoryName": "زمرے کا نام",
+      "description": "تفصیل",
+      "parentCategory": "بالائی زمرہ",
+      "productsCount": "مصنوعات",
+      "status": "حیثیت",
+      "noCategories": "کوئی زمرے نہیں ملے",
+      "searchCategories": "زمرے تلاش کریں...",
+      "categoryCreated": "زمرہ کامیابی سے بنایا گیا",
+      "categoryUpdated": "زمرہ کامیابی سے اپ ڈیٹ ہو گیا",
+      "categoryDeleted": "زمرہ کامیابی سے حذف ہو گیا",
+      "deleteFailed": "زمرہ حذف کرنے میں ناکامی",
+      "slug": "سلگ",
+      "rootCategory": "بنیادی زمرہ",
+      "products": "مصنوعات",
+      "deleteConfirm": "کیا آپ واقعی \"{{name}}\" کو حذف کرنا چاہتے ہیں؟ یہ عمل واپس نہیں ہو سکتا۔",
+      "saveFailed": "زمرہ محفوظ کرنے میں ناکامی",
+      "searchPlaceholder": "نام یا سلگ سے زمرے تلاش کریں...",
+      "enterCategoryName": "زمرے کا نام درج کریں",
+      "categorySlugPlaceholder": "category-slug",
+      "autoGeneratedFromName": "نام سے خود بخود بنایا گیا۔ آپ اسے دستی طور پر ترمیم کر سکتے ہیں۔",
+      "noneRootCategory": "کوئی نہیں (بنیادی زمرہ)",
+      "noCategoriesFound": "کوئی زمرے نہیں ملے",
+      "noCategoriesYet": "ابھی تک کوئی زمرے نہیں",
+      "noCategoriesMatch": "آپ کی تلاش سے مطابقت رکھنے والے کوئی زمرے نہیں۔",
+      "createFirstCategory": "اپنا پہلا زمرہ بنانے کے لیے \"زمرہ شامل کریں\" پر کلک کریں۔",
+      "editTitle": "زمرہ میں ترمیم",
+      "deleteTitle": "زمرہ حذف کریں",
+      "active": "فعال",
+      "inactive": "غیر فعال"
+    },
+    "payments": {
+      "title": "ادائیگیاں",
+      "subtitle": "تمام پلیٹ فارم لین دین ٹریک کریں",
+      "transactionId": "ٹرانزیکشن آئی ڈی",
+      "amount": "رقم",
+      "status": "حیثیت",
+      "date": "تاریخ",
+      "paymentMethod": "طریقہ",
+      "completed": "مکمل",
+      "pending": "زیر التوا",
+      "failed": "ناکام",
+      "refunded": "رقم واپس",
+      "noPayments": "کوئی لین دین نہیں ملے",
+      "noPaymentsMatch": "اپنے تلاش یا فلٹر معیار ایڈجسٹ کریں",
+      "paymentsWillAppear": "آرڈرز دیے جانے کے بعد ادائیگی کے لین دین یہاں ظاہر ہوں گے",
+      "searchPayments": "ٹرانزیکشن آئی ڈی، آرڈر، یا صارف سے تلاش کریں...",
+      "totalRevenue": "کل آمدنی",
+      "pendingPayouts": "زیر التوا ادائیگیاں",
+      "refunds": "رقم واپسیاں",
+      "allTimeEarnings": "ہمہ وقتی آمدنی",
+      "awaitingProcessing": "کارروائی کا انتظار",
+      "successfulTransactions": "کامیاب لین دین",
+      "totalRefunded": "کل واپس شدہ رقم",
+      "viewDetails": "تفصیلات دیکھیں"
+    },
+    "reviews": {
+      "title": "تمام جائزے",
+      "subtitle": "صارفین کے جائزے منظم اور ماڈریٹ کریں",
+      "allReviews": "تمام جائزے",
+      "productReviews": "مصنوعات کے جائزے",
+      "shopReviews": "دکان کے جائزے",
+      "reviewer": "جائزہ دینے والا",
+      "product": "مصنوعات",
+      "shop": "دکان",
+      "rating": "درجہ بندی",
+      "comment": "تبصرہ",
+      "date": "تاریخ",
+      "status": "حیثیت",
+      "approved": "منظور شدہ",
+      "pending": "زیر التوا",
+      "rejected": "مسترد",
+      "flagged": "نشان زد",
+      "approveReview": "منظور کریں",
+      "rejectReview": "مسترد کریں",
+      "flagReview": "نشان زد کریں",
+      "noReviews": "کوئی جائزے نہیں ملے",
+      "searchReviews": "جائزے تلاش کریں...",
+      "reviewApproved": "جائزہ کامیابی سے منظور ہو گیا",
+      "reviewRejected": "جائزہ مسترد ہو گیا",
+      "reviewFlagged": "جائزہ جائزے کے لیے نشان زد ہو گیا",
+      "searchPlaceholder": "مصنوعات، صارف، دکان، یا تبصرے سے تلاش کریں...",
+      "allRatings": "تمام درجہ بندیاں",
+      "stars": "ستارے",
+      "noReviewsMatch": "آپ کے موجودہ فلٹرز سے مطابقت رکھنے والے کوئی جائزے نہیں",
+      "adjustFilters": "اپنے تلاش یا فلٹر معیار ایڈجسٹ کریں",
+      "reviewsWillAppear": "صارفین کے جائزے جمع ہونے کے بعد یہاں ظاہر ہوں گے",
+      "viewDetails": "تفصیلات دیکھیں",
+      "deleteReview": "جائزہ حذف کریں",
+      "showingReviews": "{{total}} میں سے {{from}} سے {{to}} جائزے دکھائے جا رہے ہیں",
+      "pageOf": "صفحہ {{current}} از {{total}}",
+      "reviewDetails": "جائزے کی تفصیلات",
+      "customer": "صارف",
+      "submittedOn": "جمع کیا گیا",
+      "approveConfirm": "کیا آپ واقعی اس جائزے کو منظور کرنا چاہتے ہیں؟",
+      "rejectConfirm": "کیا آپ واقعی اس جائزے کو مسترد کرنا چاہتے ہیں؟",
+      "deleteConfirm": "کیا آپ واقعی اس جائزے کو حذف کرنا چاہتے ہیں؟",
+      "deleteFailed": "جائزہ حذف کرنے میں ناکامی",
+      "reviewDeleted": "جائزہ کامیابی سے حذف ہو گیا"
+    },
+    "referrals": {
+      "title": "حوالہ پروگرام",
+      "subtitle": "حوالہ سرگرمیوں اور انعامات ٹریک کریں",
+      "allReferrals": "تمام حوالے",
+      "referrer": "حوالہ دینے والا",
+      "referred": "حوالہ شدہ صارف",
+      "status": "حیثیت",
+      "reward": "انعام",
+      "date": "تاریخ",
+      "completed": "مکمل",
+      "pending": "زیر التوا",
+      "cancelled": "منسوخ",
+      "noReferrals": "کوئی حوالے نہیں ملے",
+      "searchReferrals": "حوالے تلاش کریں...",
+      "totalReferrals": "کل حوالے",
+      "successfulReferrals": "کامیاب حوالے",
+      "pendingRewards": "زیر التوا انعامات",
+      "totalPaidOut": "کل ادا شدہ",
+      "code": "کوڈ",
+      "allStatus": "تمام حیثیت",
+      "qualified": "اہل",
+      "rewarded": "انعام یافتہ",
+      "expired": "میعاد ختم",
+      "clearFilters": "فلٹرز صاف کریں",
+      "rewardType": "انعام کی قسم",
+      "storeCredit": "اسٹور کریڈٹ",
+      "fixedDiscount": "مقررہ رعایت",
+      "percentageDiscount": "فیصد رعایت",
+      "referrerReward": "حوالہ دینے والے کا انعام",
+      "refereeReward": "حوالہ شدہ کا انعام",
+      "amountGivenToReferrer": "حوالہ دینے والے شخص کو دی جانے والی رقم",
+      "amountGivenToReferee": "نئے صارف کو دی جانے والی رقم",
+      "settings": "ترتیبات"
+    },
+    "reports": {
+      "title": "رپورٹس",
+      "subtitle": "پلیٹ فارم رپورٹس بنائیں اور دیکھیں",
+      "generateReport": "رپورٹ بنائیں",
+      "salesReport": "فروخت کی رپورٹ",
+      "userReport": "صارف رپورٹ",
+      "shopReport": "دکان رپورٹ",
+      "productReport": "مصنوعات کی رپورٹ",
+      "dateRange": "تاریخ کی حد",
+      "reportType": "رپورٹ کی قسم",
+      "format": "فارمیٹ",
+      "download": "ڈاؤن لوڈ",
+      "noReports": "کوئی رپورٹس دستیاب نہیں",
+      "reportGenerated": "رپورٹ کامیابی سے بنائی گئی",
+      "reportFailed": "رپورٹ بنانے میں ناکامی",
+      "salesDescription": "آمدنی، لین دین، اور ادائیگی کے طریقوں کی تفصیلی فروخت ڈیٹا۔",
+      "usersDescription": "صارف رجسٹریشن رجحانات، سرگرمی میٹرکس، اور آبادیاتی تجزیہ۔",
+      "shopsDescription": "دکان کی کارکردگی میٹرکس، منظوری کی شرحیں، اور زمرے کی تقسیم۔",
+      "productsDescription": "مصنوعات کی انوینٹری حیثیت، بہترین فروخت، اور سٹاک لیول کا تجزیہ۔",
+      "generatingReport": "رپورٹ بنائی جا رہی ہے...",
+      "downloadReport": "رپورٹ ڈاؤن لوڈ کریں",
+      "downloadFailed": "رپورٹ ڈاؤن لوڈ کرنے میں ناکامی۔",
+      "noReportData": "کوئی رپورٹ ڈیٹا دستیاب نہیں۔ براہ کرم پہلے رپورٹ بنائیں۔",
+      "from": "سے",
+      "to": "تک",
+      "customRange": "کسٹم حد",
+      "lastGenerated": "آخری بار بنائی گئی",
+      "neverGenerated": "کبھی نہیں بنائی گئی",
+      "last7Days": "آخری 7 دن",
+      "last30Days": "آخری 30 دن",
+      "last90Days": "آخری 90 دن",
+      "downloadSuccess": "رپورٹ کامیابی سے ڈاؤن لوڈ ہوئی",
+      "totalRevenue": "کل آمدنی",
+      "totalOrders": "کل آرڈرز",
+      "averageOrderValue": "اوسط آرڈر ویلیو",
+      "newUsers": "نئے صارفین",
+      "activeUsers": "فعال صارفین",
+      "totalShops": "کل دکانیں",
+      "approvedShops": "منظور شدہ دکانیں",
+      "pendingShops": "زیر التوا دکانیں",
+      "totalProducts": "کل مصنوعات",
+      "activeProducts": "فعال مصنوعات",
+      "outOfStock": "سٹاک میں نہیں"
+    },
+    "notifications": {
+      "title": "اطلاعات",
+      "subtitle": "پلیٹ فارم اطلاعات بھیجیں اور منظم کریں",
+      "allNotifications": "تمام اطلاعات",
+      "sendNotification": "اطلاع بھیجیں",
+      "notificationType": "قسم",
+      "recipients": "وصول کنندگان",
+      "message": "پیغام",
+      "sentDate": "بھیجنے کی تاریخ",
+      "status": "حیثیت",
+      "sent": "بھیج دیا",
+      "scheduled": "شیڈول",
+      "draft": "ڈرافٹ",
+      "noNotifications": "کوئی اطلاعات نہیں ملیں",
+      "notificationSent": "اطلاع کامیابی سے بھیج دی گئی",
+      "notificationFailed": "اطلاع بھیجنے میں ناکامی",
+      "allUsers": "تمام صارفین",
+      "vendors": "صرف وینڈرز",
+      "customers": "صرف صارفین",
+      "system": "سسٹم",
+      "order": "آرڈر",
+      "shop": "دکان",
+      "user": "صارف",
+      "failed": "ناکام",
+      "totalSent": "کل بھیجی گئیں",
+      "read": "پڑھی گئی",
+      "unread": "نہ پڑھی گئی",
+      "searchPlaceholder": "عنوان یا پیغام سے تلاش کریں...",
+      "filters": "فلٹرز",
+      "type": "قسم",
+      "noNotificationsMatch": "آپ کے موجودہ فلٹرز سے مطابقت رکھنے والی کوئی اطلاعات نہیں",
+      "adjustFilters": "اپنے تلاش یا فلٹر معیار ایڈجسٹ کریں",
+      "notificationsWillAppear": "اطلاعات بھیجے جانے کے بعد یہاں ظاہر ہوں گی",
+      "pageOf": "صفحہ {{current}} از {{total}}",
+      "notificationDetails": "اطلاع کی تفصیلات",
+      "viewNotificationInfo": "اطلاع کی معلومات دیکھیں",
+      "notificationTitle": "عنوان",
+      "recipientsCount": "{{total}} کل میں سے {{read}} پڑھی، {{unread}} نہ پڑھی",
+      "createNotification": "اطلاع بنائیں",
+      "createDesc": "صارفین کو نئی اطلاع بھیجیں",
+      "titleLabel": "عنوان",
+      "titlePlaceholder": "اطلاع کا عنوان درج کریں...",
+      "messageLabel": "پیغام",
+      "messagePlaceholder": "اطلاع کا پیغام درج کریں...",
+      "typeLabel": "قسم",
+      "recipientsLabel": "وصول کنندگان",
+      "allAdmins": "تمام ایڈمنز",
+      "allVendors": "تمام وینڈرز",
+      "allCustomers": "تمام صارفین",
+      "ofTotal": "{{count}} کل میں سے",
+      "sending": "بھیجا جا رہا ہے...",
+      "send": "بھیجیں",
+      "loading": "اطلاعات لوڈ ہو رہی ہیں...",
+      "empty": "ابھی تک کوئی اطلاعات نہیں",
+      "justNow": "ابھی",
+      "minutesAgo": "منٹ پہلے",
+      "hoursAgo": "گھنٹے پہلے",
+      "daysAgo": "دن پہلے",
+      "markAllRead": "سب پڑھی ہوئی بنائیں",
+      "allMarkedRead": "تمام اطلاعات پڑھی ہوئی بنا دی گئیں",
+      "newOrder": "نیا آرڈر",
+      "newOrderMsg": "آرڈر #{{orderNumber}} ${{total}} کا دیا گیا",
+      "newShopRegistration": "نئی دکان کی رجسٹریشن",
+      "newShopMsg": "{{shopName}} نے منظوری کی درخواست دی ہے",
+      "newUserRegistration": "نئے صارف کی رجسٹریشن",
+      "newUserMsg": "{{userName}} نے ابھی رجسٹر کیا",
+      "newReview": "نیا جائزہ",
+      "newReviewMsg": "{{shopName}} کے لیے {{rating}} ستارہ جائزہ موصول"
+    },
+    "cms": {
+      "title": "CMS صفحات",
+      "subtitle": "جامد مواد کے صفحات منظم کریں",
+      "allPages": "تمام صفحات",
+      "addPage": "صفحہ شامل کریں",
+      "editPage": "صفحہ میں ترمیم",
+      "deletePage": "صفحہ حذف کریں",
+      "pageTitle": "صفحے کا عنوان",
+      "slug": "سلگ",
+      "status": "حیثیت",
+      "lastUpdated": "آخری اپ ڈیٹ",
+      "published": "شائع شدہ",
+      "draft": "ڈرافٹ",
+      "archived": "آرکائیو شدہ",
+      "all": "سب",
+      "noPages": "کوئی صفحات نہیں ملے",
+      "noPagesYet": "ابھی تک کوئی صفحات نہیں",
+      "noPagesFound": "کوئی صفحات نہیں ملے",
+      "noPagesMatch": "آپ کے معیار سے مطابقت رکھنے والے کوئی صفحات نہیں۔",
+      "createFirstPage": "شروع کرنے کے لیے اپنا پہلا CMS صفحہ بنائیں۔",
+      "createFirstPageBtn": "پہلا صفحہ بنائیں",
+      "searchPages": "صفحات تلاش کریں...",
+      "pageCreated": "صفحہ کامیابی سے بنایا گیا",
+      "pageUpdated": "صفحہ کامیابی سے اپ ڈیٹ ہو گیا",
+      "pageDeleted": "صفحہ کامیابی سے حذف ہو گیا",
+      "pagePublished": "صفحہ کامیابی سے شائع ہو گیا",
+      "pageUnpublished": "صفحہ غیر شائع ہو گیا",
+      "failedToLoad": "صفحات لوڈ کرنے میں ناکامی",
+      "failedToCreate": "صفحہ بنانے میں ناکامی",
+      "failedToUpdate": "صفحہ اپ ڈیٹ کرنے میں ناکامی",
+      "failedToDelete": "صفحہ حذف کرنے میں ناکامی",
+      "failedToUpdateStatus": "صفحے کی حیثیت اپ ڈیٹ کرنے میں ناکامی",
+      "deletePageConfirm": "کیا آپ واقعی اس صفحے کو حذف کرنا چاہتے ہیں؟ یہ عمل واپس نہیں ہو سکتا۔",
+      "delete": "حذف کریں",
+      "validationError": "توثیق کی خرابی",
+      "slugTitleRequired": "سلگ اور عنوان ضروری ہیں",
+      "public": "عوامی",
+      "private": "نجی",
+      "pageOf": "صفحہ {{current}} از {{total}}",
+      "createNewPage": "نیا صفحہ بنائیں",
+      "addNewCmsPage": "نیا CMS صفحہ شامل کریں",
+      "editing": "ترمیم",
+      "saving": "محفوظ ہو رہا ہے...",
+      "savePage": "صفحہ محفوظ کریں",
+      "pageTitleLabel": "صفحے کا عنوان *",
+      "pageTitlePlaceholder": "مثلاً رازداری کی پالیسی",
+      "urlSlugLabel": "URL سلگ *",
+      "urlSlugPlaceholder": "privacy-policy",
+      "pageContent": "صفحے کا مواد (HTML معاون)",
+      "contentPlaceholder": "<h2>سیکشن عنوان</h2><p>آپ کا مواد یہاں...</p>",
+      "seoSettings": "SEO ترتیبات",
+      "metaTitle": "میٹا عنوان",
+      "metaTitlePlaceholder": "SEO عنوان (اختیاری)",
+      "metaKeywords": "میٹا کلیدی الفاظ",
+      "metaKeywordsPlaceholder": "رازداری، پالیسی، شرائط",
+      "metaDescription": "میٹا تفصیل",
+      "metaDescPlaceholder": "سرچ انجنز کے لیے مختصر تفصیل...",
+      "pageSettings": "صفحے کی ترتیبات",
+      "showBreadcrumb": "بریڈ کرمب دکھائیں",
+      "tableOfContents": "فہرست مضامین",
+      "publicPage": "عوامی صفحہ",
+      "requiresLogin": "لاگ ان ضروری",
+      "pageStatus": "صفحے کی حیثیت",
+      "content": "مواد",
+      "seoTitle": "SEO عنوان",
+      "seoDescription": "SEO تفصیل"
+    },
+    "settings": {
+      "title": "عالمی ترتیبات",
+      "subtitle": "پلیٹ فارم بھر کی ترتیبات ترتیب دیں",
+      "general": "عمومی",
+      "payments": "ادائیگیاں",
+      "email": "ای میل",
+      "security": "سیکیورٹی",
+      "payment": "ادائیگی",
+      "maintenance": "دیکھ بھال",
+      "platformName": "پلیٹ فارم کا نام",
+      "platformNameRequired": "پلیٹ فارم کا نام *",
+      "platformLogo": "پلیٹ فارم لوگو",
+      "currency": "طے شدہ کرنسی",
+      "currencyRequired": "طے شدہ کرنسی *",
+      "language": "طے شدہ زبان",
+      "languageRequired": "طے شدہ زبان *",
+      "timezone": "ٹائم زون",
+      "commissionRate": "کمیشن کی شرح",
+      "minWithdrawal": "کم از کم نکالنا",
+      "maintenanceMode": "دیکھ بھال موڈ",
+      "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں",
+      "settingsFailed": "ترتیبات محفوظ کرنے میں ناکامی",
+      "settingsFailedLoad": "ترتیبات لوڈ کرنے میں ناکامی",
+      "validationFailed": "توثیق ناکام",
+      "fixErrors": "براہ کرم غلطیاں درست کریں اور دوبارہ کوشش کریں",
+      "changesApplied": "آپ کی تبدیلیاں لاگو ہو گئیں",
+      "invalidFileType": "غلط فائل قسم",
+      "uploadImage": "براہ کرم تصویر فائل اپ لوڈ کریں",
+      "fileTooLarge": "فائل بہت بڑی ہے",
+      "uploadSmaller": "براہ کرم 5MB سے چھوٹی تصویر اپ لوڈ کریں",
+      "logoUploaded": "لوگو کامیابی سے اپ لوڈ ہو گیا",
+      "rememberSave": "اپنی تبدیلیاں محفوظ کرنا یاد رکھیں",
+      "logoUploadFailed": "لوگو اپ لوڈ کرنے میں ناکامی",
+      "uploading": "اپ لوڈ ہو رہا ہے...",
+      "uploadLogo": "لوگو اپ لوڈ کریں",
+      "logoRecommended": "تجویز: 200x200px، زیادہ سے زیادہ 5MB",
+      "supportEmailRequired": "سپورٹ ای میل *",
+      "generalSettings": "عمومی ترتیبات",
+      "configureBasicPlatform": "بنیادی پلیٹ فارم معلومات ترتیب دیں",
+      "commissionSettings": "کمیشن کی ترتیبات",
+      "configureCommission": "پلیٹ فارم کمیشن اور قیمت کے قوانین ترتیب دیں",
+      "platformCommissionRate": "پلیٹ فارم کمیشن کی شرح (%)",
+      "commissionTaken": "ہر فروخت سے لیا جانے والا کمیشن",
+      "minimumOrderAmount": "کم از کم آرڈر کی رقم",
+      "minimumOrderValue": "ضروری کم از کم آرڈر ویلیو",
+      "freeShippingThreshold": "مفت شپنگ کی حد",
+      "orderValueFreeShipping": "مفت شپنگ کے لیے آرڈر ویلیو",
+      "commissionInfo": "کمیشن کی معلومات",
+      "commissionInfoDesc": "پلیٹ فارم کمیشن کی شرح خود بخود وینڈر فروخت سے کاٹی جائے گی۔ تبدیلیاں صرف نئے آرڈرز پر لاگو ہوں گی۔",
+      "shopSettings": "دکان کی ترتیبات",
+      "configureShopApproval": "دکان کی منظوری اور تصدیق کے تقاضے ترتیب دیں",
+      "autoApproveShops": "نئی دکانیں خود بخود منظور کریں",
+      "autoApproveDesc": "دستی جائزے کے بغیر دکان کی رجسٹریشنز خود بخود منظور کریں",
+      "requiredDocuments": "دکان کی تصدیق کے لیے ضروری دستاویزات",
+      "businessLicense": "کاروباری لائسنس",
+      "taxId": "ٹیکس آئی ڈی / EIN",
+      "bankAccountVerification": "بینک اکاؤنٹ تصدیق",
+      "identityVerification": "شناخت تصدیق",
+      "addressProof": "پتے کا ثبوت",
+      "maxProductsPerShop": "فی دکان زیادہ سے زیادہ مصنوعات",
+      "limitProducts": "ہر دکان کی بنائی جانے والی مصنوعات کی تعداد محدود کریں",
+      "paymentSettings": "ادائیگی کی ترتیبات",
+      "enablePaymentMethods": "ادائیگی کے طریقے فعال اور ترتیب دیں",
+      "creditCardDigital": "کریڈٹ کارڈ اور ڈیجیٹل والٹ ادائیگیاں",
+      "paypalDigital": "پے پال ڈیجیٹل ادائیگیاں",
+      "cashOnDelivery": "ادائیگی بوقت ترسیل (COD)",
+      "payWithCash": "ترسیل پر نقد ادائیگی",
+      "active": "فعال",
+      "inactive": "غیر فعال",
+      "error": "خرابی",
+      "notificationSettings": "اطلاعاتی ترتیبات",
+      "configureNotificationChannels": "اطلاعاتی چینلز ترتیب دیں",
+      "emailNotifications": "ای میل اطلاعات",
+      "sendViaEmail": "ای میل کے ذریعے اطلاعات بھیجیں",
+      "pushNotifications": "پش اطلاعات",
+      "browserPush": "براؤزر پش اطلاعات",
+      "smsNotifications": "SMS اطلاعات",
+      "sendViaSms": "SMS کے ذریعے اطلاعات بھیجیں",
+      "maintenanceModeSettings": "دیکھ بھال موڈ",
+      "configureMaintenanceSettings": "پلیٹ فارم دیکھ بھال کی ترتیبات ترتیب دیں",
+      "maintenanceWarning": "انتباہ: دیکھ بھال موڈ",
+      "maintenanceWarningDesc": "دیکھ بھال موڈ فعال کرنے سے پلیٹ فارم ایڈمنز کے علاوہ تمام صارفین کے لیے غیر دستیاب ہو جائے گا۔",
+      "enableMaintenanceMode": "دیکھ بھال موڈ فعال کریں",
+      "temporarilyDisable": "عارضی طور پر پلیٹ فارم تک رسائی غیر فعال کریں",
+      "maintenanceMessage": "دیکھ بھال کا پیغام",
+      "maintenanceMessagePlaceholder": "دیکھ بھال کے دوران دکھایا جانے والا پیغام درج کریں...",
+      "maintenanceMessageDesc": "یہ پیغام پلیٹ فارم تک رسائی کرتے وقت صارفین کو دکھایا جائے گا",
+      "apiIntegration": "API انٹیگریشن",
+      "configureApiAccess": "API رسائی اور ویب ہکس ترتیب دیں",
+      "apiVersion": "API ورژن",
+      "rateLimitPerMinute": "شرح کی حد (فی منٹ)",
+      "webhookUrl": "ویب ہک URL",
+      "webhookPlaceholder": "https://your-domain.com/webhook",
+      "receiveRealTime": "حقیقی وقت ایونٹ اطلاعات وصول کریں",
+      "apiKey": "API کلید",
+      "contactSupport": "API کلید دوبارہ بنانے کے لیے سپورٹ سے رابطہ کریں",
+      "apiSecurity": "API سیکیورٹی",
+      "apiSecurityDesc": "اپنی API کلید محفوظ رکھیں اور کبھی عوامی طور پر شیئر نہ کریں۔",
+      "savingAllChanges": "تمام تبدیلیاں محفوظ ہو رہی ہیں...",
+      "saveAllChanges": "تمام تبدیلیاں محفوظ کریں"
+    },
+    "login": {
+      "title": "ایڈمن لاگ ان",
+      "subtitle": "ایڈمن پینل تک رسائی کے لیے سائن ان کریں",
+      "email": "ای میل",
+      "password": "پاس ورڈ",
+      "signIn": "سائن ان",
+      "forgotPassword": "پاس ورڈ بھول گئے؟",
+      "invalidCredentials": "غلط اسناد",
+      "loggingIn": "سائن ان ہو رہا ہے...",
+      "accessDenied": "رسائی سے انکار۔ ایڈمن مراعات ضروری ہیں۔",
+      "welcomeBack": "واپسی پر خوش آمدید!",
+      "loginFailed": "لاگ ان ناکام"
+    }
+  },
+  "vendor": {
+    "common": {
+      "dashboard": "ڈیش بورڈ",
+      "vendorPanel": "وینڈر پینل",
+      "myShop": "میری دکان",
+      "welcome": "واپسی پر خوش آمدید",
+      "overview": "جائزہ",
+      "refresh": "ریفریش",
+      "export": "برآمد",
+      "filter": "فلٹر",
+      "search": "تلاش",
+      "actions": "عمل",
+      "view": "دیکھیں",
+      "edit": "ترمیم",
+      "delete": "حذف کریں",
+      "add": "شامل کریں",
+      "save": "محفوظ کریں",
+      "cancel": "منسوخ",
+      "status": "حیثیت",
+      "date": "تاریخ",
+      "loading": "لوڈ ہو رہا ہے...",
+      "noData": "کوئی ڈیٹا دستیاب نہیں",
+      "active": "فعال",
+      "inactive": "غیر فعال",
+      "pending": "زیر التوا",
+      "draft": "ڈرافٹ",
+      "published": "شائع شدہ",
+      "close": "بند کریں",
+      "next": "اگلا",
+      "of": "کا",
+      "page": "صفحہ",
+      "previous": "پچھلا",
+      "retry": "دوبارہ کوشش",
+      "tryAgain": "دوبارہ کوشش کریں",
+      "viewAll": "سب دیکھیں",
+      "failedToLoad": "لوڈ کرنے میں ناکامی",
+      "create": "بنائیں",
+      "update": "اپ ڈیٹ",
+      "logOut": "لاگ آؤٹ",
+      "logoutSuccess": "کامیابی سے لاگ آؤٹ ہو گیا",
+      "searchPlaceholder": "مصنوعات، آرڈرز تلاش کریں..."
+    },
+    "sidebar": {
+      "dashboard": "ڈیش بورڈ",
+      "products": "مصنوعات",
+      "orders": "آرڈرز",
+      "customers": "صارفین",
+      "analytics": "تجزیات",
+      "reviews": "جائزے",
+      "offers": "پیشکشیں",
+      "campaigns": "مہمات",
+      "delivery": "ترسیل",
+      "notifications": "اطلاعات",
+      "team": "ٹیم",
+      "billing": "بلنگ",
+      "settings": "ترتیبات",
+      "shopSettings": "دکان کی ترتیبات",
+      "accountSettings": "اکاؤنٹ ترتیبات",
+      "storefront": "اسٹور فرنٹ",
+      "storefrontBuilder": "اسٹور فرنٹ بلڈر",
+      "logout": "لاگ آؤٹ",
+      "allProducts": "تمام مصنوعات",
+      "addProduct": "مصنوعات شامل کریں",
+      "viewStorefront": "اسٹور فرنٹ دیکھیں",
+      "editStorefront": "اسٹور فرنٹ میں ترمیم"
+    },
+    "dashboard": {
+      "title": "وینڈر ڈیش بورڈ",
+      "subtitle": "آپ کی دکان کا جائزہ",
+      "welcomeMessage": "آپ کے دکان ڈیش بورڈ میں خوش آمدید",
+      "totalProducts": "کل مصنوعات",
+      "totalOrders": "کل آرڈرز",
+      "totalRevenue": "کل آمدنی",
+      "totalCustomers": "کل صارفین",
+      "pendingOrders": "زیر التوا آرڈرز",
+      "todayOrders": "آج کے آرڈرز",
+      "todayRevenue": "آج کی آمدنی",
+      "averageRating": "اوسط درجہ بندی",
+      "recentOrders": "حالیہ آرڈرز",
+      "topProducts": "اعلیٰ مصنوعات",
+      "quickActions": "فوری عمل",
+      "addProduct": "مصنوعات شامل کریں",
+      "viewOrders": "آرڈرز دیکھیں",
+      "manageProducts": "مصنوعات منظم کریں",
+      "viewAnalytics": "تجزیات دیکھیں",
+      "customizeStorefront": "اسٹور فرنٹ اپنی مرضی کے مطابق بنائیں",
+      "shopSettings": "دکان کی ترتیبات",
+      "vsLastPeriod": "پچھلی مدت کے مقابلے",
+      "noOrders": "ابھی تک کوئی آرڈر نہیں",
+      "noProducts": "ابھی تک کوئی مصنوعات نہیں",
+      "getStarted": "اپنی پہلی مصنوعات شامل کر کے شروع کریں",
+      "visitStorefront": "اسٹور فرنٹ ملاحظہ کریں",
+      "previewStorefront": "اسٹور فرنٹ پیش نظارہ",
+      "actualEarnings": "آپ کی اصل آمدنی",
+      "addFirstProduct": "پہلی مصنوعات شامل کریں",
+      "addLogoDetails": "لوگو اور تفصیلات شامل کریں",
+      "addProducts": "مصنوعات شامل کریں",
+      "addProductsToSeePerformance": "کارکردگی دیکھنے کے لیے مصنوعات شامل کریں",
+      "createFirstListing": "اپنی پہلی لسٹنگ بنائیں",
+      "createNewListing": "نئی لسٹنگ بنائیں",
+      "customize": "اپنی مرضی کے مطابق بنائیں",
+      "deliveryCosts": "ترسیل کے اخراجات",
+      "designStorefront": "اپنا اسٹور فرنٹ ڈیزائن کریں",
+      "details": "تفصیلات",
+      "earningsBreakdown": "آمدنی کی تفصیل",
+      "editStorefront": "اسٹور فرنٹ میں ترمیم",
+      "getStartedSubtitle": "فروخت شروع کرنے کے لیے یہ مراحل مکمل کریں",
+      "getStartedTitle": "اپنے اسٹور کے ساتھ شروع کریں",
+      "grossSales": "مجموعی فروخت",
+      "manageOrders": "آرڈرز منظم کریں",
+      "netProfit": "خالص منافع",
+      "noShopSelected": "کوئی دکان منتخب نہیں",
+      "ordersWillAppear": "صارفین خریداری کرنے پر آرڈرز یہاں ظاہر ہوں گے",
+      "paidToDeliveryPartners": "ترسیل شراکت داروں کو ادا",
+      "pendingApprovalMessage": "آپ کی دکان زیر جائزہ ہے۔ انتظار کے دوران آپ مصنوعات شامل اور ترتیبات ترتیب دے سکتے ہیں۔",
+      "performanceMetrics": "کارکردگی میٹرکس",
+      "profitAfterDeductions": "تمام کٹوتیوں کے بعد آپ کا منافع",
+      "profitMargin": "منافع کی شرح",
+      "sales": "فروخت",
+      "selectOrCreateShop": "براہ کرم دکان منتخب کریں یا نئی بنائیں",
+      "shopPendingApproval": "دکان زیر التوا منظوری",
+      "shopSettingsDesc": "دکان کی ترتیبات",
+      "storeOverview": "آج آپ کے اسٹور کے ساتھ کیا ہو رہا ہے یہ ہے",
+      "storeViews": "اسٹور مناظر",
+      "totalOrderValue": "کل آرڈر ویلیو"
+    },
+    "products": {
+      "title": "مصنوعات",
+      "subtitle": "اپنی مصنوعات منظم کریں",
+      "allProducts": "تمام مصنوعات",
+      "addProduct": "مصنوعات شامل کریں",
+      "editProduct": "مصنوعات میں ترمیم",
+      "deleteProduct": "مصنوعات حذف کریں",
+      "productName": "مصنوعات کا نام",
+      "description": "تفصیل",
+      "price": "قیمت",
+      "salePrice": "سیل قیمت",
+      "stock": "سٹاک",
+      "sku": "SKU",
+      "category": "زمرہ",
+      "images": "تصاویر",
+      "status": "حیثیت",
+      "visibility": "ظاہریت",
+      "featured": "نمایاں",
+      "variants": "ویرینٹس",
+      "attributes": "خصوصیات",
+      "noProducts": "کوئی مصنوعات نہیں ملیں",
+      "searchProducts": "مصنوعات تلاش کریں...",
+      "productAdded": "مصنوعات کامیابی سے شامل ہو گئیں",
+      "productUpdated": "مصنوعات کامیابی سے اپ ڈیٹ ہو گئیں",
+      "productDeleted": "مصنوعات کامیابی سے حذف ہو گئیں",
+      "uploadImages": "تصاویر اپ لوڈ کریں",
+      "dragDropImages": "تصاویر یہاں ڈریگ اینڈ ڈراپ کریں",
+      "basicInfo": "بنیادی معلومات",
+      "pricing": "قیمت",
+      "inventory": "انوینٹری",
+      "shipping": "شپنگ",
+      "seo": "SEO",
+      "noProductsYet": "ابھی تک کوئی مصنوعات نہیں",
+      "noProductsFound": "کوئی مصنوعات نہیں ملیں",
+      "startBuildingInventory": "اپنی پہلی مصنوعات شامل کر کے انوینٹری بنانا شروع کریں۔",
+      "failedToLoad": "مصنوعات لوڈ کرنے میں ناکامی",
+      "addFirstProduct": "پہلی مصنوعات شامل کریں",
+      "statuses": {
+        "draft": "ڈرافٹ",
+        "published": "شائع شدہ"
+      },
+      "visibilityOptions": {
+        "public": "عوامی",
+        "private": "نجی",
+        "passwordProtected": "پاس ورڈ محفوظ"
+      }
+    },
+    "orders": {
+      "title": "آرڈرز",
+      "subtitle": "اپنے آرڈرز منظم کریں",
+      "allOrders": "تمام آرڈرز",
+      "orderId": "آرڈر آئی ڈی",
+      "customer": "صارف",
+      "items": "اشیاء",
+      "total": "کل",
+      "status": "حیثیت",
+      "date": "تاریخ",
+      "actions": "عمل",
+      "viewOrder": "آرڈر دیکھیں",
+      "updateStatus": "حیثیت اپ ڈیٹ کریں",
+      "orderDetails": "آرڈر کی تفصیلات",
+      "customerInfo": "صارف کی معلومات",
+      "shippingAddress": "شپنگ ایڈریس",
+      "paymentInfo": "ادائیگی کی معلومات",
+      "orderItems": "آرڈر کی اشیاء",
+      "orderNotes": "آرڈر نوٹس",
+      "pending": "زیر التوا",
+      "processing": "کارروائی جاری",
+      "shipped": "بھیج دیا گیا",
+      "delivered": "ترسیل مکمل",
+      "cancelled": "منسوخ",
+      "refunded": "رقم واپس",
+      "noOrders": "کوئی آرڈرز نہیں ملے",
+      "searchOrders": "آرڈرز تلاش کریں...",
+      "markAsProcessing": "کارروائی جاری بنائیں",
+      "markAsShipped": "بھیج دیا گیا بنائیں",
+      "markAsDelivered": "ترسیل مکمل بنائیں",
+      "cancelOrder": "آرڈر منسوخ کریں",
+      "printInvoice": "رسید پرنٹ کریں",
+      "trackingNumber": "ٹریکنگ نمبر",
+      "addTrackingNumber": "ٹریکنگ نمبر شامل کریں",
+      "acceptOrder": "آرڈر قبول کریں",
+      "noOrdersYet": "ابھی تک کوئی آرڈر نہیں",
+      "ordersWillAppear": "صارفین آپ کی دکان سے خریداری شروع کرنے پر آرڈرز یہاں ظاہر ہوں گے۔",
+      "failedToLoad": "آرڈرز لوڈ کرنے میں ناکامی"
+    },
+    "customers": {
+      "title": "صارفین",
+      "subtitle": "اپنے صارفین دیکھیں",
+      "allCustomers": "تمام صارفین",
+      "customerName": "صارف کا نام",
+      "email": "ای میل",
+      "phone": "فون",
+      "orders": "آرڈرز",
+      "totalSpent": "کل خرچ",
+      "lastOrder": "آخری آرڈر",
+      "viewCustomer": "صارف دیکھیں",
+      "customerDetails": "صارف کی تفصیلات",
+      "orderHistory": "آرڈر کی تاریخ",
+      "noCustomers": "ابھی تک کوئی صارف نہیں",
+      "searchCustomers": "صارفین تلاش کریں...",
+      "totalCustomers": "کل صارفین",
+      "totalOrders": "کل آرڈرز",
+      "totalRevenue": "کل آمدنی"
+    },
+    "analytics": {
+      "title": "تجزیات",
+      "subtitle": "اپنے اسٹور کی کارکردگی ٹریک کریں",
+      "overview": "جائزہ",
+      "revenue": "آمدنی",
+      "orders": "آرڈرز",
+      "products": "مصنوعات",
+      "customers": "صارفین",
+      "totalRevenue": "کل آمدنی",
+      "totalOrders": "کل آرڈرز",
+      "totalProducts": "کل مصنوعات",
+      "avgOrderValue": "اوسط آرڈر ویلیو",
+      "averageOrderValue": "اوسط آرڈر ویلیو",
+      "conversionRate": "تبدیلی کی شرح",
+      "dateRange": "تاریخ کی حد",
+      "today": "آج",
+      "thisWeek": "اس ہفتے",
+      "thisMonth": "اس ماہ",
+      "thisYear": "اس سال",
+      "last7Days": "آخری 7 دن",
+      "last30Days": "آخری 30 دن",
+      "last90Days": "آخری 90 دن",
+      "loading": "تجزیات لوڈ ہو رہے ہیں...",
+      "failedToLoad": "تجزیات لوڈ کرنے میں ناکامی",
+      "exportReport": "رپورٹ برآمد کریں"
+    },
+    "reviews": {
+      "title": "صارفین کے جائزے",
+      "subtitle": "صارفین کے فیڈ بیک کو منظم کریں اور جواب دیں",
+      "allReviews": "تمام جائزے",
+      "noReviews": "ابھی تک کوئی جائزے نہیں",
+      "averageRating": "اوسط درجہ بندی",
+      "totalReviews": "کل جائزے",
+      "reply": "جواب",
+      "replyToReview": "جائزے کا جواب دیں",
+      "outOf5": "5 میں سے",
+      "postReply": "جواب پوسٹ کریں"
+    },
+    "offers": {
+      "title": "پیشکشیں اور رعایتیں",
+      "subtitle": "اپنی پیشکشیں منظم کریں",
+      "allOffers": "تمام پیشکشیں",
+      "addOffer": "پیشکش شامل کریں",
+      "editOffer": "پیشکش میں ترمیم",
+      "deleteOffer": "پیشکش حذف کریں",
+      "offerName": "پیشکش کا نام",
+      "discountType": "رعایت کی قسم",
+      "percentage": "فیصد",
+      "fixedAmount": "مقررہ رقم",
+      "discountValue": "رعایت کی قیمت",
+      "startDate": "شروع کی تاریخ",
+      "endDate": "اختتام کی تاریخ",
+      "couponCode": "کوپن کوڈ",
+      "noOffers": "کوئی پیشکشیں نہیں ملیں",
+      "offerCreated": "پیشکش کامیابی سے بنائی گئی",
+      "offerUpdated": "پیشکش کامیابی سے اپ ڈیٹ ہو گئی",
+      "offerDeleted": "پیشکش کامیابی سے حذف ہو گئی"
+    },
+    "campaigns": {
+      "title": "مہمات",
+      "marketingCampaigns": "مارکیٹنگ مہمات",
+      "subtitle": "اپنی مارکیٹنگ مہمات منظم کریں",
+      "createAndManage": "پروموشنل مہمات بنائیں اور منظم کریں",
+      "noCampaigns": "کوئی مہمات نہیں ملیں",
+      "createCampaign": "مہم بنائیں",
+      "activeCampaigns": "فعال مہمات"
+    },
+    "delivery": {
+      "title": "ترسیل اور شپنگ",
+      "subtitle": "شپنگ طریقے منظم کریں اور ترسیلات ٹریک کریں",
+      "deliveryMethods": "ترسیل کے طریقے",
+      "deliveryZones": "ترسیل کے زونز",
+      "deliveryMen": "ترسیل کے افراد",
+      "addMethod": "ترسیل کا طریقہ شامل کریں",
+      "addZone": "ترسیل زون شامل کریں",
+      "addDeliveryMan": "ترسیل شخص شامل کریں",
+      "noMethods": "کوئی ترسیل طریقے نہیں",
+      "activeMethods": "فعال طریقے"
+    },
+    "team": {
+      "title": "ٹیم",
+      "subtitle": "اپنے ٹیم ممبرز منظم کریں",
+      "allMembers": "تمام ممبرز",
+      "addMember": "ممبر شامل کریں",
+      "inviteMember": "ممبر مدعو کریں",
+      "noMembers": "کوئی ٹیم ممبرز نہیں",
+      "totalMembers": "کل ممبرز",
+      "sendInvitation": "دعوت نامہ بھیجیں"
+    },
+    "billing": {
+      "title": "بلنگ اور سبسکرپشن",
+      "subtitle": "اپنی سبسکرپشن اور بلنگ معلومات منظم کریں",
+      "currentPlan": "موجودہ پلان",
+      "upgradePlan": "پلان اپ گریڈ کریں",
+      "billingHistory": "بلنگ تاریخ",
+      "paymentMethods": "ادائیگی کے طریقے",
+      "invoices": "رسیدیں",
+      "monthly": "ماہانہ",
+      "yearly": "سالانہ",
+      "cancelSubscription": "سبسکرپشن منسوخ کریں؟",
+      "freePlan": "مفت پلان"
+    },
+    "settings": {
+      "shop": {
+        "title": "دکان کی ترتیبات",
+        "subtitle": "اپنی دکان ترتیب دیں",
+        "basicInfo": "بنیادی معلومات",
+        "shopName": "دکان کا نام",
+        "shopDescription": "دکان کی تفصیل",
+        "shopLogo": "دکان کا لوگو",
+        "shopBanner": "دکان کا بینر",
+        "saveSettings": "ترتیبات محفوظ کریں",
+        "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں"
+      },
+      "account": {
+        "title": "اکاؤنٹ ترتیبات",
+        "subtitle": "اپنا اکاؤنٹ منظم کریں",
+        "changePassword": "پاس ورڈ تبدیل کریں",
+        "currentPassword": "موجودہ پاس ورڈ",
+        "newPassword": "نیا پاس ورڈ",
+        "confirmPassword": "پاس ورڈ کی تصدیق",
+        "saveSettings": "ترتیبات محفوظ کریں",
+        "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں"
+      },
+      "tabs": {
+        "general": "عمومی",
+        "business": "کاروبار",
+        "payment": "ادائیگی",
+        "notifications": "اطلاعات",
+        "seo": "SEO",
+        "domain": "ڈومین",
+        "advanced": "اعلیٰ"
+      },
+      "pageTitle": "دکان کی ترتیبات",
+      "pageSubtitle": "اپنی دکان کی ترجیحات ترتیب دیں",
+      "saveChanges": "تبدیلیاں محفوظ کریں",
+      "savingChanges": "محفوظ ہو رہا ہے...",
+      "saveAllChanges": "تمام تبدیلیاں محفوظ کریں"
+    },
+    "createShop": {
+      "title": "اپنا اسٹور بنائیں",
+      "subtitle": "{{appName}} پر اپنا اسٹور قائم کریں اور فروخت شروع کریں۔",
+      "step1": "بنیادی معلومات",
+      "step2": "رابطے کی تفصیلات",
+      "step3": "دستاویزات",
+      "step4": "جائزہ",
+      "shopName": "دکان کا نام",
+      "shopDescription": "دکان کی تفصیل",
+      "category": "زمرہ",
+      "createShop": "دکان بنائیں",
+      "shopCreated": "دکان کامیابی سے بن گئی",
+      "pendingApproval": "آپ کی دکان زیر التوا منظوری ہے",
+      "form": {
+        "storeName": "اسٹور کا نام",
+        "storeNamePlaceholder": "اپنے اسٹور کا نام درج کریں",
+        "description": "تفصیل",
+        "descriptionPlaceholder": "اپنے اسٹور کی وضاحت کریں (اختیاری)",
+        "creating": "اسٹور بنایا جا رہا ہے...",
+        "createStore": "اسٹور بنائیں",
+        "footerNote": "آپ بعد میں ترتیبات میں اپنے اسٹور کی تفصیلات اپ ڈیٹ کر سکتے ہیں"
+      },
+      "wizard": {
+        "steps": {
+          "storeType": "اسٹور کی قسم",
+          "storeDetails": "اسٹور کی تفصیلات",
+          "businessInfo": "کاروباری معلومات",
+          "review": "جائزہ"
+        },
+        "step1": {
+          "title": "آپ کیا فروخت کریں گے؟",
+          "subtitle": "وہ زمرہ منتخب کریں جو آپ کے اسٹور کی بہترین وضاحت کرے"
+        },
+        "step2": {
+          "title": "اپنے اسٹور کا نام رکھیں",
+          "subtitle": "اپنے برانڈ کے لیے ایک یادگار نام منتخب کریں"
+        },
+        "step4": {
+          "title": "لانچ کے لیے تیار!",
+          "subtitle": "لائیو ہونے سے پہلے اپنے اسٹور کی تفصیلات کا جائزہ لیں"
+        },
+        "navigation": {
+          "continue": "جاری رکھیں",
+          "launchStore": "اسٹور لانچ کریں",
+          "creatingStore": "اسٹور بنایا جا رہا ہے..."
+        },
+        "success": "اسٹور کامیابی سے بنایا گیا!",
+        "error": "اسٹور بنانے میں ناکامی"
+      }
+    },
+    "shopSelection": {
+      "title": "دکان منتخب کریں",
+      "subtitle": "منتخب کریں کون سی دکان منظم کرنی ہے",
+      "createNew": "نئی دکان بنائیں",
+      "noShops": "آپ کی ابھی تک کوئی دکانیں نہیں ہیں",
+      "noShopsYet": "ابھی تک کوئی دکانیں نہیں",
+      "selectShop": "منظم کرنے کے لیے دکان منتخب کریں"
+    },
+    "storefront": {
+      "title": "اسٹور فرنٹ بلڈر",
+      "subtitle": "اپنے اسٹور کی ظاہری شکل اپنی مرضی کے مطابق بنائیں",
+      "preview": "پیش نظارہ",
+      "publish": "شائع کریں",
+      "saveDraft": "ڈرافٹ محفوظ کریں",
+      "changesSaved": "تبدیلیاں کامیابی سے محفوظ ہو گئیں"
+    },
+    "storefrontBuilder": {
+      "loadingStorefront": "اسٹور فرنٹ لوڈ ہو رہا ہے...",
+      "backToDashboard": "ڈیش بورڈ پر واپس",
+      "preview": "پیش نظارہ",
+      "save": "محفوظ کریں",
+      "saving": "محفوظ ہو رہا ہے...",
+      "publish": "شائع کریں",
+      "publishing": "شائع ہو رہا ہے...",
+      "sections": "سیکشنز",
+      "theme": "تھیم",
+      "settings": "ترتیبات",
+      "seo": "SEO",
+      "pages": "صفحات",
+      "addSection": "سیکشن شامل کریں",
+      "storePublished": "اسٹور شائع ہو گیا!",
+      "storefrontIsLive": "آپ کا اسٹور فرنٹ اب لائیو ہے"
+    },
+    "profile": {
+      "backToHome": "ہوم پر واپس",
+      "myProfile": "میرا پروفائل",
+      "title": "میرا پروفائل",
+      "subtitle": "اپنی ذاتی معلومات منظم کریں",
+      "firstName": "پہلا نام",
+      "lastName": "آخری نام",
+      "email": "ای میل ایڈریس",
+      "saveChanges": "تبدیلیاں محفوظ کریں",
+      "saving": "محفوظ ہو رہا ہے...",
+      "profileUpdateSuccess": "پروفائل کامیابی سے اپ ڈیٹ ہو گیا",
+      "profileUpdateFailed": "پروفائل اپ ڈیٹ کرنے میں ناکامی",
+      "deleteAccount": {
+        "title": "اکاؤنٹ حذف کریں",
+        "description": "اکاؤنٹ حذف کرنے سے دکانوں اور مصنوعات سمیت آپ کا تمام ڈیٹا مستقل طور پر ہٹا دیا جائے گا۔",
+        "button": "میرا اکاؤنٹ حذف کریں"
+      }
+    },
+    "notifications": {
+      "title": "اطلاعات",
+      "unreadCount": "{{count}} نہ پڑھی ہوئی اطلاعات",
+      "allRead": "تمام اطلاعات پڑھی ہوئیں",
+      "loading": "اطلاعات لوڈ ہو رہی ہیں...",
+      "empty": "ابھی تک کوئی اطلاعات نہیں",
+      "markAllRead": "سب پڑھی ہوئی بنائیں",
+      "newOrder": "نیا آرڈر موصول",
+      "newOrderMsg": "{{customerName}} سے آرڈر #{{orderNumber}}"
+    },
+    "placeholders": {
+      "searchCampaigns": "مہمات تلاش کریں...",
+      "searchOffers": "پیشکشیں تلاش کریں...",
+      "searchReviews": "جائزے تلاش کریں...",
+      "firstName": "پہلا نام درج کریں",
+      "lastName": "آخری نام درج کریں",
+      "email": "اپنا ای میل درج کریں",
+      "phone": "اپنا فون نمبر درج کریں",
+      "shopName": "دکان کا نام درج کریں",
+      "productName": "مصنوعات کا نام درج کریں",
+      "productDescription": "اپنی مصنوعات کی وضاحت کریں..."
+    },
+    "aiPrompt": {
+      "poweredByAI": "AI سے تقویت یافتہ",
+      "describeDreamStore": "اپنے خوابوں کے اسٹور کی وضاحت کریں",
+      "tellUsAboutStore": "ہمیں اپنے اسٹور کے بارے میں بتائیں اور ہم آپ کے لیے ایک خوبصورت ویب سائٹ اور موبائل ایپس بنائیں گے۔",
+      "generateStorefront": "میرا اسٹور فرنٹ بنائیں",
+      "generateStore": "میرا اسٹور بنائیں"
+    },
+    "productAdd": {
+      "basicInfo": "بنیادی معلومات",
+      "productName": "مصنوعات کا نام",
+      "brand": "برانڈ",
+      "description": "تفصیل",
+      "sku": "SKU",
+      "pricing": "قیمت",
+      "price": "قیمت",
+      "sellingPrice": "فروخت قیمت",
+      "originalPrice": "اصل قیمت",
+      "inventory": "انوینٹری",
+      "stockQuantity": "سٹاک کی مقدار",
+      "productImages": "مصنوعات کی تصاویر",
+      "variants": "ویرینٹس (سائز اور رنگ)",
+      "seoSettings": "SEO ترتیبات",
+      "returnPolicy": "واپسی کی پالیسی",
+      "productCreated": "مصنوعات کامیابی سے بنائی گئیں",
+      "productUpdated": "مصنوعات کامیابی سے اپ ڈیٹ ہو گئیں",
+      "failedToCreate": "مصنوعات بنانے میں ناکامی",
+      "failedToUpdate": "مصنوعات اپ ڈیٹ کرنے میں ناکامی",
+      "validation": {
+        "productNameRequired": "مصنوعات کا نام ضروری ہے",
+        "priceMustBePositive": "قیمت 0 سے زیادہ ہونی چاہیے",
+        "quantityCannotBeNegative": "مقدار منفی نہیں ہو سکتی"
+      }
+    },
+    "toasts": {
+      "shopNotFound": "دکان نہیں ملی",
+      "pleaseLoginAgain": "براہ کرم دوبارہ لاگ ان کریں",
+      "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں",
+      "settingsSavedDesc": "آپ کی دکان کی ترتیبات اپ ڈیٹ ہو گئیں",
+      "productDeleted": "مصنوعات کامیابی سے حذف ہو گئیں",
+      "orderAccepted": "آرڈر قبول",
+      "orderAcceptedDesc": "آرڈر قبول ہو گیا ہے اور تیار کیا جا رہا ہے",
+      "orderCancelled": "آرڈر منسوخ",
+      "orderCancelledDesc": "آرڈر منسوخ ہو گیا ہے",
+      "shopSelected": "دکان کامیابی سے منتخب ہو گئی!"
+    }
+  },
+  "delivery": {
+    "common": {
+      "dashboard": "ڈیش بورڈ",
+      "deliveryPanel": "ترسیل پینل",
+      "welcome": "واپسی پر خوش آمدید",
+      "refresh": "ریفریش",
+      "loading": "لوڈ ہو رہا ہے...",
+      "noData": "کوئی ڈیٹا دستیاب نہیں",
+      "view": "دیکھیں",
+      "accept": "قبول",
+      "reject": "مسترد",
+      "complete": "مکمل",
+      "status": "حیثیت",
+      "date": "تاریخ",
+      "cancel": "منسوخ",
+      "viewAll": "سب دیکھیں"
+    },
+    "sidebar": {
+      "dashboard": "ڈیش بورڈ",
+      "orders": "آرڈرز",
+      "availableOrders": "دستیاب آرڈرز",
+      "activeOrders": "فعال آرڈرز",
+      "history": "تاریخ",
+      "earnings": "آمدنی",
+      "reviews": "جائزے",
+      "zones": "زونز",
+      "profile": "پروفائل",
+      "settings": "ترتیبات",
+      "logout": "لاگ آؤٹ",
+      "delivery": "ترسیل",
+      "partnerDashboard": "پارٹنر ڈیش بورڈ",
+      "collapse": "سکیڑیں"
+    },
+    "dashboard": {
+      "title": "ترسیل ڈیش بورڈ",
+      "subtitle": "آپ کی ترسیل کا جائزہ",
+      "welcomeMessage": "ترسیل کے لیے تیار ہیں؟",
+      "todayDeliveries": "آج کی ترسیلات",
+      "totalDeliveries": "کل ترسیلات",
+      "todayEarnings": "آج کی آمدنی",
+      "totalEarnings": "کل آمدنی",
+      "pendingOrders": "زیر التوا آرڈرز",
+      "activeOrders": "فعال آرڈرز",
+      "completionRate": "تکمیل کی شرح",
+      "averageRating": "اوسط درجہ بندی",
+      "goOnline": "آن لائن ہوں",
+      "goOffline": "آف لائن ہوں",
+      "online": "آن لائن",
+      "offline": "آف لائن"
+    },
+    "orders": {
+      "title": "ترسیل آرڈرز",
+      "subtitle": "اپنی ترسیلات منظم کریں",
+      "available": "دستیاب",
+      "active": "فعال",
+      "completed": "مکمل",
+      "acceptOrder": "آرڈر قبول کریں",
+      "startDelivery": "ترسیل شروع کریں",
+      "completeDelivery": "ترسیل مکمل کریں",
+      "delivered": "ترسیل مکمل",
+      "cancelled": "منسوخ",
+      "noOrders": "کوئی آرڈرز نہیں ملے",
+      "orderDetails": "آرڈر کی تفصیلات",
+      "pickupAddress": "پک اپ ایڈریس",
+      "deliveryAddress": "ترسیل ایڈریس",
+      "callCustomer": "صارف کو کال کریں",
+      "getDirections": "سمت حاصل کریں",
+      "orderAccepted": "آرڈر کامیابی سے قبول ہو گیا",
+      "deliveryCompleted": "ترسیل کامیابی سے مکمل ہو گئی"
+    },
+    "history": {
+      "title": "ترسیل کی تاریخ",
+      "subtitle": "اپنی ماضی کی ترسیلات دیکھیں",
+      "noHistory": "ترسیل کی تاریخ نہیں",
+      "totalDeliveries": "کل ترسیلات",
+      "totalEarned": "کل آمدنی"
+    },
+    "earnings": {
+      "title": "آمدنی",
+      "subtitle": "اپنی آمدنی ٹریک کریں",
+      "totalEarnings": "کل آمدنی",
+      "pendingEarnings": "زیر التوا آمدنی",
+      "todayEarnings": "آج کی آمدنی",
+      "withdrawFunds": "رقم نکالیں",
+      "deliveryFees": "ترسیل فیس",
+      "tips": "ٹپس",
+      "netEarnings": "خالص آمدنی",
+      "noEarnings": "ابھی تک کوئی آمدنی نہیں",
+      "withdraw": "نکالیں",
+      "withdrawalSuccess": "نکالنے کی درخواست کامیابی سے ہو گئی"
+    },
+    "reviews": {
+      "title": "جائزے",
+      "subtitle": "آپ کے صارفین کے جائزے",
+      "averageRating": "اوسط درجہ بندی",
+      "totalReviews": "کل جائزے",
+      "noReviews": "ابھی تک کوئی جائزے نہیں"
+    },
+    "zones": {
+      "title": "ترسیل زونز",
+      "subtitle": "اپنے ترسیل کے علاقے منظم کریں",
+      "noZones": "کوئی زونز دستیاب نہیں",
+      "myZone": "میرا زون",
+      "assignedZone": "تفویض شدہ زون"
+    },
+    "profile": {
+      "title": "پروفائل",
+      "subtitle": "اپنا پروفائل منظم کریں",
+      "personalInfo": "ذاتی معلومات",
+      "fullName": "مکمل نام",
+      "email": "ای میل",
+      "phone": "فون",
+      "saveProfile": "پروفائل محفوظ کریں",
+      "profileSaved": "پروفائل کامیابی سے محفوظ ہو گیا",
+      "profileUpdated": "پروفائل کامیابی سے اپ ڈیٹ ہو گیا",
+      "deleteAccount": "اکاؤنٹ حذف کریں"
+    },
+    "settings": {
+      "title": "ترتیبات",
+      "subtitle": "اپنی ترجیحات منظم کریں",
+      "notifications": "اطلاعات",
+      "autoAcceptOrders": "آرڈرز خود بخود قبول کریں",
+      "saveSettings": "ترتیبات محفوظ کریں",
+      "settingsSaved": "ترتیبات کامیابی سے محفوظ ہو گئیں"
+    },
+    "login": {
+      "title": "ترسیل پارٹنر لاگ ان",
+      "subtitle": "ترسیل شروع کرنے کے لیے سائن ان کریں",
+      "email": "ای میل ایڈریس",
+      "password": "پاس ورڈ",
+      "signIn": "سائن ان",
+      "signingIn": "سائن ان ہو رہا ہے...",
+      "forgotPassword": "پاس ورڈ بھول گئے؟",
+      "welcomeBack": "واپسی پر خوش آمدید، ترسیل پارٹنر!",
+      "loginFailed": "لاگ ان ناکام",
+      "backToStore": "اسٹور پر واپس"
+    },
+    "topbar": {
+      "notifications": "اطلاعات",
+      "deliveryPartner": "ترسیل پارٹنر",
+      "partner": "پارٹنر"
+    },
+    "location": {
+      "live": "لائیو",
+      "error": "GPS خرابی",
+      "sharingActive": "آپ کا مقام صارفین کے ساتھ شیئر ہو رہا ہے",
+      "permissionDenied": "مقام کی اجازت سے انکار",
+      "enableLocation": "ترسیل شروع کرنے کے لیے لوکیشن سروسز فعال کریں"
+    },
+    "notifications": {
+      "title": "اطلاعات",
+      "unreadCount": "{{count}} نہ پڑھی ہوئی اطلاعات",
+      "markAllRead": "سب پڑھی ہوئی بنائیں"
+    }
+  },
+  "settingsPage": {
+    "title": "ترتیبات",
+    "subtitle": "اپنے اکاؤنٹ کی ترتیبات اور ترجیحات منظم کریں",
+    "breadcrumb": {
+      "account": "اکاؤنٹ",
+      "settings": "ترتیبات"
+    },
+    "toasts": {
+      "settingsUpdated": "ترتیبات اپ ڈیٹ",
+      "notificationsSaved": "آپ کی اطلاعاتی ترجیحات محفوظ ہو گئیں۔",
+      "passwordChanged": "پاس ورڈ تبدیل ہو گیا",
+      "passwordUpdated": "آپ کا پاس ورڈ کامیابی سے اپ ڈیٹ ہو گیا ہے۔",
+      "downloadStarted": "ڈاؤن لوڈ شروع ہو گیا",
+      "dataPreparing": "آپ کا ڈیٹا ڈاؤن لوڈ کے لیے تیار ہو رہا ہے۔",
+      "deletionRequested": "اکاؤنٹ حذف کی درخواست",
+      "deletionProcessing": "ہم 24 گھنٹوں میں آپ کی درخواست پر کارروائی کریں گے۔",
+      "twoFAEnabled": "2FA فعال",
+      "twoFADisabled": "2FA غیر فعال",
+      "twoFAEnabledDesc": "دو عنصری تصدیق فعال ہو گئی ہے۔",
+      "twoFADisabledDesc": "دو عنصری تصدیق غیر فعال ہو گئی ہے۔"
+    },
+    "account": {
+      "title": "اکاؤنٹ ترتیبات",
+      "changePassword": "پاس ورڈ تبدیل کریں",
+      "currentPassword": "موجودہ پاس ورڈ",
+      "newPassword": "نیا پاس ورڈ",
+      "confirmNewPassword": "نئے پاس ورڈ کی تصدیق",
+      "changePasswordBtn": "پاس ورڈ تبدیل کریں",
+      "twoFactorAuth": "دو عنصری تصدیق",
+      "twoFactorAuthDesc": "اپنے اکاؤنٹ میں سیکیورٹی کی اضافی تہہ شامل کریں"
+    },
+    "notifications": {
+      "title": "اطلاعاتی ترجیحات",
+      "emailNotifications": "ای میل اطلاعات",
+      "smsNotifications": "SMS اطلاعات",
+      "pushNotifications": "پش اطلاعات",
+      "pushNotificationsDesc": "اپنے براؤزر میں اطلاعات وصول کریں",
+      "email": {
+        "orderUpdates": "آرڈر کی تازہ کاری",
+        "promotions": "پروموشنز",
+        "newArrivals": "نئی آمد",
+        "priceDropAlerts": "قیمت میں کمی کی اطلاعات",
+        "backInStockAlerts": "واپس سٹاک میں کی اطلاعات",
+        "newsletter": "نیوز لیٹر"
+      },
+      "sms": {
+        "orderShipped": "آرڈر بھیج دیا گیا",
+        "deliveryUpdates": "ترسیل کی تازہ کاری",
+        "securityAlerts": "سیکیورٹی الرٹس"
+      }
+    },
+    "privacy": {
+      "title": "رازداری کی ترتیبات",
+      "profileVisibility": "پروفائل کی ظاہریت",
+      "public": "عوامی",
+      "publicDesc": "کوئی بھی آپ کا پروفائل دیکھ سکتا ہے",
+      "private": "نجی",
+      "privateDesc": "صرف آپ اپنا پروفائل دیکھ سکتے ہیں",
+      "downloadMyData": "میرا ڈیٹا ڈاؤن لوڈ کریں",
+      "downloadData": "ڈیٹا ڈاؤن لوڈ",
+      "deleteAccount": "اکاؤنٹ حذف کریں",
+      "deleteAccountDesc": "اپنا اکاؤنٹ اور تمام منسلک ڈیٹا مستقل طور پر حذف کریں۔ یہ عمل واپس نہیں ہو سکتا۔",
+      "typeDeleteToConfirm": "تصدیق کے لیے \"DELETE\" ٹائپ کریں"
+    },
+    "languageRegion": {
+      "title": "زبان اور علاقہ",
+      "language": "زبان",
+      "languages": {
+        "english": "انگریزی",
+        "spanish": "ہسپانوی",
+        "french": "فرانسیسی",
+        "german": "جرمن",
+        "italian": "اطالوی",
+        "portuguese": "پرتگالی"
+      },
+      "currency": "کرنسی",
+      "timeZone": "ٹائم زون",
+      "timezones": {
+        "eastern": "ایسٹرن ٹائم (ET)",
+        "central": "سنٹرل ٹائم (CT)",
+        "mountain": "ماؤنٹین ٹائم (MT)",
+        "pacific": "پیسیفک ٹائم (PT)"
+      },
+      "dateFormat": "تاریخ کا فارمیٹ"
+    },
+    "appearance": {
+      "title": "ظاہری شکل",
+      "theme": "تھیم",
+      "light": "ہلکا",
+      "dark": "گہرا",
+      "auto": "خودکار",
+      "fontSize": "فونٹ سائز",
+      "small": "چھوٹا",
+      "medium": "درمیانہ",
+      "large": "بڑا",
+      "accessibilityOptions": "رسائی کے اختیارات",
+      "highContrast": "ہائی کنٹراسٹ موڈ",
+      "reduceMotion": "حرکت کم کریں",
+      "screenReader": "سکرین ریڈر آپٹیمائزیشن"
+    },
+    "security": {
+      "title": "سیکیورٹی",
+      "changePassword": "پاس ورڈ تبدیل کریں",
+      "currentPassword": "موجودہ پاس ورڈ",
+      "newPassword": "نیا پاس ورڈ",
+      "confirmNewPassword": "نئے پاس ورڈ کی تصدیق",
+      "updatePassword": "پاس ورڈ اپ ڈیٹ کریں",
+      "twoFactorAuth": "دو عنصری تصدیق",
+      "twoFAActive": "2FA فعال ہے",
+      "twoFAActiveDesc": "آپ کا اکاؤنٹ دو عنصری تصدیق سے محفوظ ہے۔",
+      "loginAlerts": "لاگ ان الرٹس",
+      "loginAlertsDesc": "جب کوئی آپ کے اکاؤنٹ میں لاگ ان کرے تو اطلاع حاصل کریں"
+    },
+    "communication": {
+      "title": "مواصلات",
+      "emailPreferences": "ای میل ترجیحات",
+      "orderUpdates": "آرڈر کی تازہ کاری",
+      "promotionsOffers": "پروموشنز اور پیشکشیں",
+      "newsletter": "نیوز لیٹر",
+      "pushNotifications": "پش اطلاعات",
+      "pushNotificationsDesc": "اپنے براؤزر میں حقیقی وقت اپ ڈیٹس وصول کریں"
+    }
+  },
+  "profilePage": {
+    "breadcrumb": {
+      "account": "اکاؤنٹ"
+    },
+    "nav": {
+      "dashboard": "ڈیش بورڈ",
+      "personalInfo": "ذاتی معلومات",
+      "addresses": "پتے",
+      "paymentMethods": "ادائیگی کے طریقے",
+      "orderHistory": "آرڈر کی تاریخ",
+      "wishlist": "خواہش فہرست",
+      "settings": "ترتیبات"
+    },
+    "notAuthenticated": {
+      "message": "اپنا پروفائل دیکھنے کے لیے لاگ ان کریں",
+      "goToLogin": "لاگ ان پر جائیں"
+    },
+    "toasts": {
+      "selectImageFile": "براہ کرم تصویر فائل منتخب کریں",
+      "imageTooLarge": "تصویر 5MB سے کم ہونی چاہیے",
+      "photoUpdated": "پروفائل تصویر کامیابی سے اپ ڈیٹ ہو گئی",
+      "profileUpdated": "پروفائل اپ ڈیٹ",
+      "profileUpdatedDesc": "آپ کا پروفائل کامیابی سے اپ ڈیٹ ہو گیا ہے"
+    },
+    "dashboard": {
+      "welcome": "واپسی پر خوش آمدید، {{name}}!",
+      "defaultUser": "صارف",
+      "subtitle": "آپ کے اکاؤنٹ کے ساتھ کیا ہو رہا ہے یہ ہے",
+      "stats": {
+        "totalOrders": "کل آرڈرز",
+        "activeOrders": "فعال آرڈرز",
+        "wishlistItems": "خواہش فہرست کی اشیاء",
+        "rewardPoints": "انعامی پوائنٹس"
+      },
+      "recentOrders": {
+        "title": "حالیہ آرڈرز",
+        "viewAll": "سب دیکھیں",
+        "noOrders": "ابھی تک کوئی آرڈر نہیں"
+      },
+      "primaryAddress": {
+        "title": "بنیادی پتہ",
+        "manage": "منظم کریں",
+        "noAddress": "کوئی پتہ محفوظ نہیں",
+        "addAddress": "پتہ شامل کریں"
+      },
+      "security": {
+        "title": "اکاؤنٹ سیکیورٹی",
+        "emailVerified": "ای میل تصدیق شدہ",
+        "twoFactorActive": "دو عنصری تصدیق فعال",
+        "manage": "منظم کریں"
+      }
+    },
+    "loading": {
+      "orders": "آرڈرز لوڈ ہو رہے ہیں...",
+      "addresses": "پتے لوڈ ہو رہے ہیں...",
+      "paymentMethods": "ادائیگی کے طریقے لوڈ ہو رہے ہیں..."
+    },
+    "common": {
+      "retry": "دوبارہ کوشش",
+      "cancel": "منسوخ",
+      "edit": "ترمیم",
+      "default": "طے شدہ",
+      "setDefault": "طے شدہ بنائیں"
+    },
+    "personalInfo": {
+      "title": "ذاتی معلومات",
+      "firstName": "پہلا نام",
+      "lastName": "آخری نام",
+      "email": "ای میل ایڈریس",
+      "phone": "فون نمبر",
+      "profilePhoto": "پروفائل تصویر",
+      "uploading": "اپ لوڈ ہو رہا ہے...",
+      "uploadNewPhoto": "نئی تصویر اپ لوڈ کریں",
+      "photoRequirements": "JPG، PNG یا GIF۔ زیادہ سے زیادہ 5MB۔",
+      "saving": "محفوظ ہو رہا ہے...",
+      "saveChanges": "تبدیلیاں محفوظ کریں"
+    },
+    "addresses": {
+      "title": "محفوظ شدہ پتے",
+      "addNew": "نیا پتہ شامل کریں",
+      "noAddresses": "کوئی محفوظ شدہ پتے نہیں",
+      "addFirst": "اپنا پہلا پتہ شامل کریں"
+    },
+    "paymentMethods": {
+      "title": "ادائیگی کے طریقے",
+      "addNew": "نیا کارڈ شامل کریں",
+      "noMethods": "کوئی محفوظ شدہ ادائیگی کے طریقے نہیں",
+      "secureMessage": "ادائیگی کے طریقے چیک آؤٹ پر محفوظ طریقے سے کارروائی ہوتے ہیں"
+    },
+    "orderHistory": {
+      "title": "آرڈر کی تاریخ",
+      "noOrders": "ابھی تک کوئی آرڈر نہیں",
+      "startShopping": "خریداری شروع کریں",
+      "placedOn": "{{date}} کو دیا گیا",
+      "items": "{{count}} اشیاء",
+      "viewDetails": "تفصیلات دیکھیں",
+      "status": {
+        "delivered": "ترسیل مکمل",
+        "processing": "کارروائی جاری",
+        "shipped": "بھیج دیا گیا",
+        "cancelled": "منسوخ"
+      }
+    },
+    "wishlist": {
+      "title": "میری خواہش فہرست",
+      "empty": "آپ کی خواہش فہرست خالی ہے",
+      "browseProducts": "مصنوعات دیکھیں"
+    },
+    "settingsTab": {
+      "title": "ترتیبات",
+      "description": "اپنے اکاؤنٹ کی ترتیبات اور ترجیحات منظم کریں",
+      "goToSettings": "ترتیبات پر جائیں"
+    },
+    "deleteAccount": {
+      "title": "اکاؤنٹ حذف کریں",
+      "warning": "اکاؤنٹ حذف کرنے سے آپ کا تمام ڈیٹا مستقل طور پر ہٹا دیا جائے گا۔ یہ عمل واپس نہیں ہو سکتا۔",
+      "button": "میرا اکاؤنٹ حذف کریں"
+    },
+    "deleteModal": {
+      "title": "اکاؤنٹ حذف کریں",
+      "description": "اس سے آپ کا اکاؤنٹ اور تمام منسلک ڈیٹا مستقل طور پر حذف ہو جائے گا بشمول:",
+      "items": {
+        "profile": "آپ کی پروفائل معلومات",
+        "orders": "آرڈر کی تاریخ",
+        "addresses": "محفوظ شدہ پتے اور ادائیگی کے طریقے",
+        "wishlist": "خواہش فہرست کی اشیاء"
+      },
+      "confirmPrompt": "ٹائپ کریں",
+      "toConfirm": "تصدیق کے لیے:",
+      "placeholder": "DELETE ٹائپ کریں",
+      "confirmButton": "اکاؤنٹ حذف کریں"
+    },
+    "memberSince": "{{year}} سے رکن",
+    "logout": "لاگ آؤٹ"
+  }
+}

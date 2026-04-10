@@ -1,0 +1,174 @@
+name: fluxez_shop
+description: "Fluxez Shop - Multi-Vendor E-Commerce Mobile App"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Icons
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_riverpod: ^2.6.1
+
+  # HTTP & API
+  dio: ^5.7.0
+  retrofit: ^4.4.1
+  json_annotation: ^4.9.0
+  freezed_annotation: ^2.4.4
+
+  # Storage
+  shared_preferences: ^2.3.4
+  flutter_secure_storage: ^9.2.2
+
+  # Navigation
+  go_router: ^14.6.2
+
+  # UI Components
+  cached_network_image: ^3.4.1
+  flutter_svg: ^2.0.16
+  shimmer: ^3.0.0
+  flutter_staggered_grid_view: ^0.7.0
+  carousel_slider: ^5.0.0
+  smooth_page_indicator: ^1.2.0+3
+  flutter_rating_bar: ^4.0.1
+  badges: ^3.1.2
+  fl_chart: ^0.69.0
+
+  # Forms & Validation
+  flutter_form_builder: ^10.2.0
+  form_validator: ^2.1.1
+
+  # Image Handling
+  image_picker: ^1.1.2
+  image_cropper: ^8.0.2
+
+  # Payment
+  flutter_stripe: ^11.3.0
+
+  # WebSocket & Real-time
+  socket_io_client: ^3.0.0
+
+  # QR Code
+  qr_flutter: ^4.1.0
+  mobile_scanner: ^6.0.2
+
+  # Utilities
+  intl: ^0.20.0
+  timeago: ^3.7.0
+  url_launcher: ^6.3.1
+  share_plus: ^10.1.4
+  path_provider: ^2.1.5
+  flutter_dotenv: ^5.2.1
+  google_fonts: ^6.2.1
+  easy_localization: ^3.0.7
+
+  # Maps & Location
+  google_maps_flutter: ^2.9.0
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+
+  # Permissions
+  permission_handler: ^11.3.1
+
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+  firebase_messaging: ^15.1.5
+
+  # Firebase
+  firebase_core: ^3.8.1
+  firebase_analytics: ^11.3.5
+
+  # UI Utilities
+  flutter_slidable: ^3.1.1
+  pull_to_refresh: ^2.0.0
+  infinite_scroll_pagination: ^4.1.0
+
+  # Animation
+  lottie: ^3.2.2
+
+  # Video
+  video_player: ^2.9.2
+
+  # PDF
+  flutter_pdfview: ^1.3.3
+  printing: ^5.13.4
+  font_awesome_flutter: ^10.12.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # Linting
+  flutter_lints: ^6.0.0
+
+  # App Icon Generator
+  flutter_launcher_icons: ^0.14.3
+
+  # Code Generation
+  build_runner: ^2.4.13
+  retrofit_generator: ^9.1.6
+  json_serializable: ^6.8.0
+  riverpod_generator: ^2.6.4
+  freezed: ^2.5.7
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  # Assets
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/logos/
+    - assets/translations/
+    - .env
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+
+# App Icon Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logos/app_icon.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/logos/app_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  web:
+    generate: false

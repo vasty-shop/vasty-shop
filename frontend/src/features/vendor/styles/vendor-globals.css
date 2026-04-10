@@ -1,0 +1,378 @@
+/* Vendor Admin Panel - Global Styles */
+
+/* Custom Scrollbar - Vasty Design System */
+.vendor-scrollbar,
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #22d3ee rgba(34, 211, 238, 0.05);
+}
+
+.vendor-scrollbar::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.vendor-scrollbar::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(34, 211, 238, 0.05);
+  border-radius: 3px;
+}
+
+.vendor-scrollbar::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #22d3ee 0%, #0ea5e9 100%);
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(34, 211, 238, 0.3);
+}
+
+.vendor-scrollbar::-webkit-scrollbar-thumb:hover,
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #06b6d4 0%, #0284c7 100%);
+  box-shadow: 0 0 8px rgba(34, 211, 238, 0.5);
+}
+
+/* Glass Morphism Utilities - Vasty Design System */
+.glass {
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+  background: rgba(6, 182, 212, 0.1);
+  border: 1px solid rgba(34, 211, 238, 0.3);
+  box-shadow:
+    0 8px 32px rgba(34, 211, 238, 0.15),
+    inset 0 1px 0 rgba(34, 211, 238, 0.1),
+    0 0 0 1px rgba(34, 211, 238, 0.05);
+}
+
+.glass-solid {
+  backdrop-filter: blur(48px);
+  -webkit-backdrop-filter: blur(48px);
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.glass-hover {
+  transition: all 0.3s ease;
+}
+
+.glass-hover:hover {
+  background-color: rgba(51, 65, 85, 0.3);
+  border-color: rgba(103, 232, 249, 0.4);
+  box-shadow:
+    0 12px 40px rgba(34, 211, 238, 0.2),
+    inset 0 1px 0 rgba(34, 211, 238, 0.2),
+    0 0 0 1px rgba(34, 211, 238, 0.15);
+}
+
+/* Gradient Text Utilities */
+.text-gradient {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #A855F7 0%, #EC4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #60A5FA 0%, #06B6D4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Gradient Background Utilities - Vasty Design System */
+.gradient-primary {
+  background: linear-gradient(135deg, #22d3ee 0%, #0ea5e9 100%);
+  box-shadow: 0 4px 20px rgba(34, 211, 238, 0.3);
+}
+
+.gradient-secondary {
+  background: linear-gradient(135deg, #06b6d4 0%, #14b8a6 100%);
+  box-shadow: 0 4px 20px rgba(6, 182, 212, 0.3);
+}
+
+.gradient-accent {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  box-shadow: 0 4px 20px rgba(8, 145, 178, 0.3);
+}
+
+/* Keep vendor-specific gradients */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #A855F7 0%, #EC4899 100%);
+}
+
+.bg-gradient-success {
+  background: linear-gradient(135deg, #34D399 0%, #10B981 100%);
+}
+
+.bg-gradient-warning {
+  background: linear-gradient(135deg, #FBBF24 0%, #F97316 100%);
+}
+
+.bg-gradient-error {
+  background: linear-gradient(135deg, #F87171 0%, #FB7185 100%);
+}
+
+.bg-gradient-info {
+  background: linear-gradient(135deg, #60A5FA 0%, #06B6D4 100%);
+}
+
+/* Animated Gradient Background */
+.bg-gradient-animated {
+  background: linear-gradient(
+    270deg,
+    #A855F7,
+    #EC4899,
+    #8B5CF6,
+    #D946EF
+  );
+  background-size: 800% 800%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glow Effects - Vasty Design System */
+.glow {
+  box-shadow:
+    0 0 40px rgba(34, 211, 238, 0.5),
+    0 0 80px rgba(34, 211, 238, 0.2),
+    inset 0 0 20px rgba(34, 211, 238, 0.1);
+}
+
+.glow-hover {
+  transition: all 0.3s ease;
+}
+
+.glow-hover:hover {
+  box-shadow:
+    0 0 50px rgba(34, 211, 238, 0.6),
+    0 0 100px rgba(34, 211, 238, 0.3),
+    inset 0 0 30px rgba(34, 211, 238, 0.15);
+}
+
+.glow-cyan {
+  box-shadow:
+    0 0 30px rgba(34, 211, 238, 0.7),
+    0 0 60px rgba(34, 211, 238, 0.3),
+    inset 0 0 25px rgba(34, 211, 238, 0.15);
+}
+
+.glow-sm {
+  box-shadow:
+    0 0 15px rgba(34, 211, 238, 0.4),
+    0 0 30px rgba(34, 211, 238, 0.2);
+}
+
+/* Keep vendor-specific purple and pink glows */
+.glow-purple {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5),
+              0 0 40px rgba(168, 85, 247, 0.3),
+              inset 0 0 10px rgba(168, 85, 247, 0.1);
+}
+
+.glow-pink {
+  box-shadow: 0 0 20px rgba(236, 72, 153, 0.5),
+              0 0 40px rgba(236, 72, 153, 0.3),
+              inset 0 0 10px rgba(236, 72, 153, 0.1);
+}
+
+/* Shimmer Loading Effect */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 20%,
+    rgba(255, 255, 255, 0.3) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Pulse Animation */
+.pulse-purple {
+  animation: pulsePurple 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulsePurple {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.8);
+  }
+}
+
+/* Floating Animation */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Border Gradient */
+.border-gradient {
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, #A855F7, #EC4899);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Status Indicators */
+.status-dot {
+  position: relative;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.3;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Smooth Transitions */
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-fast {
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-slow {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Focus Visible Styles */
+.focus-ring:focus-visible {
+  outline: 2px solid #A855F7;
+  outline-offset: 2px;
+}
+
+/* Selection Styles */
+::selection {
+  background-color: rgba(168, 85, 247, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: rgba(168, 85, 247, 0.3);
+  color: white;
+}
+
+/* Print Styles */
+@media print {
+  .glass,
+  .glass-solid {
+    background: white !important;
+    color: black !important;
+    border: 1px solid #ccc !important;
+  }
+
+  .text-gradient {
+    -webkit-text-fill-color: unset !important;
+    background: none !important;
+    color: black !important;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .glass,
+  .glass-solid {
+    border-width: 2px;
+    border-color: currentColor;
+  }
+}
+
+/* Dark Mode Override (if needed) */
+@media (prefers-color-scheme: light) {
+  /* Vendor panel always uses dark theme */
+  .vendor-panel {
+    color-scheme: dark;
+  }
+}

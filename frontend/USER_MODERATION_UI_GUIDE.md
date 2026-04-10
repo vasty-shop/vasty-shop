@@ -1,0 +1,397 @@
+# User Moderation Page - UI Visual Guide
+
+## Page Layout Structure
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  USER MODERATION                                    [Export] │
+│  Manage and moderate user accounts                           │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌─────────┐       │
+│  │ [👤]    │  │ [✓]     │  │ [👤]    │  │ [🏪]    │       │
+│  │  1,234  │  │  1,100  │  │   800   │  │   350   │       │
+│  │ Total   │  │ Active  │  │Customer │  │ Vendor  │       │
+│  └─────────┘  └─────────┘  └─────────┘  └─────────┘       │
+│  ┌─────────┐  ┌─────────┐                                  │
+│  │ [🛡️]    │  │ [⛔]    │                                  │
+│  │    84   │  │   134   │                                  │
+│  │  Admin  │  │Suspended│                                  │
+│  └─────────┘  └─────────┘                                  │
+│                                                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  [🔍 Search by name or email...]                            │
+│  [Role ▼] [Status ▼] [Sort By ▼]                           │
+│                                                              │
+├─────────────────────────────────────────────────────────────┤
+│                                                              │
+│  ┌──┬──────────┬──────────┬──────┬────────┬─────┬────────┐ │
+│  │☐ │  User    │ Contact  │ Role │ Status │Act. │Actions │ │
+│  ├──┼──────────┼──────────┼──────┼────────┼─────┼────────┤ │
+│  │☐ │ [JD]     │ john@... │[👤]  │[Active]│2 ord│[👁][⚙]│ │
+│  │  │ John Doe │ +1-555.. │Cust. │        │     │[⛔][🗑]│ │
+│  ├──┼──────────┼──────────┼──────┼────────┼─────┼────────┤ │
+│  │☐ │ [JS]     │ jane@... │[🏪]  │[Susp.] │5 ord│[👁][⚙]│ │
+│  │  │JaneSmith │ +1-555.. │Vendor│        │3 rev│[✓][🗑] │ │
+│  ├──┼──────────┼──────────┼──────┼────────┼─────┼────────┤ │
+│  │  │   ...    │   ...    │ ...  │  ...   │ ... │  ...   │ │
+│  └──┴──────────┴──────────┴──────┴────────┴─────┴────────┘ │
+│                                                              │
+│  Page 1 of 10              [Previous] [Next]                │
+│                                                              │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## User Details Modal
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                                                    [X]  │
+│  ┌────┐                                                 │
+│  │ JD │  John Doe                                       │
+│  └────┘  john@example.com                               │
+│          [👤 Customer] [Active]                         │
+│                                                          │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐  ┌─────────┐│
+│  │ [🛒]     │  │ [$]      │  │ [⭐]     │  │ [🏪]    ││
+│  │    12    │  │  $1,234  │  │    5     │  │    0    ││
+│  │ Orders   │  │ Spent    │  │ Reviews  │  │ Shops   ││
+│  └──────────┘  └──────────┘  └──────────┘  └─────────┘│
+│                                                          │
+│  Contact Information                                     │
+│  ┌──────────────────────────────────────────────────┐  │
+│  │ [✉️] Email:  john@example.com                     │  │
+│  │ [📱] Phone:  +1-555-0123                          │  │
+│  │ [📅] Joined: Jan 15, 2024                         │  │
+│  │ [🔄] Last:   Dec 8, 2024                          │  │
+│  └──────────────────────────────────────────────────┘  │
+│                                                          │
+│  Recent Orders                                           │
+│  ┌──────────────────────────────────────────────────┐  │
+│  │ [📦] #ORD-123456         $156.00  [Delivered]    │  │
+│  │      Dec 5, 2024                                  │  │
+│  ├──────────────────────────────────────────────────┤  │
+│  │ [📦] #ORD-123455         $89.50   [Shipping]     │  │
+│  │      Dec 1, 2024                                  │  │
+│  └──────────────────────────────────────────────────┘  │
+│                                                          │
+│  [Change Role]  [Suspend/Activate]  [Delete User]       │
+│                                                          │
+└─────────────────────────────────────────────────────────┘
+```
+
+## Confirmation Dialog
+
+```
+┌───────────────────────────────────────────┐
+│                                           │
+│           ┌─────────────┐                 │
+│           │   [⚠️]      │                 │
+│           └─────────────┘                 │
+│                                           │
+│        Delete User                        │
+│                                           │
+│   Are you sure you want to delete        │
+│   John Doe? This action cannot be        │
+│   undone.                                 │
+│                                           │
+│   [Cancel]        [Confirm]               │
+│                                           │
+└───────────────────────────────────────────┘
+```
+
+## Color Coding
+
+### Status Badges
+```
+┌──────────┐  ┌──────────┐  ┌──────────┐  ┌──────────┐
+│ Active   │  │Suspended │  │ Banned   │  │ Inactive │
+│ (Green)  │  │ (Yellow) │  │  (Red)   │  │  (Gray)  │
+└──────────┘  └──────────┘  └──────────┘  └──────────┘
+```
+
+### Role Badges
+```
+┌──────────┐  ┌──────────┐  ┌──────────┐
+│ [🛡️]     │  │ [🏪]     │  │ [👤]     │
+│  Admin   │  │  Vendor  │  │ Customer │
+│ (Purple) │  │  (Blue)  │  │  (Cyan)  │
+└──────────┘  └──────────┘  └──────────┘
+```
+
+## Action Buttons
+
+### Individual Actions
+```
+┌───────────────────────────────────────┐
+│ [👁️ View] [⚙️ Role] [⛔ Suspend] [🗑️ Del] │
+└───────────────────────────────────────┘
+
+Hover States:
+- View:    Purple glow
+- Role:    Blue glow
+- Suspend: Yellow glow (or Green if suspended)
+- Delete:  Red glow
+```
+
+### Bulk Actions (when items selected)
+```
+┌────────────────────────────────────────────┐
+│  [⛔ Suspend (3)]  [🗑️ Delete (3)]  [Export] │
+└────────────────────────────────────────────┘
+```
+
+## Mobile Responsive Layout
+
+```
+┌──────────────────────┐
+│ USER MODERATION      │
+│ Manage users         │
+├──────────────────────┤
+│ ┌──────┐  ┌──────┐  │
+│ │[👤]  │  │[✓]   │  │
+│ │1,234 │  │1,100 │  │
+│ │Total │  │Active│  │
+│ └──────┘  └──────┘  │
+│                      │
+│ [🔍 Search...]       │
+│                      │
+│ ┌──────────────────┐ │
+│ │ [JD] John Doe    │ │
+│ │ john@example.com │ │
+│ │ [👤][Active]     │ │
+│ │ 12 orders        │ │
+│ └──────────────────┘ │
+│                      │
+│ ┌──────────────────┐ │
+│ │ [JS] Jane Smith  │ │
+│ │ jane@example.com │ │
+│ │ [🏪][Suspended]  │ │
+│ │ 5 orders, 3 rev. │ │
+│ └──────────────────┘ │
+│                      │
+│ [Load More]          │
+└──────────────────────┘
+```
+
+## Interactive States
+
+### Loading State
+```
+┌─────────────────────────────┐
+│                             │
+│      ⭕ (spinning)          │
+│                             │
+│   Loading users...          │
+│                             │
+└─────────────────────────────┘
+```
+
+### Empty State
+```
+┌─────────────────────────────┐
+│                             │
+│         [👤]                │
+│                             │
+│    No users found           │
+│                             │
+│  Try adjusting filters      │
+│                             │
+└─────────────────────────────┘
+```
+
+### Error State
+```
+┌─────────────────────────────┐
+│                             │
+│         [⚠️]                │
+│                             │
+│  Failed to load users       │
+│                             │
+│  Network connection error   │
+│                             │
+│      [Retry]                │
+│                             │
+└─────────────────────────────┘
+```
+
+## Toast Notifications
+
+### Success Toast (Green)
+```
+┌──────────────────────────────┐
+│ [✓] User role changed to     │
+│     vendor                   │
+└──────────────────────────────┘
+```
+
+### Error Toast (Red)
+```
+┌──────────────────────────────┐
+│ [X] Failed to delete user    │
+│     Permission denied        │
+└──────────────────────────────┘
+```
+
+### Info Toast (Blue)
+```
+┌──────────────────────────────┐
+│ [ℹ️] User list exported       │
+│     successfully             │
+└──────────────────────────────┘
+```
+
+## Animation Effects
+
+### Page Load
+- Fade in from opacity 0 to 1
+- Duration: 300ms
+
+### Stats Cards
+- Slide up with stagger
+- Each card delays by 100ms
+
+### Table Rows
+- Slide in from left
+- Stagger by 30ms per row
+
+### Modal
+- Scale from 0.95 to 1
+- Slide up slightly
+- Background blur fade in
+
+### Hover Effects
+- Scale up to 1.05
+- Transition: 200ms
+- Smooth easing
+
+## Accessibility Features
+
+### Keyboard Navigation
+- Tab through all interactive elements
+- Enter/Space to activate buttons
+- Escape to close modals
+- Arrow keys for table navigation
+
+### Screen Reader Support
+- ARIA labels on all buttons
+- Role attributes on table
+- Status announcements for actions
+- Alt text on icons
+
+### Visual Indicators
+- Focus rings on interactive elements
+- Clear hover states
+- Disabled state styling
+- Loading indicators
+
+## Dark Theme Palette
+
+### Background Colors
+```
+Primary BG:    rgb(15 23 42)    #0f172a (slate-900)
+Glass Effect:  rgba(255,255,255,0.05)
+Border:        rgba(255,255,255,0.1)
+```
+
+### Accent Colors
+```
+Purple:   rgb(168 85 247)   #a855f7
+Pink:     rgb(236 72 153)   #ec4899
+Green:    rgb(74 222 128)   #4ade80
+Red:      rgb(248 113 113)  #f87171
+Yellow:   rgb(251 191 36)   #fbbf24
+Blue:     rgb(59 130 246)   #3b82f6
+Cyan:     rgb(34 211 238)   #22d3ee
+```
+
+### Text Colors
+```
+Primary:   rgba(255,255,255,1.0)
+Secondary: rgba(255,255,255,0.7)
+Muted:     rgba(255,255,255,0.6)
+Disabled:  rgba(255,255,255,0.4)
+```
+
+## Icon Legend
+
+```
+👤 - User/Customer
+🏪 - Store/Vendor
+🛡️ - Admin/Shield
+👁️ - View/Eye
+⚙️ - Settings/Cog
+⛔ - Suspend/Ban
+✓ - Activate/Check
+🗑️ - Delete/Trash
+🔍 - Search
+📊 - Analytics
+✉️ - Email
+📱 - Phone
+📅 - Calendar
+🔄 - Activity
+📦 - Package/Order
+⭐ - Star/Rating
+💬 - Message/Review
+⚠️ - Warning
+❌ - Error
+✅ - Success
+ℹ️ - Info
+⭕ - Loading
+```
+
+## Responsive Breakpoints
+
+```
+Mobile:    < 640px   (sm)
+Tablet:    640-1024px (md)
+Desktop:   > 1024px   (lg)
+```
+
+### Mobile Adjustments
+- Single column stats
+- Stacked filters
+- Card-based user list
+- Bottom sheet for details
+- Simplified table view
+
+### Tablet Adjustments
+- Two column stats
+- Side-by-side filters
+- Condensed table columns
+- Modal with scroll
+
+### Desktop Features
+- Full grid layout
+- All columns visible
+- Hover interactions
+- Large modal display
+
+---
+
+## Usage Tips
+
+### For Designers
+- Use this as reference for mockups
+- Follow color palette exactly
+- Maintain spacing consistency
+- Keep icon sizes uniform
+
+### For Developers
+- Reference layout structure
+- Follow animation timings
+- Use exact color values
+- Implement all states
+
+### For QA
+- Test all interactive states
+- Verify responsive breakpoints
+- Check accessibility features
+- Validate color contrast
+
+---
+
+**Visual Guide Version**: 1.0.0
+**Created**: December 9, 2025
+**Part of**: Fluxez Shop - User Moderation Page

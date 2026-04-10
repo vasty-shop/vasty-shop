@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation
+    url: https://docs.vasty-shop.com
+    about: Check the documentation before opening an issue
+  - name: GitHub Discussions
+    url: https://github.com/vasty-shop/vasty-shop/discussions
+    about: Share ideas and discuss with the community

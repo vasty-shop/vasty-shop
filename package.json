@@ -1,0 +1,24 @@
+{
+  "name": "vasty-shop",
+  "version": "1.0.0",
+  "description": "vasty - AR Fashion E-Commerce Platform (Monorepo)",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "mobile",
+    "shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "dev:frontend": "npm run dev --workspace=frontend",
+    "dev:mobile": "npm run dev --workspace=mobile",
+    "build": "npm run build --workspace=frontend",
+    "build:frontend": "npm run build --workspace=frontend",
+    "build:mobile": "npm run build --workspace=mobile",
+    "preview": "npm run preview --workspace=frontend",
+    "lint": "npm run lint --workspaces"
+  },
+  "keywords": ["ecommerce", "fashion", "ar", "react", "monorepo"],
+  "author": "",
+  "license": "ISC"
+}

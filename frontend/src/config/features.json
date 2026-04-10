@@ -1,0 +1,60 @@
+{
+  "features": [
+    {
+      "id": "ai-storefront-builder",
+      "title": "AI-Powered Storefront Builder",
+      "description": "Create stunning, professional storefronts in minutes. Just describe what you want, and watch your dream store come to life with AI-generated designs and drag-and-drop customization.",
+      "videoSrc": "/videos/storefront-builder.mp4",
+      "isNew": true,
+      "isFeatured": true,
+      "isPopular": true,
+      "addedDate": "2026-01-08",
+      "version": "1.0"
+    },
+    {
+      "id": "instant-mobile-app",
+      "title": "Instant Mobile App",
+      "description": "Get your own branded mobile app automatically generated from your store. Your customers can shop on iOS and Android with a seamless native experience.",
+      "videoSrc": "/videos/mobile-app.mp4",
+      "isNew": true,
+      "isFeatured": true,
+      "isPopular": true,
+      "addedDate": "2026-01-08",
+      "version": "1.0"
+    },
+    {
+      "id": "delivery-ecosystem",
+      "title": "Complete Delivery Ecosystem",
+      "description": "Built-in delivery management with your own delivery team. Draw delivery zones on the map, assign drivers, track deliveries in real-time. Customers see live tracking from pickup to doorstep.",
+      "videoSrc": "/videos/delivery.mp4",
+      "isNew": true,
+      "isFeatured": true,
+      "isPopular": true,
+      "addedDate": "2026-01-08",
+      "version": "1.0"
+    },
+    {
+      "id": "smart-order-management",
+      "title": "Smart Order Management",
+      "description": "Manage all orders from one powerful dashboard. Real-time updates, batch operations, automated status notifications. Track orders from pending to delivered with complete visibility.",
+      "videoSrc": "/videos/order-management.mp4",
+      "isNew": true,
+      "isFeatured": true,
+      "isPopular": true,
+      "addedDate": "2026-01-08",
+      "version": "1.0"
+    },
+    {
+      "id": "marketing-tools",
+      "title": "Built-in Marketing Tools",
+      "description": "Boost sales with flash deals, coupon codes, and promotional campaigns. Create urgency with countdown timers, bundle products, and target the right customers with smart segmentation.",
+      "videoSrc": "/videos/marketing.mp4",
+      "isNew": true,
+      "isFeatured": true,
+      "isPopular": true,
+      "addedDate": "2026-01-08",
+      "version": "1.0"
+    }
+  ],
+  "modalVersion": "v1"
+}

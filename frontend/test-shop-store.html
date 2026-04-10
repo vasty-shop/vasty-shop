@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Store Test</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #1a1a1a;
+      color: #fff;
+    }
+    .test-result {
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border-left: 4px solid;
+    }
+    .pass {
+      background: #1a3d1a;
+      border-color: #4caf50;
+    }
+    .fail {
+      background: #3d1a1a;
+      border-color: #f44336;
+    }
+    button {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 10px 5px;
+    }
+    button:hover {
+      opacity: 0.9;
+    }
+    .code {
+      background: #2a2a2a;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shop Store Manual Test</h1>
+  <p>Open the browser console and run the following commands to test the shop store:</p>
+
+  <div class="code">
+    <pre>
+// Import the test functions (if in dev mode)
+import { runAllShopStoreTests } from './src/stores/useShopStore.test.ts';
+
+// Or if tests are available on window object:
+window.shopStoreTests.runAll();
+
+// Individual tests:
+window.shopStoreTests.testSetCurrentShop();
+window.shopStoreTests.testSetShops();
+window.shopStoreTests.testSwitchShop();
+window.shopStoreTests.testSwitchToInvalidShop();
+window.shopStoreTests.testClearShopContext();
+    </pre>
+  </div>
+
+  <h2>Manual Testing Steps</h2>
+  <ol>
+    <li>Start the development server: <code>npm run dev</code></li>
+    <li>Open the browser console (F12)</li>
+    <li>Test the store functions:
+      <div class="code">
+        <pre>
+// Get the store
+import { useShopStore } from './src/stores/useShopStore';
+const store = useShopStore.getState();
+
+// Test 1: Set shops
+const mockShops = [
+  {
+    id: '1',
+    name: 'Test Shop 1',
+    slug: 'test-shop-1',
+    status: 'active',
+    isVerified: true
+  }
+];
+store.setShops(mockShops);
+console.log('Shops:', useShopStore.getState().shops);
+
+// Test 2: Set current shop
+store.setCurrentShop(mockShops[0]);
+console.log('Current shop:', useShopStore.getState().currentShop);
+
+// Test 3: Switch shop
+store.switchShop('1');
+console.log('After switch:', useShopStore.getState().currentShop);
+
+// Test 4: Clear context
+store.clearShopContext();
+console.log('After clear:', useShopStore.getState());
+        </pre>
+      </div>
+    </li>
+  </ol>
+
+  <h2>Integration Testing</h2>
+  <ol>
+    <li>Login as a vendor</li>
+    <li>Check that shop context is set after login</li>
+    <li>Verify API requests include <code>x-shop-id</code> header</li>
+    <li>Test shop switching functionality</li>
+    <li>Verify logout clears shop context</li>
+  </ol>
+
+  <div id="results"></div>
+
+  <script type="module">
+    // This is a placeholder for manual testing
+    // The actual tests should be run in the dev environment
+    console.log('Shop Store Test Page Ready');
+    console.log('Follow the manual testing steps above');
+  </script>
+</body>
+</html>

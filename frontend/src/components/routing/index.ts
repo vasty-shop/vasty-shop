@@ -1,0 +1,1 @@
+export { SubdomainRouter } from './SubdomainRouter';
