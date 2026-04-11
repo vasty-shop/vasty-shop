@@ -167,6 +167,17 @@ export class BkashProvider implements PaymentProvider {
   }
 
   async createCheckout(input: CreateCheckoutInput): Promise<CheckoutSession> {
+    // bKash only accepts BDT. Reject mismatched currencies loudly
+    // instead of silently charging the customer in the wrong
+    // currency — a caller that meant USD would otherwise be billed
+    // in BDT at ~100x under their intended amount.
+    if (input.currency && input.currency.toUpperCase() !== 'BDT') {
+      throw new Error(
+        `bKash only supports BDT — caller passed currency="${input.currency}". ` +
+          `Validate the payment flow upstream or select a different PAYMENT_PROVIDER for non-BDT orders.`,
+      );
+    }
+
     // bKash amounts are decimal strings in BDT (not paisa).
     const amountBdt = (input.totalAmount / 100).toFixed(2);
 

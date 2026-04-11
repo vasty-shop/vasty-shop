@@ -347,6 +347,43 @@ async function main(): Promise<void> {
         (e) => /signature mismatch/i.test(e.message),
       ),
     );
+
+    // Fail-closed: if webhookSecret is set, missing signature
+    // header must throw instead of silently parsing the payload.
+    ok(
+      await expectThrow(
+        'missing signature header throws (fail-closed)',
+        () => p.parseWebhook(payload, undefined),
+        (e) => /signature missing/i.test(e.message),
+      ),
+    );
+
+    // Length-mismatch signatures must NOT bubble as RangeError.
+    ok(
+      await expectThrow(
+        'length-mismatch signature rejects cleanly',
+        () => p.parseWebhook(payload, `t=${timestamp},v1=deadbeef`),
+        (e) =>
+          /signature mismatch/i.test(e.message) &&
+          !/ERR_CRYPTO_TIMING_SAFE_EQUAL_LENGTH/i.test(e.message),
+      ),
+    );
+
+    // Replay protection: 10-minute-old timestamp must be rejected
+    // (tolerance window is 5 min).
+    const staleTs = Math.floor(Date.now() / 1000) - 600;
+    const staleSigned = `${staleTs}.${payload}`;
+    const staleV1 = crypto
+      .createHmac('sha256', 'whsec_test_secret')
+      .update(staleSigned)
+      .digest('hex');
+    ok(
+      await expectThrow(
+        'stale timestamp rejected (replay protection)',
+        () => p.parseWebhook(payload, `t=${staleTs},v1=${staleV1}`),
+        (e) => /tolerance/i.test(e.message),
+      ),
+    );
   }
 
   // 7. paypal without creds → unavailable
@@ -425,6 +462,205 @@ async function main(): Promise<void> {
         orderCall!.body.purchase_units[0].amount.value === '20.00',
       );
       console.log(`  ✅ basic auth → bearer, amount formatted as decimal`);
+    } finally {
+      restoreFetch();
+      fetchCalls.length = 0;
+    }
+  }
+
+  // 8b. paypal zero-decimal currencies format without the /100 step
+  console.log('\n8b. paypal JPY amounts format as integer (zero-decimal)');
+  {
+    installMockFetch((url) => {
+      if (url.endsWith('/v1/oauth2/token')) {
+        return { status: 200, body: { access_token: 't', expires_in: 3600 } };
+      }
+      if (url.endsWith('/v2/checkout/orders')) {
+        return {
+          status: 201,
+          body: {
+            id: 'JPY-ORDER',
+            links: [{ rel: 'approve', href: 'https://x' }],
+          },
+        };
+      }
+      return { status: 404, body: {} };
+    });
+    try {
+      const p = createPaymentProvider(
+        fakeConfig({
+          PAYMENT_PROVIDER: 'paypal',
+          PAYPAL_CLIENT_ID: 'cid',
+          PAYPAL_CLIENT_SECRET: 'csec',
+        }),
+      );
+      await p.createCheckout({
+        orderReference: 'jp-1',
+        currency: 'JPY',
+        totalAmount: 1000, // 1000 yen, NOT 10 yen
+        lineItems: [
+          { productId: 'noodles', description: 'noodles', quantity: 1, unitAmount: 1000 },
+        ],
+        customer: { email: 't@example.com' },
+        successUrl: 'https://x',
+        cancelUrl: 'https://x',
+      });
+      const orderCall = fetchCalls.find((c) =>
+        c.url.endsWith('/v2/checkout/orders'),
+      );
+      ok(orderCall!.body.purchase_units[0].amount.value === '1000');
+      ok(
+        orderCall!.body.purchase_units[0].items[0].unit_amount.value === '1000',
+      );
+      console.log(`  ✅ JPY amount 1000 → "1000" (not "10.00")`);
+    } finally {
+      restoreFetch();
+      fetchCalls.length = 0;
+    }
+  }
+
+  // 8c. paypal webhook without PAYPAL_WEBHOOK_ID → fail-closed
+  console.log('\n8c. paypal webhook refuses to run without PAYPAL_WEBHOOK_ID');
+  {
+    const p = createPaymentProvider(
+      fakeConfig({
+        PAYMENT_PROVIDER: 'paypal',
+        PAYPAL_CLIENT_ID: 'cid',
+        PAYPAL_CLIENT_SECRET: 'csec',
+      }),
+    );
+    ok(
+      await expectThrow(
+        'missing PAYPAL_WEBHOOK_ID throws',
+        () => p.parseWebhook('{}', '{}'),
+        (e) => /PAYPAL_WEBHOOK_ID/.test(e.message),
+      ),
+    );
+  }
+
+  // 8d. paypal webhook with missing headers → fail-closed
+  console.log('\n8d. paypal webhook rejects incomplete header bundle');
+  {
+    const p = createPaymentProvider(
+      fakeConfig({
+        PAYMENT_PROVIDER: 'paypal',
+        PAYPAL_CLIENT_ID: 'cid',
+        PAYPAL_CLIENT_SECRET: 'csec',
+        PAYPAL_WEBHOOK_ID: 'wh-123',
+      }),
+    );
+    ok(
+      await expectThrow(
+        'missing signature bundle throws',
+        () => p.parseWebhook('{}', undefined),
+        (e) => /bundle missing/.test(e.message),
+      ),
+    );
+    ok(
+      await expectThrow(
+        'incomplete headers throw',
+        () =>
+          p.parseWebhook(
+            '{}',
+            JSON.stringify({ 'paypal-transmission-id': 'x' }),
+          ),
+        (e) => /headers missing/.test(e.message),
+      ),
+    );
+  }
+
+  // 8e. paypal webhook happy path calls verify endpoint
+  console.log('\n8e. paypal webhook calls verify endpoint + returns event');
+  {
+    installMockFetch((url) => {
+      if (url.endsWith('/v1/oauth2/token')) {
+        return { status: 200, body: { access_token: 't', expires_in: 3600 } };
+      }
+      if (url.includes('/v1/notifications/verify-webhook-signature')) {
+        return { status: 200, body: { verification_status: 'SUCCESS' } };
+      }
+      return { status: 404, body: {} };
+    });
+    try {
+      const p = createPaymentProvider(
+        fakeConfig({
+          PAYMENT_PROVIDER: 'paypal',
+          PAYPAL_CLIENT_ID: 'cid',
+          PAYPAL_CLIENT_SECRET: 'csec',
+          PAYPAL_WEBHOOK_ID: 'wh-happy',
+        }),
+      );
+      const body = JSON.stringify({
+        event_type: 'PAYMENT.CAPTURE.COMPLETED',
+        resource: {
+          id: 'CAP-1',
+          amount: { value: '20.00', currency_code: 'USD' },
+          custom_id: 'ord-8e',
+        },
+      });
+      const headers = JSON.stringify({
+        'paypal-transmission-id': 'tid',
+        'paypal-transmission-time': '2026-01-01T00:00:00Z',
+        'paypal-transmission-sig': 'sig',
+        'paypal-cert-url': 'https://api.sandbox.paypal.com/v1/x',
+        'paypal-auth-algo': 'SHA256withRSA',
+      });
+      const event = await p.parseWebhook(body, headers);
+      ok(event !== null);
+      ok(event!.kind === 'payment.succeeded');
+      ok(event!.paymentId === 'CAP-1');
+      ok(event!.amount === 2000);
+      const verifyCall = fetchCalls.find((c) =>
+        c.url.includes('/v1/notifications/verify-webhook-signature'),
+      );
+      ok(!!verifyCall);
+      ok(verifyCall!.body.webhook_id === 'wh-happy');
+      console.log(`  ✅ verify endpoint called + event returned`);
+    } finally {
+      restoreFetch();
+      fetchCalls.length = 0;
+    }
+  }
+
+  // 8f. paypal webhook rejects verify_status != SUCCESS
+  console.log('\n8f. paypal webhook rejects verify_status != SUCCESS');
+  {
+    installMockFetch((url) => {
+      if (url.endsWith('/v1/oauth2/token')) {
+        return { status: 200, body: { access_token: 't', expires_in: 3600 } };
+      }
+      if (url.includes('/v1/notifications/verify-webhook-signature')) {
+        return { status: 200, body: { verification_status: 'FAILURE' } };
+      }
+      return { status: 404, body: {} };
+    });
+    try {
+      const p = createPaymentProvider(
+        fakeConfig({
+          PAYMENT_PROVIDER: 'paypal',
+          PAYPAL_CLIENT_ID: 'cid',
+          PAYPAL_CLIENT_SECRET: 'csec',
+          PAYPAL_WEBHOOK_ID: 'wh-bad',
+        }),
+      );
+      const headers = JSON.stringify({
+        'paypal-transmission-id': 'tid',
+        'paypal-transmission-time': 't',
+        'paypal-transmission-sig': 's',
+        'paypal-cert-url': 'u',
+        'paypal-auth-algo': 'a',
+      });
+      ok(
+        await expectThrow(
+          'FAILURE verification rejects',
+          () =>
+            p.parseWebhook(
+              '{"event_type":"PAYMENT.CAPTURE.COMPLETED","resource":{}}',
+              headers,
+            ),
+          (e) => /verification_status=FAILURE/.test(e.message),
+        ),
+      );
     } finally {
       restoreFetch();
       fetchCalls.length = 0;
@@ -524,6 +760,43 @@ async function main(): Promise<void> {
       restoreFetch();
       fetchCalls.length = 0;
     }
+  }
+
+  // 10b. bkash rejects non-BDT currencies loudly
+  console.log('\n10b. bkash rejects USD / non-BDT currencies');
+  {
+    const p = createPaymentProvider(
+      fakeConfig({
+        PAYMENT_PROVIDER: 'bkash',
+        BKASH_APP_KEY: 'appkey',
+        BKASH_APP_SECRET: 'appsecret',
+        BKASH_USERNAME: 'user',
+        BKASH_PASSWORD: 'pass',
+      }),
+    );
+    ok(
+      await expectThrow(
+        'USD currency rejected',
+        () =>
+          p.createCheckout({
+            orderReference: 'ord-usd',
+            currency: 'USD',
+            totalAmount: 1000,
+            lineItems: [
+              {
+                productId: 'x',
+                description: 'x',
+                quantity: 1,
+                unitAmount: 1000,
+              },
+            ],
+            customer: { email: 't@example.com', phone: '01711111111' },
+            successUrl: 'https://x',
+            cancelUrl: 'https://x',
+          }),
+        (e) => /only supports BDT/i.test(e.message),
+      ),
+    );
   }
 
   // 11. Planned providers fall back to none
