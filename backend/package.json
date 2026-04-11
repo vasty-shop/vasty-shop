@@ -59,6 +59,10 @@
     "socket.io": "^4.8.1",
     "stripe": "^14.10.0"
   },
+  "optionalDependencies": {
+    "web-push": "^3.6.7",
+    "firebase-admin": "^13.0.0"
+  },
   "devDependencies": {
     "@nestjs/cli": "^10.2.1",
     "@nestjs/schematics": "^10.0.3",
