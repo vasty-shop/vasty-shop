@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { DatabaseModule } from './modules/database/database.module';
 import { StorageModule } from './modules/storage/storage.module';
+import { ShippingModule } from './modules/shipping/shipping.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ShopsModule } from './modules/shops/shops.module';
 import { ProductsModule } from './modules/products/products.module';
@@ -69,6 +70,7 @@ import { BlogModule } from './modules/blog/blog.module';
     }),
     DatabaseModule,
     StorageModule,
+    ShippingModule,
     AuthModule,
     RealtimeModule,
     ShopsModule,
