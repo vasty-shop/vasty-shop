@@ -137,24 +137,31 @@ export class StripeTaxProvider implements TaxProvider {
 
     const calc = await this.stripeApi('/tax/calculations', body);
 
+    // Stripe's /tax/calculations endpoint returns amounts in the
+    // same minor-unit integer we sent in (e.g. cents for USD, yen
+    // for JPY). Keep them as-is — our TaxLineBreakdown contract is
+    // integer minor units throughout. Converting /100 here would
+    // produce a 100x-under-reported tax on 2-decimal currencies
+    // AND silently corrupt zero-decimal currencies like JPY.
     const lineBreakdowns: TaxLineBreakdown[] = (calc.line_items?.data ?? []).map(
       (li: any) => ({
         lineItemId: li.reference,
-        taxAmount: (li.amount_tax ?? 0) / 100,
-        taxRate: li.tax_behavior === 'exclusive' && li.amount
-          ? (li.amount_tax ?? 0) / li.amount
-          : 0,
+        taxAmount: li.amount_tax ?? 0,
+        taxRate:
+          li.tax_behavior === 'exclusive' && li.amount
+            ? (li.amount_tax ?? 0) / li.amount
+            : 0,
         jurisdictions: (li.tax_breakdown ?? []).map((bd: any) => ({
           name: bd.jurisdiction?.display_name ?? 'Unknown',
           rate: (bd.tax_rate_details?.percentage_decimal ?? 0) / 100,
-          amount: (bd.amount ?? 0) / 100,
+          amount: bd.amount ?? 0,
           type: bd.jurisdiction?.level,
         })),
       }),
     );
 
     return {
-      totalTax: (calc.tax_amount_exclusive ?? 0) / 100,
+      totalTax: calc.tax_amount_exclusive ?? 0,
       lineItems: lineBreakdowns,
       provider: 'stripe-tax',
       transactionId: calc.id,

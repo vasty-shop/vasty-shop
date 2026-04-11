@@ -87,14 +87,22 @@ export class ManualRulesTaxProvider implements TaxProvider {
       }
     }
 
+    // All arithmetic from here on operates in INTEGER MINOR UNITS
+    // (cents/paisa) to match the TaxLineItem contract and avoid
+    // float-accumulation drift. Rates live in config as percentages
+    // (e.g. 10 = 10%), so we compute taxed = round(subtotalMinor *
+    // ratePercent / 100) per line, then sum integer results.
     for (const item of input.lineItems) {
-      const subtotal = item.unitPrice * item.quantity;
+      const subtotalMinor = item.unitPrice * item.quantity;
 
       // Resolve rate (stored in config as percentages, e.g. 10.0 = 10%).
       let ratePercent: number;
       const jurisdictions: NonNullable<
         TaxLineBreakdown['jurisdictions']
       > = [];
+
+      const taxOf = (percent: number): number =>
+        Math.round((subtotalMinor * percent) / 100);
 
       if (canadaProvince) {
         // Canada: use the province's totalRate as the single combined rate,
@@ -106,7 +114,7 @@ export class ManualRulesTaxProvider implements TaxProvider {
           jurisdictions.push({
             name: `HST (${canadaProvince.provinceName})`,
             rate: canadaProvince.hst / 100,
-            amount: (subtotal * canadaProvince.hst) / 100,
+            amount: taxOf(canadaProvince.hst),
             type: 'state',
           });
         } else {
@@ -114,7 +122,7 @@ export class ManualRulesTaxProvider implements TaxProvider {
             jurisdictions.push({
               name: 'GST (Canada)',
               rate: canadaProvince.gst / 100,
-              amount: (subtotal * canadaProvince.gst) / 100,
+              amount: taxOf(canadaProvince.gst),
               type: 'country',
             });
           }
@@ -122,7 +130,7 @@ export class ManualRulesTaxProvider implements TaxProvider {
             jurisdictions.push({
               name: `PST (${canadaProvince.provinceName})`,
               rate: canadaProvince.pst / 100,
-              amount: (subtotal * canadaProvince.pst) / 100,
+              amount: taxOf(canadaProvince.pst),
               type: 'state',
             });
           }
@@ -148,23 +156,26 @@ export class ManualRulesTaxProvider implements TaxProvider {
         jurisdictions.push({
           name: config.countryName,
           rate: ratePercent / 100,
-          amount: (subtotal * ratePercent) / 100,
+          amount: taxOf(ratePercent),
           type: 'country',
         });
       }
 
-      const taxAmount = (subtotal * ratePercent) / 100;
+      // Sum jurisdiction amounts for the line total so the breakdown
+      // and the reported total never drift apart due to independent
+      // round-per-jurisdiction vs round-per-line.
+      const lineTaxMinor = jurisdictions.reduce((s, j) => s + j.amount, 0);
       lineBreakdowns.push({
         lineItemId: item.id,
-        taxAmount: Math.round(taxAmount * 100) / 100,
+        taxAmount: lineTaxMinor,
         taxRate: ratePercent / 100,
         jurisdictions,
       });
-      totalTax += taxAmount;
+      totalTax += lineTaxMinor;
     }
 
     return {
-      totalTax: Math.round(totalTax * 100) / 100,
+      totalTax,
       lineItems: lineBreakdowns,
       provider: 'manual-rules',
       jurisdictionName,

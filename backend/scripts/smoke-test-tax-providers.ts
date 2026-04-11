@@ -283,11 +283,16 @@ async function main(): Promise<void> {
         },
         lineItems: [{ id: 'l1', unitPrice: 10000, quantity: 1 }],
       });
-      ok(result.totalTax === 10.5);
+      // Integer minor units throughout: $10.50 is 1050 cents.
+      // The old contract divided by 100 and returned 10.5 (dollars)
+      // which silently 100x'd the underreport on USD and broke JPY.
+      ok(result.totalTax === 1050);
+      ok(result.lineItems[0].taxAmount === 1050);
+      ok(result.lineItems[0].jurisdictions?.[0].amount === 1050);
       ok(result.transactionId === 'taxcalc_abc123');
       ok(result.provider === 'stripe-tax');
       ok(result.lineItems[0].jurisdictions?.[0].name === 'California');
-      console.log(`  ✅ stripe-tax → $${result.totalTax}, calc=${result.transactionId}`);
+      console.log(`  ✅ stripe-tax → ${result.totalTax} (cents), calc=${result.transactionId}`);
 
       const call = fetchCalls[fetchCalls.length - 1];
       ok(call.url === 'https://api.stripe.com/v1/tax/calculations');

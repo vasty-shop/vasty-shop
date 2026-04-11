@@ -36,7 +36,12 @@ export interface TaxAddress {
 export interface TaxLineItem {
   id: string;
   description?: string;
-  /** Price per unit BEFORE tax, in the order's currency. */
+  /**
+   * Price per unit BEFORE tax, expressed in INTEGER MINOR UNITS of
+   * the order's currency (cents for USD, paisa for BDT, etc.).
+   * Contract mirrors payment-provider.interface so the same integer
+   * amounts can flow end-to-end without lossy float conversions.
+   */
   unitPrice: number;
   quantity: number;
   /** Optional tax category (e.g. 'food', 'clothing', 'digital'). */
@@ -64,8 +69,11 @@ export interface CalculateTaxInput {
 export interface TaxLineBreakdown {
   /** Matches the input line item id. */
   lineItemId: string;
-  /** Tax amount for this line (in currency minor units the caller
-   * uses — provider passes through the unit). */
+  /**
+   * Tax amount for this line, in INTEGER MINOR UNITS of the order's
+   * currency (cents for USD, paisa for BDT). Matches the input
+   * unit convention — no lossy dollar↔cent conversion on the way out.
+   */
   taxAmount: number;
   /** Effective tax rate applied to the line (0.15 = 15%). */
   taxRate: number;
@@ -73,13 +81,14 @@ export interface TaxLineBreakdown {
   jurisdictions?: Array<{
     name: string;
     rate: number;
+    /** Jurisdiction-level tax amount in integer minor units. */
     amount: number;
     type?: 'country' | 'state' | 'county' | 'city' | 'special';
   }>;
 }
 
 export interface CalculateTaxResult {
-  /** Total tax across all line items. */
+  /** Total tax across all line items, in INTEGER MINOR UNITS. */
   totalTax: number;
   /** Per-line breakdown in the same order as the input. */
   lineItems: TaxLineBreakdown[];
