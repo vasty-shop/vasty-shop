@@ -1,7 +1,7 @@
 import { IsString, IsNumber, IsOptional, IsArray, ValidateNested, IsEnum, Min } from 'class-validator';
 import { Type } from 'class-transformer';
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
-import { TaxCategory } from '../config/tax-rates.config';
+import { TaxCategory, TaxDisplayMode } from '../config/tax-rates.config';
 
 /**
  * DTO for individual tax line items
@@ -56,13 +56,12 @@ export class CalculateTaxDto {
   @ApiProperty({
     description: 'ISO 3166-1 alpha-2 country code',
     example: 'JP',
-    enum: ['JP', 'BD', 'CA'],
   })
   @IsString()
   countryCode: string;
 
   @ApiPropertyOptional({
-    description: 'Province/state code (required for Canada)',
+    description: 'Province/state code (required for Canada and US)',
     example: 'ON',
   })
   @IsOptional()
@@ -196,6 +195,12 @@ export class TaxCalculationResultDto {
     example: 'USD',
   })
   currency: string;
+
+  @ApiPropertyOptional({
+    description: 'Tax display mode: inclusive (prices include tax) or exclusive (tax added at checkout)',
+    example: 'exclusive',
+  })
+  taxDisplayMode?: TaxDisplayMode;
 
   @ApiProperty({
     description: 'Tax calculation details for each item',
