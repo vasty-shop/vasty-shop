@@ -2671,6 +2671,64 @@ export const schema = {
       { columns: ['user_id'] },
       { columns: ['post_id', 'user_id'], unique: true }
     ]
+  },
+
+  // ============================================
+  // Digital Products & License Keys
+  // ============================================
+
+  product_digital_files: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'product_id', type: 'uuid', nullable: false },
+      { name: 'file_name', type: 'string', nullable: false },
+      { name: 'file_path', type: 'string', nullable: false },
+      { name: 'file_size', type: 'integer', default: 0 },
+      { name: 'mime_type', type: 'string', default: 'application/octet-stream' },
+      { name: 'download_limit', type: 'integer', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['product_id'] }
+    ]
+  },
+
+  product_downloads: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'order_id', type: 'uuid', nullable: false },
+      { name: 'product_id', type: 'uuid', nullable: false },
+      { name: 'user_id', type: 'string', nullable: false },
+      { name: 'file_id', type: 'uuid', nullable: false },
+      { name: 'downloaded_at', type: 'timestamptz', default: 'now()' },
+      { name: 'ip_address', type: 'string', nullable: true }
+    ],
+    indexes: [
+      { columns: ['order_id'] },
+      { columns: ['product_id'] },
+      { columns: ['user_id'] },
+      { columns: ['file_id'] }
+    ]
+  },
+
+  product_licenses: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'product_id', type: 'uuid', nullable: false },
+      { name: 'order_id', type: 'uuid', nullable: true },
+      { name: 'user_id', type: 'string', nullable: true },
+      { name: 'license_key', type: 'string', nullable: false },
+      { name: 'is_active', type: 'boolean', default: true },
+      { name: 'activated_at', type: 'timestamptz', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['license_key'], unique: true },
+      { columns: ['product_id'] },
+      { columns: ['order_id'] }
+    ]
   }
 };
 
