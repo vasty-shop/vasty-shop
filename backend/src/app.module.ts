@@ -25,6 +25,7 @@ import { ContactModule } from './modules/contact/contact.module';
 import { ExportModule } from './modules/export/export.module';
 import { WalletModule } from './modules/wallet/wallet.module';
 import { RefundModule } from './modules/refund/refund.module';
+import { ReturnsModule } from './modules/returns/returns.module';
 import { LoyaltyModule } from './modules/loyalty/loyalty.module';
 // Phase 2 Modules
 import { CashbackModule } from './modules/cashback/cashback.module';
@@ -62,6 +63,8 @@ import { MobileAppGeneratorModule } from './modules/mobile-app-generator/mobile-
 import { BlogModule } from './modules/blog/blog.module';
 // SEO Module
 import { SeoModule } from './modules/seo/seo.module';
+// Digital Products Module
+import { DigitalProductsModule } from './modules/digital-products/digital-products.module';
 
 @Module({
   imports: [
@@ -93,6 +96,7 @@ import { SeoModule } from './modules/seo/seo.module';
     ExportModule,
     WalletModule,
     RefundModule,
+    ReturnsModule,
     LoyaltyModule,
     // Phase 2 Modules
     CashbackModule,
@@ -131,6 +135,8 @@ import { SeoModule } from './modules/seo/seo.module';
     BlogModule,
     // SEO Module
     SeoModule,
+    // Digital Products Module
+    DigitalProductsModule,
   ],
   controllers: [AppController],
 })

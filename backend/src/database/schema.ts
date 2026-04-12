@@ -88,6 +88,9 @@ export const schema = {
       { name: 'mobile_app_published', type: 'boolean', default: false }, // Whether mobile app is published
       { name: 'mobile_app_published_at', type: 'timestamptz', nullable: true }, // When mobile app was last published
 
+      // Return Policy
+      { name: 'return_policy_days', type: 'integer', default: 30 }, // Days within which returns are accepted
+
       { name: 'created_at', type: 'timestamptz', default: 'now()' },
       { name: 'updated_at', type: 'timestamptz', default: 'now()' },
       { name: 'deleted_at', type: 'timestamptz', nullable: true }
@@ -1737,6 +1740,36 @@ export const schema = {
     indexes: [
       { columns: ['code'], unique: true },
       { columns: ['is_active'] }
+    ]
+  },
+
+  // ============================================
+  // RETURNS / RMA SYSTEM
+  // ============================================
+
+  returns: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'rma_number', type: 'string', nullable: false }, // RMA-YYYYMMDD-XXXXX
+      { name: 'order_id', type: 'uuid', nullable: false, references: { table: 'orders' } },
+      { name: 'user_id', type: 'string', nullable: false }, // buyer
+      { name: 'vendor_id', type: 'uuid', nullable: false, references: { table: 'shops' } },
+      { name: 'status', type: 'string', nullable: false, default: 'requested' }, // requested, approved, rejected, received, refunded, cancelled
+      { name: 'reason', type: 'text', nullable: false },
+      { name: 'items', type: 'jsonb', default: '[]' }, // [{productId, quantity, reason}]
+      { name: 'product_condition', type: 'string', nullable: true }, // like_new, good, damaged, defective
+      { name: 'rejection_reason', type: 'text', nullable: true },
+      { name: 'refund_id', type: 'uuid', nullable: true, references: { table: 'refund_requests' } },
+      { name: 'return_policy_days', type: 'integer', default: 30 },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' },
+    ],
+    indexes: [
+      { columns: ['rma_number'], unique: true },
+      { columns: ['order_id'] },
+      { columns: ['user_id'] },
+      { columns: ['vendor_id'] },
+      { columns: ['status'] },
     ]
   },
 
