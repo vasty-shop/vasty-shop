@@ -2671,6 +2671,46 @@ export const schema = {
       { columns: ['user_id'] },
       { columns: ['post_id', 'user_id'], unique: true }
     ]
+  },
+
+  // ============================================
+  // WEBHOOKS
+  // ============================================
+
+  webhooks: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'vendor_id', type: 'string', nullable: false },
+      { name: 'url', type: 'string', nullable: false },
+      { name: 'events', type: 'jsonb', default: '[]' },
+      { name: 'secret', type: 'string', nullable: false },
+      { name: 'is_active', type: 'boolean', default: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['vendor_id'] },
+      { columns: ['is_active'] }
+    ]
+  },
+
+  webhook_deliveries: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'webhook_id', type: 'uuid', nullable: false, references: { table: 'webhooks' } },
+      { name: 'event_type', type: 'string', nullable: false },
+      { name: 'payload', type: 'jsonb', default: '{}' },
+      { name: 'response_status', type: 'integer', nullable: true },
+      { name: 'response_body', type: 'text', nullable: true },
+      { name: 'attempts', type: 'integer', default: 0 },
+      { name: 'last_attempt_at', type: 'timestamptz', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['webhook_id'] },
+      { columns: ['event_type'] },
+      { columns: ['created_at'] }
+    ]
   }
 };
 

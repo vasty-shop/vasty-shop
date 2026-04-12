@@ -32,6 +32,8 @@ export enum EntityType {
   TAX_RATE = 'tax_rates',
   PRODUCT_TAX_CATEGORY = 'product_tax_categories',
   TAX_RULE = 'tax_rules',
+  WEBHOOK = 'webhooks',
+  WEBHOOK_DELIVERY = 'webhook_deliveries',
 }
 
 // Status Enums
