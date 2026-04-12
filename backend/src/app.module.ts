@@ -60,6 +60,8 @@ import { AdminModule } from './modules/admin/admin.module';
 import { MobileAppGeneratorModule } from './modules/mobile-app-generator/mobile-app-generator.module';
 // Blog Module
 import { BlogModule } from './modules/blog/blog.module';
+// Translations Module
+import { TranslationsModule } from './modules/translations/translations.module';
 
 @Module({
   imports: [
@@ -127,6 +129,8 @@ import { BlogModule } from './modules/blog/blog.module';
     MobileAppGeneratorModule,
     // Blog Module
     BlogModule,
+    // Translations Module
+    TranslationsModule,
   ],
   controllers: [AppController],
 })
