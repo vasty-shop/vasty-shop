@@ -70,6 +70,8 @@ import { BlogModule } from './modules/blog/blog.module';
 import { TranslationsModule } from './modules/translations/translations.module';
 // Abandoned Cart Recovery
 import { AbandonedCartModule } from './modules/abandoned-cart/abandoned-cart.module';
+// SEO Module
+import { SeoModule } from './modules/seo/seo.module';
 
 @Module({
   imports: [
@@ -147,6 +149,8 @@ import { AbandonedCartModule } from './modules/abandoned-cart/abandoned-cart.mod
     TranslationsModule,
     // Abandoned Cart Recovery
     AbandonedCartModule,
+    // SEO Module
+    SeoModule,
   ],
   controllers: [AppController],
 })
