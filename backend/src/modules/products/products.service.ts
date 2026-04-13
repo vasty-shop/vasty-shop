@@ -4,6 +4,7 @@ import {
   ForbiddenException,
   BadRequestException,
   Logger,
+  Optional,
 } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
 import { EntityType, ProductEntity, ShopEntity } from '../../database/schema';
@@ -14,6 +15,8 @@ import {
   UpdateInventoryDto,
 } from './dto/query-products.dto';
 import { BulkEditDto, BulkAction, BulkEditResponseDto } from './dto/bulk-edit.dto';
+import { WebhooksService } from '../webhooks/webhooks.service';
+import { WebhookEventType } from '../webhooks/dto/webhooks.dto';
 
 @Injectable()
 export class ProductsService {
@@ -21,6 +24,8 @@ export class ProductsService {
 
   constructor(
     private readonly db: DatabaseService,
+    @Optional()
+    private readonly webhooksService?: WebhooksService,
   ) {}
 
   /**
@@ -555,6 +560,11 @@ export class ProductsService {
     // Update shop product count
     await this.updateShopProductCount(createProductDto.shopId);
 
+    // Deliver webhook event
+    if (this.webhooksService) {
+      this.webhooksService.deliverWebhook(WebhookEventType.PRODUCT_CREATED, { productId: product.id, shopId: createProductDto.shopId }).catch(() => {});
+    }
+
     return product;
   }
 
@@ -654,7 +664,14 @@ export class ProductsService {
 
     updateData.metadata = metadata;
 
-    return this.db.updateEntity(EntityType.PRODUCT, id, updateData);
+    const updated = await this.db.updateEntity(EntityType.PRODUCT, id, updateData);
+
+    // Deliver webhook event
+    if (this.webhooksService) {
+      this.webhooksService.deliverWebhook(WebhookEventType.PRODUCT_UPDATED, { productId: id, shopId: product.shopId }).catch(() => {});
+    }
+
+    return updated;
   }
 
   /**
@@ -729,6 +746,12 @@ export class ProductsService {
     await this.updateShopProductCount(product.shopId);
 
     this.logger.log(`[remove] Product ${id} deleted successfully`);
+
+    // Deliver webhook event
+    if (this.webhooksService) {
+      this.webhooksService.deliverWebhook(WebhookEventType.PRODUCT_DELETED, { productId: id, shopId: product.shopId }).catch(() => {});
+    }
+
     return {
       message: 'Product deleted successfully',
       id,

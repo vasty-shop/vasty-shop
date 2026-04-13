@@ -2749,7 +2749,7 @@ export const schema = {
   },
 
   // ============================================
-  // PRODUCT SUBSCRIPTIONS & RECURRING BILLING (customer-facing)
+  // PRODUCT SUBSCRIPTIONS & RECURRING BILLING
   // ============================================
 
   product_subscription_plans: {
@@ -2759,9 +2759,9 @@ export const schema = {
       { name: 'product_id', type: 'uuid', nullable: true, references: { table: 'products' } },
       { name: 'name', type: 'string', nullable: false },
       { name: 'description', type: 'text', nullable: true },
-      { name: 'price', type: 'integer', nullable: false }, // minor units (cents)
+      { name: 'price', type: 'integer', nullable: false },
       { name: 'currency', type: 'string', default: 'USD' },
-      { name: 'interval', type: 'string', nullable: false }, // weekly, monthly, quarterly, annual
+      { name: 'interval', type: 'string', nullable: false },
       { name: 'trial_days', type: 'integer', default: 0 },
       { name: 'subscription_discount_percent', type: 'numeric', default: 0 },
       { name: 'is_active', type: 'boolean', default: true },
@@ -2783,7 +2783,7 @@ export const schema = {
       { name: 'user_id', type: 'string', nullable: false },
       { name: 'plan_id', type: 'uuid', nullable: false, references: { table: 'product_subscription_plans' } },
       { name: 'vendor_id', type: 'uuid', nullable: false, references: { table: 'shops' } },
-      { name: 'status', type: 'string', nullable: false, default: 'active' }, // trialing, active, paused, canceling, past_due, cancelled
+      { name: 'status', type: 'string', nullable: false, default: 'active' },
       { name: 'current_period_start', type: 'timestamptz', default: 'now()' },
       { name: 'current_period_end', type: 'timestamptz', nullable: false },
       { name: 'next_billing_date', type: 'timestamptz', nullable: false },
@@ -2823,6 +2823,46 @@ export const schema = {
       { columns: ['license_key'], unique: true },
       { columns: ['product_id'] },
       { columns: ['order_id'] }
+    ]
+  },
+
+  // ============================================
+  // WEBHOOKS
+  // ============================================
+
+  webhooks: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'vendor_id', type: 'string', nullable: false },
+      { name: 'url', type: 'string', nullable: false },
+      { name: 'events', type: 'jsonb', default: '[]' },
+      { name: 'secret', type: 'string', nullable: false },
+      { name: 'is_active', type: 'boolean', default: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['vendor_id'] },
+      { columns: ['is_active'] }
+    ]
+  },
+
+  webhook_deliveries: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'webhook_id', type: 'uuid', nullable: false, references: { table: 'webhooks' } },
+      { name: 'event_type', type: 'string', nullable: false },
+      { name: 'payload', type: 'jsonb', default: '{}' },
+      { name: 'response_status', type: 'integer', nullable: true },
+      { name: 'response_body', type: 'text', nullable: true },
+      { name: 'attempts', type: 'integer', default: 0 },
+      { name: 'last_attempt_at', type: 'timestamptz', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['webhook_id'] },
+      { columns: ['event_type'] },
+      { columns: ['created_at'] }
     ]
   }
 };

@@ -18,6 +18,8 @@ import { NotificationsService } from '../notifications/notifications.service';
 import { CurrencyService } from '../currency/currency.service';
 import { StripeConnectService } from '../payment/stripe-connect.service';
 import { DigitalProductsService } from '../digital-products/digital-products.service';
+import { WebhooksService } from '../webhooks/webhooks.service';
+import { WebhookEventType } from '../webhooks/dto/webhooks.dto';
 
 @Injectable()
 export class OrdersService {
@@ -32,6 +34,8 @@ export class OrdersService {
     private readonly stripeConnectService?: StripeConnectService,
     @Optional()
     private readonly digitalProductsService?: DigitalProductsService,
+    @Optional()
+    private readonly webhooksService?: WebhooksService,
   ) {}
 
   /**
@@ -290,6 +294,11 @@ export class OrdersService {
     } catch (vendorNotificationError) {
       this.logger.error('Failed to send order notification to vendor', vendorNotificationError);
       // Don't fail order creation if vendor notification fails
+    }
+
+    // Deliver webhook event
+    if (this.webhooksService) {
+      this.webhooksService.deliverWebhook(WebhookEventType.ORDER_CREATED, { orderId: order.id, orderNumber, shopId, total: cart.total }).catch(() => {});
     }
 
     return orderResponse;
@@ -1210,6 +1219,20 @@ export class OrdersService {
     // Trigger digital delivery when order is marked as delivered
     if (status === 'delivered') {
       this.triggerDigitalDelivery(orderId);
+    }
+
+    // Deliver webhook event based on status
+    if (this.webhooksService && status) {
+      const statusEventMap: Record<string, WebhookEventType> = {
+        shipped: WebhookEventType.ORDER_SHIPPED,
+        delivered: WebhookEventType.ORDER_DELIVERED,
+        cancelled: WebhookEventType.ORDER_CANCELLED,
+        paid: WebhookEventType.ORDER_PAID,
+      };
+      const webhookEvent = statusEventMap[status];
+      if (webhookEvent) {
+        this.webhooksService.deliverWebhook(webhookEvent, { orderId, status, shopId }).catch(() => {});
+      }
     }
 
     return updatedOrder;

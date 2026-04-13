@@ -79,7 +79,8 @@ import { DigitalProductsModule } from './modules/digital-products/digital-produc
 import { SubscriptionsModule } from './modules/subscriptions/subscriptions.module';
 // Product Import Module
 import { ProductImportModule } from './modules/product-import/product-import.module';
-
+// Webhooks Module
+import { WebhooksModule } from './modules/webhooks/webhooks.module';
 
 @Module({
   imports: [
@@ -166,6 +167,8 @@ import { ProductImportModule } from './modules/product-import/product-import.mod
     SubscriptionsModule,
     // Product Import Module
     ProductImportModule,
+    // Webhooks Module
+    WebhooksModule,
   ],
   controllers: [AppController],
 })

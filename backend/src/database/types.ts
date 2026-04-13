@@ -37,6 +37,8 @@ export enum EntityType {
   PRODUCT_LICENSE = 'product_licenses',
   PRODUCT_SUBSCRIPTION_PLAN = 'product_subscription_plans',
   PRODUCT_SUBSCRIPTION = 'product_subscriptions',
+  WEBHOOK = 'webhooks',
+  WEBHOOK_DELIVERY = 'webhook_deliveries',
 }
 
 // Status Enums
