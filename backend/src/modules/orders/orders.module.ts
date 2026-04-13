@@ -5,6 +5,7 @@ import { NotificationsModule } from '../notifications/notifications.module';
 import { AuthModule } from '../auth/auth.module';
 import { CurrencyModule } from '../currency/currency.module';
 import { PaymentModule } from '../payment/payment.module';
+import { DigitalProductsModule } from '../digital-products/digital-products.module';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { PaymentModule } from '../payment/payment.module';
     CurrencyModule,
     forwardRef(() => NotificationsModule),
     forwardRef(() => PaymentModule),
+    DigitalProductsModule,
   ],
   controllers: [OrdersController],
   providers: [OrdersService],

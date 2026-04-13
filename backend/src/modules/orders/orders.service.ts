@@ -17,6 +17,7 @@ import { AddOrderNoteDto } from './dto/add-order-note.dto';
 import { NotificationsService } from '../notifications/notifications.service';
 import { CurrencyService } from '../currency/currency.service';
 import { StripeConnectService } from '../payment/stripe-connect.service';
+import { DigitalProductsService } from '../digital-products/digital-products.service';
 
 @Injectable()
 export class OrdersService {
@@ -29,6 +30,8 @@ export class OrdersService {
     private readonly currencyService: CurrencyService,
     @Optional()
     private readonly stripeConnectService?: StripeConnectService,
+    @Optional()
+    private readonly digitalProductsService?: DigitalProductsService,
   ) {}
 
   /**
@@ -363,7 +366,20 @@ export class OrdersService {
 
     this.logger.log(`[Confirm Payment] Payment confirmed for order ${orderId}`);
 
+    // Trigger digital product delivery on payment confirmation
+    this.triggerDigitalDelivery(orderId);
+
     return updatedOrder;
+  }
+
+  /**
+   * Trigger digital product delivery (fire-and-forget)
+   */
+  private triggerDigitalDelivery(orderId: string): void {
+    if (!this.digitalProductsService) return;
+    this.digitalProductsService.processDigitalDelivery(orderId).catch((err) => {
+      this.logger.error(`Failed to process digital delivery for order ${orderId}`, err);
+    });
   }
 
   /**
@@ -1189,6 +1205,11 @@ export class OrdersService {
     } catch (notificationError) {
       this.logger.error('Failed to send order status notification', notificationError);
       // Don't fail order update if notification fails
+    }
+
+    // Trigger digital delivery when order is marked as delivered
+    if (status === 'delivered') {
+      this.triggerDigitalDelivery(orderId);
     }
 
     return updatedOrder;

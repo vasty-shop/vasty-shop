@@ -88,6 +88,9 @@ export const schema = {
       { name: 'mobile_app_published', type: 'boolean', default: false }, // Whether mobile app is published
       { name: 'mobile_app_published_at', type: 'timestamptz', nullable: true }, // When mobile app was last published
 
+      // Return Policy
+      { name: 'return_policy_days', type: 'integer', default: 30 }, // Days within which returns are accepted
+
       { name: 'created_at', type: 'timestamptz', default: 'now()' },
       { name: 'updated_at', type: 'timestamptz', default: 'now()' },
       { name: 'deleted_at', type: 'timestamptz', nullable: true }
@@ -283,6 +286,9 @@ export const schema = {
       { name: 'total_sales', type: 'integer', default: 0 },
       { name: 'rating', type: 'numeric', default: 0 },
       { name: 'total_reviews', type: 'integer', default: 0 },
+
+      // Subscription
+      { name: 'subscription_discount_percent', type: 'numeric', default: 0 }, // % discount for subscribe-and-save
 
       // Additional Data
       { name: 'attributes', type: 'jsonb', default: '{}' }, // Custom product attributes
@@ -1741,6 +1747,36 @@ export const schema = {
   },
 
   // ============================================
+  // RETURNS / RMA SYSTEM
+  // ============================================
+
+  returns: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'rma_number', type: 'string', nullable: false }, // RMA-YYYYMMDD-XXXXX
+      { name: 'order_id', type: 'uuid', nullable: false, references: { table: 'orders' } },
+      { name: 'user_id', type: 'string', nullable: false }, // buyer
+      { name: 'vendor_id', type: 'uuid', nullable: false, references: { table: 'shops' } },
+      { name: 'status', type: 'string', nullable: false, default: 'requested' }, // requested, approved, rejected, received, refunded, cancelled
+      { name: 'reason', type: 'text', nullable: false },
+      { name: 'items', type: 'jsonb', default: '[]' }, // [{productId, quantity, reason}]
+      { name: 'product_condition', type: 'string', nullable: true }, // like_new, good, damaged, defective
+      { name: 'rejection_reason', type: 'text', nullable: true },
+      { name: 'refund_id', type: 'uuid', nullable: true, references: { table: 'refund_requests' } },
+      { name: 'return_policy_days', type: 'integer', default: 30 },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' },
+    ],
+    indexes: [
+      { columns: ['rma_number'], unique: true },
+      { columns: ['order_id'] },
+      { columns: ['user_id'] },
+      { columns: ['vendor_id'] },
+      { columns: ['status'] },
+    ]
+  },
+
+  // ============================================
   // LOYALTY POINTS SYSTEM
   // ============================================
 
@@ -2670,6 +2706,123 @@ export const schema = {
       { columns: ['post_id'] },
       { columns: ['user_id'] },
       { columns: ['post_id', 'user_id'], unique: true }
+    ]
+  },
+
+  // ============================================
+  // Digital Products & License Keys
+  // ============================================
+
+  product_digital_files: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'product_id', type: 'uuid', nullable: false },
+      { name: 'file_name', type: 'string', nullable: false },
+      { name: 'file_path', type: 'string', nullable: false },
+      { name: 'file_size', type: 'integer', default: 0 },
+      { name: 'mime_type', type: 'string', default: 'application/octet-stream' },
+      { name: 'download_limit', type: 'integer', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['product_id'] }
+    ]
+  },
+
+  product_downloads: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'order_id', type: 'uuid', nullable: false },
+      { name: 'product_id', type: 'uuid', nullable: false },
+      { name: 'user_id', type: 'string', nullable: false },
+      { name: 'file_id', type: 'uuid', nullable: false },
+      { name: 'downloaded_at', type: 'timestamptz', default: 'now()' },
+      { name: 'ip_address', type: 'string', nullable: true }
+    ],
+    indexes: [
+      { columns: ['order_id'] },
+      { columns: ['product_id'] },
+      { columns: ['user_id'] },
+      { columns: ['file_id'] }
+    ]
+  },
+
+  // ============================================
+  // PRODUCT SUBSCRIPTIONS & RECURRING BILLING (customer-facing)
+  // ============================================
+
+  product_subscription_plans: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'vendor_id', type: 'uuid', nullable: false, references: { table: 'shops' } },
+      { name: 'product_id', type: 'uuid', nullable: true, references: { table: 'products' } },
+      { name: 'name', type: 'string', nullable: false },
+      { name: 'description', type: 'text', nullable: true },
+      { name: 'price', type: 'integer', nullable: false }, // minor units (cents)
+      { name: 'currency', type: 'string', default: 'USD' },
+      { name: 'interval', type: 'string', nullable: false }, // weekly, monthly, quarterly, annual
+      { name: 'trial_days', type: 'integer', default: 0 },
+      { name: 'subscription_discount_percent', type: 'numeric', default: 0 },
+      { name: 'is_active', type: 'boolean', default: true },
+      { name: 'stripe_price_id', type: 'string', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['vendor_id'] },
+      { columns: ['product_id'] },
+      { columns: ['is_active'] },
+      { columns: ['interval'] }
+    ]
+  },
+
+  product_subscriptions: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'user_id', type: 'string', nullable: false },
+      { name: 'plan_id', type: 'uuid', nullable: false, references: { table: 'product_subscription_plans' } },
+      { name: 'vendor_id', type: 'uuid', nullable: false, references: { table: 'shops' } },
+      { name: 'status', type: 'string', nullable: false, default: 'active' }, // trialing, active, paused, canceling, past_due, cancelled
+      { name: 'current_period_start', type: 'timestamptz', default: 'now()' },
+      { name: 'current_period_end', type: 'timestamptz', nullable: false },
+      { name: 'next_billing_date', type: 'timestamptz', nullable: false },
+      { name: 'cancel_at', type: 'timestamptz', nullable: true },
+      { name: 'trial_end', type: 'timestamptz', nullable: true },
+      { name: 'payment_method_id', type: 'string', nullable: true },
+      { name: 'stripe_subscription_id', type: 'string', nullable: true },
+      { name: 'renewal_count', type: 'integer', default: 0 },
+      { name: 'last_payment_at', type: 'timestamptz', nullable: true },
+      { name: 'last_payment_amount', type: 'integer', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['user_id'] },
+      { columns: ['plan_id'] },
+      { columns: ['vendor_id'] },
+      { columns: ['status'] },
+      { columns: ['next_billing_date'] },
+      { columns: ['stripe_subscription_id'] }
+    ]
+  },
+
+  product_licenses: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'product_id', type: 'uuid', nullable: false },
+      { name: 'order_id', type: 'uuid', nullable: true },
+      { name: 'user_id', type: 'string', nullable: true },
+      { name: 'license_key', type: 'string', nullable: false },
+      { name: 'is_active', type: 'boolean', default: true },
+      { name: 'activated_at', type: 'timestamptz', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['license_key'], unique: true },
+      { columns: ['product_id'] },
+      { columns: ['order_id'] }
     ]
   }
 };
