@@ -64,7 +64,8 @@
   },
   "optionalDependencies": {
     "@google-cloud/storage": "^7.11.0",
-    "@azure/storage-blob": "^12.17.0"
+    "@azure/storage-blob": "^12.17.0",
+    "@aws-sdk/client-ses": "^3.600.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.2.1",
