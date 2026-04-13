@@ -32,6 +32,9 @@ export enum EntityType {
   TAX_RATE = 'tax_rates',
   PRODUCT_TAX_CATEGORY = 'product_tax_categories',
   TAX_RULE = 'tax_rules',
+  PRODUCT_DIGITAL_FILE = 'product_digital_files',
+  PRODUCT_DOWNLOAD = 'product_downloads',
+  PRODUCT_LICENSE = 'product_licenses',
 }
 
 // Status Enums
@@ -841,5 +844,65 @@ export interface VendorPayoutEntity {
   createdAt: string;
   created_at?: string;
   updatedAt: string;
+  updated_at?: string;
+}
+
+// ============================================
+// Digital Products
+// ============================================
+
+export interface ProductDigitalFileEntity {
+  id: string;
+  productId?: string;
+  product_id?: string;
+  fileName?: string;
+  file_name?: string;
+  filePath?: string;
+  file_path?: string;
+  fileSize?: number;
+  file_size?: number;
+  mimeType?: string;
+  mime_type?: string;
+  downloadLimit?: number | null;
+  download_limit?: number | null;
+  createdAt?: string;
+  created_at?: string;
+  updatedAt?: string;
+  updated_at?: string;
+}
+
+export interface ProductDownloadEntity {
+  id: string;
+  orderId?: string;
+  order_id?: string;
+  productId?: string;
+  product_id?: string;
+  userId?: string;
+  user_id?: string;
+  fileId?: string;
+  file_id?: string;
+  downloadedAt?: string;
+  downloaded_at?: string;
+  ipAddress?: string;
+  ip_address?: string;
+}
+
+export interface ProductLicenseEntity {
+  id: string;
+  productId?: string;
+  product_id?: string;
+  orderId?: string | null;
+  order_id?: string | null;
+  userId?: string | null;
+  user_id?: string | null;
+  licenseKey?: string;
+  license_key?: string;
+  isActive?: boolean;
+  is_active?: boolean;
+  activatedAt?: string | null;
+  activated_at?: string | null;
+  createdAt?: string;
+  created_at?: string;
+  updatedAt?: string;
   updated_at?: string;
 }
