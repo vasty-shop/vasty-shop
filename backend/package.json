@@ -57,7 +57,7 @@
     "passport-local": "^1.0.0",
     "pg": "^8.20.0",
     "prompts": "^2.4.2",
-    "reflect-metadata": "^0.1.13",
+    "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "socket.io": "^4.8.1",
     "stripe": "^14.10.0"
