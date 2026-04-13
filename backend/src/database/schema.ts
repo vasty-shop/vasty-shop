@@ -287,6 +287,9 @@ export const schema = {
       { name: 'rating', type: 'numeric', default: 0 },
       { name: 'total_reviews', type: 'integer', default: 0 },
 
+      // Subscription
+      { name: 'subscription_discount_percent', type: 'numeric', default: 0 }, // % discount for subscribe-and-save
+
       // Additional Data
       { name: 'attributes', type: 'jsonb', default: '{}' }, // Custom product attributes
       { name: 'metadata', type: 'jsonb', default: '{}' },
@@ -2742,6 +2745,65 @@ export const schema = {
       { columns: ['product_id'] },
       { columns: ['user_id'] },
       { columns: ['file_id'] }
+    ]
+  },
+
+  // ============================================
+  // PRODUCT SUBSCRIPTIONS & RECURRING BILLING (customer-facing)
+  // ============================================
+
+  product_subscription_plans: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'vendor_id', type: 'uuid', nullable: false, references: { table: 'shops' } },
+      { name: 'product_id', type: 'uuid', nullable: true, references: { table: 'products' } },
+      { name: 'name', type: 'string', nullable: false },
+      { name: 'description', type: 'text', nullable: true },
+      { name: 'price', type: 'integer', nullable: false }, // minor units (cents)
+      { name: 'currency', type: 'string', default: 'USD' },
+      { name: 'interval', type: 'string', nullable: false }, // weekly, monthly, quarterly, annual
+      { name: 'trial_days', type: 'integer', default: 0 },
+      { name: 'subscription_discount_percent', type: 'numeric', default: 0 },
+      { name: 'is_active', type: 'boolean', default: true },
+      { name: 'stripe_price_id', type: 'string', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['vendor_id'] },
+      { columns: ['product_id'] },
+      { columns: ['is_active'] },
+      { columns: ['interval'] }
+    ]
+  },
+
+  product_subscriptions: {
+    columns: [
+      { name: 'id', type: 'uuid', primaryKey: true, default: 'gen_random_uuid()' },
+      { name: 'user_id', type: 'string', nullable: false },
+      { name: 'plan_id', type: 'uuid', nullable: false, references: { table: 'product_subscription_plans' } },
+      { name: 'vendor_id', type: 'uuid', nullable: false, references: { table: 'shops' } },
+      { name: 'status', type: 'string', nullable: false, default: 'active' }, // trialing, active, paused, canceling, past_due, cancelled
+      { name: 'current_period_start', type: 'timestamptz', default: 'now()' },
+      { name: 'current_period_end', type: 'timestamptz', nullable: false },
+      { name: 'next_billing_date', type: 'timestamptz', nullable: false },
+      { name: 'cancel_at', type: 'timestamptz', nullable: true },
+      { name: 'trial_end', type: 'timestamptz', nullable: true },
+      { name: 'payment_method_id', type: 'string', nullable: true },
+      { name: 'stripe_subscription_id', type: 'string', nullable: true },
+      { name: 'renewal_count', type: 'integer', default: 0 },
+      { name: 'last_payment_at', type: 'timestamptz', nullable: true },
+      { name: 'last_payment_amount', type: 'integer', nullable: true },
+      { name: 'created_at', type: 'timestamptz', default: 'now()' },
+      { name: 'updated_at', type: 'timestamptz', default: 'now()' }
+    ],
+    indexes: [
+      { columns: ['user_id'] },
+      { columns: ['plan_id'] },
+      { columns: ['vendor_id'] },
+      { columns: ['status'] },
+      { columns: ['next_billing_date'] },
+      { columns: ['stripe_subscription_id'] }
     ]
   },
 

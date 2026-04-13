@@ -75,6 +75,8 @@ import { AbandonedCartModule } from './modules/abandoned-cart/abandoned-cart.mod
 import { SeoModule } from './modules/seo/seo.module';
 // Digital Products Module
 import { DigitalProductsModule } from './modules/digital-products/digital-products.module';
+// Subscriptions Module
+import { SubscriptionsModule } from './modules/subscriptions/subscriptions.module';
 
 
 @Module({
@@ -158,6 +160,8 @@ import { DigitalProductsModule } from './modules/digital-products/digital-produc
     SeoModule,
     // Digital Products Module
     DigitalProductsModule,
+    // Subscriptions Module
+    SubscriptionsModule,
   ],
   controllers: [AppController],
 })
