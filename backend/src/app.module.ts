@@ -76,7 +76,6 @@ import { BlogModule } from './modules/blog/blog.module';
     DatabaseModule,
     HealthModule,
     StorageModule,
-<<<<<<< HEAD
     EmailModule,
     SearchModule,
     MapsModule,
