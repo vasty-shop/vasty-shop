@@ -63,8 +63,7 @@ import { MobileAppGeneratorModule } from './modules/mobile-app-generator/mobile-
 import { BlogModule } from './modules/blog/blog.module';
 // SEO Module
 import { SeoModule } from './modules/seo/seo.module';
-// Digital Products Module
-import { DigitalProductsModule } from './modules/digital-products/digital-products.module';
+
 
 @Module({
   imports: [
@@ -135,8 +134,6 @@ import { DigitalProductsModule } from './modules/digital-products/digital-produc
     BlogModule,
     // SEO Module
     SeoModule,
-    // Digital Products Module
-    DigitalProductsModule,
   ],
   controllers: [AppController],
 })
