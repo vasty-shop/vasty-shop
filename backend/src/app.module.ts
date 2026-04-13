@@ -81,6 +81,8 @@ import { SubscriptionsModule } from './modules/subscriptions/subscriptions.modul
 import { ProductImportModule } from './modules/product-import/product-import.module';
 // Webhooks Module
 import { WebhooksModule } from './modules/webhooks/webhooks.module';
+// Bundles Module
+import { BundlesModule } from './modules/bundles/bundles.module';
 
 @Module({
   imports: [
@@ -169,6 +171,8 @@ import { WebhooksModule } from './modules/webhooks/webhooks.module';
     ProductImportModule,
     // Webhooks Module
     WebhooksModule,
+    // Bundles Module
+    BundlesModule,
   ],
   controllers: [AppController],
 })
