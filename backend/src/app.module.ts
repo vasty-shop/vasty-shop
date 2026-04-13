@@ -3,6 +3,12 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { DatabaseModule } from './modules/database/database.module';
 import { StorageModule } from './modules/storage/storage.module';
+import { HealthModule } from './modules/health/health.module';
+import { EmailModule } from './modules/email/email.module';
+import { SearchModule } from './modules/search/search.module';
+import { MapsModule } from './modules/maps/maps.module';
+import { PushModule } from './modules/push/push.module';
+import { ShippingModule } from './modules/shipping/shipping.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ShopsModule } from './modules/shops/shops.module';
 import { ProductsModule } from './modules/products/products.module';
@@ -60,6 +66,10 @@ import { AdminModule } from './modules/admin/admin.module';
 import { MobileAppGeneratorModule } from './modules/mobile-app-generator/mobile-app-generator.module';
 // Blog Module
 import { BlogModule } from './modules/blog/blog.module';
+// Translations Module
+import { TranslationsModule } from './modules/translations/translations.module';
+// Abandoned Cart Recovery
+import { AbandonedCartModule } from './modules/abandoned-cart/abandoned-cart.module';
 // SEO Module
 import { SeoModule } from './modules/seo/seo.module';
 
@@ -70,7 +80,13 @@ import { SeoModule } from './modules/seo/seo.module';
       envFilePath: ['.env.local', '.env'],
     }),
     DatabaseModule,
+    HealthModule,
     StorageModule,
+    EmailModule,
+    SearchModule,
+    MapsModule,
+    PushModule,
+    ShippingModule,
     AuthModule,
     RealtimeModule,
     ShopsModule,
@@ -129,6 +145,10 @@ import { SeoModule } from './modules/seo/seo.module';
     MobileAppGeneratorModule,
     // Blog Module
     BlogModule,
+    // Translations Module
+    TranslationsModule,
+    // Abandoned Cart Recovery
+    AbandonedCartModule,
     // SEO Module
     SeoModule,
   ],
