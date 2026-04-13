@@ -74,7 +74,9 @@ async function bootstrap() {
 
   // API prefix
   const apiPrefix = configService.get("API_PREFIX") || "api/v1";
-  app.setGlobalPrefix(apiPrefix);
+  app.setGlobalPrefix(apiPrefix, {
+    exclude: ['sitemap.xml', 'robots.txt'],
+  });
 
     // Swagger API Documentation
     const config = new DocumentBuilder()

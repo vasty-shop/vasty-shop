@@ -188,6 +188,9 @@ export interface ShopEntity {
   mobile_app_published?: boolean;
   mobileAppPublishedAt?: string;
   mobile_app_published_at?: string;
+  // Return Policy
+  returnPolicyDays?: number;
+  return_policy_days?: number;
   createdAt: string;
   created_at: string;
   updatedAt: string;

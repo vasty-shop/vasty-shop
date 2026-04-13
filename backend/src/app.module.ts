@@ -3,6 +3,12 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { DatabaseModule } from './modules/database/database.module';
 import { StorageModule } from './modules/storage/storage.module';
+import { HealthModule } from './modules/health/health.module';
+import { EmailModule } from './modules/email/email.module';
+import { SearchModule } from './modules/search/search.module';
+import { MapsModule } from './modules/maps/maps.module';
+import { PushModule } from './modules/push/push.module';
+import { ShippingModule } from './modules/shipping/shipping.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ShopsModule } from './modules/shops/shops.module';
 import { ProductsModule } from './modules/products/products.module';
@@ -25,6 +31,7 @@ import { ContactModule } from './modules/contact/contact.module';
 import { ExportModule } from './modules/export/export.module';
 import { WalletModule } from './modules/wallet/wallet.module';
 import { RefundModule } from './modules/refund/refund.module';
+import { ReturnsModule } from './modules/returns/returns.module';
 import { LoyaltyModule } from './modules/loyalty/loyalty.module';
 // Phase 2 Modules
 import { CashbackModule } from './modules/cashback/cashback.module';
@@ -60,8 +67,15 @@ import { AdminModule } from './modules/admin/admin.module';
 import { MobileAppGeneratorModule } from './modules/mobile-app-generator/mobile-app-generator.module';
 // Blog Module
 import { BlogModule } from './modules/blog/blog.module';
+// Translations Module
+import { TranslationsModule } from './modules/translations/translations.module';
+// Abandoned Cart Recovery
+import { AbandonedCartModule } from './modules/abandoned-cart/abandoned-cart.module';
+// SEO Module
+import { SeoModule } from './modules/seo/seo.module';
 // Digital Products Module
 import { DigitalProductsModule } from './modules/digital-products/digital-products.module';
+
 
 @Module({
   imports: [
@@ -70,7 +84,13 @@ import { DigitalProductsModule } from './modules/digital-products/digital-produc
       envFilePath: ['.env.local', '.env'],
     }),
     DatabaseModule,
+    HealthModule,
     StorageModule,
+    EmailModule,
+    SearchModule,
+    MapsModule,
+    PushModule,
+    ShippingModule,
     AuthModule,
     RealtimeModule,
     ShopsModule,
@@ -93,6 +113,7 @@ import { DigitalProductsModule } from './modules/digital-products/digital-produc
     ExportModule,
     WalletModule,
     RefundModule,
+    ReturnsModule,
     LoyaltyModule,
     // Phase 2 Modules
     CashbackModule,
@@ -129,6 +150,12 @@ import { DigitalProductsModule } from './modules/digital-products/digital-produc
     MobileAppGeneratorModule,
     // Blog Module
     BlogModule,
+    // Translations Module
+    TranslationsModule,
+    // Abandoned Cart Recovery
+    AbandonedCartModule,
+    // SEO Module
+    SeoModule,
     // Digital Products Module
     DigitalProductsModule,
   ],
