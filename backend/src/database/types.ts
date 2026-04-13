@@ -32,6 +32,11 @@ export enum EntityType {
   TAX_RATE = 'tax_rates',
   PRODUCT_TAX_CATEGORY = 'product_tax_categories',
   TAX_RULE = 'tax_rules',
+  PRODUCT_DIGITAL_FILE = 'product_digital_files',
+  PRODUCT_DOWNLOAD = 'product_downloads',
+  PRODUCT_LICENSE = 'product_licenses',
+  PRODUCT_SUBSCRIPTION_PLAN = 'product_subscription_plans',
+  PRODUCT_SUBSCRIPTION = 'product_subscriptions',
   WEBHOOK = 'webhooks',
   WEBHOOK_DELIVERY = 'webhook_deliveries',
 }
@@ -187,6 +192,9 @@ export interface ShopEntity {
   mobile_app_published?: boolean;
   mobileAppPublishedAt?: string;
   mobile_app_published_at?: string;
+  // Return Policy
+  returnPolicyDays?: number;
+  return_policy_days?: number;
   createdAt: string;
   created_at: string;
   updatedAt: string;
@@ -242,6 +250,8 @@ export interface ProductEntity {
   totalSales: number;
   rating: number;
   totalReviews: number;
+  subscriptionDiscountPercent?: number;
+  subscription_discount_percent?: number;
   attributes: Record<string, any>;
   metadata: Record<string, any>;
   careInstructions?: string[];
@@ -840,5 +850,145 @@ export interface VendorPayoutEntity {
   createdAt: string;
   created_at?: string;
   updatedAt: string;
+  updated_at?: string;
+}
+
+// ============================================
+// Digital Products
+// ============================================
+
+export interface ProductDigitalFileEntity {
+  id: string;
+  productId?: string;
+  product_id?: string;
+  fileName?: string;
+  file_name?: string;
+  filePath?: string;
+  file_path?: string;
+  fileSize?: number;
+  file_size?: number;
+  mimeType?: string;
+  mime_type?: string;
+  downloadLimit?: number | null;
+  download_limit?: number | null;
+  createdAt?: string;
+  created_at?: string;
+  updatedAt?: string;
+  updated_at?: string;
+}
+
+export interface ProductDownloadEntity {
+  id: string;
+  orderId?: string;
+  order_id?: string;
+  productId?: string;
+  product_id?: string;
+  userId?: string;
+  user_id?: string;
+  fileId?: string;
+  file_id?: string;
+  downloadedAt?: string;
+  downloaded_at?: string;
+  ipAddress?: string;
+  ip_address?: string;
+}
+
+// ============================================
+// Subscriptions & Recurring Billing
+// ============================================
+
+export enum SubscriptionStatus {
+  TRIALING = 'trialing',
+  ACTIVE = 'active',
+  PAUSED = 'paused',
+  CANCELING = 'canceling',
+  PAST_DUE = 'past_due',
+  CANCELLED = 'cancelled',
+}
+
+export enum SubscriptionInterval {
+  WEEKLY = 'weekly',
+  MONTHLY = 'monthly',
+  QUARTERLY = 'quarterly',
+  ANNUAL = 'annual',
+}
+
+export interface SubscriptionPlanEntity {
+  id: string;
+  vendorId?: string;
+  vendor_id?: string;
+  productId?: string | null;
+  product_id?: string | null;
+  name: string;
+  description?: string;
+  price: number; // minor units (cents)
+  currency: string;
+  interval: SubscriptionInterval | string;
+  trialDays?: number;
+  trial_days?: number;
+  subscriptionDiscountPercent?: number;
+  subscription_discount_percent?: number;
+  isActive?: boolean;
+  is_active?: boolean;
+  stripePriceId?: string | null;
+  stripe_price_id?: string | null;
+  createdAt?: string;
+  created_at?: string;
+  updatedAt?: string;
+  updated_at?: string;
+}
+
+export interface SubscriptionEntity {
+  id: string;
+  userId?: string;
+  user_id?: string;
+  planId?: string;
+  plan_id?: string;
+  vendorId?: string;
+  vendor_id?: string;
+  status: SubscriptionStatus | string;
+  currentPeriodStart?: string;
+  current_period_start?: string;
+  currentPeriodEnd?: string;
+  current_period_end?: string;
+  nextBillingDate?: string;
+  next_billing_date?: string;
+  cancelAt?: string | null;
+  cancel_at?: string | null;
+  trialEnd?: string | null;
+  trial_end?: string | null;
+  paymentMethodId?: string | null;
+  payment_method_id?: string | null;
+  stripeSubscriptionId?: string | null;
+  stripe_subscription_id?: string | null;
+  renewalCount?: number;
+  renewal_count?: number;
+  lastPaymentAt?: string | null;
+  last_payment_at?: string | null;
+  lastPaymentAmount?: number | null;
+  last_payment_amount?: number | null;
+  createdAt?: string;
+  created_at?: string;
+  updatedAt?: string;
+  updated_at?: string;
+}
+
+export interface ProductLicenseEntity {
+  id: string;
+  productId?: string;
+  product_id?: string;
+  orderId?: string | null;
+  order_id?: string | null;
+  userId?: string | null;
+  user_id?: string | null;
+  licenseKey?: string;
+  license_key?: string;
+  isActive?: boolean;
+  is_active?: boolean;
+  activatedAt?: string | null;
+  activated_at?: string | null;
+  createdAt?: string;
+  created_at?: string;
+  updatedAt?: string;
   updated_at?: string;
 }
