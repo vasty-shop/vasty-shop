@@ -77,6 +77,8 @@ import { SeoModule } from './modules/seo/seo.module';
 import { DigitalProductsModule } from './modules/digital-products/digital-products.module';
 // Subscriptions Module
 import { SubscriptionsModule } from './modules/subscriptions/subscriptions.module';
+// Product Import Module
+import { ProductImportModule } from './modules/product-import/product-import.module';
 
 
 @Module({
@@ -162,6 +164,8 @@ import { SubscriptionsModule } from './modules/subscriptions/subscriptions.modul
     DigitalProductsModule,
     // Subscriptions Module
     SubscriptionsModule,
+    // Product Import Module
+    ProductImportModule,
   ],
   controllers: [AppController],
 })
