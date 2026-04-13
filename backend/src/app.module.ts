@@ -143,7 +143,6 @@ import { AbandonedCartModule } from './modules/abandoned-cart/abandoned-cart.mod
     MobileAppGeneratorModule,
     // Blog Module
     BlogModule,
-<<<<<<< HEAD
     // Translations Module
     TranslationsModule,
     // Abandoned Cart Recovery
