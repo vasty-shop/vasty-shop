@@ -6,6 +6,7 @@ import { StorageModule } from './modules/storage/storage.module';
 import { HealthModule } from './modules/health/health.module';
 import { EmailModule } from './modules/email/email.module';
 import { SearchModule } from './modules/search/search.module';
+import { MapsModule } from './modules/maps/maps.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ShopsModule } from './modules/shops/shops.module';
 import { ProductsModule } from './modules/products/products.module';
@@ -75,6 +76,7 @@ import { BlogModule } from './modules/blog/blog.module';
     StorageModule,
     EmailModule,
     SearchModule,
+    MapsModule,
     AuthModule,
     RealtimeModule,
     ShopsModule,
