@@ -82,13 +82,16 @@ cd vasty-shop
 cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env
 
-# 2. Start all services (PostgreSQL, Redis, Backend, Frontend)
+# 2. (Optional) Run the setup wizard to pick providers interactively
+docker compose --profile setup run --rm setup
+
+# 3. Start all services (PostgreSQL, Redis, Backend, Frontend)
 docker compose up --build
 
-# 3. Run database migrations (in a new terminal)
+# 4. Run database migrations (in a new terminal)
 docker compose exec backend npm run migrate
 
-# 4. (Optional) Seed the database
+# 5. (Optional) Seed the database
 docker compose exec backend npm run seed
 ```
 
@@ -99,6 +102,7 @@ The app will be available at:
 | **Frontend** | http://localhost:5186 |
 | **Backend API** | http://localhost:4005/api/v1 |
 | **API Docs (Swagger)** | http://localhost:4005/api/v1/docs |
+| **Health (Providers)** | http://localhost:4005/api/v1/health/providers |
 | **WebSocket** | http://localhost:3002 |
 
 #### Default Admin Credentials
@@ -139,6 +143,12 @@ docker compose exec backend npm run seed
 
 # Access PostgreSQL shell
 docker compose exec postgres psql -U postgres -d vasty_shop_dev
+
+# Run setup wizard (pick providers interactively)
+docker compose --profile setup run --rm setup
+
+# Start with optional services (e.g. Meilisearch, MinIO)
+docker compose --profile meilisearch --profile minio up -d
 ```
 
 ### Local Development (without Docker)
@@ -211,6 +221,7 @@ npm run dev
 |-------|------------|
 | **Backend** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
+| **Storage** | Pluggable: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
 | **Payments** | Stripe, Stripe Connect, PayPal |
 | **AI** | OpenAI (recommendations, search) |
 | **Search** | Qdrant (vector), PostgreSQL (full-text) |

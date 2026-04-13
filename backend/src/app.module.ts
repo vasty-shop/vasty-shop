@@ -3,6 +3,9 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { DatabaseModule } from './modules/database/database.module';
 import { StorageModule } from './modules/storage/storage.module';
+import { HealthModule } from './modules/health/health.module';
+import { EmailModule } from './modules/email/email.module';
+import { SearchModule } from './modules/search/search.module';
 import { MapsModule } from './modules/maps/maps.module';
 import { AuthModule } from './modules/auth/auth.module';
 import { ShopsModule } from './modules/shops/shops.module';
@@ -69,7 +72,10 @@ import { BlogModule } from './modules/blog/blog.module';
       envFilePath: ['.env.local', '.env'],
     }),
     DatabaseModule,
+    HealthModule,
     StorageModule,
+    EmailModule,
+    SearchModule,
     MapsModule,
     AuthModule,
     RealtimeModule,
