@@ -31,6 +31,7 @@ import { ContactModule } from './modules/contact/contact.module';
 import { ExportModule } from './modules/export/export.module';
 import { WalletModule } from './modules/wallet/wallet.module';
 import { RefundModule } from './modules/refund/refund.module';
+import { ReturnsModule } from './modules/returns/returns.module';
 import { LoyaltyModule } from './modules/loyalty/loyalty.module';
 // Phase 2 Modules
 import { CashbackModule } from './modules/cashback/cashback.module';
@@ -73,6 +74,7 @@ import { AbandonedCartModule } from './modules/abandoned-cart/abandoned-cart.mod
 // SEO Module
 import { SeoModule } from './modules/seo/seo.module';
 
+
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -109,6 +111,7 @@ import { SeoModule } from './modules/seo/seo.module';
     ExportModule,
     WalletModule,
     RefundModule,
+    ReturnsModule,
     LoyaltyModule,
     // Phase 2 Modules
     CashbackModule,
