@@ -68,6 +68,8 @@ import { MobileAppGeneratorModule } from './modules/mobile-app-generator/mobile-
 import { BlogModule } from './modules/blog/blog.module';
 // Translations Module
 import { TranslationsModule } from './modules/translations/translations.module';
+// Abandoned Cart Recovery
+import { AbandonedCartModule } from './modules/abandoned-cart/abandoned-cart.module';
 
 @Module({
   imports: [
@@ -143,6 +145,8 @@ import { TranslationsModule } from './modules/translations/translations.module';
     BlogModule,
     // Translations Module
     TranslationsModule,
+    // Abandoned Cart Recovery
+    AbandonedCartModule,
   ],
   controllers: [AppController],
 })
