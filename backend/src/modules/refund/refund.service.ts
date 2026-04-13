@@ -1,4 +1,4 @@
-import { Injectable, Logger, BadRequestException, NotFoundException, ForbiddenException } from '@nestjs/common';
+import { Injectable, Logger, BadRequestException, NotFoundException, ForbiddenException, Optional } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
 import { WalletService } from '../wallet/wallet.service';
 import {
@@ -10,6 +10,8 @@ import {
   GetRefundsDto,
 } from './dto/refund.dto';
 import { TransactionType } from '../wallet/dto/wallet.dto';
+import { WebhooksService } from '../webhooks/webhooks.service';
+import { WebhookEventType } from '../webhooks/dto/webhooks.dto';
 
 @Injectable()
 export class RefundService {
@@ -18,6 +20,8 @@ export class RefundService {
   constructor(
     private readonly db: DatabaseService,
     private readonly walletService: WalletService,
+    @Optional()
+    private readonly webhooksService?: WebhooksService,
   ) {}
 
   /**
@@ -100,6 +104,11 @@ export class RefundService {
       })
       .returning('*')
       .execute();
+
+    // Deliver webhook event
+    if (this.webhooksService) {
+      this.webhooksService.deliverWebhook(WebhookEventType.REFUND_REQUESTED, { refundId: refundRequest[0]?.id, orderId, userId }).catch(() => {});
+    }
 
     return this.transformRefund(refundRequest[0]);
   }
@@ -297,6 +306,11 @@ export class RefundService {
         updated_at: new Date().toISOString(),
       })
       .execute();
+
+    // Deliver webhook event
+    if (this.webhooksService) {
+      this.webhooksService.deliverWebhook(WebhookEventType.REFUND_PROCESSED, { refundId, orderId: refund.order_id, amount: finalAmount }).catch(() => {});
+    }
 
     return {
       success: true,
