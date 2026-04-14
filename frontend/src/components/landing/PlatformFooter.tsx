@@ -39,9 +39,7 @@ const footerLinks = {
   legal: {
     title: 'Legal',
     links: [
-      { label: 'Privacy Policy', href: '/privacy' },
       { label: 'Terms of Service', href: '/terms' },
-      { label: 'Cookie Policy', href: '/cookies' },
       { label: 'Data Deletion', href: '/data-deletion' },
     ],
   },
@@ -99,9 +97,7 @@ export function PlatformFooter() {
     legal: {
       title: t('platform.footer.sections.legal'),
       links: [
-        { label: t('platform.footer.links.privacyPolicy'), href: '/privacy' },
         { label: t('platform.footer.links.termsOfService'), href: '/terms' },
-        { label: t('platform.footer.links.cookiePolicy'), href: '/cookies' },
         { label: t('platform.footer.links.dataDeletion'), href: '/data-deletion' },
       ],
     },
@@ -300,7 +296,6 @@ export function PlatformFooter() {
             &copy; {currentYear} {settings.platformName}. {t('platform.footer.allRightsReserved')}
           </p>
           <div className="flex items-center gap-6 text-sm text-white/40">
-            <Link to="/privacy" className="hover:text-primary-lime transition-colors">{t('platform.footer.privacy')}</Link>
             <Link to="/terms" className="hover:text-primary-lime transition-colors">{t('platform.footer.terms')}</Link>
             <Link to="/contact" className="hover:text-primary-lime transition-colors">{t('platform.footer.contact')}</Link>
           </div>

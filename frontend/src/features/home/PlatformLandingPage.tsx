@@ -10,7 +10,10 @@ import {
   Globe,
   Check,
   Star,
+  LogOut,
+  LayoutDashboard,
 } from 'lucide-react';
+import { useAuth } from '@/contexts/AuthContext';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -18,6 +21,16 @@ const fadeUp = {
 };
 
 export default function PlatformLandingPage() {
+  const { user, shops, isAuthenticated, isAdmin, isVendor, logout } = useAuth();
+
+  const dashboardPath = isAdmin
+    ? '/admin/dashboard'
+    : isVendor && shops[0]
+    ? `/shop/${shops[0].id}/vendor/dashboard`
+    : '/profile';
+
+  const dashboardLabel = isAdmin ? 'Admin' : isVendor ? 'Dashboard' : 'Profile';
+
   return (
     <div className="min-h-screen text-slate-900 antialiased">
       <header className="sticky top-0 z-50 border-b border-indigo-100 bg-gradient-to-r from-indigo-100/80 via-violet-50/60 to-fuchsia-100/80 shadow-[0_1px_3px_rgba(99,102,241,0.08)] backdrop-blur-xl">
@@ -51,18 +64,42 @@ export default function PlatformLandingPage() {
             </Link>
           </div>
           <div className="flex items-center gap-3">
-            <Link
-              to="/login"
-              className="hidden text-sm font-medium text-slate-700 transition hover:text-indigo-700 sm:block"
-            >
-              Sign in
-            </Link>
-            <Link
-              to="/register"
-              className="rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 px-5 py-2 text-sm font-medium text-white shadow-md shadow-indigo-600/25 ring-1 ring-white/20 transition hover:shadow-lg hover:shadow-indigo-600/30"
-            >
-              Get started
-            </Link>
+            {isAuthenticated ? (
+              <>
+                <Link
+                  to={dashboardPath}
+                  className="hidden items-center gap-1.5 rounded-full border border-indigo-200 bg-white/70 px-4 py-2 text-sm font-medium text-indigo-700 shadow-sm backdrop-blur transition hover:bg-white sm:inline-flex"
+                >
+                  <LayoutDashboard className="h-4 w-4" />
+                  {dashboardLabel}
+                </Link>
+                <span className="hidden text-sm text-slate-600 md:block">
+                  {user?.metadata?.firstName || user?.name?.split(' ')[0] || user?.email?.split('@')[0]}
+                </span>
+                <button
+                  onClick={() => logout()}
+                  className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 px-5 py-2 text-sm font-medium text-white shadow-md shadow-indigo-600/25 ring-1 ring-white/20 transition hover:shadow-lg hover:shadow-indigo-600/30"
+                >
+                  <LogOut className="h-4 w-4" />
+                  Sign out
+                </button>
+              </>
+            ) : (
+              <>
+                <Link
+                  to="/login"
+                  className="hidden text-sm font-medium text-slate-700 transition hover:text-indigo-700 sm:block"
+                >
+                  Sign in
+                </Link>
+                <Link
+                  to="/register"
+                  className="rounded-full bg-gradient-to-r from-indigo-600 to-violet-600 px-5 py-2 text-sm font-medium text-white shadow-md shadow-indigo-600/25 ring-1 ring-white/20 transition hover:shadow-lg hover:shadow-indigo-600/30"
+                >
+                  Get started
+                </Link>
+              </>
+            )}
           </div>
         </nav>
       </header>

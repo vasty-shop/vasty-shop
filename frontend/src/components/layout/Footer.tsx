@@ -39,9 +39,7 @@ const footerLinksConfig = {
   legal: {
     titleKey: 'platform.footer.sections.legal',
     links: [
-      { labelKey: 'platform.footer.links.privacyPolicy', href: '/privacy' },
       { labelKey: 'platform.footer.links.termsOfService', href: '/terms' },
-      { labelKey: 'platform.footer.links.cookiePolicy', href: '/cookies' },
       { labelKey: 'platform.footer.links.dataDeletion', href: '/data-deletion' },
     ],
   },
@@ -264,7 +262,6 @@ const Footer: React.FC = () => {
             &copy; {currentYear} {settings?.platformName || 'Vasty Shop'}. {t('platform.footer.allRightsReserved')}
           </p>
           <div className="flex items-center gap-6 text-sm text-white/40">
-            <Link to="/privacy" className="hover:text-primary-lime transition-colors">{t('platform.footer.privacy')}</Link>
             <Link to="/terms" className="hover:text-primary-lime transition-colors">{t('platform.footer.terms')}</Link>
             <Link to="/contact" className="hover:text-primary-lime transition-colors">{t('platform.footer.contact')}</Link>
           </div>

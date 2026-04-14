@@ -61,7 +61,7 @@ export const DataDeletionPage: React.FC = () => {
   };
 
   const breadcrumbItems = [
-    { label: t('legal.breadcrumb'), href: '/privacy' },
+    { label: t('legal.breadcrumb'), href: '/terms' },
     { label: t('legal.dataDeletion.title') },
   ];
 

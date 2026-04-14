@@ -332,11 +332,6 @@ export const TermsPage: React.FC = () => {
               <p className="text-text-secondary">{t('legal.terms.sections.contact.hours')}</p>
             </div>
             <p className="mb-4">{t('legal.terms.sections.contact.responseTime')}</p>
-            <p className="mb-4">
-              {t('legal.terms.sections.contact.privacyNote').split('Privacy Policy')[0]}
-              <Link to="/privacy" className="text-primary-lime hover:underline">{t('legal.privacy.title')}</Link>
-              {t('legal.terms.sections.contact.privacyNote').split('Privacy Policy')[1]}
-            </p>
           </>
         );
 
