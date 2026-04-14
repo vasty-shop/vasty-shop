@@ -6,8 +6,6 @@ import { useTranslation } from 'react-i18next';
 import {
   Store,
   Mail,
-  Facebook,
-  Linkedin,
   ArrowRight,
   Loader2,
   Check
@@ -39,7 +37,6 @@ const footerLinksConfig = {
   legal: {
     titleKey: 'platform.footer.sections.legal',
     links: [
-      { labelKey: 'platform.footer.links.termsOfService', href: '/terms' },
       { labelKey: 'platform.footer.links.dataDeletion', href: '/data-deletion' },
     ],
   },
@@ -52,19 +49,6 @@ const footerLinksConfig = {
     ],
   },
 };
-
-// X (Twitter) icon component
-const XIcon = ({ className }: { className?: string }) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className={className}>
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-  </svg>
-);
-
-const socialLinks = [
-  { icon: Facebook, href: 'https://www.facebook.com/infoinlet/', label: 'Facebook' },
-  { icon: XIcon, href: 'https://x.com/inletinfo', label: 'X' },
-  { icon: Linkedin, href: 'https://linkedin.com/company/info-inlet', label: 'LinkedIn' },
-];
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -207,24 +191,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            {/* Social Links */}
-            <div className="mt-6">
-              <h4 className="text-white font-semibold mb-4">{t('platform.footer.followUs')}</h4>
-              <div className="flex gap-3">
-                {socialLinks.map((social) => (
-                  <a
-                    key={social.label}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/60 hover:text-primary-lime hover:bg-white/10 transition-all"
-                    aria-label={social.label}
-                  >
-                    <social.icon className="w-5 h-5" />
-                  </a>
-                ))}
-              </div>
-            </div>
           </div>
 
           {/* Link Columns */}
@@ -262,7 +228,6 @@ const Footer: React.FC = () => {
             &copy; {currentYear} {settings?.platformName || 'Vasty Shop'}. {t('platform.footer.allRightsReserved')}
           </p>
           <div className="flex items-center gap-6 text-sm text-white/40">
-            <Link to="/terms" className="hover:text-primary-lime transition-colors">{t('platform.footer.terms')}</Link>
             <Link to="/contact" className="hover:text-primary-lime transition-colors">{t('platform.footer.contact')}</Link>
           </div>
         </div>

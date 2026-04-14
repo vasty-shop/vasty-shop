@@ -236,15 +236,6 @@ export const OrderReview: React.FC<OrderReviewProps> = ({
             <p className="text-xs text-text-secondary mb-3">
               {t('checkout.agreeTermsDesc')}
             </p>
-            <div className="flex gap-3">
-              <Link
-                to="/terms"
-                target="_blank"
-                className="text-xs text-primary-lime hover:text-primary-lime-dark font-medium underline"
-              >
-                {t('checkout.readTerms')}
-              </Link>
-            </div>
           </div>
         </div>
       </Card>

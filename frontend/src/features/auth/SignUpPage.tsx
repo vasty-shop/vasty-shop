@@ -603,13 +603,7 @@ const SignUpPage: React.FC = () => {
                       htmlFor="agreeToTerms"
                       className="text-sm text-gray-700 leading-relaxed cursor-pointer"
                     >
-                      I agree to the{' '}
-                      <Link
-                        to="/terms"
-                        className="text-primary-lime hover:underline font-medium"
-                      >
-                        Terms of Service
-                      </Link>
+                      I agree to the Terms of Service
                       <span className="text-red-500 ml-1">*</span>
                     </label>
                   </div>

@@ -33,7 +33,6 @@ const PUBLIC_PATHS = [
   '/contact',
   '/about',
   '/faq',
-  '/terms',
   '/shipping',
   '/press',
   '/stores',

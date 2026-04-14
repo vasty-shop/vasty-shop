@@ -79,7 +79,6 @@ export const Header: React.FC = () => {
       dropdown: [
         { label: t('header.nav.aboutUs'), href: '/about' },
         { label: t('header.nav.faq'), href: '/faq' },
-        { label: t('header.nav.terms'), href: '/terms' },
       ],
     },
     { label: t('header.nav.contact'), href: '/contact' },

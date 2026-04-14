@@ -30,7 +30,6 @@ import { ContactPage } from './features/contact/ContactPage';
 import { FAQPage } from './features/faq/FAQPage';
 import { HelpCenterPage } from './features/help/HelpCenterPage';
 import { AboutPage } from './features/about';
-import { TermsPage } from './features/legal/TermsPage';
 import { ShippingPage } from './features/legal/ShippingPage';
 import { DataDeletionPage } from './features/legal/DataDeletionPage';
 import { SitemapPage } from './features/legal/SitemapPage';
@@ -213,7 +212,6 @@ const AppContent: React.FC = () => {
         <Route path="/faq" element={<FAQPage />} />
         <Route path="/faqs" element={<Navigate to="/faq" replace />} />
         <Route path="/help" element={<HelpCenterPage />} />
-        <Route path="/terms" element={<TermsPage />} />
         <Route path="/shipping" element={<ShippingPage />} />
         <Route path="/data-deletion" element={<DataDeletionPage />} />
         <Route path="/sitemap" element={<SitemapPage />} />
