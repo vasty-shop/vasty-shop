@@ -3,6 +3,8 @@ import {
   NotFoundException,
   BadRequestException,
   UnprocessableEntityException,
+  UnauthorizedException,
+  ConflictException,
   Logger,
 } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
@@ -37,8 +39,8 @@ export class StorefrontService {
     let paramIndex = 2;
 
     if (query.categoryId) {
-      conditions.push(`p."category_id" = $${paramIndex}`);
-      params.push(query.categoryId);
+      conditions.push(`p."categories" @> $${paramIndex}::jsonb`);
+      params.push(JSON.stringify([query.categoryId]));
       paramIndex++;
     }
 
@@ -72,7 +74,7 @@ export class StorefrontService {
         const attrs = JSON.parse(query.attributes);
         for (const [key, value] of Object.entries(attrs)) {
           conditions.push(
-            `p."attributes"->$${paramIndex} = $${paramIndex + 1}::jsonb`,
+            `p."variant_attributes"->$${paramIndex} = $${paramIndex + 1}::jsonb`,
           );
           params.push(key, JSON.stringify(value));
           paramIndex += 2;
@@ -94,7 +96,7 @@ export class StorefrontService {
         orderClause = 'p."created_at" DESC';
         break;
       case ProductSortBy.POPULARITY:
-        orderClause = 'p."total_sold" DESC NULLS LAST, p."created_at" DESC';
+        orderClause = 'p."total_sales" DESC NULLS LAST, p."created_at" DESC';
         break;
       case ProductSortBy.NAME_ASC:
         orderClause = 'p."name" ASC';
@@ -116,10 +118,10 @@ export class StorefrontService {
     const dataSql = `
       SELECT
         p."id", p."name", p."slug", p."description",
-        p."price", p."compare_at_price", p."currency",
-        p."images", p."category_id", p."stock",
-        p."rating", p."total_reviews", p."total_sold",
-        p."variants", p."attributes", p."tags",
+        p."price", p."compare_price",
+        p."images", p."categories", p."stock",
+        p."rating", p."total_reviews", p."total_sales",
+        p."variants", p."variant_attributes", p."tags",
         p."created_at",
         json_build_object(
           'id', s."id",
@@ -221,29 +223,33 @@ export class StorefrontService {
 
     // Related products (same category)
     let relatedProducts: any[] = [];
-    if (product.category_id) {
+    const productCategories: string[] = Array.isArray(product.categories)
+      ? product.categories
+      : [];
+    const primaryCategory = productCategories[0];
+    if (primaryCategory) {
       try {
         const relatedSql = `
           SELECT
-            p."id", p."name", p."slug", p."price", p."compare_at_price",
+            p."id", p."name", p."slug", p."price", p."compare_price",
             p."images", p."rating", p."total_reviews",
             json_build_object('id', s."id", 'name', s."name", 'slug', s."slug") as shop
           FROM "products" p
           INNER JOIN "shops" s ON s."id" = p."shop_id" AND s."status" = 'active'
-          WHERE p."category_id" = $1
+          WHERE p."categories" @> $1::jsonb
             AND p."id" != $2
             AND p."status" = 'active'
             AND p."deleted_at" IS NULL
-          ORDER BY p."total_sold" DESC NULLS LAST
+          ORDER BY p."total_sales" DESC NULLS LAST
           LIMIT 8
         `;
         const relatedResult = await this.db.query(relatedSql, [
-          product.category_id,
+          JSON.stringify([primaryCategory]),
           product.id,
         ]);
         relatedProducts = relatedResult.rows;
-      } catch {
-        // Ignore errors
+      } catch (err) {
+        this.logger.warn(`related-products query failed: ${(err as Error).message}`);
       }
     }
 
@@ -265,16 +271,10 @@ export class StorefrontService {
     const sql = `
       SELECT
         c.*,
-        COALESCE(pc.product_count, 0)::integer as product_count
+        COALESCE(c."product_count", 0)::integer as product_count
       FROM "categories" c
-      LEFT JOIN (
-        SELECT "category_id", COUNT(*) as product_count
-        FROM "products"
-        WHERE "status" = 'active' AND "deleted_at" IS NULL
-        GROUP BY "category_id"
-      ) pc ON pc."category_id" = c."id"
-      WHERE c."is_active" = true
-      ORDER BY c."order" ASC, c."name" ASC
+      WHERE c."is_active" = true AND c."deleted_at" IS NULL
+      ORDER BY c."display_order" ASC, c."name" ASC
     `;
 
     const { rows } = await this.db.query(sql);
@@ -343,7 +343,12 @@ export class StorefrontService {
       throw new NotFoundException('Cart not found');
     }
 
-    const product = await this.db.findOne('products', { id: dto.productId });
+    let product: any;
+    try {
+      product = await this.db.findOne('products', { id: dto.productId });
+    } catch {
+      throw new NotFoundException('Product not found or unavailable');
+    }
     if (!product || product.status !== 'active' || product.deleted_at) {
       throw new NotFoundException('Product not found or unavailable');
     }
@@ -522,7 +527,16 @@ export class StorefrontService {
    * Customer login via email+password.
    */
   async login(email: string, password: string) {
-    const result = await this.db.signIn(email, password);
+    let result: any;
+    try {
+      result = await this.db.signIn(email, password);
+    } catch (err) {
+      const message = (err as Error)?.message || '';
+      if (/invalid credentials|not found|wrong password|unauthorized/i.test(message)) {
+        throw new UnauthorizedException('Invalid email or password');
+      }
+      throw err;
+    }
     const user = result.user || result;
     const token =
       (result as any).token ||
@@ -556,7 +570,16 @@ export class StorefrontService {
     const name = `${firstName || ''} ${lastName || ''}`.trim();
     const metadata = { phone, firstName, lastName, full_name: name };
 
-    const result = await this.db.signUp(email, password, name, 'customer', metadata);
+    let result: any;
+    try {
+      result = await this.db.signUp(email, password, name, 'customer', metadata);
+    } catch (err) {
+      const message = (err as Error)?.message || '';
+      if (/already (exists|in use|registered)|duplicate|unique/i.test(message)) {
+        throw new ConflictException('Email already in use');
+      }
+      throw err;
+    }
     const user = result.user || result;
     const token =
       (result as any).token ||
