@@ -609,13 +609,6 @@ const SignUpPage: React.FC = () => {
                         className="text-primary-lime hover:underline font-medium"
                       >
                         Terms of Service
-                      </Link>{' '}
-                      and{' '}
-                      <Link
-                        to="/privacy"
-                        className="text-primary-lime hover:underline font-medium"
-                      >
-                        Privacy Policy
                       </Link>
                       <span className="text-red-500 ml-1">*</span>
                     </label>

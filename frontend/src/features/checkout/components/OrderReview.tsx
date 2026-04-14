@@ -244,13 +244,6 @@ export const OrderReview: React.FC<OrderReviewProps> = ({
               >
                 {t('checkout.readTerms')}
               </Link>
-              <Link
-                to="/privacy"
-                target="_blank"
-                className="text-xs text-primary-lime hover:text-primary-lime-dark font-medium underline"
-              >
-                {t('checkout.readPrivacy')}
-              </Link>
             </div>
           </div>
         </div>

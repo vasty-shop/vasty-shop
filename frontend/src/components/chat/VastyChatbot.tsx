@@ -34,8 +34,6 @@ const PUBLIC_PATHS = [
   '/about',
   '/faq',
   '/terms',
-  '/privacy',
-  '/cookies',
   '/shipping',
   '/press',
   '/stores',

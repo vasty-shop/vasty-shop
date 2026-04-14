@@ -775,7 +775,6 @@ export const DEFAULT_FOOTER: StorefrontFooter = {
       title: 'Company',
       links: [
         { label: 'About Us', link: '/about' },
-        { label: 'Privacy Policy', link: '/privacy' },
         { label: 'Terms of Service', link: '/terms' },
       ],
     },

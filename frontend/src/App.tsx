@@ -31,8 +31,6 @@ import { FAQPage } from './features/faq/FAQPage';
 import { HelpCenterPage } from './features/help/HelpCenterPage';
 import { AboutPage } from './features/about';
 import { TermsPage } from './features/legal/TermsPage';
-import { PrivacyPage } from './features/legal/PrivacyPage';
-import { CookiesPage } from './features/legal/CookiesPage';
 import { ShippingPage } from './features/legal/ShippingPage';
 import { DataDeletionPage } from './features/legal/DataDeletionPage';
 import { SitemapPage } from './features/legal/SitemapPage';
@@ -216,8 +214,6 @@ const AppContent: React.FC = () => {
         <Route path="/faqs" element={<Navigate to="/faq" replace />} />
         <Route path="/help" element={<HelpCenterPage />} />
         <Route path="/terms" element={<TermsPage />} />
-        <Route path="/privacy" element={<PrivacyPage />} />
-        <Route path="/cookies" element={<CookiesPage />} />
         <Route path="/shipping" element={<ShippingPage />} />
         <Route path="/data-deletion" element={<DataDeletionPage />} />
         <Route path="/sitemap" element={<SitemapPage />} />
