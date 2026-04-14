@@ -40,12 +40,12 @@ export class TaxController {
   @Get('rates/:countryCode')
   @ApiOperation({
     summary: 'Get tax rates for a country',
-    description: 'Retrieve tax rate information for a specific country (JP, BD, or CA)',
+    description: 'Retrieve tax rate information for any supported country (22 total: JP, BD, CA, US, DE, FR, IT, ES, NL, BE, AT, IE, PT, PL, SE, GB, AU, IN, SG, KR, BR, MX)',
   })
   @ApiParam({
     name: 'countryCode',
     description: 'ISO 3166-1 alpha-2 country code',
-    enum: ['JP', 'BD', 'CA'],
+    enum: ['JP', 'BD', 'CA', 'US', 'DE', 'FR', 'IT', 'ES', 'NL', 'BE', 'AT', 'IE', 'PT', 'PL', 'SE', 'GB', 'AU', 'IN', 'SG', 'KR', 'BR', 'MX'],
     example: 'JP',
   })
   @ApiResponse({

@@ -7,7 +7,9 @@ import {
 } from './dto/calculate-tax.dto';
 import {
   getTaxConfig,
+  getTaxDisplayMode,
   isSupportedCountry,
+  getSupportedCountries,
   TaxCategory,
   CountryTaxConfig,
   ProvinceTaxRate,
@@ -18,7 +20,7 @@ export class TaxService {
   private readonly logger = new Logger(TaxService.name);
 
   /**
-   * Calculate tax for given items based on country and province
+   * Calculate tax for given items based on country and province/state
    */
   async calculateTax(input: CalculateTaxDto): Promise<TaxCalculationResultDto> {
     this.logger.log(`Calculating tax for country: ${input.countryCode}`);
@@ -26,7 +28,7 @@ export class TaxService {
     // Validate country code
     if (!isSupportedCountry(input.countryCode)) {
       throw new BadRequestException(
-        `Country code '${input.countryCode}' is not supported. Supported countries: JP, BD, CA`,
+        `Country code '${input.countryCode}' is not supported. Supported countries: ${getSupportedCountries().join(', ')}`,
       );
     }
 
@@ -35,9 +37,15 @@ export class TaxService {
       throw new BadRequestException(`Tax configuration not found for country: ${input.countryCode}`);
     }
 
-    // Validate Canada province requirement
-    if (input.countryCode.toUpperCase() === 'CA' && !input.provinceCode) {
+    const upperCountry = input.countryCode.toUpperCase();
+
+    // Validate province/state requirement for countries that need it
+    if (upperCountry === 'CA' && !input.provinceCode) {
       throw new BadRequestException('Province code is required for Canada tax calculations');
+    }
+
+    if (upperCountry === 'US' && !input.provinceCode) {
+      throw new BadRequestException('State code is required for US tax calculations');
     }
 
     // Validate items
@@ -45,13 +53,14 @@ export class TaxService {
       throw new BadRequestException('At least one item is required for tax calculation');
     }
 
-    // Get province info for Canada
+    // Get province/state info for countries with sub-national rates
     let provinceInfo: ProvinceTaxRate | null = null;
-    if (input.countryCode.toUpperCase() === 'CA' && input.provinceCode) {
+    if ((upperCountry === 'CA' || upperCountry === 'US') && input.provinceCode) {
       provinceInfo = this.getProvinceRate(taxConfig, input.provinceCode);
       if (!provinceInfo) {
+        const label = upperCountry === 'US' ? 'state' : 'province';
         throw new BadRequestException(
-          `Invalid province code: ${input.provinceCode}. Please use valid Canadian province codes.`,
+          `Invalid ${label} code: ${input.provinceCode}. Please use a valid ${label} code.`,
         );
       }
     }
@@ -77,8 +86,8 @@ export class TaxService {
         category: item.category,
       };
 
-      // Add tax breakdown for Canada
-      if (input.countryCode.toUpperCase() === 'CA' && provinceInfo) {
+      // Add tax breakdown for Canada (GST/PST/HST)
+      if (upperCountry === 'CA' && provinceInfo) {
         itemResult.taxBreakdown = this.calculateCanadaTaxBreakdown(itemSubtotal, provinceInfo);
       }
 
@@ -90,6 +99,8 @@ export class TaxService {
     // Generate tax summary
     const taxSummary = this.generateTaxSummary(itemResults);
 
+    const displayMode = getTaxDisplayMode();
+
     const result: TaxCalculationResultDto = {
       countryCode: taxConfig.countryCode,
       countryName: taxConfig.countryName,
@@ -99,6 +110,7 @@ export class TaxService {
       totalTax: this.roundTo2Decimals(totalTax),
       grandTotal: this.roundTo2Decimals(subtotal + totalTax),
       currency: input.currency || 'USD',
+      taxDisplayMode: displayMode,
       items: itemResults,
       taxSummary,
       calculatedAt: new Date().toISOString(),
@@ -119,7 +131,7 @@ export class TaxService {
 
     if (!isSupportedCountry(countryCode)) {
       throw new BadRequestException(
-        `Country code '${countryCode}' is not supported. Supported countries: JP, BD, CA`,
+        `Country code '${countryCode}' is not supported. Supported countries: ${getSupportedCountries().join(', ')}`,
       );
     }
 
@@ -151,8 +163,8 @@ export class TaxService {
     category?: TaxCategory,
     provinceInfo?: ProvinceTaxRate | null,
   ): number {
-    // For Canada, use province rate
-    if (config.countryCode === 'CA' && provinceInfo) {
+    // For countries with sub-national rates (CA, US), use province/state rate
+    if ((config.countryCode === 'CA' || config.countryCode === 'US') && provinceInfo) {
       return provinceInfo.totalRate;
     }
 
@@ -252,6 +264,25 @@ export class TaxService {
       JP: 'Standard rate: 10%, Reduced rate: 8% for food and beverages (excluding alcohol and dining out)',
       BD: 'Standard VAT: 15%, Essential food items are exempt (0%), Clothing: 5%',
       CA: 'Tax rates vary by province. HST applies in Atlantic provinces and Ontario. GST+PST in BC, MB, SK, QC. GST only in AB and territories.',
+      US: 'No federal sales tax. Rates vary by state. Province code = state code (e.g. CA, NY, TX).',
+      DE: 'Standard VAT: 19%, Reduced: 7% for food, books, medical.',
+      FR: 'Standard VAT: 20%, Reduced: 5.5% for food, medical.',
+      IT: 'Standard VAT: 22%, Super-reduced: 4% for food, medical.',
+      ES: 'Standard IVA: 21%, Super-reduced: 4% for food, medical.',
+      NL: 'Standard VAT: 21%, Reduced: 9% for food, medical.',
+      BE: "Standard VAT: 21%, Reduced: 6% for food, children's clothing.",
+      AT: 'Standard VAT: 20%, Reduced: 10% for food, medical.',
+      IE: "Standard VAT: 23%, Reduced: 13.5%. Food and children's clothing zero-rated.",
+      PT: 'Standard VAT: 23%, Reduced: 6% for food, medical.',
+      PL: "Standard VAT: 23%, Reduced: 5% for food, children's clothing.",
+      SE: 'Standard VAT: 25%, Food: 12%, Reduced: 6%.',
+      GB: "Standard VAT: 20%, Reduced: 5%. Food, children's clothing, and medical zero-rated.",
+      AU: 'GST: 10%. Basic food and medical are GST-free.',
+      IN: 'GST slabs: 5%/12%/18%/28%. Standard: 18%. Food staples exempt.',
+      BR: 'ICMS national average: 18%. Varies by state.',
+      SG: 'GST: 9% (flat rate).',
+      KR: 'VAT: 10%. Unprocessed food and medical exempt.',
+      MX: 'IVA: 16%. Food and medicine exempt (0%).',
     };
     return notes[countryCode.toUpperCase()] || '';
   }
