@@ -107,9 +107,7 @@ export const SitemapPage: React.FC = () => {
       titleKey: 'legal.sitemap.sections.legal',
       icon: Shield,
       links: [
-        { labelKey: 'legal.sitemap.links.privacyPolicy', descKey: 'legal.sitemap.links.privacyPolicyDesc', href: '/privacy' },
         { labelKey: 'legal.sitemap.links.termsOfService', descKey: 'legal.sitemap.links.termsOfServiceDesc', href: '/terms' },
-        { labelKey: 'legal.sitemap.links.cookiePolicy', descKey: 'legal.sitemap.links.cookiePolicyDesc', href: '/cookies' },
         { labelKey: 'legal.sitemap.links.dataDeletion', descKey: 'legal.sitemap.links.dataDeletionDesc', href: '/data-deletion' },
         { labelKey: 'legal.sitemap.links.shippingPolicy', descKey: 'legal.sitemap.links.shippingPolicyDesc', href: '/shipping' },
       ]

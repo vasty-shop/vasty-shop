@@ -5,6 +5,7 @@ import {
   ForbiddenException,
   ConflictException,
   Logger,
+  Optional,
 } from '@nestjs/common';
 import { DatabaseService } from '../database/database.service';
 import {
@@ -16,12 +17,18 @@ import {
   QueryReviewsDto,
   ReviewStatus,
 } from './dto';
+import { WebhooksService } from '../webhooks/webhooks.service';
+import { WebhookEventType } from '../webhooks/dto/webhooks.dto';
 
 @Injectable()
 export class ReviewsService {
   private readonly logger = new Logger(ReviewsService.name);
 
-  constructor(private readonly db: DatabaseService) {}
+  constructor(
+    private readonly db: DatabaseService,
+    @Optional()
+    private readonly webhooksService?: WebhooksService,
+  ) {}
 
   /**
    * Create a new review
@@ -155,6 +162,11 @@ export class ReviewsService {
     // Add userName for frontend (camelCase mapping)
     review.userName = userName;
     review.userAvatar = userAvatar;
+
+    // Deliver webhook event
+    if (this.webhooksService) {
+      this.webhooksService.deliverWebhook(WebhookEventType.REVIEW_CREATED, { reviewId: review.id, productId: dto.productId, rating: dto.rating }).catch(() => {});
+    }
 
     return review;
   }

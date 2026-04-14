@@ -80,7 +80,6 @@ export const Header: React.FC = () => {
         { label: t('header.nav.aboutUs'), href: '/about' },
         { label: t('header.nav.faq'), href: '/faq' },
         { label: t('header.nav.terms'), href: '/terms' },
-        { label: t('header.nav.privacy'), href: '/privacy' },
       ],
     },
     { label: t('header.nav.contact'), href: '/contact' },
