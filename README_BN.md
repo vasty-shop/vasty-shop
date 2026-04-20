@@ -108,7 +108,7 @@ docker compose exec backend npm run seed
 
 | সার্ভিস | ইমেজ | পোর্ট |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -212,15 +212,15 @@ npm run dev
 | **Backend** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **স্টোরেজ** | প্লাগযোগ্য: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
-| **পেমেন্ট** | Stripe, Stripe Connect, PayPal |
-| **AI** | OpenAI (রিকমেন্ডেশন, সার্চ) |
-| **সার্চ** | Qdrant (ভেক্টর), PostgreSQL (পূর্ণ-পাঠ্য) |
+| **পেমেন্ট** | Stripe, Stripe Connect, PayPal, bKash |
+| **AI** | OpenAI, Anthropic, Gemini, Groq, Ollama |
+| **সার্চ** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 
 ## প্রজেক্ট স্ট্রাকচার
 
 ```
 vasty-shop/
-├── backend/              # NestJS API (৫৩ মডিউল, ৬৭ টেবিল)
+├── backend/              # NestJS API (৬৯ মডিউল, ৮০+ টেবিল)
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...

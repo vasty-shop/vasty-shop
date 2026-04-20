@@ -108,7 +108,7 @@ Aplikasi akan tersedia di:
 
 | Perkhidmatan | Imej | Port |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -212,15 +212,15 @@ npm run dev
 | **Backend** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **Storan** | Boleh pasang: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
-| **Pembayaran** | Stripe, Stripe Connect, PayPal |
-| **AI** | OpenAI (cadangan, carian) |
-| **Carian** | Qdrant (vektor), PostgreSQL (teks penuh) |
+| **Pembayaran** | Stripe, Stripe Connect, PayPal, bKash |
+| **AI** | OpenAI, Anthropic, Gemini, Groq, Ollama |
+| **Carian** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 
 ## Struktur Projek
 
 ```
 vasty-shop/
-├── backend/              # API NestJS (53 modul, 67 jadual)
+├── backend/              # API NestJS (69 modul, 80+ jadual)
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...

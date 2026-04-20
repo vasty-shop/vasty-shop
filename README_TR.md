@@ -108,7 +108,7 @@ Uygulama şu adreslerde çalışacak:
 
 | Servis | İmaj | Port |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -212,15 +212,15 @@ npm run dev
 | **Backend** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **Depolama** | Takılabilir: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
-| **Ödemeler** | Stripe, Stripe Connect, PayPal |
-| **AI** | OpenAI (öneriler, arama) |
-| **Arama** | Qdrant (vektör), PostgreSQL (tam metin) |
+| **Ödemeler** | Stripe, Stripe Connect, PayPal, bKash |
+| **AI** | OpenAI, Anthropic, Gemini, Groq, Ollama |
+| **Arama** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 
 ## Proje Yapısı
 
 ```
 vasty-shop/
-├── backend/              # NestJS API (53 modül, 67 tablo)
+├── backend/              # NestJS API (69 modül, 80+ tablo)
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...

@@ -108,7 +108,7 @@ docker compose exec backend npm run seed
 
 | 서비스 | 이미지 | 포트 |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -212,15 +212,15 @@ npm run dev
 | **백엔드** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **프론트엔드** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **스토리지** | 플러그형: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
-| **결제** | Stripe, Stripe Connect, PayPal |
-| **AI** | OpenAI (추천, 검색) |
-| **검색** | Qdrant (벡터), PostgreSQL (전문) |
+| **결제** | Stripe, Stripe Connect, PayPal, bKash |
+| **AI** | OpenAI, Anthropic, Gemini, Groq, Ollama |
+| **검색** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 
 ## 프로젝트 구조
 
 ```
 vasty-shop/
-├── backend/              # NestJS API (53 모듈, 67 테이블)
+├── backend/              # NestJS API (69 모듈, 80+ 테이블)
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...

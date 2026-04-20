@@ -108,7 +108,7 @@ docker compose exec backend npm run seed
 
 | 服务 | 镜像 | 端口 |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -212,15 +212,15 @@ npm run dev
 | **后端** | NestJS、TypeScript、PostgreSQL（原生 SQL）、Redis、Socket.io |
 | **前端** | React、Vite、TypeScript、Tailwind CSS、Radix UI、i18next |
 | **存储** | 可插拔: local-fs、S3、Cloudflare R2、MinIO、B2、GCS、Azure |
-| **支付** | Stripe、Stripe Connect、PayPal |
-| **AI** | OpenAI（推荐、搜索）|
-| **搜索** | Qdrant（向量）、PostgreSQL（全文）|
+| **支付** | Stripe、Stripe Connect、PayPal、bKash |
+| **AI** | OpenAI、Anthropic、Gemini、Groq、Ollama |
+| **搜索** | PostgreSQL（pg-trgm）、Meilisearch、Typesense |
 
 ## 项目结构
 
 ```
 vasty-shop/
-├── backend/              # NestJS API（53 个模块，67 张表）
+├── backend/              # NestJS API（69 个模块，80+ 张表）
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...

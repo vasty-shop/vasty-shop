@@ -108,7 +108,7 @@ docker compose exec backend npm run seed
 
 | Сервис | Образ | Порт |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -212,15 +212,15 @@ npm run dev
 | **Backend** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **Хранилище** | Подключаемое: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
-| **Платежи** | Stripe, Stripe Connect, PayPal |
-| **AI** | OpenAI (рекомендации, поиск) |
-| **Поиск** | Qdrant (векторный), PostgreSQL (полнотекстовый) |
+| **Платежи** | Stripe, Stripe Connect, PayPal, bKash |
+| **AI** | OpenAI, Anthropic, Gemini, Groq, Ollama |
+| **Поиск** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 
 ## Структура проекта
 
 ```
 vasty-shop/
-├── backend/              # NestJS API (53 модуля, 67 таблиц)
+├── backend/              # NestJS API (69 модулей, 80+ таблиц)
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...

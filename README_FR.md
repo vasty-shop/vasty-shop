@@ -108,7 +108,7 @@ L'application sera disponible sur :
 
 | Service | Image | Port |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -212,15 +212,15 @@ npm run dev
 | **Backend** | NestJS, TypeScript, PostgreSQL (SQL direct), Redis, Socket.io |
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **Stockage** | Connectable : local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
-| **Paiements** | Stripe, Stripe Connect, PayPal |
-| **IA** | OpenAI (recommandations, recherche) |
-| **Recherche** | Qdrant (vectoriel), PostgreSQL (plein texte) |
+| **Paiements** | Stripe, Stripe Connect, PayPal, bKash |
+| **IA** | OpenAI, Anthropic, Gemini, Groq, Ollama |
+| **Recherche** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 
 ## Structure du projet
 
 ```
 vasty-shop/
-├── backend/              # API NestJS (53 modules, 67 tables)
+├── backend/              # API NestJS (69 modules, 80+ tables)
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...

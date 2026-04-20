@@ -108,7 +108,7 @@ docker compose exec backend npm run seed
 
 | サービス | イメージ | ポート |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -212,15 +212,15 @@ npm run dev
 | **Backend** | NestJS、TypeScript、PostgreSQL（Raw SQL）、Redis、Socket.io |
 | **Frontend** | React、Vite、TypeScript、Tailwind CSS、Radix UI、i18next |
 | **ストレージ** | プラグイン式: local-fs、S3、Cloudflare R2、MinIO、B2、GCS、Azure |
-| **決済** | Stripe、Stripe Connect、PayPal |
-| **AI** | OpenAI（レコメンド、検索）|
-| **検索** | Qdrant（ベクトル）、PostgreSQL（全文検索）|
+| **決済** | Stripe、Stripe Connect、PayPal、bKash |
+| **AI** | OpenAI、Anthropic、Gemini、Groq、Ollama |
+| **検索** | PostgreSQL（pg-trgm）、Meilisearch、Typesense |
 
 ## プロジェクト構成
 
 ```
 vasty-shop/
-├── backend/              # NestJS API（53 モジュール、67 テーブル）
+├── backend/              # NestJS API（69 モジュール、80+ テーブル）
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...
