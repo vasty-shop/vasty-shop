@@ -14,4 +14,4 @@
 
 ## License
 
-[MIT License](LICENSE)
+[AGPL-3.0 License](LICENSE)

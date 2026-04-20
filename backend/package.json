@@ -4,7 +4,7 @@
   "description": "NestJS backend for vasty e-commerce platform",
   "author": "InfoInlet",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "AGPL-3.0-only",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",

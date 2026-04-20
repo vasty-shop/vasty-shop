@@ -2,8 +2,11 @@
 
 ## [Unreleased]
 
+### Changed
+- Relicensed from MIT to AGPL-3.0
+
 ### Added
-- Open-source release under MIT License
+- Open-source release
 - PostgreSQL direct database layer (replaces proprietary SDK)
 - Cloudflare R2 storage, Redis caching
 - SQL migrations (67 tables)

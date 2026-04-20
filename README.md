@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
+  <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/issues"><img src="https://img.shields.io/github/issues/vasty-shop/vasty-shop" alt="Issues"></a>
@@ -65,7 +65,7 @@ Vasty Shop is an open-source multi-vendor e-commerce marketplace platform. Build
 | **CMS/Blog** | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **17 Languages** | ✅ | ✅ | ✅ | ⚠️ | ⚠️ |
 | **Self-Hosted** | ✅ Docker | ❌ | ✅ | ✅ | ✅ |
-| **Open Source** | ✅ MIT | ❌ | ✅ GPL | ✅ MIT | ✅ BSD |
+| **Open Source** | ✅ AGPL-3.0 | ❌ | ✅ GPL | ✅ MIT | ✅ BSD |
 | **Pricing** | 🟢 Free | 💰 $39-399/mo | 🟢 Free | 🟢 Free | 🟢 Free |
 
 ## Quick Start
@@ -265,6 +265,8 @@ Please report vulnerabilities responsibly. See [SECURITY.md](SECURITY.md).
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **AGPL-3.0 License** - see the [LICENSE](LICENSE) file for details.
+
+This means you can freely use, modify, and distribute this software, but any modifications must also be open-sourced under the same license.
 
 Copyright 2025 Vasty Shop Contributors.
