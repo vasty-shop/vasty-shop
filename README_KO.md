@@ -212,7 +212,7 @@ npm run dev
 | **백엔드** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **프론트엔드** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **스토리지** | 플러그형: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
-| **결제** | Stripe, Stripe Connect, PayPal, bKash |
+| **결제** | Stripe, Stripe Connect, PayPal |
 | **AI** | OpenAI, Anthropic, Gemini, Groq, Ollama |
 | **검색** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 

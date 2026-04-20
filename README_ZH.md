@@ -212,7 +212,7 @@ npm run dev
 | **后端** | NestJS、TypeScript、PostgreSQL（原生 SQL）、Redis、Socket.io |
 | **前端** | React、Vite、TypeScript、Tailwind CSS、Radix UI、i18next |
 | **存储** | 可插拔: local-fs、S3、Cloudflare R2、MinIO、B2、GCS、Azure |
-| **支付** | Stripe、Stripe Connect、PayPal、bKash |
+| **支付** | Stripe、Stripe Connect、PayPal |
 | **AI** | OpenAI、Anthropic、Gemini、Groq、Ollama |
 | **搜索** | PostgreSQL（pg-trgm）、Meilisearch、Typesense |
 

@@ -228,7 +228,7 @@ npm run dev
 | **Backend** | NestJS, TypeScript, PostgreSQL (raw SQL), Redis, Socket.io |
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **Storage** | Pluggable: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
-| **Payments** | Stripe, Stripe Connect, PayPal, bKash |
+| **Payments** | Stripe, Stripe Connect, PayPal |
 | **AI** | OpenAI, Anthropic, Gemini, Groq, Ollama |
 | **Search** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 

@@ -212,7 +212,7 @@ npm run dev
 | **Backend** | NestJS、TypeScript、PostgreSQL（Raw SQL）、Redis、Socket.io |
 | **Frontend** | React、Vite、TypeScript、Tailwind CSS、Radix UI、i18next |
 | **ストレージ** | プラグイン式: local-fs、S3、Cloudflare R2、MinIO、B2、GCS、Azure |
-| **決済** | Stripe、Stripe Connect、PayPal、bKash |
+| **決済** | Stripe、Stripe Connect、PayPal |
 | **AI** | OpenAI、Anthropic、Gemini、Groq、Ollama |
 | **検索** | PostgreSQL（pg-trgm）、Meilisearch、Typesense |
 
