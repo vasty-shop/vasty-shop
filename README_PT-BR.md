@@ -211,6 +211,12 @@ npm run dev
 - **Notificações** -- Email, WebSocket, push
 - **Painel admin** -- Analytics completo da plataforma
 
+## Gestão de Entregas
+
+Operações de entrega e envio de toda a plataforma em um só lugar: configure métodos e zonas de envio, cadastre e gerencie parceiros de entrega, acompanhe envios ativos e observe KPIs como tempo médio de entrega e quantidade em trânsito em um relance.
+
+![Gestão de Entregas](./docs/screenshots/VastyDelivery.png)
+
 ## Construtor de Loja
 
 Os vendedores desenham sua própria loja com um construtor de páginas arrastar e soltar — banners, produtos em destaque, categorias, depoimentos e páginas personalizadas — com uma prévia ao vivo que reflete cada alteração instantaneamente.

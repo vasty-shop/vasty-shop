@@ -211,6 +211,12 @@ npm run dev
 - **Notifikasi** -- E-mel, WebSocket, tolakan
 - **Papan Pemuka Admin** -- Analitis platform lengkap
 
+## Pengurusan Penghantaran
+
+Operasi penghantaran dan kargo seluruh platform di satu tempat: konfigurasikan kaedah dan zon penghantaran, daftar dan urus rakan penghantaran, jejaki penghantaran aktif, dan pantau KPI seperti purata masa penghantaran dan bilangan dalam transit dengan sepintas lalu.
+
+![Pengurusan Penghantaran](./docs/screenshots/VastyDelivery.png)
+
 ## Pembina Storefront
 
 Vendor mereka bentuk vitrin mereka sendiri dengan pembina halaman seret-dan-lepas — sepanduk hero, produk pilihan, kategori, testimoni, dan halaman tersuai — dengan pratonton langsung yang memaparkan setiap perubahan serta-merta bersebelahan.

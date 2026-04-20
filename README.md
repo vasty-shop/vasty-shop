@@ -227,6 +227,12 @@ npm run dev
 - **Notifications** -- Email, WebSocket, push
 - **Admin Dashboard** -- Full platform analytics
 
+## Delivery Management
+
+Platform-wide delivery and shipping ops in one place: configure shipping methods and zones, register and manage delivery partners, track active shipments, and watch KPIs like average delivery time and in-transit count at a glance.
+
+![Delivery Management](./docs/screenshots/VastyDelivery.png)
+
 ## Storefront Builder
 
 Vendors design their own storefront with a drag-and-drop page builder — hero banners, featured products, categories, testimonials, and custom pages — with a live preview pane that renders every change instantly side-by-side.

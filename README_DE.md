@@ -211,6 +211,12 @@ npm run dev
 - **Benachrichtigungen** -- E-Mail, WebSocket, Push
 - **Admin-Dashboard** -- Vollständige Plattformanalyse
 
+## Lieferverwaltung
+
+Plattformweite Liefer- und Versandvorgänge an einem Ort: Versandmethoden und -zonen konfigurieren, Lieferpartner registrieren und verwalten, aktive Sendungen verfolgen und KPIs wie durchschnittliche Lieferzeit und Anzahl unterwegs auf einen Blick überwachen.
+
+![Lieferverwaltung](./docs/screenshots/VastyDelivery.png)
+
 ## Storefront-Builder
 
 Händler gestalten ihr Schaufenster mit einem Drag-and-Drop-Seitenersteller — Hero-Banner, ausgewählte Produkte, Kategorien, Testimonials und benutzerdefinierte Seiten — mit einer Live-Vorschau, die jede Änderung sofort nebeneinander darstellt.

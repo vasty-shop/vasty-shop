@@ -211,6 +211,12 @@ npm run dev
 - **Notifiche** -- Email, WebSocket, push
 - **Dashboard admin** -- Analytics completa della piattaforma
 
+## Gestione Consegne
+
+Operazioni di consegna e spedizione dell'intera piattaforma in un unico posto: configura metodi e zone di spedizione, registra e gestisci partner di consegna, traccia le spedizioni attive e monitora KPI come tempo medio di consegna e spedizioni in transito a colpo d'occhio.
+
+![Gestione Consegne](./docs/screenshots/VastyDelivery.png)
+
 ## Storefront Builder
 
 I vendor progettano il proprio storefront con un page builder drag-and-drop — hero banner, prodotti in evidenza, categorie, testimonial e pagine personalizzate — con un'anteprima live che mostra ogni modifica istantaneamente.

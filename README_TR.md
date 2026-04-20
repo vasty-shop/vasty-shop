@@ -211,6 +211,12 @@ npm run dev
 - **Bildirimler** -- E-posta, WebSocket, push
 - **Yönetici Paneli** -- Tam platform analitiği
 
+## Teslimat Yönetimi
+
+Platform genelindeki teslimat ve kargo operasyonları tek yerde: kargo yöntemlerini ve bölgelerini yapılandırın, teslimat partnerlerini kaydedin ve yönetin, aktif gönderileri takip edin, ortalama teslimat süresi ve transit durumdaki gönderi sayısı gibi KPI'ları bir bakışta izleyin.
+
+![Teslimat Yönetimi](./docs/screenshots/VastyDelivery.png)
+
 ## Mağaza Oluşturucu
 
 Satıcılar, sürükle-bırak sayfa oluşturucu ile kendi mağaza vitrinini tasarlar — hero bannerlar, öne çıkan ürünler, kategoriler, müşteri yorumları ve özel sayfalar — her değişikliği anında yan yana gösteren canlı önizleme paneli ile birlikte.

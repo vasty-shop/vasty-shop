@@ -211,6 +211,12 @@ npm run dev
 - **Notifications** -- E-mail, WebSocket, push
 - **Tableau de bord admin** -- Analytique complète de la plateforme
 
+## Gestion des livraisons
+
+Toutes les opérations de livraison et d'expédition en un seul endroit : configurez méthodes et zones d'expédition, enregistrez et gérez les partenaires de livraison, suivez les expéditions actives et surveillez les KPI comme le temps moyen de livraison et le nombre de colis en transit d'un coup d'œil.
+
+![Gestion des livraisons](./docs/screenshots/VastyDelivery.png)
+
 ## Éditeur de vitrine
 
 Les vendeurs conçoivent leur vitrine avec un éditeur de pages en glisser-déposer — bannières hero, produits phares, catégories, témoignages et pages personnalisées — avec un aperçu en direct qui reflète chaque changement instantanément.

@@ -211,6 +211,12 @@ npm run dev
 - **Notifikasi** -- Email, WebSocket, push
 - **Dasbor Admin** -- Analitik platform lengkap
 
+## Manajemen Pengiriman
+
+Operasi pengiriman dan logistik seluruh platform di satu tempat: konfigurasi metode dan zona pengiriman, daftarkan dan kelola mitra kurir, lacak pengiriman aktif, dan pantau KPI seperti rata-rata waktu pengiriman dan jumlah dalam perjalanan sekilas.
+
+![Manajemen Pengiriman](./docs/screenshots/VastyDelivery.png)
+
 ## Storefront Builder
 
 Vendor merancang storefront mereka sendiri dengan page builder drag-and-drop — hero banner, produk unggulan, kategori, testimoni, dan halaman kustom — dengan panel pratinjau langsung yang menampilkan setiap perubahan seketika berdampingan.
