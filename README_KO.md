@@ -9,9 +9,13 @@
   <p align="center">
     AI 추천, Stripe Connect 판매자 정산, 플래시 세일, POS, 배송 관리, 17개 언어 지원을 갖춘 엔터프라이즈급 마켓플레이스.
   </p>
+  <p align="center">
+    <a href="https://vasty.shop"><strong>🌐 라이브 데모 체험하기 →</strong></a>
+  </p>
 </p>
 
 <p align="center">
+  <a href="https://vasty.shop"><img src="https://img.shields.io/badge/demo-live-brightgreen.svg" alt="Live Demo"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
@@ -20,9 +24,10 @@
 </p>
 
 <p align="center">
-  <a href="https://vasty.shop">웹사이트</a> |
+  <a href="https://vasty.shop">라이브 데모</a> |
   <a href="#빠른-시작">빠른 시작</a> |
   <a href="#기능">기능</a> |
+  <a href="#배포">배포</a> |
   <a href="https://github.com/vasty-shop/vasty-shop/discussions">토론</a> |
   <a href="CONTRIBUTING.md">기여하기</a>
 </p>
@@ -32,6 +37,23 @@
 </p>
 
 ---
+
+## 목차
+
+- [Vasty Shop이란?](#vasty-shop이란)
+- [왜 Vasty Shop인가?](#왜-vasty-shop인가-비교)
+- [벤더 대시보드](#벤더-대시보드)
+- [빠른 시작](#빠른-시작)
+- [기능](#기능)
+- [배송 관리](#배송-관리)
+- [스토어프론트 빌더](#스토어프론트-빌더)
+- [기술 스택](#기술-스택)
+- [프로젝트 구조](#프로젝트-구조)
+- [배포](#배포)
+- [변경 이력](#변경-이력)
+- [기여하기](CONTRIBUTING.md)
+- [보안](#보안)
+- [라이선스](#라이선스)
 
 ## Vasty Shop이란?
 
@@ -173,6 +195,8 @@ npm run dev
 ## 기능
 
 ### 이커머스 코어
+온라인 스토어 운영에 필요한 모든 것 — 카탈로그, 장바구니, 결제, 구매 후 관리까지.
+
 - **상품** -- 옵션, 속성, 재고, 디지털 상품, 일괄 등록
 - **주문** -- 멀티벤더 주문 분할, 상태 추적, 환불
 - **장바구니** -- 영구 장바구니, 게스트 결제, 다중 통화
@@ -180,6 +204,8 @@ npm run dev
 - **리뷰** -- 별점, 사진, 구매 인증 배지
 
 ### 결제 및 금융
+다중 프로바이더 결제와 자동 플랫폼 수수료, 판매자 정산, 재무 추적을 지원합니다.
+
 - **Stripe Connect** -- 플랫폼 수수료가 포함된 자동 판매자 정산
 - **PayPal** -- 대체 결제 게이트웨이
 - **지갑** -- 충전 및 소비 가능한 고객 지갑
@@ -188,6 +214,8 @@ npm run dev
 - **경비** -- 판매자 비즈니스 비용 추적
 
 ### 마케팅 및 성장
+기본 제공되는 수요 창출 도구 — 서드파티 플러그인이 필요 없습니다.
+
 - **플래시 세일** -- 카운트다운이 있는 시간 한정 할인
 - **캠페인** -- 일정 기반 프로모션
 - **쿠폰** -- 퍼센트, 정액, 무료 배송
@@ -197,6 +225,8 @@ npm run dev
 - **서지 가격** -- 수요 기반 동적 가격
 
 ### 운영
+웹을 넘어 판매하는 벤더를 위한 매장 및 풀필먼트 워크플로우.
+
 - **POS** -- 바코드 스캔이 가능한 포스
 - **배송** -- 구역별 가격, 추적, 배송 파트너
 - **소포** -- 소포 배송 관리
@@ -204,6 +234,8 @@ npm run dev
 - **내보내기** -- CSV/Excel 데이터 내보내기
 
 ### 플랫폼
+다른 모든 모듈을 뒷받침하는 기반 기능입니다.
+
 - **17개 언어** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
 - **AI** -- 상품 추천, 스마트 검색
 - **블로그/CMS** -- 콘텐츠 관리
@@ -247,6 +279,29 @@ vasty-shop/
 ├── shared/               # 공유 타입 및 유틸리티
 └── .github/workflows/    # CI/CD
 ```
+
+## 배포
+
+Vasty Shop은 셀프 호스팅을 전제로 설계되었습니다. Docker를 지원하는 어떤 호스트에서도 실행할 수 있습니다 — VPS, Render/Railway/Fly, 혹은 자체 Kubernetes 클러스터.
+
+**일반적인 배포 방식:**
+
+- **단일 호스트 Docker** — 포함된 `docker-compose.yml`은 몇 가지 환경 변수 조정만으로 프로덕션에 사용 가능합니다(빌드 타겟 전환, 관리형 볼륨 사용, 앞단에 리버스 프록시 배치 등).
+- **매니지드 Postgres + Redis** — `DATABASE_URL` / `REDIS_HOST`를 관리형 인스턴스로 지정하고 백엔드/프론트엔드 컨테이너만 실행합니다.
+- **프로바이더 설정** — 스토리지, 이메일, 결제, 검색, SMS, AI는 모두 환경 변수로 교체 가능합니다. 전체 프로바이더 목록과 설정 가이드: [`backend/docs/providers/`](backend/docs/providers).
+
+**출시 전 체크리스트:**
+
+- [ ] 기본 관리자 비밀번호 변경 (`admin@vasty.shop` / `admin123`)
+- [ ] `JWT_SECRET`을 강력한 무작위 값으로 설정
+- [ ] 백엔드에서 `NODE_ENV=production` 설정
+- [ ] 트랜잭션 메일용 이메일 프로바이더를 최소 하나 구성
+- [ ] 업로드 미디어를 위한 스토리지 프로바이더(S3/R2/MinIO) 구성
+- [ ] `backend/.env` 시크릿을 저장소와 버전 관리에서 제외
+
+## 변경 이력
+
+버전 기록과 주요 변경 사항은 [CHANGELOG.md](CHANGELOG.md)를 참조하세요.
 
 ## 기여자
 

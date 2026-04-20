@@ -9,9 +9,13 @@
   <p align="center">
     Marketplace de nivel empresarial con recomendaciones por IA, pagos automáticos con Stripe Connect, ventas flash, POS, gestión de entregas y soporte para 17 idiomas.
   </p>
+  <p align="center">
+    <a href="https://vasty.shop"><strong>🌐 Prueba la demo en vivo →</strong></a>
+  </p>
 </p>
 
 <p align="center">
+  <a href="https://vasty.shop"><img src="https://img.shields.io/badge/demo-live-brightgreen.svg" alt="Live Demo"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
@@ -20,9 +24,10 @@
 </p>
 
 <p align="center">
-  <a href="https://vasty.shop">Sitio web</a> |
+  <a href="https://vasty.shop">Demo en vivo</a> |
   <a href="#inicio-rápido">Inicio rápido</a> |
   <a href="#características">Características</a> |
+  <a href="#despliegue">Despliegue</a> |
   <a href="https://github.com/vasty-shop/vasty-shop/discussions">Discusiones</a> |
   <a href="CONTRIBUTING.md">Contribuir</a>
 </p>
@@ -32,6 +37,23 @@
 </p>
 
 ---
+
+## Tabla de contenidos
+
+- [¿Qué es Vasty Shop?](#qué-es-vasty-shop)
+- [¿Por qué Vasty Shop?](#por-qué-vasty-shop-comparación)
+- [Panel del Vendedor](#panel-del-vendedor)
+- [Inicio rápido](#inicio-rápido)
+- [Características](#características)
+- [Gestión de Entregas](#gestión-de-entregas)
+- [Constructor de Tienda](#constructor-de-tienda)
+- [Tecnologías](#tecnologías)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Despliegue](#despliegue)
+- [Registro de cambios](#registro-de-cambios)
+- [Contribuir](CONTRIBUTING.md)
+- [Seguridad](#seguridad)
+- [Licencia](#licencia)
 
 ## ¿Qué es Vasty Shop?
 
@@ -173,6 +195,8 @@ npm run dev
 ## Características
 
 ### Núcleo E-commerce
+Todo lo necesario para operar una tienda en línea — catálogo, carrito, checkout y post-compra.
+
 - **Productos** -- Variantes, atributos, inventario, productos digitales, importación masiva
 - **Pedidos** -- División entre múltiples vendedores, seguimiento de estado, reembolsos
 - **Carrito** -- Carrito persistente, checkout como invitado, multi-moneda
@@ -180,6 +204,8 @@ npm run dev
 - **Reseñas** -- Valoraciones, fotos, insignias de compra verificada
 
 ### Pagos y Finanzas
+Pagos multi-proveedor con comisiones de plataforma automáticas, desembolsos a vendedores y seguimiento financiero.
+
 - **Stripe Connect** -- Pagos automáticos a vendedores con comisión de plataforma
 - **PayPal** -- Pasarela de pago alternativa
 - **Billetera** -- Saldo del cliente con recarga y gasto
@@ -188,6 +214,8 @@ npm run dev
 - **Gastos** -- Seguimiento de gastos comerciales para vendedores
 
 ### Marketing y Crecimiento
+Herramientas de generación de demanda integradas — sin necesidad de complementos de terceros.
+
 - **Ventas flash** -- Ofertas por tiempo limitado con cuenta regresiva
 - **Campañas** -- Campañas promocionales con programación
 - **Cupones** -- Porcentaje, monto fijo, envío gratis
@@ -197,6 +225,8 @@ npm run dev
 - **Precios dinámicos** -- Precios según demanda
 
 ### Operaciones
+Flujos de tienda física y cumplimiento para vendedores que venden más allá de la web.
+
 - **POS** -- Punto de venta con escáner de códigos de barras
 - **Entregas** -- Precios por zona, seguimiento, socios de entrega
 - **Paquetería** -- Gestión de entregas de paquetes
@@ -204,6 +234,8 @@ npm run dev
 - **Exportación** -- Exportación de datos en CSV/Excel
 
 ### Plataforma
+Capacidades fundamentales que impulsan cada uno de los demás módulos.
+
 - **17 idiomas** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
 - **IA** -- Recomendaciones de productos, búsqueda inteligente
 - **Blog/CMS** -- Gestión de contenido
@@ -247,6 +279,29 @@ vasty-shop/
 ├── shared/               # Tipos y utilidades compartidas
 └── .github/workflows/    # CI/CD
 ```
+
+## Despliegue
+
+Vasty Shop está construido para auto-alojarse. Ejecútalo en cualquier host con Docker — un VPS, Render/Railway/Fly, o tu propio clúster de Kubernetes.
+
+**Rutas de despliegue comunes:**
+
+- **Docker en un solo host** — el `docker-compose.yml` incluido es apto para producción con unos ajustes de variables de entorno (cambiar targets de build, usar volúmenes gestionados, colocar un proxy inverso delante).
+- **Postgres + Redis gestionados** — apunta `DATABASE_URL` / `REDIS_HOST` a una instancia gestionada y ejecuta solo los contenedores de backend/frontend.
+- **Configuración de proveedores** — almacenamiento, correo, pagos, búsqueda, SMS e IA son todos intercambiables mediante variables de entorno. Catálogo completo de proveedores y guías de configuración: [`backend/docs/providers/`](backend/docs/providers).
+
+**Lista de comprobación previa al lanzamiento:**
+
+- [ ] Cambia la contraseña de administrador predeterminada (`admin@vasty.shop` / `admin123`)
+- [ ] Establece `JWT_SECRET` a un valor aleatorio fuerte
+- [ ] Establece `NODE_ENV=production` en el backend
+- [ ] Configura al menos un proveedor de correo para correos transaccionales
+- [ ] Configura un proveedor de almacenamiento (S3/R2/MinIO) para los medios subidos
+- [ ] Retira los secretos de `backend/.env` del repositorio y del control de versiones
+
+## Registro de cambios
+
+Consulta [CHANGELOG.md](CHANGELOG.md) para ver el historial de versiones y los cambios destacados.
 
 ## Colaboradores
 

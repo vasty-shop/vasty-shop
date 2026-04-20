@@ -9,9 +9,13 @@
   <p align="center">
     Marketplace kelas enterprise dengan rekomendasi AI, pencairan Stripe Connect, flash sale, POS, manajemen pengiriman, dan dukungan 17 bahasa.
   </p>
+  <p align="center">
+    <a href="https://vasty.shop"><strong>🌐 Coba Demo Langsung →</strong></a>
+  </p>
 </p>
 
 <p align="center">
+  <a href="https://vasty.shop"><img src="https://img.shields.io/badge/demo-live-brightgreen.svg" alt="Live Demo"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
@@ -20,9 +24,10 @@
 </p>
 
 <p align="center">
-  <a href="https://vasty.shop">Situs web</a> |
+  <a href="https://vasty.shop">Demo Langsung</a> |
   <a href="#mulai-cepat">Mulai Cepat</a> |
   <a href="#fitur">Fitur</a> |
+  <a href="#deployment">Deployment</a> |
   <a href="https://github.com/vasty-shop/vasty-shop/discussions">Diskusi</a> |
   <a href="CONTRIBUTING.md">Berkontribusi</a>
 </p>
@@ -32,6 +37,23 @@
 </p>
 
 ---
+
+## Daftar Isi
+
+- [Apa itu Vasty Shop?](#apa-itu-vasty-shop)
+- [Mengapa Vasty Shop?](#mengapa-vasty-shop-perbandingan)
+- [Dasbor Vendor](#dasbor-vendor)
+- [Mulai Cepat](#mulai-cepat)
+- [Fitur](#fitur)
+- [Manajemen Pengiriman](#manajemen-pengiriman)
+- [Storefront Builder](#storefront-builder)
+- [Tech Stack](#tech-stack)
+- [Struktur Proyek](#struktur-proyek)
+- [Deployment](#deployment)
+- [Changelog](#changelog)
+- [Berkontribusi](CONTRIBUTING.md)
+- [Keamanan](#keamanan)
+- [Lisensi](#lisensi)
 
 ## Apa itu Vasty Shop?
 
@@ -173,6 +195,8 @@ npm run dev
 ## Fitur
 
 ### Inti E-Commerce
+Semua yang dibutuhkan untuk menjalankan toko online — katalog, keranjang, checkout, dan pasca-pembelian.
+
 - **Produk** -- Varian, atribut, inventaris, produk digital, impor massal
 - **Pesanan** -- Pembagian pesanan multi-vendor, pelacakan status, pengembalian dana
 - **Keranjang** -- Keranjang persisten, checkout tamu, multi-mata uang
@@ -180,6 +204,8 @@ npm run dev
 - **Ulasan** -- Rating, foto, badge pembelian terverifikasi
 
 ### Pembayaran & Keuangan
+Pembayaran multi-provider dengan biaya platform otomatis, pencairan vendor, dan pelacakan keuangan.
+
 - **Stripe Connect** -- Pencairan otomatis ke vendor dengan biaya platform
 - **PayPal** -- Gateway pembayaran alternatif
 - **Dompet** -- Saldo pelanggan dengan top-up dan pengeluaran
@@ -188,6 +214,8 @@ npm run dev
 - **Pengeluaran** -- Pelacakan pengeluaran bisnis untuk vendor
 
 ### Pemasaran & Pertumbuhan
+Alat pembangkit permintaan bawaan — tanpa plugin pihak ketiga.
+
 - **Flash sale** -- Penawaran terbatas waktu dengan hitung mundur
 - **Kampanye** -- Kampanye promosi dengan penjadwalan
 - **Kupon** -- Persentase, nominal tetap, ongkir gratis
@@ -197,6 +225,8 @@ npm run dev
 - **Harga surge** -- Harga dinamis berdasarkan permintaan
 
 ### Operasional
+Alur kerja toko fisik dan pemenuhan untuk vendor yang berjualan di luar web.
+
 - **POS** -- Point-of-sale dengan pemindai barcode
 - **Pengiriman** -- Harga per zona, pelacakan, mitra pengiriman
 - **Paket** -- Manajemen pengiriman paket
@@ -204,6 +234,8 @@ npm run dev
 - **Ekspor** -- Ekspor data CSV/Excel
 
 ### Platform
+Kapabilitas dasar yang menopang setiap modul lainnya.
+
 - **17 bahasa** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
 - **AI** -- Rekomendasi produk, pencarian cerdas
 - **Blog/CMS** -- Manajemen konten
@@ -247,6 +279,29 @@ vasty-shop/
 ├── shared/               # Tipe dan utilitas bersama
 └── .github/workflows/    # CI/CD
 ```
+
+## Deployment
+
+Vasty Shop dirancang untuk self-hosting. Jalankan di host apa pun yang mendukung Docker — VPS, Render/Railway/Fly, atau cluster Kubernetes Anda sendiri.
+
+**Jalur deployment umum:**
+
+- **Docker host tunggal** — `docker-compose.yml` yang disertakan siap produksi dengan beberapa penyesuaian env (ganti build target, gunakan volume terkelola, letakkan reverse proxy di depan).
+- **Postgres + Redis terkelola** — arahkan `DATABASE_URL` / `REDIS_HOST` ke instance terkelola dan jalankan hanya kontainer backend/frontend.
+- **Pengaturan provider** — penyimpanan, email, pembayaran, pencarian, SMS, dan AI semuanya pluggable melalui variabel lingkungan. Katalog provider lengkap dan panduan pengaturan: [`backend/docs/providers/`](backend/docs/providers).
+
+**Checklist sebelum peluncuran:**
+
+- [ ] Ubah kata sandi admin default (`admin@vasty.shop` / `admin123`)
+- [ ] Atur `JWT_SECRET` ke nilai acak yang kuat
+- [ ] Atur `NODE_ENV=production` pada backend
+- [ ] Konfigurasikan setidaknya satu provider email untuk surat transaksional
+- [ ] Konfigurasikan provider penyimpanan (S3/R2/MinIO) untuk media yang diunggah
+- [ ] Keluarkan rahasia `backend/.env` dari repositori dan version control
+
+## Changelog
+
+Lihat [CHANGELOG.md](CHANGELOG.md) untuk riwayat versi dan perubahan penting.
 
 ## Kontributor
 
