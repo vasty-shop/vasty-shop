@@ -162,6 +162,26 @@ export class AuthService {
     };
   }
 
+  async updateProfile(
+    userId: string,
+    updateDto: { name?: string; email?: string; phone?: string; avatar_url?: string; metadata?: Record<string, any> },
+  ) {
+    const user = await this.db.getUserById(userId);
+    if (!user) {
+      throw new UnauthorizedException('User not found');
+    }
+
+    const updates: Record<string, any> = {};
+    if (updateDto.name !== undefined) updates.name = updateDto.name;
+    if (updateDto.email !== undefined) updates.email = updateDto.email;
+    if (updateDto.phone !== undefined) updates.phone = updateDto.phone;
+    if (updateDto.avatar_url !== undefined) updates.avatar_url = updateDto.avatar_url;
+    if (updateDto.metadata !== undefined) updates.metadata = updateDto.metadata;
+
+    const updated = await this.db.updateUser(userId, updates);
+    return this.sanitizeUser(updated);
+  }
+
   async refreshToken(refreshToken: string) {
     if (!refreshToken) {
       throw new UnauthorizedException('Refresh token is required');

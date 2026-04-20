@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License"></a>
+  <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/issues"><img src="https://img.shields.io/github/issues/vasty-shop/vasty-shop" alt="Issues"></a>
@@ -32,12 +32,18 @@
   <a href="./README_JA.md">日本語</a> |
   <a href="./README_ZH.md">中文</a> |
   <a href="./README_KO.md">한국어</a> |
+  <a href="./README_ID.md">Bahasa Indonesia</a> |
+  <a href="./README_MS.md">Bahasa Melayu</a> |
   <a href="./README_ES.md">Español</a> |
   <a href="./README_FR.md">Français</a> |
   <a href="./README_DE.md">Deutsch</a> |
+  <a href="./README_IT.md">Italiano</a> |
   <a href="./README_PT-BR.md">Português</a> |
   <a href="./README_AR.md">العربية</a> |
+  <a href="./README_TR.md">Türkçe</a> |
   <a href="./README_HI.md">हिन्दी</a> |
+  <a href="./README_BN.md">বাংলা</a> |
+  <a href="./README_UR.md">اردو</a> |
   <a href="./README_RU.md">Русский</a>
 </p>
 
@@ -65,8 +71,14 @@ Vasty Shop is an open-source multi-vendor e-commerce marketplace platform. Build
 | **CMS/Blog** | ✅ | ✅ | ✅ | ❌ | ❌ |
 | **17 Languages** | ✅ | ✅ | ✅ | ⚠️ | ⚠️ |
 | **Self-Hosted** | ✅ Docker | ❌ | ✅ | ✅ | ✅ |
-| **Open Source** | ✅ MIT | ❌ | ✅ GPL | ✅ MIT | ✅ BSD |
+| **Open Source** | ✅ AGPL-3.0 | ❌ | ✅ GPL | ✅ MIT | ✅ BSD |
 | **Pricing** | 🟢 Free | 💰 $39-399/mo | 🟢 Free | 🟢 Free | 🟢 Free |
+
+## Vendor Dashboard
+
+Every vendor gets a self-service control panel with real-time KPIs (revenue, orders, products, customers), an earnings breakdown — gross sales, delivery costs, net profit — and full order, product, and approval management.
+
+![Vendor Dashboard](./docs/screenshots/VastyDash.png)
 
 ## Quick Start
 
@@ -118,7 +130,7 @@ The app will be available at:
 
 | Service | Image | Port |
 |---------|-------|------|
-| **PostgreSQL** | postgres:16-alpine | 5432 |
+| **PostgreSQL** | postgres:16-alpine | 5433 |
 | **Redis** | redis:7-alpine | 6379 |
 | **Backend** | node:20-alpine (NestJS) | 4005, 3002 |
 | **Frontend** | node:20-alpine (Vite) | 5186 |
@@ -215,6 +227,18 @@ npm run dev
 - **Notifications** -- Email, WebSocket, push
 - **Admin Dashboard** -- Full platform analytics
 
+## Delivery Management
+
+Platform-wide delivery and shipping ops in one place: configure shipping methods and zones, register and manage delivery partners, track active shipments, and watch KPIs like average delivery time and in-transit count at a glance.
+
+![Delivery Management](./docs/screenshots/VastyDelivery.png)
+
+## Storefront Builder
+
+Vendors design their own storefront with a drag-and-drop page builder — hero banners, featured products, categories, testimonials, and custom pages — with a live preview pane that renders every change instantly side-by-side.
+
+![Storefront Builder](./docs/screenshots/VastyAppPreview.png)
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -223,14 +247,14 @@ npm run dev
 | **Frontend** | React, Vite, TypeScript, Tailwind CSS, Radix UI, i18next |
 | **Storage** | Pluggable: local-fs, S3, Cloudflare R2, MinIO, B2, GCS, Azure |
 | **Payments** | Stripe, Stripe Connect, PayPal |
-| **AI** | OpenAI (recommendations, search) |
-| **Search** | Qdrant (vector), PostgreSQL (full-text) |
+| **AI** | OpenAI, Anthropic, Gemini, Groq, Ollama |
+| **Search** | PostgreSQL (pg-trgm), Meilisearch, Typesense |
 
 ## Project Structure
 
 ```
 vasty-shop/
-├── backend/              # NestJS API (53 modules, 67 tables)
+├── backend/              # NestJS API (69 modules, 80+ tables)
 │   ├── src/modules/      # products, orders, cart, payments, delivery,
 │   │                     # campaigns, coupons, flash-sales, gift-cards,
 │   │                     # loyalty, referral, pos, ai, blog, chat, ...
@@ -265,6 +289,8 @@ Please report vulnerabilities responsibly. See [SECURITY.md](SECURITY.md).
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **AGPL-3.0 License** - see the [LICENSE](LICENSE) file for details.
+
+This means you can freely use, modify, and distribute this software, but any modifications must also be open-sourced under the same license.
 
 Copyright 2025 Vasty Shop Contributors.

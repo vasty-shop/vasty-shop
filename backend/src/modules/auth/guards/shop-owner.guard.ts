@@ -25,10 +25,11 @@ export class ShopOwnerGuard implements CanActivate {
       throw new UnauthorizedException('Authentication required');
     }
 
-    // Check if user is a vendor or has shop access
-    // Users who created shops through customer flow might have role 'user'
-    // We'll verify actual shop ownership below instead of blocking by role
-    const allowedRoles = ['vendor', 'admin', 'user'];
+    // Check if user is a vendor or has shop access.
+    // Users who create shops through the customer flow keep role 'customer'
+    // (or legacy 'user') until an admin promotes them, so those are allowed
+    // here — actual shop ownership is verified below.
+    const allowedRoles = ['vendor', 'admin', 'user', 'customer'];
     if (!allowedRoles.includes(user.role)) {
       throw new ForbiddenException('You do not have permission to access this resource');
     }

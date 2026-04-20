@@ -62,36 +62,36 @@ export class ShopsService {
       supportedLanguages.unshift(defaultLanguage);
     }
 
-    const shopData: Partial<ShopEntity> = {
+    // node-pg serializes JS arrays as Postgres array literals; jsonb columns
+    // need JSON strings, so explicitly stringify array-valued jsonb fields.
+    const shopData: Record<string, any> = {
       ...shopDtoWithoutPlan,
       owner_id: userId,
-      ownerId: userId, // Keep both for compatibility
       slug,
       status: 'pending',
-      isVerified: false,
-      defaultLanguage,
-      supportedLanguages,
-      totalSales: 0,
-      totalOrders: 0,
-      totalProducts: 0,
+      is_verified: false,
+      default_language: defaultLanguage,
+      supported_languages: JSON.stringify(supportedLanguages),
+      total_sales: 0,
+      total_orders: 0,
+      total_products: 0,
       rating: 0,
-      totalReviews: 0,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
+      total_reviews: 0,
     };
+    if (Array.isArray(shopData.payment_methods)) {
+      shopData.payment_methods = JSON.stringify(shopData.payment_methods);
+    }
 
     const shop = await this.db.createEntity(EntityType.SHOP, shopData);
 
     // Create owner as team member
-    const teamMemberData: Partial<ShopTeamMemberEntity> = {
-      shopId: shop.id,
-      userId: userId,
+    const teamMemberData: Record<string, any> = {
+      shop_id: shop.id,
+      user_id: userId,
       role: 'owner',
-      permissions: ['*'], // Full permissions
+      permissions: JSON.stringify(['*']),
       status: 'active',
-      joinedAt: new Date().toISOString(),
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
+      joined_at: new Date().toISOString(),
     };
 
     await this.db.createEntity(EntityType.SHOP_TEAM_MEMBER, teamMemberData);

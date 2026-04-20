@@ -16,7 +16,7 @@
     "react"
   ],
   "author": "",
-  "license": "ISC",
+  "license": "AGPL-3.0-only",
   "dependencies": {
     "@mediapipe/pose": "^0.5.1675469404",
     "@radix-ui/react-accordion": "^1.2.12",

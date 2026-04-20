@@ -1,7 +1,7 @@
 Vasty Shop
 Copyright 2025 Vasty Shop Contributors
 
-Licensed under the MIT License.
+Licensed under the GNU Affero General Public License v3.0.
 
 Backend: NestJS, TypeScript, PostgreSQL, Redis, Socket.IO, Stripe, OpenAI
 Frontend: React, Vite, Tailwind CSS, Radix UI, i18next (17 languages)
