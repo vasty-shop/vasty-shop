@@ -1,7 +1,7 @@
 <p align="center">
   <a href="https://vasty.shop"><img src="frontend/public/vasty-logo-small.png" alt="Vasty Shop" width="80"></a>
   <h1 align="center">Vasty Shop</h1>
-  <p align="center"><strong>Marketplace de e-commerce multi-vendedor</strong></p>
+  <p align="center"><strong>اوپن سورس ملٹی وینڈر ای کامرس مارکیٹ پلیس</strong></p>
 </p>
 
 <p align="center">
