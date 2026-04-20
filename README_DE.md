@@ -58,6 +58,12 @@ Vasty Shop ist eine Open-Source-Plattform für Multi-Vendor-E-Commerce-Marktplä
 | **Open Source** | ✅ AGPL-3.0 | ❌ | ✅ GPL | ✅ MIT | ✅ BSD |
 | **Preis** | 🟢 Kostenlos | 💰 $39-399/Mon. | 🟢 Kostenlos | 🟢 Kostenlos | 🟢 Kostenlos |
 
+## Händler-Dashboard
+
+Jeder Händler erhält ein Self-Service-Bedienfeld mit Echtzeit-KPIs (Umsatz, Bestellungen, Produkte, Kunden), einer Einnahmenübersicht — Bruttoumsatz, Lieferkosten, Nettogewinn — und vollständiger Bestell-, Produkt- und Genehmigungsverwaltung.
+
+![Händler-Dashboard](./docs/screenshots/VastyDash.png)
+
 ## Schnellstart
 
 ### Docker (Empfohlen)
@@ -204,6 +210,12 @@ npm run dev
 - **Chat** -- Echtzeit-Nachrichten zwischen Kunden und Händlern
 - **Benachrichtigungen** -- E-Mail, WebSocket, Push
 - **Admin-Dashboard** -- Vollständige Plattformanalyse
+
+## Storefront-Builder
+
+Händler gestalten ihr Schaufenster mit einem Drag-and-Drop-Seitenersteller — Hero-Banner, ausgewählte Produkte, Kategorien, Testimonials und benutzerdefinierte Seiten — mit einer Live-Vorschau, die jede Änderung sofort nebeneinander darstellt.
+
+![Storefront-Builder](./docs/screenshots/VastyAppPreview.png)
 
 ## Technologie-Stack
 

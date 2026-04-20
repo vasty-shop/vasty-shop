@@ -58,6 +58,12 @@ Vasty Shop, açık kaynaklı bir çok satıcılı e-ticaret pazaryeri platformud
 | **Açık kaynak** | ✅ AGPL-3.0 | ❌ | ✅ GPL | ✅ MIT | ✅ BSD |
 | **Fiyat** | 🟢 Ücretsiz | 💰 $39-399/ay | 🟢 Ücretsiz | 🟢 Ücretsiz | 🟢 Ücretsiz |
 
+## Satıcı Paneli
+
+Her satıcı; gerçek zamanlı KPI'lar (gelir, siparişler, ürünler, müşteriler), kazanç dökümü — brüt satış, teslimat maliyetleri, net kâr — ve tam sipariş, ürün ile onay yönetimini sunan bir self-servis kontrol paneline sahip olur.
+
+![Satıcı Paneli](./docs/screenshots/VastyDash.png)
+
 ## Hızlı Başlangıç
 
 ### Docker (Önerilen)
@@ -204,6 +210,12 @@ npm run dev
 - **Sohbet** -- Müşteri-satıcı gerçek zamanlı mesajlaşma
 - **Bildirimler** -- E-posta, WebSocket, push
 - **Yönetici Paneli** -- Tam platform analitiği
+
+## Mağaza Oluşturucu
+
+Satıcılar, sürükle-bırak sayfa oluşturucu ile kendi mağaza vitrinini tasarlar — hero bannerlar, öne çıkan ürünler, kategoriler, müşteri yorumları ve özel sayfalar — her değişikliği anında yan yana gösteren canlı önizleme paneli ile birlikte.
+
+![Mağaza Oluşturucu](./docs/screenshots/VastyAppPreview.png)
 
 ## Teknoloji Yığını
 

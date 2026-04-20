@@ -58,6 +58,12 @@ Vasty Shop ialah platform pasaran e-dagang pelbagai vendor sumber terbuka. Bina 
 | **Sumber Terbuka** | ✅ AGPL-3.0 | ❌ | ✅ GPL | ✅ MIT | ✅ BSD |
 | **Harga** | 🟢 Percuma | 💰 $39-399/bln | 🟢 Percuma | 🟢 Percuma | 🟢 Percuma |
 
+## Papan Pemuka Vendor
+
+Setiap vendor mendapat panel kawalan layan diri dengan KPI masa nyata (hasil, pesanan, produk, pelanggan), pecahan pendapatan — jualan kasar, kos penghantaran, keuntungan bersih — dan pengurusan pesanan, produk serta kelulusan yang lengkap.
+
+![Papan Pemuka Vendor](./docs/screenshots/VastyDash.png)
+
 ## Mula Pantas
 
 ### Docker (Disyorkan)
@@ -204,6 +210,12 @@ npm run dev
 - **Sembang** -- Pemesejan masa nyata pelanggan-vendor
 - **Notifikasi** -- E-mel, WebSocket, tolakan
 - **Papan Pemuka Admin** -- Analitis platform lengkap
+
+## Pembina Storefront
+
+Vendor mereka bentuk vitrin mereka sendiri dengan pembina halaman seret-dan-lepas — sepanduk hero, produk pilihan, kategori, testimoni, dan halaman tersuai — dengan pratonton langsung yang memaparkan setiap perubahan serta-merta bersebelahan.
+
+![Pembina Storefront](./docs/screenshots/VastyAppPreview.png)
 
 ## Tindanan Teknologi
 
