@@ -9,9 +9,13 @@
   <p align="center">
     企业级电商平台，内置 AI 推荐、Stripe Connect 商户自动结算、闪购、POS、配送管理以及 17 种语言支持。
   </p>
+  <p align="center">
+    <a href="https://vasty.shop"><strong>🌐 体验在线演示 →</strong></a>
+  </p>
 </p>
 
 <p align="center">
+  <a href="https://vasty.shop"><img src="https://img.shields.io/badge/demo-live-brightgreen.svg" alt="Live Demo"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
@@ -20,9 +24,10 @@
 </p>
 
 <p align="center">
-  <a href="https://vasty.shop">官网</a> |
+  <a href="https://vasty.shop">在线演示</a> |
   <a href="#快速开始">快速开始</a> |
   <a href="#功能">功能</a> |
+  <a href="#部署">部署</a> |
   <a href="https://github.com/vasty-shop/vasty-shop/discussions">讨论区</a> |
   <a href="CONTRIBUTING.md">贡献</a>
 </p>
@@ -32,6 +37,23 @@
 </p>
 
 ---
+
+## 目录
+
+- [什么是 Vasty Shop？](#什么是-vasty-shop)
+- [为什么选择 Vasty Shop？](#为什么选择-vasty-shop对比)
+- [商户仪表盘](#商户仪表盘)
+- [快速开始](#快速开始)
+- [功能](#功能)
+- [配送管理](#配送管理)
+- [店铺编辑器](#店铺编辑器)
+- [技术栈](#技术栈)
+- [项目结构](#项目结构)
+- [部署](#部署)
+- [更新日志](#更新日志)
+- [贡献](CONTRIBUTING.md)
+- [安全](#安全)
+- [许可证](#许可证)
 
 ## 什么是 Vasty Shop？
 
@@ -173,6 +195,8 @@ npm run dev
 ## 功能
 
 ### 电商核心
+运营一家在线商店所需的一切 — 商品目录、购物车、结账以及购后流程。
+
 - **商品** -- 规格、属性、库存、数字商品、批量导入
 - **订单** -- 多商户分单、状态追踪、退款
 - **购物车** -- 持久化购物车、访客结账、多币种
@@ -180,6 +204,8 @@ npm run dev
 - **评价** -- 评分、图片、已购认证
 
 ### 支付与财务
+多支付服务商接入，自动计算平台抽成、商户结算与财务追踪。
+
 - **Stripe Connect** -- 自动商户结算带平台抽成
 - **PayPal** -- 备用支付网关
 - **钱包** -- 客户充值与消费
@@ -188,6 +214,8 @@ npm run dev
 - **费用** -- 商户业务费用追踪
 
 ### 营销与增长
+内置的流量增长工具 — 无需第三方插件。
+
 - **闪购** -- 带倒计时的限时促销
 - **活动** -- 可调度的营销活动
 - **优惠券** -- 百分比、满减、免运费
@@ -197,6 +225,8 @@ npm run dev
 - **动态定价** -- 基于需求的定价
 
 ### 运营
+面向线下销售与履约的商户工作流，助力跨越网页触达更多场景。
+
 - **POS** -- 支持扫码的收银台
 - **配送** -- 区域定价、物流追踪、配送伙伴
 - **包裹** -- 包裹派送管理
@@ -204,6 +234,8 @@ npm run dev
 - **导出** -- CSV/Excel 数据导出
 
 ### 平台
+为其他所有模块提供支撑的基础能力。
+
 - **17 种语言** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
 - **AI** -- 商品推荐、智能搜索
 - **博客/CMS** -- 内容管理
@@ -247,6 +279,29 @@ vasty-shop/
 ├── shared/               # 共享类型与工具
 └── .github/workflows/    # CI/CD
 ```
+
+## 部署
+
+Vasty Shop 面向自部署构建。可在任何支持 Docker 的主机上运行 — VPS、Render/Railway/Fly，或者你自己的 Kubernetes 集群。
+
+**常见部署方式:**
+
+- **单主机 Docker** — 随附的 `docker-compose.yml` 在调整少量环境变量后即可用于生产（切换构建目标、使用托管卷、在前面架一层反向代理）。
+- **托管 Postgres + Redis** — 将 `DATABASE_URL` / `REDIS_HOST` 指向托管实例，仅运行后端/前端容器即可。
+- **服务商设置** — 存储、邮件、支付、搜索、短信和 AI 都通过环境变量进行插拔配置。完整的服务商目录与配置指南：[`backend/docs/providers/`](backend/docs/providers)。
+
+**上线前检查清单:**
+
+- [ ] 修改默认管理员密码（`admin@vasty.shop` / `admin123`）
+- [ ] 将 `JWT_SECRET` 设置为一个高强度随机值
+- [ ] 在后端设置 `NODE_ENV=production`
+- [ ] 至少配置一个邮件服务商用于事务邮件
+- [ ] 配置存储服务商（S3/R2/MinIO）用于上传媒体
+- [ ] 将 `backend/.env` 中的机密信息移出仓库与版本管理
+
+## 更新日志
+
+请查看 [CHANGELOG.md](CHANGELOG.md) 了解版本历史和重要变更。
 
 ## 贡献者
 

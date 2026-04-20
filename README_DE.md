@@ -9,9 +9,13 @@
   <p align="center">
     Enterprise-tauglicher Marktplatz mit KI-Empfehlungen, Stripe Connect-Auszahlungen, Flash-Verkäufen, POS, Lieferverwaltung und Unterstützung für 17 Sprachen.
   </p>
+  <p align="center">
+    <a href="https://vasty.shop"><strong>🌐 Live-Demo ausprobieren →</strong></a>
+  </p>
 </p>
 
 <p align="center">
+  <a href="https://vasty.shop"><img src="https://img.shields.io/badge/demo-live-brightgreen.svg" alt="Live Demo"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
@@ -20,9 +24,10 @@
 </p>
 
 <p align="center">
-  <a href="https://vasty.shop">Webseite</a> |
+  <a href="https://vasty.shop">Live-Demo</a> |
   <a href="#schnellstart">Schnellstart</a> |
   <a href="#funktionen">Funktionen</a> |
+  <a href="#bereitstellung">Bereitstellung</a> |
   <a href="https://github.com/vasty-shop/vasty-shop/discussions">Diskussionen</a> |
   <a href="CONTRIBUTING.md">Mitwirken</a>
 </p>
@@ -32,6 +37,23 @@
 </p>
 
 ---
+
+## Inhaltsverzeichnis
+
+- [Was ist Vasty Shop?](#was-ist-vasty-shop)
+- [Warum Vasty Shop?](#warum-vasty-shop-vergleich)
+- [Händler-Dashboard](#händler-dashboard)
+- [Schnellstart](#schnellstart)
+- [Funktionen](#funktionen)
+- [Lieferverwaltung](#lieferverwaltung)
+- [Storefront-Builder](#storefront-builder)
+- [Technologie-Stack](#technologie-stack)
+- [Projektstruktur](#projektstruktur)
+- [Bereitstellung](#bereitstellung)
+- [Änderungsprotokoll](#änderungsprotokoll)
+- [Mitwirken](CONTRIBUTING.md)
+- [Sicherheit](#sicherheit)
+- [Lizenz](#lizenz)
 
 ## Was ist Vasty Shop?
 
@@ -173,6 +195,8 @@ npm run dev
 ## Funktionen
 
 ### E-Commerce-Kern
+Alles Nötige zum Betrieb eines Online-Shops — Katalog, Warenkorb, Checkout und Nachkauf-Prozesse.
+
 - **Produkte** -- Varianten, Attribute, Lagerbestand, digitale Produkte, Bulk-Import
 - **Bestellungen** -- Aufteilung auf mehrere Händler, Statusverfolgung, Rückerstattungen
 - **Warenkorb** -- Persistenter Warenkorb, Gast-Checkout, Multi-Währung
@@ -180,6 +204,8 @@ npm run dev
 - **Bewertungen** -- Sterne, Fotos, verifizierte Käufer-Badges
 
 ### Zahlungen & Finanzen
+Multi-Provider-Zahlungen mit automatischen Plattformgebühren, Händlerauszahlungen und Finanzverfolgung.
+
 - **Stripe Connect** -- Automatische Händlerauszahlungen mit Plattformgebühr
 - **PayPal** -- Alternatives Zahlungs-Gateway
 - **Wallet** -- Kundenguthaben mit Aufladung und Abzug
@@ -188,6 +214,8 @@ npm run dev
 - **Ausgaben** -- Geschäftsausgabenverfolgung für Händler
 
 ### Marketing & Wachstum
+Integrierte Tools zur Nachfragegenerierung — ohne Drittanbieter-Plugins.
+
 - **Flash-Verkäufe** -- Zeitlich begrenzte Angebote mit Countdown
 - **Kampagnen** -- Werbekampagnen mit Terminplanung
 - **Gutscheine** -- Prozent, Festbetrag, kostenloser Versand
@@ -197,6 +225,8 @@ npm run dev
 - **Surge-Pricing** -- Dynamische Preise nach Nachfrage
 
 ### Betrieb
+In-Store- und Fulfillment-Workflows für Händler, die über das Web hinaus verkaufen.
+
 - **POS** -- Kassensystem mit Barcode-Scanning
 - **Lieferung** -- Zonenbasierte Preise, Tracking, Lieferpartner
 - **Paket** -- Paketzustellungsverwaltung
@@ -204,6 +234,8 @@ npm run dev
 - **Export** -- Datenexport als CSV/Excel
 
 ### Plattform
+Basisfunktionen, die jedes andere Modul antreiben.
+
 - **17 Sprachen** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
 - **KI** -- Produktempfehlungen, intelligente Suche
 - **Blog/CMS** -- Content-Management
@@ -247,6 +279,29 @@ vasty-shop/
 ├── shared/               # Gemeinsame Typen und Utilities
 └── .github/workflows/    # CI/CD
 ```
+
+## Bereitstellung
+
+Vasty Shop ist für Self-Hosting konzipiert. Führen Sie es auf jedem Docker-fähigen Host aus — einem VPS, Render/Railway/Fly oder Ihrem eigenen Kubernetes-Cluster.
+
+**Gängige Bereitstellungspfade:**
+
+- **Single-Host-Docker** — die mitgelieferte `docker-compose.yml` ist mit wenigen Env-Anpassungen produktionstauglich (Build-Targets umstellen, verwaltete Volumes nutzen, Reverse-Proxy davorschalten).
+- **Managed Postgres + Redis** — richten Sie `DATABASE_URL` / `REDIS_HOST` auf eine verwaltete Instanz und betreiben Sie nur die Backend-/Frontend-Container.
+- **Provider-Setup** — Speicher, E-Mail, Zahlungen, Suche, SMS und KI sind alle über Umgebungsvariablen austauschbar. Vollständiger Provider-Katalog und Einrichtungsanleitungen: [`backend/docs/providers/`](backend/docs/providers).
+
+**Checkliste vor dem Go-Live:**
+
+- [ ] Standard-Admin-Passwort ändern (`admin@vasty.shop` / `admin123`)
+- [ ] `JWT_SECRET` auf einen starken Zufallswert setzen
+- [ ] `NODE_ENV=production` im Backend setzen
+- [ ] Mindestens einen E-Mail-Provider für Transaktionsmails konfigurieren
+- [ ] Einen Storage-Provider (S3/R2/MinIO) für hochgeladene Medien konfigurieren
+- [ ] Secrets aus `backend/.env` aus dem Repository und der Versionskontrolle entfernen
+
+## Änderungsprotokoll
+
+Siehe [CHANGELOG.md](CHANGELOG.md) für die Versionshistorie und nennenswerte Änderungen.
 
 ## Mitwirkende
 

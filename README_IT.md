@@ -9,9 +9,13 @@
   <p align="center">
     Marketplace di livello enterprise con raccomandazioni IA, pagamenti Stripe Connect, vendite flash, POS, gestione consegne e supporto per 17 lingue.
   </p>
+  <p align="center">
+    <a href="https://vasty.shop"><strong>🌐 Prova la demo live →</strong></a>
+  </p>
 </p>
 
 <p align="center">
+  <a href="https://vasty.shop"><img src="https://img.shields.io/badge/demo-live-brightgreen.svg" alt="Live Demo"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
@@ -20,9 +24,10 @@
 </p>
 
 <p align="center">
-  <a href="https://vasty.shop">Sito web</a> |
+  <a href="https://vasty.shop">Demo live</a> |
   <a href="#avvio-rapido">Avvio rapido</a> |
   <a href="#funzionalità">Funzionalità</a> |
+  <a href="#deployment">Deployment</a> |
   <a href="https://github.com/vasty-shop/vasty-shop/discussions">Discussioni</a> |
   <a href="CONTRIBUTING.md">Contribuire</a>
 </p>
@@ -32,6 +37,23 @@
 </p>
 
 ---
+
+## Indice
+
+- [Cos'è Vasty Shop?](#cosè-vasty-shop)
+- [Perché Vasty Shop?](#perché-vasty-shop-confronto)
+- [Dashboard Vendor](#dashboard-vendor)
+- [Avvio rapido](#avvio-rapido)
+- [Funzionalità](#funzionalità)
+- [Gestione Consegne](#gestione-consegne)
+- [Storefront Builder](#storefront-builder)
+- [Stack tecnologico](#stack-tecnologico)
+- [Struttura del progetto](#struttura-del-progetto)
+- [Deployment](#deployment)
+- [Changelog](#changelog)
+- [Contribuire](CONTRIBUTING.md)
+- [Sicurezza](#sicurezza)
+- [Licenza](#licenza)
 
 ## Cos'è Vasty Shop?
 
@@ -173,6 +195,8 @@ npm run dev
 ## Funzionalità
 
 ### Core E-Commerce
+Tutto ciò che serve per gestire una vetrina online — catalogo, carrello, checkout e post-acquisto.
+
 - **Prodotti** -- Varianti, attributi, inventario, prodotti digitali, import in blocco
 - **Ordini** -- Divisione multi-vendor, tracking status, rimborsi
 - **Carrello** -- Persistente, checkout ospite, multi-valuta
@@ -180,6 +204,8 @@ npm run dev
 - **Recensioni** -- Valutazioni, foto, badge acquisto verificato
 
 ### Pagamenti e Finanza
+Pagamenti multi-provider con commissioni di piattaforma automatiche, pagamenti ai vendor e tracciamento finanziario.
+
 - **Stripe Connect** -- Pagamenti automatici ai venditori con commissione piattaforma
 - **PayPal** -- Gateway di pagamento alternativo
 - **Wallet** -- Portafoglio cliente con ricarica e spesa
@@ -188,6 +214,8 @@ npm run dev
 - **Spese** -- Tracking spese per venditori
 
 ### Marketing e Crescita
+Strumenti integrati per generare domanda — nessun plugin di terze parti necessario.
+
 - **Vendite flash** -- Offerte a tempo con countdown
 - **Campagne** -- Campagne promozionali con pianificazione
 - **Coupon** -- Percentuale, importo fisso, spedizione gratuita
@@ -197,6 +225,8 @@ npm run dev
 - **Prezzi dinamici** -- Prezzi basati sulla domanda
 
 ### Operazioni
+Flussi in negozio e di evasione per i vendor che vendono anche al di fuori del web.
+
 - **POS** -- Punto vendita con scanner codice a barre
 - **Consegne** -- Prezzi per zona, tracking, partner di consegna
 - **Pacchi** -- Gestione spedizioni pacchi
@@ -204,6 +234,8 @@ npm run dev
 - **Esportazione** -- Export CSV/Excel
 
 ### Piattaforma
+Capacità fondamentali che alimentano ogni altro modulo.
+
 - **17 lingue** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
 - **IA** -- Raccomandazioni prodotti, ricerca intelligente
 - **Blog/CMS** -- Gestione contenuti
@@ -247,6 +279,29 @@ vasty-shop/
 ├── shared/               # Tipi e utilità condivise
 └── .github/workflows/    # CI/CD
 ```
+
+## Deployment
+
+Vasty Shop è pensato per il self-hosting. Eseguilo su qualsiasi host compatibile con Docker — un VPS, Render/Railway/Fly o il tuo cluster Kubernetes.
+
+**Percorsi di deployment comuni:**
+
+- **Docker su singolo host** — il `docker-compose.yml` incluso è pronto per la produzione con qualche regolazione di env (cambiare i target di build, usare volumi gestiti, mettere un reverse proxy davanti).
+- **Postgres + Redis gestiti** — punta `DATABASE_URL` / `REDIS_HOST` a un'istanza gestita e avvia solo i container backend/frontend.
+- **Configurazione provider** — storage, email, pagamenti, ricerca, SMS e IA sono tutti pluggabili tramite variabili d'ambiente. Catalogo completo dei provider e guide di configurazione: [`backend/docs/providers/`](backend/docs/providers).
+
+**Checklist pre-lancio:**
+
+- [ ] Cambia la password admin predefinita (`admin@vasty.shop` / `admin123`)
+- [ ] Imposta `JWT_SECRET` su un valore casuale robusto
+- [ ] Imposta `NODE_ENV=production` sul backend
+- [ ] Configura almeno un provider email per la posta transazionale
+- [ ] Configura un provider di storage (S3/R2/MinIO) per i media caricati
+- [ ] Estrai i segreti di `backend/.env` dal repository e dal version control
+
+## Changelog
+
+Consulta [CHANGELOG.md](CHANGELOG.md) per la cronologia delle versioni e le modifiche rilevanti.
 
 ## Contributori
 

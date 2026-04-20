@@ -9,9 +9,13 @@
   <p align="center">
     Yapay zeka önerileri, Stripe Connect satıcı ödemeleri, flaş satışlar, POS, teslimat yönetimi ve 17 dil desteği ile kurumsal düzeyde pazaryeri.
   </p>
+  <p align="center">
+    <a href="https://vasty.shop"><strong>🌐 Canlı Demo'yu Deneyin →</strong></a>
+  </p>
 </p>
 
 <p align="center">
+  <a href="https://vasty.shop"><img src="https://img.shields.io/badge/demo-live-brightgreen.svg" alt="Live Demo"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
@@ -20,9 +24,10 @@
 </p>
 
 <p align="center">
-  <a href="https://vasty.shop">Web sitesi</a> |
+  <a href="https://vasty.shop">Canlı Demo</a> |
   <a href="#hızlı-başlangıç">Hızlı Başlangıç</a> |
   <a href="#özellikler">Özellikler</a> |
+  <a href="#dağıtım">Dağıtım</a> |
   <a href="https://github.com/vasty-shop/vasty-shop/discussions">Tartışmalar</a> |
   <a href="CONTRIBUTING.md">Katkı</a>
 </p>
@@ -32,6 +37,23 @@
 </p>
 
 ---
+
+## İçindekiler
+
+- [Vasty Shop Nedir?](#vasty-shop-nedir)
+- [Neden Vasty Shop?](#neden-vasty-shop-karşılaştırma)
+- [Satıcı Paneli](#satıcı-paneli)
+- [Hızlı Başlangıç](#hızlı-başlangıç)
+- [Özellikler](#özellikler)
+- [Teslimat Yönetimi](#teslimat-yönetimi)
+- [Mağaza Oluşturucu](#mağaza-oluşturucu)
+- [Teknoloji Yığını](#teknoloji-yığını)
+- [Proje Yapısı](#proje-yapısı)
+- [Dağıtım](#dağıtım)
+- [Değişiklik Günlüğü](#değişiklik-günlüğü)
+- [Katkı](CONTRIBUTING.md)
+- [Güvenlik](#güvenlik)
+- [Lisans](#lisans)
 
 ## Vasty Shop Nedir?
 
@@ -173,6 +195,8 @@ npm run dev
 ## Özellikler
 
 ### E-Ticaret Çekirdeği
+Çevrim içi bir mağazayı yürütmek için gereken her şey — katalog, sepet, ödeme ve satış sonrası.
+
 - **Ürünler** -- Varyantlar, öznitelikler, stok, dijital ürünler, toplu içe aktarma
 - **Siparişler** -- Çok satıcılı sipariş bölme, durum takibi, iade
 - **Sepet** -- Kalıcı sepet, misafir ödemesi, çoklu para birimi
@@ -180,6 +204,8 @@ npm run dev
 - **Değerlendirmeler** -- Puan, fotoğraf, doğrulanmış alım rozetleri
 
 ### Ödemeler ve Finans
+Otomatik platform komisyonları, satıcı ödemeleri ve finansal takiple çok sağlayıcılı ödemeler.
+
 - **Stripe Connect** -- Platform komisyonlu otomatik satıcı ödemeleri
 - **PayPal** -- Alternatif ödeme ağ geçidi
 - **Cüzdan** -- Yükleme ve harcama için müşteri cüzdanı
@@ -188,6 +214,8 @@ npm run dev
 - **Giderler** -- Satıcılar için iş gideri takibi
 
 ### Pazarlama ve Büyüme
+Talep yaratan araçlar yerleşik olarak gelir — üçüncü taraf eklentilere gerek yoktur.
+
 - **Flaş satışlar** -- Geri sayımlı zaman sınırlı teklifler
 - **Kampanyalar** -- Zamanlamalı promosyon kampanyaları
 - **Kuponlar** -- Yüzde, sabit tutar, ücretsiz kargo
@@ -197,6 +225,8 @@ npm run dev
 - **Surge fiyatlandırma** -- Talebe göre dinamik fiyatlar
 
 ### Operasyon
+Web dışında da satış yapan satıcılar için mağaza içi ve sevkiyat iş akışları.
+
 - **POS** -- Barkod tarayıcılı satış noktası
 - **Teslimat** -- Bölge bazlı fiyat, takip, teslimat ortakları
 - **Koli** -- Koli teslimat yönetimi
@@ -204,6 +234,8 @@ npm run dev
 - **Dışa aktarma** -- CSV/Excel veri dışa aktarma
 
 ### Platform
+Diğer tüm modülleri güçlendiren temel yetenekler.
+
 - **17 dil** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
 - **AI** -- Ürün önerileri, akıllı arama
 - **Blog/CMS** -- İçerik yönetimi
@@ -247,6 +279,29 @@ vasty-shop/
 ├── shared/               # Paylaşılan tipler ve yardımcılar
 └── .github/workflows/    # CI/CD
 ```
+
+## Dağıtım
+
+Vasty Shop, self-hosting için tasarlanmıştır. Docker çalıştırabilen herhangi bir sunucuda çalıştırın — bir VPS, Render/Railway/Fly veya kendi Kubernetes kümeniz.
+
+**Yaygın dağıtım yolları:**
+
+- **Tek sunuculu Docker** — birlikte gelen `docker-compose.yml`, birkaç env ayarı ile üretime uygundur (build hedeflerini değiştirme, yönetilen birim kullanma, önüne reverse proxy koyma).
+- **Yönetilen Postgres + Redis** — `DATABASE_URL` / `REDIS_HOST` değerini yönetilen bir örneğe yönlendirin ve yalnızca backend/frontend kapsayıcılarını çalıştırın.
+- **Sağlayıcı kurulumu** — depolama, e-posta, ödeme, arama, SMS ve AI, tümü ortam değişkenleriyle değiştirilebilir. Sağlayıcıların tam kataloğu ve kurulum kılavuzları: [`backend/docs/providers/`](backend/docs/providers).
+
+**Lansman öncesi kontrol listesi:**
+
+- [ ] Varsayılan yönetici parolasını değiştirin (`admin@vasty.shop` / `admin123`)
+- [ ] `JWT_SECRET` değerini güçlü, rastgele bir değere ayarlayın
+- [ ] Backend'de `NODE_ENV=production` ayarlayın
+- [ ] İşlemsel e-postalar için en az bir e-posta sağlayıcısı yapılandırın
+- [ ] Yüklenen medya için bir depolama sağlayıcısı (S3/R2/MinIO) yapılandırın
+- [ ] `backend/.env` sırlarını depodan ve sürüm kontrolünden çıkarın
+
+## Değişiklik Günlüğü
+
+Sürüm geçmişi ve önemli değişiklikler için [CHANGELOG.md](CHANGELOG.md) dosyasına bakın.
 
 ## Katkıda Bulunanlar
 

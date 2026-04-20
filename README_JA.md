@@ -9,9 +9,13 @@
   <p align="center">
     AIレコメンデーション、Stripe Connect による出品者への自動送金、フラッシュセール、POS、配送管理、17言語対応を備えたエンタープライズ級マーケットプレイス。
   </p>
+  <p align="center">
+    <a href="https://vasty.shop"><strong>🌐 ライブデモを試す →</strong></a>
+  </p>
 </p>
 
 <p align="center">
+  <a href="https://vasty.shop"><img src="https://img.shields.io/badge/demo-live-brightgreen.svg" alt="Live Demo"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPL--3.0-blue.svg" alt="License"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml"><img src="https://github.com/vasty-shop/vasty-shop/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
   <a href="https://github.com/vasty-shop/vasty-shop/stargazers"><img src="https://img.shields.io/github/stars/vasty-shop/vasty-shop?style=social" alt="Stars"></a>
@@ -20,9 +24,10 @@
 </p>
 
 <p align="center">
-  <a href="https://vasty.shop">ウェブサイト</a> |
+  <a href="https://vasty.shop">ライブデモ</a> |
   <a href="#クイックスタート">クイックスタート</a> |
   <a href="#機能">機能</a> |
+  <a href="#デプロイ">デプロイ</a> |
   <a href="https://github.com/vasty-shop/vasty-shop/discussions">ディスカッション</a> |
   <a href="CONTRIBUTING.md">コントリビュート</a>
 </p>
@@ -32,6 +37,23 @@
 </p>
 
 ---
+
+## 目次
+
+- [Vasty Shop とは？](#vasty-shop-とは)
+- [なぜ Vasty Shop なのか？](#なぜ-vasty-shop-なのか比較)
+- [出品者ダッシュボード](#出品者ダッシュボード)
+- [クイックスタート](#クイックスタート)
+- [機能](#機能)
+- [配送管理](#配送管理)
+- [ストアフロントビルダー](#ストアフロントビルダー)
+- [技術スタック](#技術スタック)
+- [プロジェクト構成](#プロジェクト構成)
+- [デプロイ](#デプロイ)
+- [変更履歴](#変更履歴)
+- [コントリビュート](CONTRIBUTING.md)
+- [セキュリティ](#セキュリティ)
+- [ライセンス](#ライセンス)
 
 ## Vasty Shop とは？
 
@@ -173,6 +195,8 @@ npm run dev
 ## 機能
 
 ### Eコマースのコア
+オンラインストアを運営するために必要なすべて — カタログ、カート、チェックアウト、購入後のフロー。
+
 - **商品** -- バリアント、属性、在庫、デジタル商品、一括インポート
 - **注文** -- マルチベンダー注文分割、ステータス追跡、返金
 - **カート** -- 永続カート、ゲスト購入、マルチ通貨
@@ -180,6 +204,8 @@ npm run dev
 - **レビュー** -- 評価、写真、購入済みバッジ
 
 ### 決済と金融
+複数プロバイダ対応の決済、自動的なプラットフォーム手数料、出品者への送金、財務追跡。
+
 - **Stripe Connect** -- プラットフォーム手数料付きの自動出品者送金
 - **PayPal** -- 代替決済ゲートウェイ
 - **ウォレット** -- チャージと支払いができる顧客ウォレット
@@ -188,6 +214,8 @@ npm run dev
 - **経費** -- 出品者向け経費追跡
 
 ### マーケティングと成長
+組み込みの需要喚起ツール — サードパーティプラグインは不要。
+
 - **フラッシュセール** -- カウントダウン付きの期間限定セール
 - **キャンペーン** -- スケジュール可能なプロモーション
 - **クーポン** -- パーセント、定額、送料無料
@@ -197,6 +225,8 @@ npm run dev
 - **サージ価格** -- 需要に応じた動的価格設定
 
 ### 運用
+ウェブを超えて販売する出品者向けの店舗およびフルフィルメントワークフロー。
+
 - **POS** -- バーコードスキャン対応 POS
 - **配送** -- ゾーン別価格、追跡、配送パートナー
 - **小包** -- 小包配送管理
@@ -204,6 +234,8 @@ npm run dev
 - **エクスポート** -- CSV/Excel データエクスポート
 
 ### プラットフォーム
+他のすべてのモジュールを支える基盤機能。
+
 - **17 言語** -- AR, BN, DE, EN, ES, FR, HI, ID, IT, JA, KO, MS, PT, RU, TR, UR, ZH
 - **AI** -- 商品レコメンド、スマート検索
 - **ブログ/CMS** -- コンテンツ管理
@@ -247,6 +279,29 @@ vasty-shop/
 ├── shared/               # 共有型とユーティリティ
 └── .github/workflows/    # CI/CD
 ```
+
+## デプロイ
+
+Vasty Shop はセルフホスティング向けに設計されています。Docker が動作する任意のホストで実行できます — VPS、Render/Railway/Fly、または自前の Kubernetes クラスタ。
+
+**一般的なデプロイ方法:**
+
+- **シングルホスト Docker** — 同梱の `docker-compose.yml` は、いくつかの環境変数の調整で本番運用可能です（ビルドターゲットの切り替え、マネージドボリュームの使用、リバースプロキシの配置など）。
+- **マネージド Postgres + Redis** — `DATABASE_URL` / `REDIS_HOST` をマネージドインスタンスに向け、バックエンド/フロントエンドのコンテナのみを実行します。
+- **プロバイダ設定** — ストレージ、メール、決済、検索、SMS、AI はすべて環境変数で切り替え可能です。完全なプロバイダカタログとセットアップガイド: [`backend/docs/providers/`](backend/docs/providers)。
+
+**リリース前チェックリスト:**
+
+- [ ] デフォルトの管理者パスワードを変更する（`admin@vasty.shop` / `admin123`）
+- [ ] `JWT_SECRET` を強力なランダム値に設定する
+- [ ] バックエンドで `NODE_ENV=production` を設定する
+- [ ] トランザクションメール用のメールプロバイダを少なくとも 1 つ構成する
+- [ ] アップロードメディア用のストレージプロバイダ（S3/R2/MinIO）を構成する
+- [ ] `backend/.env` のシークレットをリポジトリとバージョン管理から外す
+
+## 変更履歴
+
+バージョン履歴と主な変更については [CHANGELOG.md](CHANGELOG.md) をご覧ください。
 
 ## コントリビューター
 
